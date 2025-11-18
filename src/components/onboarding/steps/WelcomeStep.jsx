@@ -47,7 +47,7 @@ export default function WelcomeStep() {
             <Button 
               size="lg" 
               onClick={nextStep}
-              className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-12 py-6 text-lg shadow-2xl"
+              className="bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent hover:opacity-95 text-white font-bold px-12 py-6 text-lg shadow-2xl"
             >
               Start Your Journey
               <ArrowRight className="ml-2" size={24} />

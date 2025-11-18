@@ -43,8 +43,8 @@ export default function FounderMessageStep() {
           </AnimatedSection>
 
           <AnimatedSection animation="fade-left" delay={200}>
-            <div className="space-y-6">
-              <div className="p-8 rounded-2xl bg-white border-2 border-slate-100 shadow-lg">
+            <div className="flex flex-col h-full space-y-8">
+              <div className="p-10 rounded-2xl bg-white border-2 border-slate-100 shadow-lg">
                 <Quote className="text-orange-500 mb-4" size={32} />
                 <p className="text-slate-700 leading-relaxed text-base mb-4">
                   Our approach is grounded in excellence, where every member of our team plays an integral role in delivering unparalleled financial services to a global clientele. We don't settle for mediocrity; we aim for excellence through innovation and automation.
@@ -54,17 +54,17 @@ export default function FounderMessageStep() {
                 </p>
               </div>
 
-              <div className="p-8 rounded-2xl bg-gradient-to-br from-orange-50 to-blue-50 border-2 border-orange-100 shadow-md">
+              <div className="p-10 rounded-2xl bg-gradient-to-br from-orange-50 to-blue-50 border-2 border-orange-100 shadow-md">
                 <p className="text-slate-800 leading-relaxed font-medium text-lg italic">
                   "Together, let us redefine financial advisory, let us empower the future of finance, and let us, as Finanshels, illuminate the path towards financial mastery for all."
                 </p>
               </div>
 
-              <div className="flex gap-4 pt-4">
+              <div className="flex gap-4 pt-6">
                 <Button
                   size="lg"
                   onClick={previousStep}
-                  className="bg-white hover:bg-slate-50 text-slate-900 font-bold text-lg shadow-xl border-2 border-slate-200"
+                  className="bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent text-white hover:opacity-95 font-bold text-lg shadow-xl"
                 >
                   <ArrowLeft className="mr-2" size={20} />
                   Back
@@ -72,7 +72,7 @@ export default function FounderMessageStep() {
                 <Button
                   size="lg"
                   onClick={nextStep}
-                  className="flex-1 bg-orange-500 hover:bg-orange-600 text-white font-bold text-lg shadow-xl"
+                  className="flex-1 bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent hover:opacity-95 text-white font-bold text-lg shadow-xl"
                 >
                   Continue to Roadmap
                   <ArrowRight className="ml-2" size={20} />
@@ -85,4 +85,3 @@ export default function FounderMessageStep() {
     </div>
   )
 }
-

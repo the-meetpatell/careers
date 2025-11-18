@@ -17,7 +17,13 @@ export default function ToolsStep() {
     { name: 'Fathom AI', icon: '🎙️', category: 'Meeting Notes', color: 'from-yellow-500 to-orange-600' },
     { name: 'Maqsam', icon: '📊', category: 'Analytics', color: 'from-teal-500 to-cyan-600' },
     { name: 'Calendly', icon: '📅', category: 'Scheduling', color: 'from-pink-500 to-rose-600' },
-    { name: 'FocusRO', icon: '🎯', category: 'Productivity', color: 'from-violet-500 to-purple-600' }
+    { name: 'FocusRO', icon: '🎯', category: 'Productivity', color: 'from-violet-500 to-purple-600' },
+    { name: 'PMS for Ops', icon: '🗂️', category: 'Operations Hub', color: 'from-amber-500 to-orange-500' },
+    { name: '3CX', icon: '📞', category: 'Cloud Telephony', color: 'from-teal-500 to-emerald-500' },
+    { name: 'Cursor', icon: '⌨️', category: 'AI IDE', color: 'from-fuchsia-500 to-purple-600' },
+    { name: 'AWS', icon: '☁️', category: 'Cloud Infrastructure', color: 'from-yellow-500 to-orange-500' },
+    { name: 'Jira', icon: '🧩', category: 'Project Tracking', color: 'from-blue-600 to-indigo-500' },
+    { name: 'Zoho CRM', icon: '📈', category: 'Sales CRM', color: 'from-pink-500 to-rose-500' }
   ]
 
   return (
@@ -69,7 +75,7 @@ export default function ToolsStep() {
             <Button
               size="lg"
               onClick={previousStep}
-              className="bg-white hover:bg-slate-50 text-slate-900 font-bold px-12 text-lg shadow-xl border-2 border-slate-200"
+              className="bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent text-white hover:opacity-95 font-bold px-12 text-lg shadow-xl"
             >
               <ArrowLeft className="mr-2" size={20} />
               Back
@@ -77,7 +83,7 @@ export default function ToolsStep() {
             <Button
               size="lg"
               onClick={nextStep}
-              className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-12 text-lg shadow-xl"
+              className="bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent hover:opacity-95 text-white font-bold px-12 text-lg shadow-xl"
             >
               Continue
               <ArrowRight className="ml-2" size={20} />
@@ -88,4 +94,3 @@ export default function ToolsStep() {
     </div>
   )
 }
-

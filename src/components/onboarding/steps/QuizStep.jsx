@@ -124,7 +124,7 @@ export default function QuizStep() {
                   <Button
                     size="lg"
                     onClick={previousStep}
-                    className="bg-white hover:bg-slate-50 text-slate-900 font-bold px-12 text-lg shadow-xl border-2 border-slate-200"
+                    className="bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent text-white hover:opacity-95 font-bold px-12 text-lg shadow-xl"
                   >
                     <ArrowLeft className="mr-2" size={20} />
                     Back
@@ -132,7 +132,7 @@ export default function QuizStep() {
                   <Button
                     size="lg"
                     onClick={handleComplete}
-                    className="flex-1 bg-orange-500 hover:bg-orange-600 text-white font-bold px-12 text-lg shadow-xl"
+                    className="flex-1 bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent hover:opacity-95 text-white font-bold px-12 text-lg shadow-xl"
                   >
                     Complete Onboarding
                     <ArrowRight className="ml-2" size={20} />

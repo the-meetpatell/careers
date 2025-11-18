@@ -8,16 +8,16 @@ export default function CompanyOverviewStep() {
   const { nextStep, previousStep } = useOnboarding()
 
   const stats = [
-    { icon: Users, value: '50+', label: 'Team Members', color: 'from-blue-500 to-cyan-600' },
+    { icon: Users, value: '140+', label: 'Team Members', color: 'from-blue-500 to-cyan-600' },
     { icon: Globe, value: 'MENA', label: 'Region Focus', color: 'from-orange-500 to-amber-600' },
-    { icon: Zap, value: '1000+', label: 'SMBs Served', color: 'from-purple-500 to-pink-600' },
-    { icon: Building2, value: '5+', label: 'Years Experience', color: 'from-emerald-500 to-teal-600' }
+    { icon: Zap, value: '5,000+', label: 'SMBs Served', color: 'from-purple-500 to-pink-600' },
+    { icon: Building2, value: '200+', label: 'Partners', color: 'from-emerald-500 to-teal-600' }
   ]
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-blue-50 px-6 py-12 sm:py-16">
       <div className="max-w-6xl mx-auto">
-        <AnimatedSection animation="fade-down">
+        <AnimatedSection animation="fade-down">ß
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-orange-100 border border-orange-200 text-sm font-bold text-orange-700 mb-6">
               <Building2 size={16} />
@@ -63,7 +63,7 @@ export default function CompanyOverviewStep() {
             <Button
               size="lg"
               onClick={previousStep}
-              className="bg-white hover:bg-slate-50 text-slate-900 font-bold px-12 text-lg shadow-xl border-2 border-slate-200"
+              className="bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent text-white hover:opacity-95 font-bold px-12 text-lg shadow-xl"
             >
               <ArrowLeft className="mr-2" size={20} />
               Back
@@ -71,7 +71,7 @@ export default function CompanyOverviewStep() {
             <Button
               size="lg"
               onClick={nextStep}
-              className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-12 text-lg shadow-xl"
+              className="bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent hover:opacity-95 text-white font-bold px-12 text-lg shadow-xl"
             >
               Continue to Vision & Mission
               <ArrowRight className="ml-2" size={20} />

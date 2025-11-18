@@ -1,23 +1,69 @@
-import { useState } from 'react'
+import { useEffect } from 'react'
 import { useOnboarding } from '../../../contexts/OnboardingContext'
 import { Button } from '../../ui/Button'
 import { Card } from '../../ui/Card'
-import { ArrowRight, ArrowLeft, User, Briefcase, Building2, Calendar } from 'lucide-react'
+import { ArrowRight, ArrowLeft, Info } from 'lucide-react'
 import AnimatedSection from '../../AnimatedSection'
 
 export default function PersonalizeStep() {
-  const { userData, updateUserData, nextStep, previousStep } = useOnboarding()
-  const [formData, setFormData] = useState(userData)
+  const { nextStep, previousStep } = useOnboarding()
+  const formContainerId = 'zf_div__zvGqqY95wJdw2PJYPnCYgAfb_VJl3jeOIZor19ATm0'
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    updateUserData(formData)
-    nextStep()
-  }
-
-  const handleChange = (e) => {
-    setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }))
-  }
+  useEffect(() => {
+    const container = document.getElementById(formContainerId)
+    if (!container) return
+    container.innerHTML = ''
+    const script = document.createElement('script')
+    script.type = 'text/javascript'
+    script.innerHTML = `
+      (function() {
+        try {
+          var f = document.createElement("iframe");
+          var ifrmSrc = 'https://forms.zohopublic.com/finanshelsllc/form/EmployeeOnboarding/formperma/_zvGqqY95wJdw2PJYPnCYgAfb_VJl3jeOIZor19ATm0?zf_rszfm=1';
+          f.src = ifrmSrc;
+          f.style.border="none";
+          f.style.height="650px";
+          f.style.width="100%";
+          f.style.transition="all 0.5s ease";
+          f.setAttribute("aria-label", 'Employee Onboarding');
+          var d = document.getElementById("${formContainerId}");
+          d.appendChild(f);
+          window.addEventListener('message', function (event){
+            var evntData = event.data;
+            if( evntData && evntData.constructor == String ){
+              var zf_ifrm_data = evntData.split("|");
+              if ( zf_ifrm_data.length == 2 || zf_ifrm_data.length == 3 ) {
+                var zf_perma = zf_ifrm_data[0];
+                var zf_ifrm_ht_nw = ( parseInt(zf_ifrm_data[1], 10) + 15 ) + "px";
+                var iframe = document.getElementById("${formContainerId}").getElementsByTagName("iframe")[0];
+                if ( (iframe.src).indexOf('formperma') > 0 && (iframe.src).indexOf(zf_perma) > 0 ) {
+                  var prevIframeHeight = iframe.style.height;
+                  var zf_tout = false;
+                  if( zf_ifrm_data.length == 3 ) {
+                      iframe.scrollIntoView();
+                      zf_tout = true;
+                  }
+                  if ( prevIframeHeight != zf_ifrm_ht_nw ) {
+                    if( zf_tout ) {
+                        setTimeout(function(){
+                            iframe.style.height = zf_ifrm_ht_nw;
+                        },500);
+                    } else {
+                        iframe.style.height = zf_ifrm_ht_nw;
+                    }
+                  }
+                }
+              }
+            }
+          }, false);
+        } catch(e) {}
+      })();
+    `
+    container.appendChild(script)
+    return () => {
+      container.innerHTML = ''
+    }
+  }, [formContainerId])
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-blue-50 px-6 py-12 sm:py-16 relative overflow-hidden">
@@ -38,102 +84,38 @@ export default function PersonalizeStep() {
 
         <AnimatedSection animation="fade-up" delay={100}>
           <Card className="border-2 border-slate-200 shadow-2xl">
-            <form onSubmit={handleSubmit} className="p-8 sm:p-12 space-y-6">
-              <div>
-                <label className="flex items-center gap-2 text-sm font-bold text-slate-700 mb-2">
-                  <User size={16} />
-                  Your Full Name
-                </label>
-                <input
-                  type="text"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  placeholder="John Doe"
-                  className="w-full px-4 py-3 rounded-xl border-2 border-slate-200 focus:border-blue-500 focus:ring-4 focus:ring-blue-100 outline-none transition-all text-slate-900 font-medium"
-                />
+            <div className="p-8 sm:p-12 space-y-6">
+              <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-200">
+                <Info size={20} className="text-blue-500 flex-shrink-0 mt-1" />
+                <p className="text-sm text-slate-600">
+                  Please fill in our secure onboarding intake form below. Once you submit the information, click Continue to move to the next step.
+                </p>
               </div>
-
-              <div>
-                <label className="flex items-center gap-2 text-sm font-bold text-slate-700 mb-2">
-                  <Briefcase size={16} />
-                  Your Role/Position
-                </label>
-                <input
-                  type="text"
-                  name="role"
-                  value={formData.role}
-                  onChange={handleChange}
-                  required
-                  placeholder="Software Engineer"
-                  className="w-full px-4 py-3 rounded-xl border-2 border-slate-200 focus:border-blue-500 focus:ring-4 focus:ring-blue-100 outline-none transition-all text-slate-900 font-medium"
-                />
-              </div>
-
-              <div>
-                <label className="flex items-center gap-2 text-sm font-bold text-slate-700 mb-2">
-                  <Building2 size={16} />
-                  Department
-                </label>
-                <select
-                  name="department"
-                  value={formData.department}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 rounded-xl border-2 border-slate-200 focus:border-blue-500 focus:ring-4 focus:ring-blue-100 outline-none transition-all text-slate-900 font-medium"
-                >
-                  <option value="">Select Department</option>
-                  <option value="Engineering">Engineering</option>
-                  <option value="Sales">Sales</option>
-                  <option value="Marketing">Marketing</option>
-                  <option value="Operations">Operations</option>
-                  <option value="Finance">Finance</option>
-                  <option value="HR">Human Resources</option>
-                  <option value="Customer Success">Customer Success</option>
-                  <option value="Product">Product</option>
-                </select>
-              </div>
-
-              <div>
-                <label className="flex items-center gap-2 text-sm font-bold text-slate-700 mb-2">
-                  <Calendar size={16} />
-                  Start Date
-                </label>
-                <input
-                  type="date"
-                  name="startDate"
-                  value={formData.startDate}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 rounded-xl border-2 border-slate-200 focus:border-blue-500 focus:ring-4 focus:ring-blue-100 outline-none transition-all text-slate-900 font-medium"
-                />
-              </div>
-
+              <div id={formContainerId} className="rounded-3xl overflow-hidden bg-white border border-slate-100 shadow-inner"></div>
               <div className="pt-6 flex gap-4">
                 <Button
                   type="button"
                   size="lg"
                   onClick={previousStep}
-                  className="bg-white hover:bg-slate-50 text-slate-900 font-bold text-lg shadow-xl border-2 border-slate-200"
+                  className="bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent text-white hover:opacity-95 font-bold text-lg shadow-xl"
                 >
                   <ArrowLeft className="mr-2" size={20} />
                   Back
                 </Button>
                 <Button
-                  type="submit"
+                  type="button"
                   size="lg"
-                  className="flex-1 bg-orange-500 hover:bg-orange-600 text-white font-bold text-lg shadow-xl"
+                  onClick={nextStep}
+                  className="flex-1 bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent hover:opacity-95 text-white font-bold text-lg shadow-xl"
                 >
                   Continue
                   <ArrowRight className="ml-2" size={20} />
                 </Button>
               </div>
-            </form>
+            </div>
           </Card>
         </AnimatedSection>
       </div>
     </div>
   )
 }
-
