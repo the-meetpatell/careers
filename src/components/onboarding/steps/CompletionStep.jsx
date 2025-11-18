@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { useOnboarding } from '../../../contexts/OnboardingContext'
 import { Button } from '../../ui/Button'
 import { Card } from '../../ui/Card'
@@ -6,6 +7,99 @@ import AnimatedSection from '../../AnimatedSection'
 
 export default function CompletionStep() {
   const { userData, badges, progress, timeSpent, quizScore } = useOnboarding()
+  const feedbackContainerId = 'zf_div_ls3pO0u6VPKjNDFxkv69RdRXZ49fBMuoRbfdf-Svqqg'
+
+  useEffect(() => {
+    const container = document.getElementById(feedbackContainerId)
+    if (!container) return
+    container.innerHTML = ''
+
+    const script = document.createElement('script')
+    script.type = 'text/javascript'
+    script.innerHTML = `
+      (function() {
+        try{
+          var f = document.createElement("iframe");
+          var ifrmSrc = 'https://forms.zohopublic.com/finanshelsllc/form/EmployeeOnboardingExperience/formperma/ls3pO0u6VPKjNDFxkv69RdRXZ49fBMuoRbfdf-Svqqg?zf_rszfm=1';
+          try{
+            if ( typeof ZFAdvLead != "undefined" && typeof zfutm_zfAdvLead != "undefined" ) {
+              for( var prmIdx = 0 ; prmIdx < ZFAdvLead.utmPNameArr.length ; prmIdx ++ ) {
+                var utmPm = ZFAdvLead.utmPNameArr[ prmIdx ];
+                utmPm = ( ZFAdvLead.isSameDomian && ( ZFAdvLead.utmcustPNameArr.indexOf(utmPm) == -1 ) ) ? "zf_" + utmPm : utmPm;
+                var utmVal = zfutm_zfAdvLead.zfautm_gC_enc( ZFAdvLead.utmPNameArr[ prmIdx ] );
+                if ( typeof utmVal !== "undefined" ) {
+                  if ( utmVal != "" ) {
+                    if(ifrmSrc.indexOf('?') > 0){
+                      ifrmSrc = ifrmSrc+'&'+utmPm+'='+utmVal;
+                    }else{
+                      ifrmSrc = ifrmSrc+'?'+utmPm+'='+utmVal;
+                    }
+                  }
+                }
+              }
+            }
+            if ( typeof ZFLead !== "undefined" && typeof zfutm_zfLead !== "undefined" ) {
+              for( var prmIdx = 0 ; prmIdx < ZFLead.utmPNameArr.length ; prmIdx ++ ) {
+                var utmPm = ZFLead.utmPNameArr[ prmIdx ];
+                var utmVal = zfutm_zfLead.zfutm_gC_enc( ZFLead.utmPNameArr[ prmIdx ] );
+                if ( typeof utmVal !== "undefined" ) {
+                  if ( utmVal != "" ){
+                    if(ifrmSrc.indexOf('?') > 0){
+                      ifrmSrc = ifrmSrc+'&'+utmPm+'='+utmVal;
+                    }else{
+                      ifrmSrc = ifrmSrc+'?'+utmPm+'='+utmVal;
+                    }
+                  }
+                }
+              }
+            }
+          }catch(e){}
+          f.src = ifrmSrc;
+          f.style.border="none";
+          f.style.height="611px";
+          f.style.width="90%";
+          f.style.transition="all 0.5s ease";
+          f.setAttribute("aria-label", 'Employee Onboarding Experience');
+          var d = document.getElementById("${feedbackContainerId}");
+          d.appendChild(f);
+          window.addEventListener('message', function (event){
+            var evntData = event.data;
+            if( evntData && evntData.constructor == String ){
+              var zf_ifrm_data = evntData.split("|");
+              if ( zf_ifrm_data.length == 2 || zf_ifrm_data.length == 3 ) {
+                var zf_perma = zf_ifrm_data[0];
+                var zf_ifrm_ht_nw = ( parseInt(zf_ifrm_data[1], 10) + 15 ) + "px";
+                var iframe = document.getElementById("${feedbackContainerId}").getElementsByTagName("iframe")[0];
+                if ( (iframe.src).indexOf('formperma') > 0 && (iframe.src).indexOf(zf_perma) > 0 ) {
+                  var prevIframeHeight = iframe.style.height;
+                  var zf_tout = false;
+                  if( zf_ifrm_data.length == 3 ) {
+                    iframe.scrollIntoView();
+                    zf_tout = true;
+                  }
+                  if ( prevIframeHeight != zf_ifrm_ht_nw ) {
+                    if( zf_tout ) {
+                      setTimeout(function(){
+                        iframe.style.height = zf_ifrm_ht_nw;
+                      },500);
+                    } else {
+                      iframe.style.height = zf_ifrm_ht_nw;
+                    }
+                  }
+                }
+              }
+            }
+          }, false);
+        }catch(e){}
+      })();
+    `
+
+    container.appendChild(script)
+
+    return () => {
+      container.innerHTML = ''
+    }
+  }, [feedbackContainerId])
 
   const handleDownloadCertificate = () => {
     const width = 2000
@@ -149,37 +243,6 @@ export default function CompletionStep() {
           </Card>
         </AnimatedSection>
 
-        <AnimatedSection animation="fade-up" delay={500}>
-          <Card className="border-2 border-slate-200 shadow-2xl mb-12">
-            <div className="p-12 bg-white text-center">
-              <h3 className="text-3xl font-extrabold text-slate-900 mb-4">
-                Your Onboarding Certificate
-              </h3>
-              <div className="p-8 border-4 border-amber-500 rounded-2xl bg-gradient-to-br from-amber-50 to-orange-50 mb-6">
-                <div className="text-amber-600 text-6xl mb-4">🏆</div>
-                <div className="text-sm text-slate-600 mb-2">This certifies that</div>
-                <div className="text-3xl font-extrabold text-slate-900 mb-2">{userData.name}</div>
-                <div className="text-sm text-slate-600 mb-4">has successfully completed the</div>
-                <div className="text-xl font-bold text-slate-900 mb-4">Finanshels Onboarding Program</div>
-                <div className="text-sm text-slate-600">
-                  {userData.role} | {userData.department}
-                </div>
-                <div className="text-sm text-slate-600 mt-2">
-                  {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
-                </div>
-              </div>
-              <Button
-                size="lg"
-                onClick={handleDownloadCertificate}
-                className="bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent hover:opacity-95 text-white font-bold px-12 text-lg shadow-xl"
-              >
-                <Download className="mr-2" size={20} />
-                Download Certificate
-              </Button>
-            </div>
-          </Card>
-        </AnimatedSection>
-
         <AnimatedSection animation="fade-up" delay={600}>
           <Card className="border-2 border-blue-200 shadow-2xl">
             <div className="p-8 bg-gradient-to-br from-blue-50 to-purple-50">
@@ -187,11 +250,7 @@ export default function CompletionStep() {
               <div className="space-y-3 mb-8">
                 <div className="flex items-center gap-3 p-4 rounded-xl bg-white border border-slate-200">
                   <CheckCircle2 className="text-emerald-500" size={24} />
-                  <span className="text-slate-700 font-semibold">Check your email for access credentials</span>
-                </div>
-                <div className="flex items-center gap-3 p-4 rounded-xl bg-white border border-slate-200">
-                  <CheckCircle2 className="text-emerald-500" size={24} />
-                  <span className="text-slate-700 font-semibold">Join our Slack workspace and introduce yourself</span>
+                  <span className="text-slate-700 font-semibold">Join our Slack workspace and introduce yourself in #general channel</span>
                 </div>
                 <div className="flex items-center gap-3 p-4 rounded-xl bg-white border border-slate-200">
                   <CheckCircle2 className="text-emerald-500" size={24} />
@@ -212,19 +271,10 @@ export default function CompletionStep() {
                     </p>
                   </div>
                 </div>
-                <div className="rounded-2xl border border-slate-200 overflow-hidden shadow-inner">
-                  <iframe
-                    src="https://survey.zohopublic.com/zs/lXB1ib"
-                    title="Finanshels Onboarding Feedback"
-                    frameBorder="0"
-                    className="w-full block"
-                    style={{ height: '700px' }}
-                    marginWidth="0"
-                    marginHeight="0"
-                    scrolling="auto"
-                    allow="geolocation"
-                  ></iframe>
-                </div>
+                <div
+                  id={feedbackContainerId}
+                  className="rounded-2xl border border-slate-200 overflow-hidden shadow-inner bg-white"
+                ></div>
               </div>
             </div>
           </Card>

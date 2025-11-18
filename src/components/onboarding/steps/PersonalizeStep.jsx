@@ -1,69 +1,37 @@
-import { useEffect } from 'react'
+import { useEffect, useState, useCallback, useRef } from 'react'
 import { useOnboarding } from '../../../contexts/OnboardingContext'
 import { Button } from '../../ui/Button'
 import { Card } from '../../ui/Card'
-import { ArrowRight, ArrowLeft, Info } from 'lucide-react'
+import { ArrowRight, ArrowLeft, Info, CheckCircle2 } from 'lucide-react'
 import AnimatedSection from '../../AnimatedSection'
 
 export default function PersonalizeStep() {
   const { nextStep, previousStep } = useOnboarding()
-  const formContainerId = 'zf_div__zvGqqY95wJdw2PJYPnCYgAfb_VJl3jeOIZor19ATm0'
+  const formActionUrl = 'https://forms.zohopublic.com/finanshelsllc/form/EmployeeOnboarding/formperma/Woot2Ll8DxPyJgzujhpCq92VB8sONE-HMNiKDZC0hyo/htmlRecords/submit'
+  const [formSubmitted, setFormSubmitted] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [iframeLoadedOnce, setIframeLoadedOnce] = useState(false)
+  const formRef = useRef(null)
+  const iframeRef = useRef(null)
 
-  useEffect(() => {
-    const container = document.getElementById(formContainerId)
-    if (!container) return
-    container.innerHTML = ''
-    const script = document.createElement('script')
-    script.type = 'text/javascript'
-    script.innerHTML = `
-      (function() {
-        try {
-          var f = document.createElement("iframe");
-          var ifrmSrc = 'https://forms.zohopublic.com/finanshelsllc/form/EmployeeOnboarding/formperma/_zvGqqY95wJdw2PJYPnCYgAfb_VJl3jeOIZor19ATm0?zf_rszfm=1';
-          f.src = ifrmSrc;
-          f.style.border="none";
-          f.style.height="650px";
-          f.style.width="100%";
-          f.style.transition="all 0.5s ease";
-          f.setAttribute("aria-label", 'Employee Onboarding');
-          var d = document.getElementById("${formContainerId}");
-          d.appendChild(f);
-          window.addEventListener('message', function (event){
-            var evntData = event.data;
-            if( evntData && evntData.constructor == String ){
-              var zf_ifrm_data = evntData.split("|");
-              if ( zf_ifrm_data.length == 2 || zf_ifrm_data.length == 3 ) {
-                var zf_perma = zf_ifrm_data[0];
-                var zf_ifrm_ht_nw = ( parseInt(zf_ifrm_data[1], 10) + 15 ) + "px";
-                var iframe = document.getElementById("${formContainerId}").getElementsByTagName("iframe")[0];
-                if ( (iframe.src).indexOf('formperma') > 0 && (iframe.src).indexOf(zf_perma) > 0 ) {
-                  var prevIframeHeight = iframe.style.height;
-                  var zf_tout = false;
-                  if( zf_ifrm_data.length == 3 ) {
-                      iframe.scrollIntoView();
-                      zf_tout = true;
-                  }
-                  if ( prevIframeHeight != zf_ifrm_ht_nw ) {
-                    if( zf_tout ) {
-                        setTimeout(function(){
-                            iframe.style.height = zf_ifrm_ht_nw;
-                        },500);
-                    } else {
-                        iframe.style.height = zf_ifrm_ht_nw;
-                    }
-                  }
-                }
-              }
-            }
-          }, false);
-        } catch(e) {}
-      })();
-    `
-    container.appendChild(script)
-    return () => {
-      container.innerHTML = ''
+  const handleSubmit = useCallback((event) => {
+    if (formSubmitted) {
+      event.preventDefault()
+      return
     }
-  }, [formContainerId])
+    setIsSubmitting(true)
+  }, [formSubmitted])
+
+  const handleIframeLoad = useCallback(() => {
+    if (!iframeLoadedOnce) {
+      setIframeLoadedOnce(true)
+      return
+    }
+    if (isSubmitting) {
+      setIsSubmitting(false)
+      setFormSubmitted(true)
+    }
+  }, [iframeLoadedOnce, isSubmitting])
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-blue-50 px-6 py-12 sm:py-16 relative overflow-hidden">
@@ -91,7 +59,138 @@ export default function PersonalizeStep() {
                   Please fill in our secure onboarding intake form below. Once you submit the information, click Continue to move to the next step.
                 </p>
               </div>
-              <div id={formContainerId} className="rounded-3xl overflow-hidden bg-white border border-slate-100 shadow-inner"></div>
+              <div className={`${formSubmitted ? 'hidden' : 'block'}`}>
+                <form
+                  ref={formRef}
+                  onSubmit={handleSubmit}
+                  action={formActionUrl}
+                  method="POST"
+                  acceptCharset="UTF-8"
+                  encType="multipart/form-data"
+                  target="onboardingSubmissionFrame"
+                  className="space-y-6 rounded-3xl bg-white border border-slate-100 shadow-inner p-8"
+                >
+                  <input type="hidden" name="zf_referrer_name" value="" />
+                  <input type="hidden" name="zf_redirect_url" value="" />
+                  <input type="hidden" name="zc_gad" value="" />
+                  <div>
+                    <label className="block text-sm font-semibold text-slate-700 mb-2">
+                      Your Name <span className="text-pink-500">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      name="SingleLine"
+                      placeholder="i.e. Meet Patel"
+                      maxLength="255"
+                      required
+                      className="w-full rounded-2xl border border-slate-200 px-4 py-3 text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-200"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-semibold text-slate-700 mb-2">Phone</label>
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                      <div className="sm:col-span-1">
+                        <label className="block text-xs font-semibold text-slate-500 mb-2">Country Code</label>
+                        <div className="flex rounded-2xl border border-slate-200 bg-white overflow-hidden">
+                          <span className="px-3 flex items-center text-slate-500 font-semibold">+</span>
+                          <input
+                            type="text"
+                            name="PhoneNumber_countrycode"
+                            maxLength="3"
+                            minLength="2"
+                            inputMode="numeric"
+                            pattern="[0-9]{2,3}"
+                            className="w-full px-2 py-3 text-slate-900 focus:outline-none"
+                            placeholder="971"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div className="sm:col-span-2">
+                        <label className="block text-xs font-semibold text-slate-500 mb-2">Number</label>
+                        <input
+                          type="text"
+                          name="PhoneNumber_countrycodeval"
+                          maxLength="10"
+                          className="w-full rounded-2xl border border-slate-200 px-4 py-3 text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-200"
+                          placeholder="1234567890"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <label className="block text-sm font-semibold text-slate-700 mb-2">
+                      Email <span className="text-pink-500">*</span>
+                    </label>
+                    <input
+                      type="email"
+                      name="Email"
+                      placeholder="i.e. name@finanshels.com"
+                      maxLength="255"
+                      required
+                      className="w-full rounded-2xl border border-slate-200 px-4 py-3 text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-200"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-semibold text-slate-700 mb-2">
+                      Your Department <span className="text-pink-500">*</span>
+                    </label>
+                    <select
+                      name="Dropdown"
+                      required
+                      defaultValue=""
+                      className="w-full rounded-2xl border border-slate-200 px-4 py-3 text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-200 bg-white"
+                    >
+                      <option value="" disabled>
+                        Select
+                      </option>
+                      <option value="Marketing">Marketing</option>
+                      <option value="Sales">Sales</option>
+                      <option value="Partnership">Partnership</option>
+                      <option value="Engineering">Engineering</option>
+                      <option value="HR">HR</option>
+                      <option value="Customer Success">Customer Success</option>
+                      <option value="FinOps">FinOps</option>
+                      <option value="AML">AML</option>
+                      <option value="ALC">ALC</option>
+                      <option value="Taxation">Taxation</option>
+                      <option value="Legal">Legal</option>
+                      <option value="Internal Finance">Internal Finance</option>
+                      <option value="Center of Excellence">Center of Excellence</option>
+                    </select>
+                  </div>
+                  <div className="pt-2">
+                    <Button
+                      type="submit"
+                      size="lg"
+                      disabled={isSubmitting}
+                      className="w-full bg-slate-900 hover:bg-slate-800 text-white rounded-2xl"
+                    >
+                      {isSubmitting ? 'Submitting...' : 'Submit'}
+                    </Button>
+                  </div>
+                </form>
+                <iframe
+                  title="Onboarding submission handler"
+                  name="onboardingSubmissionFrame"
+                  ref={iframeRef}
+                  onLoad={handleIframeLoad}
+                  className="hidden"
+                ></iframe>
+              </div>
+              {formSubmitted && (
+                <div className="rounded-3xl bg-white border border-slate-100 shadow-inner p-10 text-center space-y-6">
+                  <div className="flex justify-center">
+                    <div className="w-32 h-32 rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center shadow-inner">
+                      <CheckCircle2 className="text-blue-600" size={56} />
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-semibold text-slate-900 mb-2">Thank you!</h3>
+                    <p className="text-slate-600 text-sm sm:text-base">Your response has been submitted successfully. Click Continue below.</p>
+                  </div>
+                </div>
+              )}
               <div className="pt-6 flex gap-4">
                 <Button
                   type="button"
@@ -106,12 +205,16 @@ export default function PersonalizeStep() {
                   type="button"
                   size="lg"
                   onClick={nextStep}
+                  disabled={!formSubmitted}
                   className="flex-1 bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent hover:opacity-95 text-white font-bold text-lg shadow-xl"
                 >
                   Continue
                   <ArrowRight className="ml-2" size={20} />
                 </Button>
               </div>
+              <p className="text-sm text-slate-500 text-center">
+                {formSubmitted ? 'All set! Click Continue below to move ahead.' : 'Submit the form above to enable the Continue button.'}
+              </p>
             </div>
           </Card>
         </AnimatedSection>

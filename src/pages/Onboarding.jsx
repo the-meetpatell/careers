@@ -21,6 +21,7 @@ import ThinkBigStep from '../components/onboarding/steps/ThinkBigStep'
 import OKRSystemStep from '../components/onboarding/steps/OKRSystemStep'
 import ServicesStep from '../components/onboarding/steps/ServicesStep'
 import TeamStep from '../components/onboarding/steps/TeamStep'
+import HRTeamStep from '../components/onboarding/steps/HRTeamStep'
 import PoliciesStep from '../components/onboarding/steps/PoliciesStep'
 import ToolsStep from '../components/onboarding/steps/ToolsStep'
 import TestimonialsStep from '../components/onboarding/steps/TestimonialsStep'
@@ -49,6 +50,7 @@ function OnboardingContent() {
       case 'okr-system': return <OKRSystemStep />
       case 'services': return <ServicesStep />
       case 'team': return <TeamStep />
+      case 'hr-team': return <HRTeamStep />
       case 'policies': return <PoliciesStep />
       case 'tools': return <ToolsStep />
       case 'testimonials': return <TestimonialsStep />
@@ -80,4 +82,3 @@ export default function Onboarding() {
     </OnboardingProvider>
   )
 }
-

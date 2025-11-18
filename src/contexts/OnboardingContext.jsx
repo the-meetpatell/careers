@@ -26,6 +26,7 @@ const ONBOARDING_STEPS = [
   { id: 'okr-system', title: 'OKR System', icon: '📊', required: true },
   { id: 'services', title: 'Our Services', icon: '🛠️', required: true },
   { id: 'team', title: 'Meet the Team', icon: '👥', required: true },
+  { id: 'hr-team', title: 'HR Partners', icon: '🧡', required: true },
   { id: 'policies', title: 'Company Policies', icon: '📋', required: true },
   { id: 'tools', title: 'Tools & Systems', icon: '⚙️', required: true },
   { id: 'testimonials', title: 'Customer Stories', icon: '⭐', required: false },
@@ -173,4 +174,3 @@ export const OnboardingProvider = ({ children }) => {
 
   return <OnboardingContext.Provider value={value}>{children}</OnboardingContext.Provider>
 }
-
