@@ -1,7 +1,7 @@
 import { useOnboarding } from '../../../contexts/OnboardingContext'
 import { Button } from '../../ui/Button'
 import { Card } from '../../ui/Card'
-import { ArrowRight, ArrowLeft, Sparkles, Video, MessageCircle, TrendingUp } from 'lucide-react'
+import { ArrowRight, ArrowLeft, Sparkles, Video, MessageCircle, TrendingUp, Users, Briefcase, ShieldCheck } from 'lucide-react'
 import AnimatedSection from '../../AnimatedSection'
 
 export default function RoadmapStep() {
@@ -21,10 +21,28 @@ export default function RoadmapStep() {
       description: 'Receive all the tools and credentials you need to get started effectively.'
     },
     {
-      title: 'A Conversation with Our Founder',
+      title: 'Conversation with the Founder',
       icon: MessageCircle,
       color: 'from-purple-500 to-pink-600',
-      description: 'Hear insights and vision directly from the visionary driving Finanshels\' success.'
+      description: 'Join a warm welcome session with our founder focused on inspiration and engagement.'
+    },
+    {
+      title: 'CHRO Talk',
+      icon: Users,
+      color: 'from-pink-500 to-rose-600',
+      description: 'Hear directly from our CHRO about company culture, values and key HR processes.'
+    },
+    {
+      title: 'Department Head Introduction',
+      icon: Briefcase,
+      color: 'from-amber-500 to-yellow-600',
+      description: 'Meet each department head for a quick overview of their teams and collaboration touchpoints.'
+    },
+    {
+      title: 'Legal Team Address',
+      icon: ShieldCheck,
+      color: 'from-red-500 to-rose-600',
+      description: 'Learn essential legal guidelines covering contracts, compliance and critical policies.'
     },
     {
       title: 'Meet Your Buddy',
@@ -102,4 +120,3 @@ export default function RoadmapStep() {
     </div>
   )
 }
-
