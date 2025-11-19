@@ -1,4 +1,4 @@
-import { useEffect, useState, useCallback, useRef } from 'react'
+import { useState, useCallback } from 'react'
 import { useOnboarding } from '../../../contexts/OnboardingContext'
 import { Button } from '../../ui/Button'
 import { Card } from '../../ui/Card'
@@ -10,28 +10,37 @@ export default function PersonalizeStep() {
   const formActionUrl = 'https://forms.zohopublic.com/finanshelsllc/form/EmployeeOnboarding/formperma/Woot2Ll8DxPyJgzujhpCq92VB8sONE-HMNiKDZC0hyo/htmlRecords/submit'
   const [formSubmitted, setFormSubmitted] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
-  const [iframeLoadedOnce, setIframeLoadedOnce] = useState(false)
-  const formRef = useRef(null)
-  const iframeRef = useRef(null)
+  const [submissionError, setSubmissionError] = useState(null)
 
-  const handleSubmit = useCallback((event) => {
-    if (formSubmitted) {
+  const handleSubmit = useCallback(
+    async (event) => {
       event.preventDefault()
-      return
-    }
-    setIsSubmitting(true)
-  }, [formSubmitted])
+      if (formSubmitted || isSubmitting) return
 
-  const handleIframeLoad = useCallback(() => {
-    if (!iframeLoadedOnce) {
-      setIframeLoadedOnce(true)
-      return
-    }
-    if (isSubmitting) {
-      setIsSubmitting(false)
-      setFormSubmitted(true)
-    }
-  }, [iframeLoadedOnce, isSubmitting])
+      setSubmissionError(null)
+      setIsSubmitting(true)
+      try {
+        const formData = new FormData(event.currentTarget)
+        const response = await fetch(formActionUrl, {
+          method: 'POST',
+          mode: 'no-cors',
+          body: formData
+        })
+
+        if (!response.ok && response.type !== 'opaque') {
+          throw new Error('Form submission failed')
+        }
+
+        setFormSubmitted(true)
+      } catch (error) {
+        console.error('Unable to submit onboarding form', error)
+        setSubmissionError('Something went wrong while submitting the form. Please try again.')
+      } finally {
+        setIsSubmitting(false)
+      }
+    },
+    [formActionUrl, formSubmitted, isSubmitting]
+  )
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-blue-50 px-6 py-12 sm:py-16 relative overflow-hidden">
@@ -60,16 +69,7 @@ export default function PersonalizeStep() {
                 </p>
               </div>
               <div className={`${formSubmitted ? 'hidden' : 'block'}`}>
-                <form
-                  ref={formRef}
-                  onSubmit={handleSubmit}
-                  action={formActionUrl}
-                  method="POST"
-                  acceptCharset="UTF-8"
-                  encType="multipart/form-data"
-                  target="onboardingSubmissionFrame"
-                  className="space-y-6 rounded-3xl bg-white border border-slate-100 shadow-inner p-8"
-                >
+                <form onSubmit={handleSubmit} className="space-y-6 rounded-3xl bg-white border border-slate-100 shadow-inner p-8">
                   <input type="hidden" name="zf_referrer_name" value="" />
                   <input type="hidden" name="zf_redirect_url" value="" />
                   <input type="hidden" name="zc_gad" value="" />
@@ -87,36 +87,17 @@ export default function PersonalizeStep() {
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-semibold text-slate-700 mb-2">Phone</label>
-                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                      <div className="sm:col-span-1">
-                        <label className="block text-xs font-semibold text-slate-500 mb-2">Country Code</label>
-                        <div className="flex rounded-2xl border border-slate-200 bg-white overflow-hidden">
-                          <span className="px-3 flex items-center text-slate-500 font-semibold">+</span>
-                          <input
-                            type="text"
-                            name="PhoneNumber_countrycode"
-                            maxLength="3"
-                            minLength="2"
-                            inputMode="numeric"
-                            pattern="[0-9]{2,3}"
-                            className="w-full px-2 py-3 text-slate-900 focus:outline-none"
-                            placeholder="971"
-                            required
-                          />
-                        </div>
-                      </div>
-                      <div className="sm:col-span-2">
-                        <label className="block text-xs font-semibold text-slate-500 mb-2">Number</label>
-                        <input
-                          type="text"
-                          name="PhoneNumber_countrycodeval"
-                          maxLength="10"
-                          className="w-full rounded-2xl border border-slate-200 px-4 py-3 text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-200"
-                          placeholder="1234567890"
-                        />
-                      </div>
-                    </div>
+                    <label className="block text-sm font-semibold text-slate-700 mb-2">
+                      Phone Number
+                    </label>
+                    <input
+                      type="tel"
+                      name="PhoneNumber_countrycodeval"
+                      maxLength="15"
+                      className="w-full rounded-2xl border border-slate-200 px-4 py-3 text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-200"
+                      placeholder="971123456789"
+                      required
+                    />
                   </div>
                   <div>
                     <label className="block text-sm font-semibold text-slate-700 mb-2">
@@ -168,15 +149,9 @@ export default function PersonalizeStep() {
                     >
                       {isSubmitting ? 'Submitting...' : 'Submit'}
                     </Button>
+                    {submissionError && <p className="mt-3 text-sm text-red-500 text-center">{submissionError}</p>}
                   </div>
                 </form>
-                <iframe
-                  title="Onboarding submission handler"
-                  name="onboardingSubmissionFrame"
-                  ref={iframeRef}
-                  onLoad={handleIframeLoad}
-                  className="hidden"
-                ></iframe>
               </div>
               {formSubmitted && (
                 <div className="rounded-3xl bg-white border border-slate-100 shadow-inner p-10 text-center space-y-6">
