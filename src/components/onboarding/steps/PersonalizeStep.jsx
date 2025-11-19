@@ -69,7 +69,14 @@ export default function PersonalizeStep() {
                 </p>
               </div>
               <div className={`${formSubmitted ? 'hidden' : 'block'}`}>
-                <form onSubmit={handleSubmit} className="space-y-6 rounded-3xl bg-white border border-slate-100 shadow-inner p-8">
+                <form
+                  onSubmit={handleSubmit}
+                  action={formActionUrl}
+                  method="POST"
+                  acceptCharset="UTF-8"
+                  encType="multipart/form-data"
+                  className="space-y-6 rounded-3xl bg-white border border-slate-100 shadow-inner p-8"
+                >
                   <input type="hidden" name="zf_referrer_name" value="" />
                   <input type="hidden" name="zf_redirect_url" value="" />
                   <input type="hidden" name="zc_gad" value="" />
@@ -88,14 +95,19 @@ export default function PersonalizeStep() {
                   </div>
                   <div>
                     <label className="block text-sm font-semibold text-slate-700 mb-2">
-                      Phone Number
+                      Phone <span className="text-pink-500">*</span>
                     </label>
                     <input
-                      type="tel"
-                      name="PhoneNumber_countrycodeval"
-                      maxLength="15"
+                      type="text"
+                      compname="PhoneNumber"
+                      name="PhoneNumber_countrycode"
+                      phoneFormat="1"
+                      isCountryCodeEnabled="false"
+                      maxLength="20"
+                      fieldType="11"
+                      id="international_PhoneNumber_countrycode"
                       className="w-full rounded-2xl border border-slate-200 px-4 py-3 text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-200"
-                      placeholder="971123456789"
+                      placeholder="Enter your phone number"
                       required
                     />
                   </div>
@@ -119,10 +131,10 @@ export default function PersonalizeStep() {
                     <select
                       name="Dropdown"
                       required
-                      defaultValue=""
+                      defaultValue="-Select-"
                       className="w-full rounded-2xl border border-slate-200 px-4 py-3 text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-200 bg-white"
                     >
-                      <option value="" disabled>
+                      <option value="-Select-" disabled>
                         Select
                       </option>
                       <option value="Marketing">Marketing</option>
