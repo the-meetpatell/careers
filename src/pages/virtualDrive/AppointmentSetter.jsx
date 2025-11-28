@@ -43,7 +43,7 @@ export default function AppointmentSetter() {
         iframe.style.transition = "all 0.5s ease";
         iframe.style.overflow = "hidden";
         iframe.style.display = "block";
-        iframe.setAttribute("aria-label", 'Appointment Setter');
+        iframe.setAttribute("aria-label", 'Partnership Appointment Setter');
         
         container.appendChild(iframe);
         
@@ -96,23 +96,23 @@ export default function AppointmentSetter() {
             {/* Main Content - Left Side */}
             <div className="lg:col-span-2">
           <AnimatedSection animation="fade-up">
-                <Link to="/dubai-walkin" className="inline-flex items-center gap-2 text-emerald-600 hover:text-emerald-700 font-semibold mb-6 sm:mb-8 group text-sm sm:text-base">
+                <Link to="/virtual-drive" className="inline-flex items-center gap-2 text-emerald-600 hover:text-emerald-700 font-semibold mb-6 sm:mb-8 group text-sm sm:text-base">
                   <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
-                  Back to Dubai Walk-In
+                  Back to Virtual Talent Drive
                 </Link>
 
                 <div className="mb-6 sm:mb-8">
                   <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-gradient-to-r from-emerald-600 to-teal-600 text-white text-xs sm:text-sm font-bold mb-3 sm:mb-4">
-                    📞 Sales Support
+                    🤝 Revenue Support
                   </div>
                   <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">
-                    Appointment Setter
+                    Partnership Appointment Setter
                   </h1>
-                  <div className="flex flex-wrap gap-3 sm:gap-4 text-slate-600 font-medium text-sm sm:text-base">
-                    <div className="flex items-center gap-2">
-                      <MapPin size={16} className="text-emerald-600 flex-shrink-0" />
-                      Dubai, UAE
-                    </div>
+                <div className="flex flex-wrap gap-3 sm:gap-4 text-slate-600 font-medium text-sm sm:text-base">
+                  <div className="flex items-center gap-2">
+                    <MapPin size={16} className="text-emerald-600 flex-shrink-0" />
+                    Remote (virtual interview process)
+                  </div>
                     <div className="flex items-center gap-2">
                       <Briefcase size={16} className="text-emerald-600 flex-shrink-0" />
                       Full-Time
@@ -130,13 +130,14 @@ export default function AppointmentSetter() {
               <div className="p-4 sm:p-6 md:p-8">
                 <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
                   <Calendar className="text-emerald-600 flex-shrink-0" size={24} />
-                  <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900">Walk-In Details</h3>
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900">Virtual Drive Schedule</h3>
                 </div>
                 <div className="space-y-2 text-slate-700 font-medium text-sm sm:text-base">
-                  <p><strong>Date:</strong> November 23, 2025 (Saturday)</p>
-                  <p><strong>Time:</strong> 10:00 AM - 5:00 PM</p>
-                  <p className="break-words"><strong>Venue:</strong> 413, Publishing Pavilion, Dubai Production City, Dubai, UAE</p>
-                  <p className="text-emerald-600 font-bold mt-3 sm:mt-4">Walk in with your CV and meet our team!</p>
+                  <p><strong>Apply by:</strong> Friday the 5th (applications only)</p>
+                  <p><strong>Screening & HR:</strong> Saturday, 6th (virtual)</p>
+                  <p><strong>Technical:</strong> Sunday, 7th (virtual)</p>
+                  <p><strong>Final Round:</strong> Early next week with leadership</p>
+                  <p className="text-emerald-600 font-bold mt-3 sm:mt-4">Only candidates who apply before Friday the 5th will be scheduled.</p>
                 </div>
               </div>
             </Card>
@@ -147,10 +148,10 @@ export default function AppointmentSetter() {
               <div className="p-4 sm:p-6 md:p-8">
                 <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3 sm:mb-4">About the Role</h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-3 sm:mb-4">
-                  We're looking for enthusiastic Appointment Setters to join our sales team in Dubai. You'll be the first point of contact for potential clients, responsible for qualifying leads and booking meetings for our business development team.
+                  We're looking for Partnership Appointment Setters to support our revenue team remotely. You'll be the first touch for potential partners, qualifying interest and booking meetings for our partnerships and sales leads.
                 </p>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                  This is an excellent entry-level role for individuals who are passionate about sales and want to build a career in the fintech industry. You'll receive comprehensive training and have clear growth opportunities.
+                  This is an excellent entry-level role for fast learners who want to build a fintech career. You'll receive structured training, clear playbooks, and growth paths.
                 </p>
               </div>
             </Card>
@@ -174,7 +175,7 @@ export default function AppointmentSetter() {
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={20} />
-                    <span className="text-slate-700">Schedule appointments for the business development team</span>
+                    <span className="text-slate-700">Schedule appointments for partnerships and sales leaders</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={20} />
@@ -296,7 +297,7 @@ export default function AppointmentSetter() {
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={20} />
-                    <span className="text-slate-700">Supportive team environment in Dubai</span>
+                    <span className="text-slate-700">Supportive, high-energy team across India & UAE</span>
                   </li>
                 </ul>
               </div>
@@ -329,4 +330,3 @@ export default function AppointmentSetter() {
     </div>
   )
 }
-

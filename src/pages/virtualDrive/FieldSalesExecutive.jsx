@@ -96,9 +96,9 @@ export default function FieldSalesExecutive() {
             {/* Main Content - Left Side */}
             <div className="lg:col-span-2">
           <AnimatedSection animation="fade-up">
-            <Link to="/dubai-walkin" className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold mb-8 group">
+            <Link to="/virtual-drive" className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold mb-8 group">
               <ArrowLeft size={20} className="group-hover:-translate-x-1 transition-transform" />
-              Back to Dubai Walk-In
+              Back to Virtual Talent Drive
             </Link>
 
             <div className="mb-8">
@@ -111,7 +111,7 @@ export default function FieldSalesExecutive() {
               <div className="flex flex-wrap gap-3 sm:gap-4 text-slate-600 font-medium text-sm sm:text-base">
                 <div className="flex items-center gap-2">
                   <MapPin size={16} className="text-blue-600 flex-shrink-0" />
-                  Dubai, UAE
+                  Dubai, UAE (virtual interview process)
                 </div>
                 <div className="flex items-center gap-2">
                   <Briefcase size={16} className="text-blue-600 flex-shrink-0" />
@@ -130,13 +130,14 @@ export default function FieldSalesExecutive() {
               <div className="p-4 sm:p-6 md:p-8">
                 <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
                   <Calendar className="text-blue-600 flex-shrink-0" size={24} />
-                  <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900">Walk-In Details</h3>
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900">Virtual Drive Schedule</h3>
                 </div>
                 <div className="space-y-2 text-slate-700 font-medium text-sm sm:text-base">
-                  <p><strong>Date:</strong> November 23, 2025 (Saturday)</p>
-                  <p><strong>Time:</strong> 10:00 AM - 5:00 PM</p>
-                  <p className="break-words"><strong>Venue:</strong> 413, Publishing Pavilion, Dubai Production City, Dubai, UAE</p>
-                  <p className="text-blue-600 font-bold mt-3 sm:mt-4">Walk in with your CV and meet our team!</p>
+                  <p><strong>Apply by:</strong> Friday the 5th (applications only)</p>
+                  <p><strong>Screening & HR:</strong> Saturday, 6th (virtual)</p>
+                  <p><strong>Technical:</strong> Sunday, 7th (virtual)</p>
+                  <p><strong>Final Round:</strong> Early next week with leadership</p>
+                  <p className="text-blue-600 font-bold mt-3 sm:mt-4">Only candidates who apply before Friday the 5th will be scheduled.</p>
                 </div>
               </div>
             </Card>
@@ -147,7 +148,7 @@ export default function FieldSalesExecutive() {
               <div className="p-4 sm:p-6 md:p-8">
                 <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3 sm:mb-4">About the Role</h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-3 sm:mb-4">
-                  We're looking for motivated sales professionals to join our Dubai team. You'll be responsible for generating new business opportunities, building relationships with potential clients, and driving revenue growth in the MENA region.
+                  We're looking for motivated sales professionals to own Dubai market growth. You'll drive new business generation, build relationships with potential clients, and accelerate revenue in the UAE.
                 </p>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   This is a high-energy role perfect for individuals who thrive in a fast-paced fintech environment and are passionate about building relationships with startups and SMBs.
@@ -280,7 +281,7 @@ export default function FieldSalesExecutive() {
                   </li>
                   <li className="flex items-start gap-2 sm:gap-3">
                     <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                    <span className="text-sm sm:text-base text-slate-700">Collaborative team environment in Dubai</span>
+                    <span className="text-sm sm:text-base text-slate-700">Collaborative team anchored in Dubai</span>
                   </li>
                 </ul>
               </div>
@@ -292,7 +293,7 @@ export default function FieldSalesExecutive() {
               <div className="p-4 sm:p-6 md:p-8">
                 <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-6">What We're Looking For</h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                  We're seeking driven sales professionals who can build lasting relationships with clients in the MENA region. If you're passionate about fintech, thrive in fast-paced environments, and have a proven track record in sales, we'd love to meet you at our walk-in drive!
+                  We're seeking driven sales professionals who can build lasting relationships with clients in the MENA region. If you're passionate about fintech, thrive in fast-paced environments, and have a proven track record in sales, we want you in our virtual talent drive.
                 </p>
               </div>
             </Card>
@@ -324,4 +325,3 @@ export default function FieldSalesExecutive() {
     </div>
   )
 }
-

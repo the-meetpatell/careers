@@ -5,11 +5,16 @@ import Home from './pages/Home'
 import Jobs from './pages/Jobs'
 import JobDetail from './pages/JobDetail'
 import Life from './pages/Life'
-import DubaiWalkIn from './pages/DubaiWalkIn'
-import FieldSalesExecutive from './pages/dubaiWalkIn/FieldSalesExecutive'
-import BusinessDevelopment from './pages/dubaiWalkIn/BusinessDevelopment'
-import PartnershipsManager from './pages/dubaiWalkIn/PartnershipsManager'
-import AppointmentSetter from './pages/dubaiWalkIn/AppointmentSetter'
+import VirtualDrive from './pages/VirtualDrive'
+import FieldSalesExecutive from './pages/virtualDrive/FieldSalesExecutive'
+import PartnershipsManager from './pages/virtualDrive/PartnershipsManager'
+import AppointmentSetter from './pages/virtualDrive/AppointmentSetter'
+import SrFullStackDeveloper from './pages/virtualDrive/SrFullStackDeveloper'
+import JrWebDeveloper from './pages/virtualDrive/JrWebDeveloper'
+import ContentWriterEnglish from './pages/virtualDrive/ContentWriterEnglish'
+import ContentWriterArabic from './pages/virtualDrive/ContentWriterArabic'
+import EventPRManager from './pages/virtualDrive/EventPRManager'
+import MarketingOpsCRMManager from './pages/virtualDrive/MarketingOpsCRMManager'
 import Onboarding from './pages/Onboarding'
 
 function App() {
@@ -27,11 +32,16 @@ function App() {
                   <Route path="/jobs" element={<Jobs />} />
                   <Route path="/jobs/:id" element={<JobDetail />} />
                   <Route path="/life" element={<Life />} />
-                  <Route path="/dubai-walkin" element={<DubaiWalkIn />} />
-                  <Route path="/dubai-walkin/field-sales-executive" element={<FieldSalesExecutive />} />
-                  <Route path="/dubai-walkin/business-development" element={<BusinessDevelopment />} />
-                  <Route path="/dubai-walkin/partnerships-manager" element={<PartnershipsManager />} />
-                  <Route path="/dubai-walkin/appointment-setter" element={<AppointmentSetter />} />
+                  <Route path="/virtual-drive" element={<VirtualDrive />} />
+                  <Route path="/virtual-drive/field-sales-executive" element={<FieldSalesExecutive />} />
+                  <Route path="/virtual-drive/partnerships-manager" element={<PartnershipsManager />} />
+                  <Route path="/virtual-drive/appointment-setter" element={<AppointmentSetter />} />
+                  <Route path="/virtual-drive/sr-full-stack-developer" element={<SrFullStackDeveloper />} />
+                  <Route path="/virtual-drive/jr-web-developer" element={<JrWebDeveloper />} />
+                  <Route path="/virtual-drive/content-writer-english" element={<ContentWriterEnglish />} />
+                  <Route path="/virtual-drive/content-writer-arabic" element={<ContentWriterArabic />} />
+                  <Route path="/virtual-drive/event-pr-manager" element={<EventPRManager />} />
+                  <Route path="/virtual-drive/marketing-ops-crm-manager" element={<MarketingOpsCRMManager />} />
                 </Routes>
               </main>
               <Footer />

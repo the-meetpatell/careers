@@ -14,6 +14,98 @@ import { TEAMS } from '../data/jobs'
 import { LEADERSHIP_TEAM, TESTIMONIALS, COMPANY_VALUES } from '../data/team'
 
 export default function Home() {
+  const DRIVE_ROLES = [
+    {
+      title: 'Partnership Manager',
+      tag: 'Revenue • Dubai',
+      description: 'Own UAE ecosystem partnerships with freezones, VCs, and accelerators.',
+      to: '/virtual-drive/partnerships-manager',
+      accentLight: 'from-amber-400/10 to-orange-400/10',
+      iconBg: 'from-amber-500 to-orange-600',
+      badgeBg: 'bg-amber-100 text-amber-700',
+      textAccent: 'text-amber-600',
+    },
+    {
+      title: 'Partnership Appointment Setter',
+      tag: 'Revenue • Remote',
+      description: 'Qualify and book high-intent meetings for the partnerships org.',
+      to: '/virtual-drive/appointment-setter',
+      accentLight: 'from-emerald-400/10 to-teal-400/10',
+      iconBg: 'from-emerald-500 to-teal-600',
+      badgeBg: 'bg-emerald-100 text-emerald-700',
+      textAccent: 'text-emerald-600',
+    },
+    {
+      title: 'Field Sales Executive',
+      tag: 'Revenue • Dubai',
+      description: 'Drive outbound, pipeline, and conversions for fintech services in the UAE.',
+      to: '/virtual-drive/field-sales-executive',
+      accentLight: 'from-blue-400/10 to-cyan-400/10',
+      iconBg: 'from-blue-500 to-cyan-600',
+      badgeBg: 'bg-blue-100 text-blue-700',
+      textAccent: 'text-blue-600',
+    },
+    {
+      title: 'Sr Software Engineer',
+      tag: 'Technology • Remote',
+      description: 'Lead builds across React/Node, ship fast, and keep quality high.',
+      to: '/virtual-drive/sr-full-stack-developer',
+      accentLight: 'from-indigo-400/10 to-purple-400/10',
+      iconBg: 'from-indigo-500 to-purple-600',
+      badgeBg: 'bg-indigo-100 text-indigo-700',
+      textAccent: 'text-indigo-600',
+    },
+    {
+      title: 'Jr Web Developer',
+      tag: 'Technology • Remote',
+      description: 'Ship clean frontend experiences and learn alongside senior engineers.',
+      to: '/virtual-drive/jr-web-developer',
+      accentLight: 'from-purple-400/10 to-pink-400/10',
+      iconBg: 'from-purple-500 to-pink-600',
+      badgeBg: 'bg-purple-100 text-purple-700',
+      textAccent: 'text-purple-600',
+    },
+    {
+      title: 'Content Writer - English',
+      tag: 'Marketing • Remote',
+      description: 'Craft crisp copy for campaigns, landing pages, and product narratives.',
+      to: '/virtual-drive/content-writer-english',
+      accentLight: 'from-sky-400/10 to-blue-400/10',
+      iconBg: 'from-sky-500 to-blue-600',
+      badgeBg: 'bg-sky-100 text-sky-700',
+      textAccent: 'text-sky-600',
+    },
+    {
+      title: 'Content Writer - Arabic',
+      tag: 'Marketing • Remote',
+      description: 'Lead Arabic storytelling for founders across MENA; localize campaigns.',
+      to: '/virtual-drive/content-writer-arabic',
+      accentLight: 'from-teal-400/10 to-cyan-400/10',
+      iconBg: 'from-teal-500 to-cyan-600',
+      badgeBg: 'bg-teal-100 text-teal-700',
+      textAccent: 'text-teal-600',
+    },
+    {
+      title: 'Event & PR Manager',
+      tag: 'Marketing • Dubai',
+      description: 'Own events, PR motions, and ecosystem visibility across the region.',
+      to: '/virtual-drive/event-pr-manager',
+      accentLight: 'from-rose-400/10 to-orange-400/10',
+      iconBg: 'from-rose-500 to-orange-500',
+      badgeBg: 'bg-rose-100 text-rose-700',
+      textAccent: 'text-rose-600',
+    },
+    {
+      title: 'Marketing Ops & CRM Developer',
+      tag: 'Marketing • Remote',
+      description: 'Build and optimize CRM, automations, and reporting for growth teams.',
+      to: '/virtual-drive/marketing-ops-crm-manager',
+      accentLight: 'from-lime-400/10 to-green-400/10',
+      iconBg: 'from-lime-500 to-green-600',
+      badgeBg: 'bg-lime-100 text-lime-700',
+      textAccent: 'text-lime-600',
+    },
+  ]
 
   useEffect(() => {
     const container = document.getElementById("zf_div_jQBxaOyXvB5vbVEwHYzgDthNbYVadDVpRDKRFkkD_Mo")
@@ -401,7 +493,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Dubai Walk-In Banner */}
+      {/* Virtual Talent Drive Banner */}
       <section className="py-12 px-6 sm:px-8 lg:px-12 bg-slate-900 relative overflow-hidden">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
         <div className="absolute inset-0 pointer-events-none">
@@ -417,13 +509,13 @@ export default function Home() {
                 <div className="text-center mb-8">
                   <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-100 border border-amber-200 text-amber-800 text-sm font-bold mb-4">
                     <MapPin size={16} />
-                    <span>Dubai Walk-In Career Drive</span>
+                    <span>Finanshels Global Virtual Talent Drive</span>
                   </div>
                   <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-3 tracking-tight">
-                    Join Our Team in Dubai
+                    Application-only. Virtual interviews for India & UAE.
                   </h2>
               <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto font-medium">
-                Walk in with your CV • Meet our team face-to-face • 3-step process
+                Apply before Friday the 5th to join the weekend interview rounds. No walk-ins—every conversation is scheduled.
               </p>
                 </div>
 
@@ -434,8 +526,9 @@ export default function Home() {
                       <Calendar className="text-white" size={18} />
                     </div>
                     <div>
-                      <div className="text-xs text-slate-600 font-semibold uppercase tracking-wide">Date</div>
-                      <div className="font-bold text-slate-900">Saturday, Nov 23</div>
+                      <div className="text-xs text-slate-600 font-semibold uppercase tracking-wide">Application Deadline</div>
+                      <div className="font-bold text-slate-900">Friday the 5th</div>
+                      <div className="text-slate-600 text-xs">Only pre-registered candidates are scheduled</div>
                     </div>
                   </div>
                   <div className="flex items-center gap-3 p-4 rounded-xl bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-100">
@@ -443,8 +536,9 @@ export default function Home() {
                       <Clock className="text-white" size={18} />
                     </div>
                     <div>
-                      <div className="text-xs text-slate-600 font-semibold uppercase tracking-wide">Time</div>
-                      <div className="font-bold text-slate-900">10 AM - 5 PM</div>
+                      <div className="text-xs text-slate-600 font-semibold uppercase tracking-wide">Weekend Rounds</div>
+                      <div className="font-bold text-slate-900">Screening 6th • Technical 7th</div>
+                      <div className="text-slate-600 text-xs">Final leadership round next week</div>
                     </div>
                   </div>
                   <div className="flex items-center gap-3 p-4 rounded-xl bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-100">
@@ -452,8 +546,9 @@ export default function Home() {
                       <Building className="text-white" size={18} />
                     </div>
                     <div>
-                      <div className="text-xs text-slate-600 font-semibold uppercase tracking-wide">Venue</div>
-                      <div className="font-bold text-slate-900 text-sm">Dubai Production City</div>
+                      <div className="text-xs text-slate-600 font-semibold uppercase tracking-wide">Format</div>
+                      <div className="font-bold text-slate-900 text-sm">Virtual • India & UAE</div>
+                      <div className="text-slate-600 text-xs">Confirmed time slots only</div>
                     </div>
                   </div>
                 </div>
@@ -464,144 +559,44 @@ export default function Home() {
                   <div>
                     <h3 className="text-xl font-bold text-slate-900 mb-6 flex items-center gap-3">
                       <div className="w-1.5 h-8 bg-gradient-to-b from-blue-600 to-cyan-600 rounded-full"></div>
-                      Open Positions
+                      Roles in this drive
                     </h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <Link to="/dubai-walkin/field-sales-executive" className="block group">
-                        <div className="relative p-6 rounded-2xl bg-gradient-to-br from-white via-blue-50/30 to-white border border-slate-200 hover:border-blue-400 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 overflow-hidden">
-                          <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-400/10 to-cyan-400/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500"></div>
-                          <div className="relative">
-                            <div className="flex items-start justify-between mb-4">
-                              <div className="flex items-center gap-4">
-                                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-600 flex items-center justify-center flex-shrink-0 shadow-lg shadow-blue-500/30 group-hover:shadow-blue-500/50 transition-all group-hover:scale-110">
-                                  <Target className="text-white" size={24} />
-                                </div>
-                                <div>
-                                  <div className="inline-flex px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-bold mb-2">
-                                    Sales
+                      {DRIVE_ROLES.map((role, idx) => (
+                        <Link to={role.to || '/virtual-drive#roles'} key={idx} className="block group">
+                          <div className="relative p-6 rounded-2xl bg-gradient-to-br from-white via-slate-50/40 to-white border border-slate-200 hover:border-indigo-300 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+                            <div className={`absolute top-0 right-0 w-32 h-32 bg-gradient-to-br ${role.accentLight} rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500`}></div>
+                            <div className="relative">
+                              <div className="flex items-start justify-between mb-4">
+                                <div className="flex items-center gap-4">
+                                  <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${role.iconBg} flex items-center justify-center flex-shrink-0 shadow-lg shadow-slate-300/50 group-hover:scale-110 transition-all`}>
+                                    <Target className="text-white" size={24} />
                                   </div>
-                                  <h4 className="font-extrabold text-slate-900 text-lg group-hover:text-blue-600 transition-colors leading-tight">
-                                    Field Sales Executive
-                                  </h4>
+                                  <div>
+                                    <div className={`inline-flex px-3 py-1 rounded-full ${role.badgeBg} text-xs font-bold mb-2`}>
+                                      {role.tag}
+                                    </div>
+                                    <h4 className="font-extrabold text-slate-900 text-lg group-hover:text-indigo-600 transition-colors leading-tight">
+                                      {role.title}
+                                    </h4>
+                                  </div>
                                 </div>
                               </div>
-                            </div>
-                            <p className="text-slate-600 text-sm mb-4 leading-relaxed">Cold calling & lead generation</p>
-                            <div className="flex items-center justify-between">
-                              <div className="flex items-center gap-2 text-slate-700">
-                                <Users size={16} className="text-blue-600" />
-                                <span className="text-sm font-semibold">2 Openings</span>
-                              </div>
-                              <div className="flex items-center gap-1 text-blue-600 font-bold text-sm group-hover:gap-2 transition-all">
-                                Apply Now
-                                <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                              <p className="text-slate-600 text-sm mb-4 leading-relaxed">{role.description}</p>
+                              <div className="flex items-center justify-between">
+                                <div className="flex items-center gap-2 text-slate-700">
+                                  <Users size={16} className={role.textAccent} />
+                                  <span className="text-sm font-semibold">Apply before Friday the 5th</span>
+                                </div>
+                                <div className="flex items-center gap-1 text-indigo-600 font-bold text-sm group-hover:gap-2 transition-all">
+                                  View details
+                                  <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                                </div>
                               </div>
                             </div>
                           </div>
-                        </div>
-                      </Link>
-
-                      <Link to="/dubai-walkin/business-development" className="block group">
-                        <div className="relative p-6 rounded-2xl bg-gradient-to-br from-white via-indigo-50/30 to-white border border-slate-200 hover:border-indigo-400 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 overflow-hidden">
-                          <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-indigo-400/10 to-purple-400/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500"></div>
-                          <div className="relative">
-                            <div className="flex items-start justify-between mb-4">
-                              <div className="flex items-center gap-4">
-                                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center flex-shrink-0 shadow-lg shadow-indigo-500/30 group-hover:shadow-indigo-500/50 transition-all group-hover:scale-110">
-                                  <TrendingUp className="text-white" size={24} />
-                                </div>
-                                <div>
-                                  <div className="inline-flex px-3 py-1 rounded-full bg-indigo-100 text-indigo-700 text-xs font-bold mb-2">
-                                    Business Development
-                                  </div>
-                                  <h4 className="font-extrabold text-slate-900 text-lg group-hover:text-indigo-600 transition-colors leading-tight">
-                                    Business Development Executive
-                                  </h4>
-                                </div>
-                              </div>
-                            </div>
-                            <p className="text-slate-600 text-sm mb-4 leading-relaxed">Build relationships & close deals</p>
-                            <div className="flex items-center justify-between">
-                              <div className="flex items-center gap-2 text-slate-700">
-                                <Users size={16} className="text-indigo-600" />
-                                <span className="text-sm font-semibold">2 Openings</span>
-                              </div>
-                              <div className="flex items-center gap-1 text-indigo-600 font-bold text-sm group-hover:gap-2 transition-all">
-                                Apply Now
-                                <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </Link>
-                      
-                      <Link to="/dubai-walkin/partnerships-manager" className="block group">
-                        <div className="relative p-6 rounded-2xl bg-gradient-to-br from-white via-amber-50/30 to-white border border-slate-200 hover:border-amber-400 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 overflow-hidden">
-                          <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-amber-400/10 to-orange-400/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500"></div>
-                          <div className="relative">
-                            <div className="flex items-start justify-between mb-4">
-                              <div className="flex items-center gap-4">
-                                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center flex-shrink-0 shadow-lg shadow-amber-500/30 group-hover:shadow-amber-500/50 transition-all group-hover:scale-110">
-                                  <Users className="text-white" size={24} />
-                                </div>
-                                <div>
-                                  <div className="inline-flex px-3 py-1 rounded-full bg-amber-100 text-amber-700 text-xs font-bold mb-2">
-                                    Strategic Partnerships
-                                  </div>
-                                  <h4 className="font-extrabold text-slate-900 text-lg group-hover:text-amber-600 transition-colors leading-tight">
-                                    Partnerships Manager
-                                  </h4>
-                                </div>
-                              </div>
-                            </div>
-                            <p className="text-slate-600 text-sm mb-4 leading-relaxed">Build strategic alliances</p>
-                            <div className="flex items-center justify-between">
-                              <div className="flex items-center gap-2 text-slate-700">
-                                <Users size={16} className="text-amber-600" />
-                                <span className="text-sm font-semibold">2 Openings</span>
-                              </div>
-                              <div className="flex items-center gap-1 text-amber-600 font-bold text-sm group-hover:gap-2 transition-all">
-                                Apply Now
-                                <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </Link>
-                      
-                      <Link to="/dubai-walkin/appointment-setter" className="block group">
-                        <div className="relative p-6 rounded-2xl bg-gradient-to-br from-white via-emerald-50/30 to-white border border-slate-200 hover:border-emerald-400 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 overflow-hidden">
-                          <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-emerald-400/10 to-teal-400/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500"></div>
-                          <div className="relative">
-                            <div className="flex items-start justify-between mb-4">
-                              <div className="flex items-center gap-4">
-                                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center flex-shrink-0 shadow-lg shadow-emerald-500/30 group-hover:shadow-emerald-500/50 transition-all group-hover:scale-110">
-                                  <Briefcase className="text-white" size={24} />
-                                </div>
-                                <div>
-                                  <div className="inline-flex px-3 py-1 rounded-full bg-emerald-100 text-emerald-700 text-xs font-bold mb-2">
-                                    Sales Support
-                                  </div>
-                                  <h4 className="font-extrabold text-slate-900 text-lg group-hover:text-emerald-600 transition-colors leading-tight">
-                                    Appointment Setter
-                                  </h4>
-                                </div>
-                              </div>
-                            </div>
-                            <p className="text-slate-600 text-sm mb-4 leading-relaxed">Schedule & qualify leads</p>
-                            <div className="flex items-center justify-between">
-                              <div className="flex items-center gap-2 text-slate-700">
-                                <Users size={16} className="text-emerald-600" />
-                                <span className="text-sm font-semibold">2 Openings</span>
-                              </div>
-                              <div className="flex items-center gap-1 text-emerald-600 font-bold text-sm group-hover:gap-2 transition-all">
-                                Apply Now
-                                <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </Link>
+                        </Link>
+                      ))}
                     </div>
                   </div>
 
@@ -609,13 +604,13 @@ export default function Home() {
 
                 {/* CTA */}
                 <div className="text-center pt-6 border-t-2 border-slate-200">
-                  <Link to="/dubai-walkin">
+                  <Link to="/virtual-drive">
                     <Button size="lg" className="group shadow-xl bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white">
-                      View Full Details & Register
+                      View Drive Schedule & Apply
                       <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
                     </Button>
                   </Link>
-                  <p className="text-sm text-slate-500 mt-4">Walk-ins welcome • Bring your CV and ID</p>
+                  <p className="text-sm text-slate-500 mt-4">Applications close Friday the 5th • Virtual-only interviews</p>
                 </div>
               </div>
             </Card>
