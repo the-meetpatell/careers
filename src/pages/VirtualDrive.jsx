@@ -140,7 +140,7 @@ export default function VirtualDrive() {
                 <div className="grid sm:grid-cols-2 gap-4 pt-6">
                   <div className="p-4 rounded-xl bg-gradient-to-br from-indigo-50 to-purple-50 border border-indigo-100">
                     <div className="text-xs font-semibold text-indigo-700 uppercase mb-2">Timeline</div>
-                    <div className="font-extrabold text-slate-900 text-xl">6th - 7th Dec</div>
+                    <div className="font-extrabold text-slate-900 text-xl">6th Dec - 7th Dec</div>
                     <div className="text-slate-600 text-sm">Screening on Saturday, Technical on Sunday, Finals next week.</div>
                   </div>
                   <div className="p-4 rounded-xl bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-100">
