@@ -43,7 +43,7 @@ export default function MarketingOpsCRMManager() {
       iframe.style.height = '900px'
       iframe.style.width = '100%'
       iframe.style.transition = 'all 0.5s ease'
-      iframe.setAttribute('aria-label', 'Marketing Ops & CRM Developer')
+      iframe.setAttribute('aria-label', 'Marketing Automation & CRM Manager')
 
       container.appendChild(iframe)
 
@@ -92,10 +92,10 @@ export default function MarketingOpsCRMManager() {
 
                 <div className="mb-6 sm:mb-8">
                   <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-gradient-to-r from-lime-500 to-green-600 text-white text-xs sm:text-sm font-bold mb-3 sm:mb-4">
-                    📊 Marketing Ops
+                    📊 Marketing Automation
                   </div>
                   <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">
-                    Marketing Ops & CRM Developer
+                    Marketing Automation & CRM Manager
                   </h1>
                   <div className="flex flex-wrap gap-3 sm:gap-4 text-slate-600 font-medium text-sm sm:text-base">
                     <div className="flex items-center gap-2">
@@ -122,11 +122,11 @@ export default function MarketingOpsCRMManager() {
                       <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900">Virtual Drive Schedule</h3>
                     </div>
                     <div className="space-y-2 text-slate-700 font-medium text-sm sm:text-base">
-                      <p><strong>Apply by:</strong> Friday the 5th (applications only)</p>
-                      <p><strong>Screening & HR:</strong> Saturday, 6th (virtual)</p>
-                      <p><strong>Technical:</strong> Sunday, 7th (virtual)</p>
+                      <p><strong>Apply by:</strong> Friday the 5th Dec (applications only)</p>
+                      <p><strong>Screening & HR:</strong> Saturday, 6th Dec (virtual)</p>
+                      <p><strong>Technical:</strong> Sunday, 7th Dec (virtual)</p>
                       <p><strong>Final Round:</strong> Early next week with leadership</p>
-                      <p className="text-lime-700 font-bold mt-3 sm:mt-4">Only candidates who apply before Friday the 5th will be scheduled.</p>
+                      <p className="text-lime-700 font-bold mt-3 sm:mt-4">Only candidates who apply before Friday the 5th Dec will be scheduled.</p>
                     </div>
                   </div>
                 </Card>
@@ -186,7 +186,7 @@ export default function MarketingOpsCRMManager() {
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-lime-700 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Hands-on with HubSpot/Salesforce (or similar) and automation tools.</span>
+                        <span className="text-sm sm:text-base text-slate-700">Hands-on with Zoho CRM (or similar) and automation tools.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-lime-700 flex-shrink-0 mt-1" size={18} />
@@ -231,10 +231,10 @@ export default function MarketingOpsCRMManager() {
                     <div className="bg-gradient-to-r from-lime-500 to-green-600 p-4 sm:p-6 text-white">
                       <BarChart3 className="mb-2" size={24} />
                       <h3 className="text-xl sm:text-2xl font-bold mb-1">Apply Now</h3>
-                      <p className="text-lime-50 text-xs sm:text-sm">Marketing Ops & CRM Developer</p>
+                      <p className="text-lime-50 text-xs sm:text-sm">Join our Marketing Team</p>
                     </div>
                     <div className="p-4 sm:p-6 space-y-3">
-                      <p className="text-sm text-slate-600">Submit your application before Friday the 5th to get scheduled for the virtual rounds.</p>
+                      <p className="text-sm text-slate-600">Submit your application before Friday the 5th Dec to get scheduled for the virtual rounds.</p>
                       <div
                         id="zf_div_e9f3GO_SePt7HtSRH9kKlVieKEUvlGHjzSCenamipy0"
                         className="w-full"

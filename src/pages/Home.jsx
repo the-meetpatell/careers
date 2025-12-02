@@ -46,26 +46,6 @@ export default function Home() {
       textAccent: 'text-blue-600',
     },
     {
-      title: 'Sr Software Engineer',
-      tag: 'Technology • Remote',
-      description: 'Lead builds across React/Node, ship fast, and keep quality high.',
-      to: '/virtual-drive/sr-full-stack-developer',
-      accentLight: 'from-indigo-400/10 to-purple-400/10',
-      iconBg: 'from-indigo-500 to-purple-600',
-      badgeBg: 'bg-indigo-100 text-indigo-700',
-      textAccent: 'text-indigo-600',
-    },
-    {
-      title: 'Jr Web Developer',
-      tag: 'Technology • Remote',
-      description: 'Ship clean frontend experiences and learn alongside senior engineers.',
-      to: '/virtual-drive/jr-web-developer',
-      accentLight: 'from-purple-400/10 to-pink-400/10',
-      iconBg: 'from-purple-500 to-pink-600',
-      badgeBg: 'bg-purple-100 text-purple-700',
-      textAccent: 'text-purple-600',
-    },
-    {
       title: 'Content Writer - English',
       tag: 'Marketing • Remote',
       description: 'Craft crisp copy for campaigns, landing pages, and product narratives.',
@@ -86,7 +66,7 @@ export default function Home() {
       textAccent: 'text-teal-600',
     },
     {
-      title: 'Event & PR Manager',
+      title: 'Events & PR Manager',
       tag: 'Marketing • Dubai',
       description: 'Own events, PR motions, and ecosystem visibility across the region.',
       to: '/virtual-drive/event-pr-manager',
@@ -94,16 +74,6 @@ export default function Home() {
       iconBg: 'from-rose-500 to-orange-500',
       badgeBg: 'bg-rose-100 text-rose-700',
       textAccent: 'text-rose-600',
-    },
-    {
-      title: 'Marketing Ops & CRM Developer',
-      tag: 'Marketing • Remote',
-      description: 'Build and optimize CRM, automations, and reporting for growth teams.',
-      to: '/virtual-drive/marketing-ops-crm-manager',
-      accentLight: 'from-lime-400/10 to-green-400/10',
-      iconBg: 'from-lime-500 to-green-600',
-      badgeBg: 'bg-lime-100 text-lime-700',
-      textAccent: 'text-lime-600',
     },
   ]
 
@@ -515,7 +485,7 @@ export default function Home() {
                     Application-only. Virtual interviews for India & UAE.
                   </h2>
               <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto font-medium">
-                Apply before Friday the 5th to join the weekend interview rounds. No walk-ins—every conversation is scheduled.
+                Apply before Friday the 5th Dec to join the weekend interview rounds. No walk-ins—every conversation is scheduled.
               </p>
                 </div>
 
@@ -527,7 +497,7 @@ export default function Home() {
                     </div>
                     <div>
                       <div className="text-xs text-slate-600 font-semibold uppercase tracking-wide">Application Deadline</div>
-                      <div className="font-bold text-slate-900">Friday the 5th</div>
+                      <div className="font-bold text-slate-900">Friday the 5th Dec</div>
                       <div className="text-slate-600 text-xs">Only pre-registered candidates are scheduled</div>
                     </div>
                   </div>
@@ -537,7 +507,7 @@ export default function Home() {
                     </div>
                     <div>
                       <div className="text-xs text-slate-600 font-semibold uppercase tracking-wide">Weekend Rounds</div>
-                      <div className="font-bold text-slate-900">Screening 6th • Technical 7th</div>
+                      <div className="font-bold text-slate-900">Screening 6th Dec • Technical 7th Dec</div>
                       <div className="text-slate-600 text-xs">Final leadership round next week</div>
                     </div>
                   </div>
@@ -586,7 +556,7 @@ export default function Home() {
                               <div className="flex items-center justify-between">
                                 <div className="flex items-center gap-2 text-slate-700">
                                   <Users size={16} className={role.textAccent} />
-                                  <span className="text-sm font-semibold">Apply before Friday the 5th</span>
+                                  <span className="text-sm font-semibold">Apply before Friday the 5th Dec</span>
                                 </div>
                                 <div className="flex items-center gap-1 text-indigo-600 font-bold text-sm group-hover:gap-2 transition-all">
                                   View details
@@ -610,7 +580,7 @@ export default function Home() {
                       <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
                     </Button>
                   </Link>
-                  <p className="text-sm text-slate-500 mt-4">Applications close Friday the 5th • Virtual-only interviews</p>
+                  <p className="text-sm text-slate-500 mt-4">Applications close Friday the 5th Dec • Virtual-only interviews</p>
                 </div>
               </div>
             </Card>

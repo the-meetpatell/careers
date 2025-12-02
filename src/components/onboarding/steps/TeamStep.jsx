@@ -80,7 +80,7 @@ export default function TeamStep() {
           leaders: [
             { name: 'George Mathew', title: 'Fractional CHRO', linkedin: 'https://www.linkedin.com/in/georgeathumlog/' },
             { name: 'Shabana', title: 'HR Business Partner', linkedin: 'https://www.linkedin.com/in/shabana-nazeer-36a74a70/'  },
-            { name: 'Brijen', title: 'Talent Acquisition Lead', linkedin: 'https://www.linkedin.com/in/brijenbrahmbhatt/'  }
+            { name: 'Brijen', title: 'Manager - Talent Acquisition', linkedin: 'https://www.linkedin.com/in/brijenbrahmbhatt/'  }
           ]
         },
         {

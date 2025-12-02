@@ -5,9 +5,9 @@ import { Button } from '../components/ui/Button'
 import { Card } from '../components/ui/Card'
 
 const PROCESS_STEPS = [
-  { title: 'Apply by Friday the 5th', detail: 'Submit your application before 11:59 PM. Only pre-registered candidates move forward.' },
-  { title: 'Screening & HR • Saturday, 6th', detail: 'Initial screening plus a quick HR conversation to align expectations.' },
-  { title: 'Technical • Sunday, 7th', detail: 'Role-specific technical/skills discussions with our leaders.' },
+  { title: 'Apply by Friday the 5th Dec', detail: 'Submit your application before 11:59 PM. Only pre-registered candidates move forward.' },
+  { title: 'Screening & HR • Saturday, 6th Dec', detail: 'Initial screening plus a quick HR conversation to align expectations.' },
+  { title: 'Technical • Sunday, 7th Dec', detail: 'Role-specific technical/skills discussions with our leaders.' },
   { title: 'Final Round • Next Week', detail: 'Top candidates meet leadership for the closing conversation.' },
 ]
 
@@ -37,22 +37,6 @@ const ROLE_CARDS = [
     chipBg: 'bg-blue-100 text-blue-700',
   },
   {
-    title: 'Sr Software Engineer',
-    tag: 'Technology • Remote',
-    description: 'Lead builds across React/Node, ship fast, and keep quality high.',
-    to: '/virtual-drive/sr-full-stack-developer',
-    accent: 'from-indigo-500 to-purple-600',
-    chipBg: 'bg-indigo-100 text-indigo-700',
-  },
-  {
-    title: 'Jr Web Developer',
-    tag: 'Technology • Remote',
-    description: 'Ship clean frontend experiences and learn alongside senior engineers.',
-    to: '/virtual-drive/jr-web-developer',
-    accent: 'from-purple-500 to-pink-500',
-    chipBg: 'bg-purple-100 text-purple-700',
-  },
-  {
     title: 'Content Writer - English',
     tag: 'Marketing • Remote',
     description: 'Craft crisp copy for campaigns, landing pages, and product narratives.',
@@ -69,7 +53,7 @@ const ROLE_CARDS = [
     chipBg: 'bg-teal-100 text-teal-700',
   },
   {
-    title: 'Event & PR Manager',
+    title: 'Events & PR Manager',
     tag: 'Marketing • Dubai',
     description: 'Own events, PR motions, and ecosystem visibility across the region.',
     to: '/virtual-drive/event-pr-manager',
@@ -77,7 +61,7 @@ const ROLE_CARDS = [
     chipBg: 'bg-rose-100 text-rose-700',
   },
   {
-    title: 'Marketing Ops & CRM Developer',
+    title: 'Marketing Automation & CRM Manager',
     tag: 'Marketing • Remote',
     description: 'Build and optimize CRM, automations, and reporting for growth teams.',
     to: '/virtual-drive/marketing-ops-crm-manager',
@@ -104,7 +88,7 @@ export default function VirtualDrive() {
                 No walk-ins. Application-only hiring for India & UAE.
               </h1>
               <p className="text-lg sm:text-xl text-slate-600 max-w-3xl font-medium">
-                We are looking for top performers who can move fast and own outcomes. Apply before Friday the 5th to be considered for virtual rounds happening this weekend.
+                We are looking for top performers who can move fast and own outcomes. Apply before Friday the 5th Dec to be considered for virtual rounds happening this weekend.
               </p>
             </AnimatedSection>
 
@@ -112,11 +96,11 @@ export default function VirtualDrive() {
               <div className="mt-8 flex flex-wrap gap-3">
                 <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-indigo-50 text-indigo-700 text-sm font-semibold border border-indigo-100">
                   <Calendar size={16} />
-                  Apply by Friday the 5th
+                  Apply by Friday the 5th Dec
                 </div>
                 <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-blue-50 text-blue-700 text-sm font-semibold border border-blue-100">
                   <Clock size={16} />
-                  Screening 6th • Technical 7th
+                  Screening 6th Dec • Technical 7th Dec
                 </div>
                 <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-emerald-50 text-emerald-700 text-sm font-semibold border border-emerald-100">
                   <Laptop2 size={16} />
@@ -138,7 +122,7 @@ export default function VirtualDrive() {
                   </Button>
                 </a>
               </div>
-              <p className="text-sm text-slate-500 mt-3">Only applications submitted before Friday the 5th will be scheduled.</p>
+              <p className="text-sm text-slate-500 mt-3">Only applications submitted before Friday the 5th Dec will be scheduled.</p>
             </AnimatedSection>
           </div>
 
@@ -156,8 +140,8 @@ export default function VirtualDrive() {
                 <div className="grid sm:grid-cols-2 gap-4 pt-6">
                   <div className="p-4 rounded-xl bg-gradient-to-br from-indigo-50 to-purple-50 border border-indigo-100">
                     <div className="text-xs font-semibold text-indigo-700 uppercase mb-2">Timeline</div>
-                    <div className="font-extrabold text-slate-900 text-xl">6th - 7th</div>
-                    <div className="text-slate-600 text-sm">Screening on Saturday, technical on Sunday, finals next week.</div>
+                    <div className="font-extrabold text-slate-900 text-xl">6th - 7th Dec</div>
+                    <div className="text-slate-600 text-sm">Screening on Saturday, Technical on Sunday, Finals next week.</div>
                   </div>
                   <div className="p-4 rounded-xl bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-100">
                     <div className="text-xs font-semibold text-emerald-700 uppercase mb-2">Locations</div>
@@ -185,7 +169,7 @@ export default function VirtualDrive() {
         <div className="max-w-7xl mx-auto">
           <AnimatedSection animation="fade-up">
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">How the drive works</h2>
-            <p className="text-lg text-slate-600 max-w-3xl">Every step is scheduled and virtual. Apply once; we line you up for the right role based on strength and location fit.</p>
+            <p className="text-lg text-slate-600 max-w-3xl"> Damn good talent only</p>
           </AnimatedSection>
 
           <div className="grid md:grid-cols-2 gap-6 mt-8">
@@ -207,7 +191,7 @@ export default function VirtualDrive() {
           <AnimatedSection animation="fade-up" delay={350}>
             <div className="mt-6 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 text-white text-sm font-semibold">
               <Users size={16} />
-              Screening on 6th, technical on 7th, finals the following week.
+              Screening on 6th Dec, Technical on 7th Dec, Finals the following week.
             </div>
           </AnimatedSection>
         </div>
@@ -221,7 +205,7 @@ export default function VirtualDrive() {
               <span className="text-sm font-bold text-indigo-700 uppercase tracking-wide">India & UAE hiring</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">Roles in the virtual drive</h2>
-            <p className="text-lg text-slate-600 max-w-3xl">Pick the role that fits you best. Apply before Friday the 5th to lock your slot for the weekend interviews.</p>
+            <p className="text-lg text-slate-600 max-w-3xl">Pick the role that fits you best. Apply before Friday the 5th Dec to lock your slot for the weekend interviews.</p>
           </AnimatedSection>
 
           <div className="grid md:grid-cols-2 gap-6 mt-8">

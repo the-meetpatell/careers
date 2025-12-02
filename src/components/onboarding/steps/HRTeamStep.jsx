@@ -17,7 +17,7 @@ const hrSquads = [
     members: [
       {
         name: 'Brijen B',
-        title: 'Talent Acquisition Lead',
+        title: 'Manager - Talent Acquisition',
         linkedin: 'https://www.linkedin.com/in/brijenbrahmbhatt/',
         support: 'Owns your hiring journey and answers strategic questions about your fit at Finanshels.'
       },

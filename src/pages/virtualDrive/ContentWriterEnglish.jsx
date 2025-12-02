@@ -122,11 +122,11 @@ export default function ContentWriterEnglish() {
                       <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900">Virtual Drive Schedule</h3>
                     </div>
                     <div className="space-y-2 text-slate-700 font-medium text-sm sm:text-base">
-                      <p><strong>Apply by:</strong> Friday the 5th (applications only)</p>
-                      <p><strong>Screening & HR:</strong> Saturday, 6th (virtual)</p>
-                      <p><strong>Technical:</strong> Sunday, 7th (virtual)</p>
+                      <p><strong>Apply by:</strong> Friday the 5th Dec (applications only)</p>
+                      <p><strong>Screening & HR:</strong> Saturday, 6th Dec (virtual)</p>
+                      <p><strong>Technical:</strong> Sunday, 7th Dec (virtual)</p>
                       <p><strong>Final Round:</strong> Early next week with leadership</p>
-                      <p className="text-sky-600 font-bold mt-3 sm:mt-4">Only candidates who apply before Friday the 5th will be scheduled.</p>
+                      <p className="text-sky-600 font-bold mt-3 sm:mt-4">Only candidates who apply before Friday the 5th Dec will be scheduled.</p>
                     </div>
                   </div>
                 </Card>
@@ -231,10 +231,10 @@ export default function ContentWriterEnglish() {
                     <div className="bg-gradient-to-r from-sky-500 to-blue-600 p-4 sm:p-6 text-white">
                       <BookOpen className="mb-2" size={24} />
                       <h3 className="text-xl sm:text-2xl font-bold mb-1">Apply Now</h3>
-                      <p className="text-sky-50 text-xs sm:text-sm">Content Writer — English</p>
+                      <p className="text-sky-50 text-xs sm:text-sm">Join our Marketing Team</p>
                     </div>
                     <div className="p-4 sm:p-6 space-y-3">
-                      <p className="text-sm text-slate-600">Submit your application before Friday the 5th to get scheduled for the virtual rounds.</p>
+                      <p className="text-sm text-slate-600">Submit your application before Friday the 5th Dec to get scheduled for the virtual rounds.</p>
                       <div
                         id="zf_div_twzyyIbeSwc_qnpRphOdBZnIhkpeL-KlJx32KoKPESs"
                         className="w-full"
