@@ -56,6 +56,16 @@ export default function Home() {
       textAccent: 'text-indigo-600',
     },
     {
+      title: 'Marketing Automation & CRM Manager',
+      tag: 'Marketing • Remote',
+      description: 'Build and optimize CRM, automations, and reporting for growth teams.',
+      to: '/virtual-drive/marketing-ops-crm-manager',
+      accentLight: 'from-lime-400/10 to-green-400/10',
+      iconBg: 'from-lime-500 to-green-600',
+      badgeBg: 'bg-lime-100 text-lime-700',
+      textAccent: 'text-green-600',
+    },
+    {
       title: 'Field Marketing Manager',
       tag: 'Marketing • Dubai',
       description: 'Lead field marketing programs, events, and ecosystem visibility across the region.',
