@@ -11,8 +11,7 @@ import PartnershipsManager from './pages/virtualDrive/PartnershipsManager'
 import AppointmentSetter from './pages/virtualDrive/AppointmentSetter'
 import SrFullStackDeveloper from './pages/virtualDrive/SrFullStackDeveloper'
 import JrWebDeveloper from './pages/virtualDrive/JrWebDeveloper'
-import ContentWriterEnglish from './pages/virtualDrive/ContentWriterEnglish'
-import ContentWriterArabic from './pages/virtualDrive/ContentWriterArabic'
+import ContentPRManager from './pages/virtualDrive/ContentPRManager'
 import EventPRManager from './pages/virtualDrive/EventPRManager'
 import MarketingOpsCRMManager from './pages/virtualDrive/MarketingOpsCRMManager'
 import Onboarding from './pages/Onboarding'
@@ -38,8 +37,7 @@ function App() {
                   <Route path="/virtual-drive/appointment-setter" element={<AppointmentSetter />} />
                   <Route path="/virtual-drive/sr-full-stack-developer" element={<SrFullStackDeveloper />} />
                   <Route path="/virtual-drive/jr-web-developer" element={<JrWebDeveloper />} />
-                  <Route path="/virtual-drive/content-writer-english" element={<ContentWriterEnglish />} />
-                  <Route path="/virtual-drive/content-writer-arabic" element={<ContentWriterArabic />} />
+                  <Route path="/virtual-drive/content-pr-manager" element={<ContentPRManager />} />
                   <Route path="/virtual-drive/event-pr-manager" element={<EventPRManager />} />
                   <Route path="/virtual-drive/marketing-ops-crm-manager" element={<MarketingOpsCRMManager />} />
                 </Routes>

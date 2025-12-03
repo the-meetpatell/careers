@@ -43,7 +43,7 @@ export default function EventPRManager() {
       iframe.style.height = '900px'
       iframe.style.width = '100%'
       iframe.style.transition = 'all 0.5s ease'
-      iframe.setAttribute('aria-label', 'Events & PR Manager')
+      iframe.setAttribute('aria-label', 'Field Marketing Manager')
 
       container.appendChild(iframe)
 
@@ -96,7 +96,7 @@ export default function EventPRManager() {
                     📣 Marketing
                   </div>
                   <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">
-                    Events & PR Manager
+                    Field Marketing Manager
                   </h1>
                   <div className="flex flex-wrap gap-3 sm:gap-4 text-slate-600 font-medium text-sm sm:text-base">
                     <div className="flex items-center gap-2">
@@ -138,7 +138,7 @@ export default function EventPRManager() {
                   <div className="p-4 sm:p-6 md:p-8">
                     <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3 sm:mb-4">About the Role</h2>
                     <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-3 sm:mb-4">
-                      Own events, PR, and ecosystem visibility across the region. You’ll design experiences that attract founders, partners, and media, showcasing Finanshels as the category leader.
+                      Lead field marketing programs, events, and ecosystem visibility across the region. You’ll design experiences that attract founders, partners, and media, showcasing Finanshels as the category leader.
                     </p>
                     <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                       Ideal for operators who mix creative storytelling with flawless execution and strong media networks.
@@ -161,7 +161,7 @@ export default function EventPRManager() {
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Drive PR narratives; manage media relations and press releases.</span>
+                        <span className="text-sm sm:text-base text-slate-700">Drive regional narratives; manage media relations and press releases.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
@@ -183,7 +183,7 @@ export default function EventPRManager() {
                     <ul className="space-y-3 sm:space-y-4">
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-rose-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">4+ years in events/PR, preferably in tech or startups.</span>
+                        <span className="text-sm sm:text-base text-slate-700">4+ years in field marketing/events, preferably in tech or startups.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-rose-600 flex-shrink-0 mt-1" size={18} />
@@ -236,7 +236,7 @@ export default function EventPRManager() {
                     <div className="bg-gradient-to-r from-rose-500 to-orange-500 p-4 sm:p-6 text-white">
                       <Sparkles className="mb-2" size={24} />
                       <h3 className="text-xl sm:text-2xl font-bold mb-1">Apply Now</h3>
-                      <p className="text-rose-50 text-xs sm:text-sm">Events & PR Manager</p>
+                      <p className="text-rose-50 text-xs sm:text-sm">Field Marketing Manager</p>
                     </div>
                     <div className="p-4 sm:p-6 space-y-3">
                       <p className="text-sm text-slate-600">Submit your application before Friday the 5th Dec to get scheduled for the virtual rounds.</p>
