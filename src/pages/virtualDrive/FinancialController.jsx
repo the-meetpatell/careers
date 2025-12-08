@@ -58,9 +58,9 @@ export default function FinancialController() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
             <div className="lg:col-span-2">
               <AnimatedSection animation="fade-up">
-                <Link to="/virtual-drive" className="inline-flex items-center gap-2 text-indigo-600 hover:text-indigo-700 font-semibold mb-6 sm:mb-8 group text-sm sm:text-base">
+                <Link to="/finops-career-drive" className="inline-flex items-center gap-2 text-indigo-600 hover:text-indigo-700 font-semibold mb-6 sm:mb-8 group text-sm sm:text-base">
                   <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
-                  Back to Endgame Hiring 2025
+                  Back to FinOps Career Drive
                 </Link>
 
                 <div className="mb-6 sm:mb-8">
@@ -92,14 +92,13 @@ export default function FinancialController() {
                   <div className="p-4 sm:p-6 md:p-8">
                     <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
                       <Calendar className="text-indigo-600 flex-shrink-0" size={24} />
-                      <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900">Virtual Drive Schedule</h3>
+                      <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900">FinOps Career Drive Schedule</h3>
                     </div>
                     <div className="space-y-2 text-slate-700 font-medium text-sm sm:text-base">
-                      <p><strong>Apply by:</strong> Friday, 19th Dec 2025 (applications only)</p>
-                      <p><strong>Screening & HR:</strong> Saturday, 20th Dec 2025 (virtual)</p>
-                      <p><strong>Technical:</strong> Sunday, 21st Dec 2025 (virtual)</p>
+                      <p><strong>Friday, 12th:</strong> 1-hour group discussion (virtual)</p>
+                      <p><strong>Saturday, 13th:</strong> Technical round (virtual)</p>
                       <p><strong>Final Round:</strong> Early next week with leadership</p>
-                      <p className="text-indigo-700 font-bold mt-3 sm:mt-4">Only candidates who apply before Friday, 19th Dec 2025 will be scheduled.</p>
+                      <p className="text-indigo-700 font-bold mt-3 sm:mt-4">Submit now to get scheduled for the 12th & 13th sessions.</p>
                     </div>
                   </div>
                 </Card>
@@ -112,9 +111,10 @@ export default function FinancialController() {
                     <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-3 sm:mb-4">
                       Own controllership for a pod of startup clients. You will review deliverables, manage escalations, and ensure every output meets our quality bar.
                     </p>
-                    <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
+                    <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-3 sm:mb-4">
                       You will partner with account managers, team leads, and associates to keep books clean, closes on time, and leadership informed.
                     </p>
+                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">Note: For remote roles, we use FocusRO for work monitoring as a standard term.</p>
                   </div>
                 </Card>
               </AnimatedSection>
@@ -155,7 +155,11 @@ export default function FinancialController() {
                     <ul className="space-y-3 sm:space-y-4">
                       <li className="flex items-start gap-3">
                         <CheckCircle className="text-indigo-600 flex-shrink-0 mt-1" size={20} />
-                        <span className="text-sm sm:text-base text-slate-700">6+ years in accounting/controllership; experience with multi-entity books.</span>
+                        <span className="text-sm sm:text-base text-slate-700">7+ years in accounting/controllership; experience with multi-entity books.</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <CheckCircle className="text-indigo-600 flex-shrink-0 mt-1" size={20} />
+                        <span className="text-sm sm:text-base text-slate-700">Proven ownership of pods with 15+ team members or $50k+ monthly revenue.</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <CheckCircle className="text-indigo-600 flex-shrink-0 mt-1" size={20} />
@@ -164,6 +168,10 @@ export default function FinancialController() {
                       <li className="flex items-start gap-3">
                         <CheckCircle className="text-indigo-600 flex-shrink-0 mt-1" size={20} />
                         <span className="text-sm sm:text-base text-slate-700">Comfort managing pods and coaching teams in remote setups.</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <CheckCircle className="text-indigo-600 flex-shrink-0 mt-1" size={20} />
+                        <span className="text-sm sm:text-base text-slate-700">Experienced in cash flow management, budgeting, and forecasting.</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <CheckCircle className="text-indigo-600 flex-shrink-0 mt-1" size={20} />
@@ -210,7 +218,7 @@ export default function FinancialController() {
                       <p className="text-indigo-50 text-xs sm:text-sm">Financial Controller</p>
                     </div>
                     <div className="p-4 sm:p-6 space-y-3">
-                      <p className="text-sm text-slate-600">Submit your application before Friday, 19th Dec 2025 to get scheduled for the virtual rounds.</p>
+                      <p className="text-sm text-slate-600">Submit your application to get scheduled for the 12th & 13th virtual rounds.</p>
                       <div
                         id="zf_div_eJHiYL5szMR2i0ahFh4Awh3AeLaAlbtX3PiC2UjpGWU"
                         className="w-full"

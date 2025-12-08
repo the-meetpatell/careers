@@ -16,29 +16,9 @@ import { LEADERSHIP_TEAM, TESTIMONIALS, COMPANY_VALUES } from '../data/team'
 export default function Home() {
   const DRIVE_ROLES = [
     {
-      title: 'Senior Software Engineer',
-      tag: 'Engineering • Remote/Hybrid',
-      description: 'Own end-to-end features and mentor across our fintech platform.',
-      to: '/virtual-drive/sr-software-engineer',
-      accentLight: 'from-indigo-400/10 to-blue-400/10',
-      iconBg: 'from-indigo-600 to-blue-600',
-      badgeBg: 'bg-indigo-100 text-indigo-700',
-      textAccent: 'text-indigo-600',
-    },
-    {
-      title: 'Content & PR Manager (Arabic is a must)',
-      tag: 'Marketing • Dubai',
-      description: 'Lead Arabic content, PR, and media narratives across MENA.',
-      to: '/virtual-drive/content-pr-manager',
-      accentLight: 'from-purple-400/10 to-amber-400/10',
-      iconBg: 'from-purple-600 to-amber-500',
-      badgeBg: 'bg-purple-100 text-purple-700',
-      textAccent: 'text-purple-600',
-    },
-    {
       title: 'Financial Controller',
       tag: 'FinOps • UAE (Dubai) / Remote',
-      description: 'Own pod-level controllership, reviews, and quality for high-growth startup clients.',
+      description: 'Own controllership, reviews, and pod-level quality for high-growth startup clients.',
       to: '/virtual-drive/financial-controller',
       accentLight: 'from-indigo-400/10 to-blue-400/10',
       iconBg: 'from-indigo-600 to-blue-600',
@@ -46,14 +26,34 @@ export default function Home() {
       textAccent: 'text-indigo-600',
     },
     {
-      title: 'Appointment Setter',
-      tag: 'Revenue • Remote',
-      description: 'Qualify and schedule high-intent meetings for the partnerships org.',
-      to: '/virtual-drive/appointment-setter',
+      title: 'Account Manager - FinOps',
+      tag: 'FinOps • UAE (Dubai) / Remote',
+      description: 'Lead client pods, manage SLAs, and partner with controllers on escalations.',
+      to: '/virtual-drive/finops-account-manager',
       accentLight: 'from-emerald-400/10 to-teal-400/10',
       iconBg: 'from-emerald-500 to-teal-600',
       badgeBg: 'bg-emerald-100 text-emerald-700',
       textAccent: 'text-emerald-600',
+    },
+    {
+      title: 'Team Lead - FinOps',
+      tag: 'FinOps • UAE (Dubai) / Remote',
+      description: 'Run daily execution for pods; coach Sr/Jr associates to deliver error-free work.',
+      to: '/virtual-drive/finops-team-lead',
+      accentLight: 'from-amber-400/10 to-orange-400/10',
+      iconBg: 'from-amber-500 to-orange-500',
+      badgeBg: 'bg-amber-100 text-amber-700',
+      textAccent: 'text-amber-600',
+    },
+    {
+      title: 'Senior Accounting Associate',
+      tag: 'FinOps • Remote',
+      description: 'Handle complex reconciliations, reporting packs, and month-end support.',
+      to: '/virtual-drive/senior-accounting-associate',
+      accentLight: 'from-purple-400/10 to-pink-400/10',
+      iconBg: 'from-purple-600 to-pink-500',
+      badgeBg: 'bg-purple-100 text-purple-700',
+      textAccent: 'text-purple-600',
     },
   ]
 
@@ -448,7 +448,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Virtual Talent Drive Banner */}
+      {/* FinOps Career Drive Banner */}
       <section className="py-12 px-6 sm:px-8 lg:px-12 bg-slate-900 relative overflow-hidden">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
         <div className="absolute inset-0 pointer-events-none">
@@ -462,15 +462,15 @@ export default function Home() {
               <div className="p-6 sm:p-8 lg:p-10">
                 {/* Header */}
                 <div className="text-center mb-8">
-                  <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-100 border border-amber-200 text-amber-800 text-sm font-bold mb-4">
+                  <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-100 border border-emerald-200 text-emerald-800 text-sm font-bold mb-4">
                     <MapPin size={16} />
-                    <span>Endgame Hiring 2025</span>
+                    <span>FinOps Career Drive</span>
                   </div>
                   <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-3 tracking-tight">
-                    Final virtual drive of the year. Application-only interviews.
+                    Dedicated FinOps drive. Virtual rounds on Fri 12th & Sat 13th.
                   </h2>
               <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto font-medium">
-                Apply before Friday, 19th Dec 2025 to join the Dec 20-21 interview weekend. No walk-ins—every conversation is scheduled.
+                Focused hiring for FinOps pods: group discussion on Friday (1 hour), technical on Saturday, finals early next week. All conversations are scheduled.
               </p>
                 </div>
 
@@ -481,9 +481,9 @@ export default function Home() {
                       <Calendar className="text-white" size={18} />
                     </div>
                     <div>
-                      <div className="text-xs text-slate-600 font-semibold uppercase tracking-wide">Application Deadline</div>
-                      <div className="font-bold text-slate-900">Friday, 19th Dec 2025</div>
-                      <div className="text-slate-600 text-xs">Only pre-registered candidates are scheduled</div>
+                      <div className="text-xs text-slate-600 font-semibold uppercase tracking-wide">Group Discussion</div>
+                      <div className="font-bold text-slate-900">Friday, 12th</div>
+                      <div className="text-slate-600 text-xs">1-hour virtual cohort discussion</div>
                     </div>
                   </div>
                   <div className="flex items-center gap-3 p-4 rounded-xl bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-100">
@@ -491,9 +491,9 @@ export default function Home() {
                       <Clock className="text-white" size={18} />
                     </div>
                     <div>
-                      <div className="text-xs text-slate-600 font-semibold uppercase tracking-wide">Weekend Rounds</div>
-                      <div className="font-bold text-slate-900">Screening 20th Dec • Technical 21st Dec</div>
-                      <div className="text-slate-600 text-xs">Final leadership round the following week</div>
+                      <div className="text-xs text-slate-600 font-semibold uppercase tracking-wide">Technical Round</div>
+                      <div className="font-bold text-slate-900">Saturday, 13th</div>
+                      <div className="text-slate-600 text-xs">Role-specific deep dives with FinOps leaders</div>
                     </div>
                   </div>
                   <div className="flex items-center gap-3 p-4 rounded-xl bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-100">
@@ -501,9 +501,9 @@ export default function Home() {
                       <Building className="text-white" size={18} />
                     </div>
                     <div>
-                      <div className="text-xs text-slate-600 font-semibold uppercase tracking-wide">Format</div>
-                      <div className="font-bold text-slate-900 text-sm">Virtual • UAE (Dubai) & Global (Remote)</div>
-                      <div className="text-slate-600 text-xs">Confirmed time slots only</div>
+                      <div className="text-xs text-slate-600 font-semibold uppercase tracking-wide">Final Round</div>
+                      <div className="font-bold text-slate-900 text-sm">Early next week</div>
+                      <div className="text-slate-600 text-xs">Leadership conversation for shortlisted talent</div>
                     </div>
                   </div>
                 </div>
@@ -541,7 +541,7 @@ export default function Home() {
                               <div className="flex items-center justify-between">
                                 <div className="flex items-center gap-2 text-slate-700">
                                   <Users size={16} className={role.textAccent} />
-                                  <span className="text-sm font-semibold">Apply before Friday, 19th Dec 2025</span>
+                                  <span className="text-sm font-semibold">Slots for Fri 12th & Sat 13th</span>
                                 </div>
                                 <div className="flex items-center gap-1 text-indigo-600 font-bold text-sm group-hover:gap-2 transition-all">
                                   View details
@@ -554,9 +554,9 @@ export default function Home() {
                       ))}
                     </div>
                     <div className="mt-8 text-center">
-                      <Link to="/virtual-drive">
-                        <Button size="lg" className="group shadow-lg bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white">
-                          View all roles & apply
+                      <Link to="/finops-career-drive">
+                        <Button size="lg" className="group shadow-lg bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white">
+                          View FinOps roles & apply
                           <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
                         </Button>
                       </Link>

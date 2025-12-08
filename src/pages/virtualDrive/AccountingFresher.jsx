@@ -58,9 +58,9 @@ export default function AccountingFresher() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
             <div className="lg:col-span-2">
               <AnimatedSection animation="fade-up">
-                <Link to="/virtual-drive" className="inline-flex items-center gap-2 text-lime-600 hover:text-lime-700 font-semibold mb-6 sm:mb-8 group text-sm sm:text-base">
+                <Link to="/finops-career-drive" className="inline-flex items-center gap-2 text-lime-600 hover:text-lime-700 font-semibold mb-6 sm:mb-8 group text-sm sm:text-base">
                   <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
-                  Back to Endgame Hiring 2025
+                  Back to FinOps Career Drive
                 </Link>
 
                 <div className="mb-6 sm:mb-8">
@@ -92,14 +92,13 @@ export default function AccountingFresher() {
                   <div className="p-4 sm:p-6 md:p-8">
                     <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
                       <Calendar className="text-lime-600 flex-shrink-0" size={24} />
-                      <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900">Virtual Drive Schedule</h3>
+                      <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900">FinOps Career Drive Schedule</h3>
                     </div>
                     <div className="space-y-2 text-slate-700 font-medium text-sm sm:text-base">
-                      <p><strong>Apply by:</strong> Friday, 19th Dec 2025 (applications only)</p>
-                      <p><strong>Screening & HR:</strong> Saturday, 20th Dec 2025 (virtual)</p>
-                      <p><strong>Technical:</strong> Sunday, 21st Dec 2025 (virtual)</p>
+                      <p><strong>Friday, 12th:</strong> 1-hour group discussion (virtual)</p>
+                      <p><strong>Saturday, 13th:</strong> Technical round (virtual)</p>
                       <p><strong>Final Round:</strong> Early next week with leadership</p>
-                      <p className="text-lime-700 font-bold mt-3 sm:mt-4">Only candidates who apply before Friday, 19th Dec 2025 will be scheduled.</p>
+                      <p className="text-lime-700 font-bold mt-3 sm:mt-4">Submit now to get scheduled for the 12th & 13th sessions.</p>
                     </div>
                   </div>
                 </Card>
@@ -112,8 +111,11 @@ export default function AccountingFresher() {
                     <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-3 sm:mb-4">
                       Start your accounting career in a structured FinOps pod. You’ll support data prep, reconciliations, and reporting while learning best practices from leads and controllers.
                     </p>
-                    <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
+                    <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-3 sm:mb-4">
                       Ideal for fresh graduates who want hands-on exposure to multiple clients and modern tooling.
+                    </p>
+                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                      Note: For remote roles, we use FocusRO for work monitoring as a standard term.
                     </p>
                   </div>
                 </Card>
@@ -210,7 +212,7 @@ export default function AccountingFresher() {
                       <p className="text-lime-50 text-xs sm:text-sm">Accounting Fresher</p>
                     </div>
                     <div className="p-4 sm:p-6 space-y-3">
-                      <p className="text-sm text-slate-600">Submit your application before Friday, 19th Dec 2025 to get scheduled for the virtual rounds.</p>
+                      <p className="text-sm text-slate-600">Submit your application to get scheduled for the 12th & 13th virtual rounds.</p>
                       <div
                         id="zf_div_eJHiYL5szMR2i0ahFh4Awh3AeLaAlbtX3PiC2UjpGWU"
                         className="w-full"

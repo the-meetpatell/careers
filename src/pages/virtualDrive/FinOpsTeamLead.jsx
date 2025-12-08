@@ -58,9 +58,9 @@ export default function FinOpsTeamLead() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
             <div className="lg:col-span-2">
               <AnimatedSection animation="fade-up">
-                <Link to="/virtual-drive" className="inline-flex items-center gap-2 text-amber-600 hover:text-amber-700 font-semibold mb-6 sm:mb-8 group text-sm sm:text-base">
+                <Link to="/finops-career-drive" className="inline-flex items-center gap-2 text-amber-600 hover:text-amber-700 font-semibold mb-6 sm:mb-8 group text-sm sm:text-base">
                   <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
-                  Back to Endgame Hiring 2025
+                  Back to FinOps Career Drive
                 </Link>
 
                 <div className="mb-6 sm:mb-8">
@@ -92,14 +92,13 @@ export default function FinOpsTeamLead() {
                   <div className="p-4 sm:p-6 md:p-8">
                     <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
                       <Calendar className="text-amber-600 flex-shrink-0" size={24} />
-                      <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900">Virtual Drive Schedule</h3>
+                      <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900">FinOps Career Drive Schedule</h3>
                     </div>
                     <div className="space-y-2 text-slate-700 font-medium text-sm sm:text-base">
-                      <p><strong>Apply by:</strong> Friday, 19th Dec 2025 (applications only)</p>
-                      <p><strong>Screening & HR:</strong> Saturday, 20th Dec 2025 (virtual)</p>
-                      <p><strong>Technical:</strong> Sunday, 21st Dec 2025 (virtual)</p>
+                      <p><strong>Friday, 12th:</strong> 1-hour group discussion (virtual)</p>
+                      <p><strong>Saturday, 13th:</strong> Technical round (virtual)</p>
                       <p><strong>Final Round:</strong> Early next week with leadership</p>
-                      <p className="text-amber-700 font-bold mt-3 sm:mt-4">Only candidates who apply before Friday, 19th Dec 2025 will be scheduled.</p>
+                      <p className="text-amber-700 font-bold mt-3 sm:mt-4">Submit now to get scheduled for the 12th & 13th sessions.</p>
                     </div>
                   </div>
                 </Card>
@@ -112,9 +111,10 @@ export default function FinOpsTeamLead() {
                     <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-3 sm:mb-4">
                       Lead day-to-day execution for pods, keep books clean, and coach Sr/Jr associates. You’ll ensure reconciliations, closes, and reporting stay on track.
                     </p>
-                    <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
+                    <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-3 sm:mb-4">
                       You work closely with controllers and account managers to surface risks, fix process gaps, and deliver a smooth client experience.
                     </p>
+                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">Note: For remote roles, we use FocusRO for work monitoring as a standard term.</p>
                   </div>
                 </Card>
               </AnimatedSection>
@@ -129,7 +129,7 @@ export default function FinOpsTeamLead() {
                     <ul className="space-y-3 sm:space-y-4">
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Run daily reconciliations, AP/AR hygiene, and month-end close tasks.</span>
+                        <span className="text-sm sm:text-base text-slate-700">Monitor daily reconciliations, AP/AR hygiene, and close tasks executed by the pod; unblock the team and ensure quality.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
@@ -137,7 +137,11 @@ export default function FinOpsTeamLead() {
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Surface risks/escalations early and partner with controllers/AMs to resolve.</span>
+                        <span className="text-sm sm:text-base text-slate-700">Lead client communication on status, risks, and next steps; surface escalations early with controllers/AMs.</span>
+                      </li>
+                      <li className="flex items-start gap-2 sm:gap-3">
+                        <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">Review and deliver monthly reports to clients, ensuring accuracy and clarity of insights.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
@@ -210,7 +214,7 @@ export default function FinOpsTeamLead() {
                       <p className="text-amber-50 text-xs sm:text-sm">Team Lead - FinOps</p>
                     </div>
                     <div className="p-4 sm:p-6 space-y-3">
-                      <p className="text-sm text-slate-600">Submit your application before Friday, 19th Dec 2025 to get scheduled for the virtual rounds.</p>
+                      <p className="text-sm text-slate-600">Submit your application to get scheduled for the 12th & 13th virtual rounds.</p>
                       <div
                         id="zf_div_eJHiYL5szMR2i0ahFh4Awh3AeLaAlbtX3PiC2UjpGWU"
                         className="w-full"
