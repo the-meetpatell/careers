@@ -88,7 +88,7 @@ export default function SrFullStackDeveloper() {
               <AnimatedSection animation="fade-up">
                 <Link to="/virtual-drive" className="inline-flex items-center gap-2 text-indigo-600 hover:text-indigo-700 font-semibold mb-6 sm:mb-8 group text-sm sm:text-base">
                   <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
-                  Back to Virtual Talent Drive
+                  Back to Endgame Hiring 2025
                 </Link>
 
                 <div className="mb-6 sm:mb-8">
@@ -123,11 +123,11 @@ export default function SrFullStackDeveloper() {
                       <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900">Virtual Drive Schedule</h3>
                     </div>
                     <div className="space-y-2 text-slate-700 font-medium text-sm sm:text-base">
-                      <p><strong>Apply by:</strong> Friday the 5th Dec (applications only)</p>
-                      <p><strong>Screening & HR:</strong> Saturday, 6th Dec (virtual)</p>
-                      <p><strong>Technical:</strong> Sunday, 7th Dec (virtual)</p>
+                      <p><strong>Apply by:</strong> Friday, 19th Dec 2025 (applications only)</p>
+                      <p><strong>Screening & HR:</strong> Saturday, 20th Dec 2025 (virtual)</p>
+                      <p><strong>Technical:</strong> Sunday, 21st Dec 2025 (virtual)</p>
                       <p><strong>Final Round:</strong> Early next week with leadership</p>
-                      <p className="text-indigo-600 font-bold mt-3 sm:mt-4">Only candidates who apply before Friday the 5th Dec will be scheduled.</p>
+                      <p className="text-indigo-600 font-bold mt-3 sm:mt-4">Only candidates who apply before Friday, 19th Dec 2025 will be scheduled.</p>
                     </div>
                   </div>
                 </Card>
@@ -251,7 +251,7 @@ export default function SrFullStackDeveloper() {
                       <p className="text-indigo-50 text-xs sm:text-sm">Senior Software Engineer</p>
                     </div>
                     <div className="p-4 sm:p-6 space-y-3">
-                      <p className="text-sm text-slate-600">Submit your application before Friday the 5th Dec to get scheduled for the virtual rounds.</p>
+                      <p className="text-sm text-slate-600">Submit your application before Friday, 19th Dec 2025 to get scheduled for the virtual rounds.</p>
                       <div
                         id="zf_div_NnSY1-5oURPx9rz8bDoL4FZxVyy1kH-1ZPrw13T64Ww"
                         className="w-full"

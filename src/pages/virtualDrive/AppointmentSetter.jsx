@@ -98,7 +98,7 @@ export default function AppointmentSetter() {
           <AnimatedSection animation="fade-up">
                 <Link to="/virtual-drive" className="inline-flex items-center gap-2 text-emerald-600 hover:text-emerald-700 font-semibold mb-6 sm:mb-8 group text-sm sm:text-base">
                   <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
-                  Back to Virtual Talent Drive
+                  Back to Endgame Hiring 2025
                 </Link>
 
                 <div className="mb-6 sm:mb-8">
@@ -133,11 +133,11 @@ export default function AppointmentSetter() {
                   <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900">Virtual Drive Schedule</h3>
                 </div>
                 <div className="space-y-2 text-slate-700 font-medium text-sm sm:text-base">
-                  <p><strong>Apply by:</strong> Friday the 5th Dec (applications only)</p>
-                  <p><strong>Screening & HR:</strong> Saturday, 6th Dec (virtual)</p>
-                  <p><strong>Technical:</strong> Sunday, 7th Dec (virtual)</p>
+                  <p><strong>Apply by:</strong> Friday, 19th Dec 2025 (applications only)</p>
+                  <p><strong>Screening & HR:</strong> Saturday, 20th Dec 2025 (virtual)</p>
+                  <p><strong>Technical:</strong> Sunday, 21st Dec 2025 (virtual)</p>
                   <p><strong>Final Round:</strong> Early next week with leadership</p>
-                  <p className="text-emerald-600 font-bold mt-3 sm:mt-4">Only candidates who apply before Friday the 5th Dec will be scheduled.</p>
+                  <p className="text-emerald-600 font-bold mt-3 sm:mt-4">Only candidates who apply before Friday, 19th Dec 2025 will be scheduled.</p>
                 </div>
               </div>
             </Card>
@@ -281,7 +281,7 @@ export default function AppointmentSetter() {
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={20} />
-                    <span className="text-slate-700">Health insurance and visa sponsorship</span>
+                    <span className="text-slate-700">Health insurance</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={20} />
@@ -294,10 +294,6 @@ export default function AppointmentSetter() {
                   <li className="flex items-start gap-3">
                     <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={20} />
                     <span className="text-slate-700">Work with a fast-growing fintech backed by MBRIF and in5 Tech</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={20} />
-                    <span className="text-slate-700">Supportive, high-energy team across India & UAE</span>
                   </li>
                 </ul>
               </div>

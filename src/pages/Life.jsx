@@ -37,45 +37,45 @@ export default function Life() {
   const coreValues = [
     {
       number: "01",
-      title: "Customer Obsession",
-      description: "Start with the customer and work backward.",
-      gradient: "from-indigo-500 to-purple-600"
+      title: "Integrity",
+      description: "We do the right thing even when no one is watching.",
+      gradient: "from-amber-500 to-orange-600"
     },
     {
       number: "02",
-      title: "Earn Trust",
-      description: "Be honest. Ask for and act on feedback. Be reachable.",
-      gradient: "from-purple-500 to-pink-600"
+      title: "Never Stop Learning",
+      description: "Learning is continuous. We learn fast and execute fast.",
+      gradient: "from-blue-500 to-cyan-600"
     },
     {
       number: "03",
-      title: "Learn Fast & Be curious",
-      description: "Build a deeper level of subject matter expertise and ask more questions and admit if you don't know.",
-      gradient: "from-pink-500 to-indigo-600"
+      title: "Striving for Excellence",
+      description: "Aim for high-quality work — not just “okay”.",
+      gradient: "from-indigo-500 to-purple-600"
     },
     {
       number: "04",
-      title: "Ownership",
-      description: "Not waiting for others to act, and take initiatives and bring positive results. Be accountable for the results of your actions.",
-      gradient: "from-indigo-600 to-purple-500"
+      title: "Proactive Ownership",
+      description: "Treat the company like it's yours. Own your work from start to finish.",
+      gradient: "from-emerald-500 to-teal-600"
     },
     {
       number: "05",
-      title: "Insight on high standards",
-      description: "Set exceptionally high demands of yourself and the products and services you work on. Continually self-critique your work to make sure the quality is the best it can be.",
-      gradient: "from-purple-600 to-pink-500"
+      title: "Inventiveness",
+      description: "We don't freeze when stuck — we figure things out.",
+      gradient: "from-fuchsia-500 to-pink-600"
     },
     {
       number: "06",
-      title: "Innovate and simplify",
-      description: "Make something simpler for customers and find new ways to improve existing services/product.",
-      gradient: "from-pink-600 to-indigo-500"
+      title: "Resilience",
+      description: "We push beyond the expected when it matters.",
+      gradient: "from-orange-500 to-red-500"
     },
     {
       number: "07",
-      title: "Think Big",
-      description: "Opportunity to do something much bigger or better than the initial focus.",
-      gradient: "from-indigo-500 to-purple-600"
+      title: "Expansion Mindset",
+      description: "We see challenges as opportunities and embrace change.",
+      gradient: "from-blue-600 to-indigo-700"
     }
   ]
 

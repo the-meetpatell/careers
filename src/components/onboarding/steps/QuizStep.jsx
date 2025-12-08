@@ -31,24 +31,24 @@ export default function QuizStep() {
     },
     {
       id: 3,
-      question: 'What is one of Finanshels\' core values?',
-      options: ['Customer Obsession', 'Profit Maximization', 'Speed over Quality', 'Individual Glory'],
+      question: 'Which of these is part of the INSPIRE core values?',
+      options: ['Integrity', 'Profit Maximization', 'Avoiding change', 'Winning at all costs'],
       correct: 0
     },
     {
       id: 4,
-      question: 'What does "Think Big" value encourage?',
+      question: 'What does "Proactive Ownership" encourage?',
       options: [
-        'Working long hours',
-        'Pursuing ambitious goals and anticipating future needs',
-        'Avoiding risks',
-        'Following competitors'
+        'Treating work like it belongs to someone else',
+        'Waiting for instructions before acting',
+        'Owning your work from start to finish and sharing solutions, not just problems',
+        'Avoiding accountability'
       ],
-      correct: 1
+      correct: 2
     },
     {
       id: 5,
-      question: 'How many core values does Finanshels have?',
+      question: 'How many core values does Finanshels INSPIRE framework include?',
       options: ['3', '5', '7', '10'],
       correct: 2
     }
@@ -194,4 +194,3 @@ export default function QuizStep() {
     </div>
   )
 }
-

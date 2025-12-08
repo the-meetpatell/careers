@@ -16,59 +16,39 @@ import { LEADERSHIP_TEAM, TESTIMONIALS, COMPANY_VALUES } from '../data/team'
 export default function Home() {
   const DRIVE_ROLES = [
     {
-      title: 'Partnership Manager',
-      tag: 'Revenue • Dubai',
-      description: 'Own UAE ecosystem partnerships with freezones, VCs, and accelerators.',
-      to: '/virtual-drive/partnerships-manager',
-      accentLight: 'from-amber-400/10 to-orange-400/10',
-      iconBg: 'from-amber-500 to-orange-600',
-      badgeBg: 'bg-amber-100 text-amber-700',
-      textAccent: 'text-amber-600',
-    },
-    {
-      title: 'Partnership Appointment Setter',
-      tag: 'Revenue • Remote',
-      description: 'Qualify and book high-intent meetings for the partnerships org.',
-      to: '/virtual-drive/appointment-setter',
-      accentLight: 'from-emerald-400/10 to-teal-400/10',
-      iconBg: 'from-emerald-500 to-teal-600',
-      badgeBg: 'bg-emerald-100 text-emerald-700',
-      textAccent: 'text-emerald-600',
-    },
-    {
-      title: 'Field Sales Executive',
-      tag: 'Revenue • Dubai',
-      description: 'Drive outbound, pipeline, and conversions for fintech services in the UAE.',
-      to: '/virtual-drive/field-sales-executive',
-      accentLight: 'from-blue-400/10 to-cyan-400/10',
-      iconBg: 'from-blue-500 to-cyan-600',
-      badgeBg: 'bg-blue-100 text-blue-700',
-      textAccent: 'text-blue-600',
+      title: 'Senior Software Engineer',
+      tag: 'Engineering • Remote/Hybrid',
+      description: 'Own end-to-end features and mentor across our fintech platform.',
+      to: '/virtual-drive/sr-software-engineer',
+      accentLight: 'from-indigo-400/10 to-blue-400/10',
+      iconBg: 'from-indigo-600 to-blue-600',
+      badgeBg: 'bg-indigo-100 text-indigo-700',
+      textAccent: 'text-indigo-600',
     },
     {
       title: 'Content & PR Manager (Arabic is a must)',
       tag: 'Marketing • Dubai',
       description: 'Lead Arabic content, PR, and media narratives across MENA.',
       to: '/virtual-drive/content-pr-manager',
-      accentLight: 'from-indigo-400/10 to-amber-400/10',
-      iconBg: 'from-indigo-500 to-amber-500',
-      badgeBg: 'bg-indigo-100 text-indigo-700',
-      textAccent: 'text-indigo-600',
+      accentLight: 'from-purple-400/10 to-amber-400/10',
+      iconBg: 'from-purple-600 to-amber-500',
+      badgeBg: 'bg-purple-100 text-purple-700',
+      textAccent: 'text-purple-600',
     },
     {
-      title: 'Marketing Automation & CRM Manager',
+      title: 'Content Writer (English)',
       tag: 'Marketing • Remote',
-      description: 'Build and optimize CRM, automations, and reporting for growth teams.',
-      to: '/virtual-drive/marketing-ops-crm-manager',
-      accentLight: 'from-lime-400/10 to-green-400/10',
-      iconBg: 'from-lime-500 to-green-600',
-      badgeBg: 'bg-lime-100 text-lime-700',
-      textAccent: 'text-green-600',
+      description: 'Own crisp English storytelling across product, web, and growth campaigns.',
+      to: '/virtual-drive/content-writer-english',
+      accentLight: 'from-sky-400/10 to-indigo-400/10',
+      iconBg: 'from-sky-500 to-indigo-500',
+      badgeBg: 'bg-sky-100 text-sky-700',
+      textAccent: 'text-sky-600',
     },
     {
-      title: 'Field Marketing Manager',
+      title: 'Field Marketing Manager (Arabic is a must)',
       tag: 'Marketing • Dubai',
-      description: 'Lead field marketing programs, events, and ecosystem visibility across the region.',
+      description: 'Lead Arabic-first field marketing programs, events, and ecosystem visibility.',
       to: '/virtual-drive/event-pr-manager',
       accentLight: 'from-rose-400/10 to-orange-400/10',
       iconBg: 'from-rose-500 to-orange-500',
@@ -91,7 +71,7 @@ export default function Home() {
         
         iframe.src = ifrmSrc
         iframe.style.border = "none"
-        iframe.style.height = "758px"
+        iframe.style.height = "710px"
         iframe.style.width = "100%"
         iframe.style.transition = "all 0.5s ease"
         iframe.setAttribute("aria-label", 'Get Your Friend A Job')
@@ -185,7 +165,7 @@ export default function Home() {
             <AnimatedSection animation="fade-up" delay={200}>
               <p className="text-xl sm:text-2xl text-slate-600 mb-14 max-w-3xl mx-auto leading-relaxed font-medium">
                 Join Finanshels and help <span className="text-slate-900 font-semibold">2M+ startups</span> across MENA automate their financial operations.{' '}
-                <span className="text-slate-900 font-semibold">Move fast. Build for founders. Ship excellence.</span>
+                <span className="text-slate-900 font-semibold">Move fast. Build for founders. Ship with excellence.</span>
               </p>
             </AnimatedSection>
 
@@ -479,13 +459,13 @@ export default function Home() {
                 <div className="text-center mb-8">
                   <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-100 border border-amber-200 text-amber-800 text-sm font-bold mb-4">
                     <MapPin size={16} />
-                    <span>Finanshels Global Virtual Talent Drive</span>
+                    <span>Endgame Hiring 2025</span>
                   </div>
                   <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-3 tracking-tight">
-                    Application-only. Virtual interviews for India & UAE.
+                    Final virtual drive of the year. Application-only interviews.
                   </h2>
               <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto font-medium">
-                Apply before Friday the 5th Dec to join the weekend interview rounds. No walk-ins—every conversation is scheduled.
+                Apply before Friday, 19th Dec 2025 to join the Dec 20-21 interview weekend. No walk-ins—every conversation is scheduled.
               </p>
                 </div>
 
@@ -497,7 +477,7 @@ export default function Home() {
                     </div>
                     <div>
                       <div className="text-xs text-slate-600 font-semibold uppercase tracking-wide">Application Deadline</div>
-                      <div className="font-bold text-slate-900">Friday the 5th Dec</div>
+                      <div className="font-bold text-slate-900">Friday, 19th Dec 2025</div>
                       <div className="text-slate-600 text-xs">Only pre-registered candidates are scheduled</div>
                     </div>
                   </div>
@@ -507,8 +487,8 @@ export default function Home() {
                     </div>
                     <div>
                       <div className="text-xs text-slate-600 font-semibold uppercase tracking-wide">Weekend Rounds</div>
-                      <div className="font-bold text-slate-900">Screening 6th Dec • Technical 7th Dec</div>
-                      <div className="text-slate-600 text-xs">Final leadership round next week</div>
+                      <div className="font-bold text-slate-900">Screening 20th Dec • Technical 21st Dec</div>
+                      <div className="text-slate-600 text-xs">Final leadership round the following week</div>
                     </div>
                   </div>
                   <div className="flex items-center gap-3 p-4 rounded-xl bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-100">
@@ -517,7 +497,7 @@ export default function Home() {
                     </div>
                     <div>
                       <div className="text-xs text-slate-600 font-semibold uppercase tracking-wide">Format</div>
-                      <div className="font-bold text-slate-900 text-sm">Virtual • India & UAE</div>
+                      <div className="font-bold text-slate-900 text-sm">Virtual • UAE (Dubai) & Global (Remote)</div>
                       <div className="text-slate-600 text-xs">Confirmed time slots only</div>
                     </div>
                   </div>
@@ -556,7 +536,7 @@ export default function Home() {
                               <div className="flex items-center justify-between">
                                 <div className="flex items-center gap-2 text-slate-700">
                                   <Users size={16} className={role.textAccent} />
-                                  <span className="text-sm font-semibold">Apply before Friday the 5th Dec</span>
+                                  <span className="text-sm font-semibold">Apply before Friday, 19th Dec 2025</span>
                                 </div>
                                 <div className="flex items-center gap-1 text-indigo-600 font-bold text-sm group-hover:gap-2 transition-all">
                                   View details
@@ -568,20 +548,18 @@ export default function Home() {
                         </Link>
                       ))}
                     </div>
+                    <div className="mt-8 text-center">
+                      <Link to="/virtual-drive">
+                        <Button size="lg" className="group shadow-lg bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white">
+                          View all roles & apply
+                          <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
+                        </Button>
+                      </Link>
+                    </div>
                   </div>
 
                 </div>
 
-                {/* CTA */}
-                <div className="text-center pt-6 border-t-2 border-slate-200">
-                  <Link to="/virtual-drive">
-                    <Button size="lg" className="group shadow-xl bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white">
-                      View Drive Schedule & Apply
-                      <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
-                    </Button>
-                  </Link>
-                  <p className="text-sm text-slate-500 mt-4">Applications close Friday the 5th Dec • Virtual-only interviews</p>
-                </div>
               </div>
             </Card>
           </AnimatedSection>

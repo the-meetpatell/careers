@@ -11,13 +11,7 @@ import RoadmapStep from '../components/onboarding/steps/RoadmapStep'
 import CompanyOverviewStep from '../components/onboarding/steps/CompanyOverviewStep'
 import VisionMissionStep from '../components/onboarding/steps/VisionMissionStep'
 import ValuesStep from '../components/onboarding/steps/ValuesStep'
-import CustomerObsessionStep from '../components/onboarding/steps/CustomerObsessionStep'
-import EarnTrustStep from '../components/onboarding/steps/EarnTrustStep'
-import LearnFastStep from '../components/onboarding/steps/LearnFastStep'
-import OwnershipStep from '../components/onboarding/steps/OwnershipStep'
-import HighStandardsStep from '../components/onboarding/steps/HighStandardsStep'
-import InnovateStep from '../components/onboarding/steps/InnovateStep'
-import ThinkBigStep from '../components/onboarding/steps/ThinkBigStep'
+import CoreValueDetailStep from '../components/onboarding/steps/CoreValueDetailStep'
 import OKRSystemStep from '../components/onboarding/steps/OKRSystemStep'
 import ServicesStep from '../components/onboarding/steps/ServicesStep'
 import TeamStep from '../components/onboarding/steps/TeamStep'
@@ -40,13 +34,13 @@ function OnboardingContent() {
       case 'company': return <CompanyOverviewStep />
       case 'vision-mission': return <VisionMissionStep />
       case 'values': return <ValuesStep />
-      case 'customer-obsession': return <CustomerObsessionStep />
-      case 'earn-trust': return <EarnTrustStep />
-      case 'learn-fast': return <LearnFastStep />
-      case 'ownership': return <OwnershipStep />
-      case 'high-standards': return <HighStandardsStep />
-      case 'innovate': return <InnovateStep />
-      case 'think-big': return <ThinkBigStep />
+      case 'integrity': return <CoreValueDetailStep valueKey="integrity" />
+      case 'never-stop-learning': return <CoreValueDetailStep valueKey="never-stop-learning" />
+      case 'striving-excellence': return <CoreValueDetailStep valueKey="striving-excellence" />
+      case 'proactive-ownership': return <CoreValueDetailStep valueKey="proactive-ownership" />
+      case 'inventiveness': return <CoreValueDetailStep valueKey="inventiveness" />
+      case 'resilience': return <CoreValueDetailStep valueKey="resilience" />
+      case 'expansion-mindset': return <CoreValueDetailStep valueKey="expansion-mindset" />
       case 'okr-system': return <OKRSystemStep />
       case 'services': return <ServicesStep />
       case 'team': return <TeamStep />

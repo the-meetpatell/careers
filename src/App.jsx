@@ -14,6 +14,8 @@ import JrWebDeveloper from './pages/virtualDrive/JrWebDeveloper'
 import ContentPRManager from './pages/virtualDrive/ContentPRManager'
 import EventPRManager from './pages/virtualDrive/EventPRManager'
 import MarketingOpsCRMManager from './pages/virtualDrive/MarketingOpsCRMManager'
+import ContentWriterEnglish from './pages/virtualDrive/ContentWriterEnglish'
+import ContentWriterArabic from './pages/virtualDrive/ContentWriterArabic'
 import Onboarding from './pages/Onboarding'
 
 function App() {
@@ -35,11 +37,14 @@ function App() {
                   <Route path="/virtual-drive/field-sales-executive" element={<FieldSalesExecutive />} />
                   <Route path="/virtual-drive/partnerships-manager" element={<PartnershipsManager />} />
                   <Route path="/virtual-drive/appointment-setter" element={<AppointmentSetter />} />
+                  <Route path="/virtual-drive/sr-software-engineer" element={<SrFullStackDeveloper />} />
                   <Route path="/virtual-drive/sr-full-stack-developer" element={<SrFullStackDeveloper />} />
                   <Route path="/virtual-drive/jr-web-developer" element={<JrWebDeveloper />} />
                   <Route path="/virtual-drive/content-pr-manager" element={<ContentPRManager />} />
                   <Route path="/virtual-drive/event-pr-manager" element={<EventPRManager />} />
                   <Route path="/virtual-drive/marketing-ops-crm-manager" element={<MarketingOpsCRMManager />} />
+                  <Route path="/virtual-drive/content-writer-english" element={<ContentWriterEnglish />} />
+                  <Route path="/virtual-drive/content-writer-arabic" element={<ContentWriterArabic />} />
                 </Routes>
               </main>
               <Footer />

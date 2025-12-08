@@ -88,7 +88,7 @@ export default function EventPRManager() {
               <AnimatedSection animation="fade-up">
                 <Link to="/virtual-drive" className="inline-flex items-center gap-2 text-rose-600 hover:text-rose-700 font-semibold mb-6 sm:mb-8 group text-sm sm:text-base">
                   <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
-                  Back to Virtual Talent Drive
+                  Back to Endgame Hiring 2025
                 </Link>
 
                 <div className="mb-6 sm:mb-8">
@@ -96,7 +96,7 @@ export default function EventPRManager() {
                     📣 Marketing
                   </div>
                   <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">
-                    Field Marketing Manager
+                    Field Marketing Manager (Arabic is a must)
                   </h1>
                   <div className="flex flex-wrap gap-3 sm:gap-4 text-slate-600 font-medium text-sm sm:text-base">
                     <div className="flex items-center gap-2">
@@ -123,11 +123,11 @@ export default function EventPRManager() {
                       <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900">Virtual Drive Schedule</h3>
                     </div>
                     <div className="space-y-2 text-slate-700 font-medium text-sm sm:text-base">
-                      <p><strong>Apply by:</strong> Friday the 5th Dec (applications only)</p>
-                      <p><strong>Screening & HR:</strong> Saturday, 6th Dec (virtual)</p>
-                      <p><strong>Technical:</strong> Sunday, 7th Dec (virtual)</p>
+                      <p><strong>Apply by:</strong> Friday, 19th Dec 2025 (applications only)</p>
+                      <p><strong>Screening & HR:</strong> Saturday, 20th Dec 2025 (virtual)</p>
+                      <p><strong>Technical:</strong> Sunday, 21st Dec 2025 (virtual)</p>
                       <p><strong>Final Round:</strong> Early next week with leadership</p>
-                      <p className="text-rose-600 font-bold mt-3 sm:mt-4">Only candidates who apply before Friday the 5th Dec will be scheduled.</p>
+                      <p className="text-rose-600 font-bold mt-3 sm:mt-4">Only candidates who apply before Friday, 19th Dec 2025 will be scheduled.</p>
                     </div>
                   </div>
                 </Card>
@@ -138,7 +138,7 @@ export default function EventPRManager() {
                   <div className="p-4 sm:p-6 md:p-8">
                     <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3 sm:mb-4">About the Role</h2>
                     <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-3 sm:mb-4">
-                      Lead field marketing programs, events, and ecosystem visibility across the region. You’ll design experiences that attract founders, partners, and media, showcasing Finanshels as the category leader.
+                      Lead field marketing programs, events, and ecosystem visibility across the region with Arabic-first storytelling. You’ll design experiences that attract founders, partners, and media, showcasing Finanshels as the category leader.
                     </p>
                     <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                       Ideal for operators who mix creative storytelling with flawless execution and strong media networks.
@@ -161,7 +161,7 @@ export default function EventPRManager() {
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Drive regional narratives; manage media relations and press releases.</span>
+                        <span className="text-sm sm:text-base text-slate-700">Drive regional narratives in Arabic and English; manage media relations and press releases.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
@@ -184,6 +184,10 @@ export default function EventPRManager() {
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-rose-600 flex-shrink-0 mt-1" size={18} />
                         <span className="text-sm sm:text-base text-slate-700">4+ years in field marketing/events, preferably in tech or startups.</span>
+                      </li>
+                      <li className="flex items-start gap-2 sm:gap-3">
+                        <CheckCircle className="text-rose-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">Fluent Arabic (written/spoken) with strong English for bilingual campaigns.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-rose-600 flex-shrink-0 mt-1" size={18} />
@@ -239,7 +243,7 @@ export default function EventPRManager() {
                       <p className="text-rose-50 text-xs sm:text-sm">Field Marketing Manager</p>
                     </div>
                     <div className="p-4 sm:p-6 space-y-3">
-                      <p className="text-sm text-slate-600">Submit your application before Friday the 5th Dec to get scheduled for the virtual rounds.</p>
+                      <p className="text-sm text-slate-600">Submit your application before Friday, 19th Dec 2025 to get scheduled for the virtual rounds.</p>
                       <div
                         id="zf_div_Jof38UFDuDoasJIhr-SWliKLcP8VX1v-1UzZPnOXxPk"
                         className="w-full"

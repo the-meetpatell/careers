@@ -3,7 +3,7 @@ import { Linkedin, Twitter, Mail, Instagram, Youtube } from 'lucide-react'
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-900 text-white py-20 px-6 sm:px-8 lg:px-12 border-t border-slate-800">
+    <footer className="bg-white text-slate-900 py-20 px-6 sm:px-8 lg:px-12 border-t border-slate-200">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           {/* Brand */}
@@ -15,7 +15,7 @@ export default function Footer() {
                 className="h-10 w-auto"
               />
             </div>
-            <p className="text-slate-300 text-lg leading-relaxed max-w-md font-medium mb-8">
+            <p className="text-slate-700 text-lg leading-relaxed max-w-md font-medium mb-8">
               Empowering startups across MENA with world-class financial operations, 
               accounting, and tax services. Founded in 2022, trusted by 5000+ SMBs.
             </p>
@@ -24,7 +24,7 @@ export default function Footer() {
                 href="https://linkedin.com/company/finanshels"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 rounded-xl bg-white/5 hover:bg-white/10 transition-all duration-300 hover:scale-110 hover:shadow-lg"
+                className="p-3 rounded-xl bg-slate-100 hover:bg-slate-200 transition-all duration-300 hover:scale-110 hover:shadow-lg text-slate-900"
               >
                 <Linkedin size={22} />
               </a>
@@ -32,7 +32,7 @@ export default function Footer() {
                 href="https://twitter.com/finanshels"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 rounded-xl bg-white/5 hover:bg-white/10 transition-all duration-300 hover:scale-110 hover:shadow-lg"
+                className="p-3 rounded-xl bg-slate-100 hover:bg-slate-200 transition-all duration-300 hover:scale-110 hover:shadow-lg text-slate-900"
               >
                 <Twitter size={22} />
               </a>
@@ -40,7 +40,7 @@ export default function Footer() {
                 href="https://www.instagram.com/finanshels"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 rounded-xl bg-white/5 hover:bg-white/10 transition-all duration-300 hover:scale-110 hover:shadow-lg"
+                className="p-3 rounded-xl bg-slate-100 hover:bg-slate-200 transition-all duration-300 hover:scale-110 hover:shadow-lg text-slate-900"
               >
                 <Instagram size={22} />
               </a>
@@ -48,13 +48,13 @@ export default function Footer() {
                 href="https://www.youtube.com/@finanshelshq"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 rounded-xl bg-white/5 hover:bg-white/10 transition-all duration-300 hover:scale-110 hover:shadow-lg"
+                className="p-3 rounded-xl bg-slate-100 hover:bg-slate-200 transition-all duration-300 hover:scale-110 hover:shadow-lg text-slate-900"
               >
                 <Youtube size={22} />
               </a>
               <a
                 href="mailto:talents@finanshels.com"
-                className="p-3 rounded-xl bg-white/5 hover:bg-white/10 transition-all duration-300 hover:scale-110 hover:shadow-lg"
+                className="p-3 rounded-xl bg-slate-100 hover:bg-slate-200 transition-all duration-300 hover:scale-110 hover:shadow-lg text-slate-900"
               >
                 <Mail size={22} />
               </a>
@@ -63,20 +63,20 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-bold text-xl mb-6 text-white">Quick Links</h3>
+            <h3 className="font-bold text-xl mb-6 text-slate-900">Quick Links</h3>
             <ul className="space-y-4">
               <li>
-                <Link to="/" className="text-slate-300 hover:text-white transition-colors font-medium text-base">
+                <Link to="/" className="text-slate-700 hover:text-slate-900 transition-colors font-medium text-base">
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/jobs" className="text-slate-300 hover:text-white transition-colors font-medium text-base">
+                <Link to="/jobs" className="text-slate-700 hover:text-slate-900 transition-colors font-medium text-base">
                   Open Roles
                 </Link>
               </li>
               <li>
-                <Link to="/life" className="text-slate-300 hover:text-white transition-colors font-medium text-base">
+                <Link to="/life" className="text-slate-700 hover:text-slate-900 transition-colors font-medium text-base">
                   Life at Finanshels
                 </Link>
               </li>
@@ -85,7 +85,7 @@ export default function Footer() {
                   href="https://finanshels.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-slate-300 hover:text-white transition-colors font-medium text-base"
+                  className="text-slate-700 hover:text-slate-900 transition-colors font-medium text-base"
                 >
                   Main Website
                 </a>
@@ -95,10 +95,10 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="font-bold text-xl mb-6 text-white">Get in Touch</h3>
-            <ul className="space-y-4 text-slate-300 font-medium text-base">
+            <h3 className="font-bold text-xl mb-6 text-slate-900">Get in Touch</h3>
+            <ul className="space-y-4 text-slate-700 font-medium text-base">
               <li>
-                <a href="mailto:careers@finanshels.com" className="hover:text-white transition-colors">
+                <a href="mailto:careers@finanshels.com" className="hover:text-slate-900 transition-colors">
                   talents@finanshels.com
                 </a>
               </li>
@@ -109,7 +109,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-slate-800 pt-10 text-center text-slate-400 text-base font-medium">
+        <div className="border-t border-slate-200 pt-10 text-center text-slate-600 text-base font-medium">
           <p>© 2025 Finanshels. All rights reserved. Backed by MBRIF, in5 Tech, Kube VC.</p>
         </div>
       </div>
