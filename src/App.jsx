@@ -16,6 +16,12 @@ import EventPRManager from './pages/virtualDrive/EventPRManager'
 import MarketingOpsCRMManager from './pages/virtualDrive/MarketingOpsCRMManager'
 import ContentWriterEnglish from './pages/virtualDrive/ContentWriterEnglish'
 import ContentWriterArabic from './pages/virtualDrive/ContentWriterArabic'
+import FinancialController from './pages/virtualDrive/FinancialController'
+import FinOpsAccountManager from './pages/virtualDrive/FinOpsAccountManager'
+import FinOpsTeamLead from './pages/virtualDrive/FinOpsTeamLead'
+import SeniorAccountingAssociate from './pages/virtualDrive/SeniorAccountingAssociate'
+import JuniorAccountingAssociate from './pages/virtualDrive/JuniorAccountingAssociate'
+import AccountingFresher from './pages/virtualDrive/AccountingFresher'
 import Onboarding from './pages/Onboarding'
 
 function App() {
@@ -45,6 +51,12 @@ function App() {
                   <Route path="/virtual-drive/marketing-ops-crm-manager" element={<MarketingOpsCRMManager />} />
                   <Route path="/virtual-drive/content-writer-english" element={<ContentWriterEnglish />} />
                   <Route path="/virtual-drive/content-writer-arabic" element={<ContentWriterArabic />} />
+                  <Route path="/virtual-drive/financial-controller" element={<FinancialController />} />
+                  <Route path="/virtual-drive/finops-account-manager" element={<FinOpsAccountManager />} />
+                  <Route path="/virtual-drive/finops-team-lead" element={<FinOpsTeamLead />} />
+                  <Route path="/virtual-drive/senior-accounting-associate" element={<SeniorAccountingAssociate />} />
+                  <Route path="/virtual-drive/junior-accounting-associate" element={<JuniorAccountingAssociate />} />
+                  <Route path="/virtual-drive/accounting-fresher" element={<AccountingFresher />} />
                 </Routes>
               </main>
               <Footer />

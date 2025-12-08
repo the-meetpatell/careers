@@ -36,24 +36,24 @@ export default function Home() {
       textAccent: 'text-purple-600',
     },
     {
-      title: 'Content Writer (English)',
-      tag: 'Marketing • Remote',
-      description: 'Own crisp English storytelling across product, web, and growth campaigns.',
-      to: '/virtual-drive/content-writer-english',
-      accentLight: 'from-sky-400/10 to-indigo-400/10',
-      iconBg: 'from-sky-500 to-indigo-500',
-      badgeBg: 'bg-sky-100 text-sky-700',
-      textAccent: 'text-sky-600',
+      title: 'Financial Controller',
+      tag: 'FinOps • UAE (Dubai) / Remote',
+      description: 'Own pod-level controllership, reviews, and quality for high-growth startup clients.',
+      to: '/virtual-drive/financial-controller',
+      accentLight: 'from-indigo-400/10 to-blue-400/10',
+      iconBg: 'from-indigo-600 to-blue-600',
+      badgeBg: 'bg-indigo-100 text-indigo-700',
+      textAccent: 'text-indigo-600',
     },
     {
-      title: 'Field Marketing Manager (Arabic is a must)',
-      tag: 'Marketing • Dubai',
-      description: 'Lead Arabic-first field marketing programs, events, and ecosystem visibility.',
-      to: '/virtual-drive/event-pr-manager',
-      accentLight: 'from-rose-400/10 to-orange-400/10',
-      iconBg: 'from-rose-500 to-orange-500',
-      badgeBg: 'bg-rose-100 text-rose-700',
-      textAccent: 'text-rose-600',
+      title: 'Appointment Setter',
+      tag: 'Revenue • Remote',
+      description: 'Qualify and schedule high-intent meetings for the partnerships org.',
+      to: '/virtual-drive/appointment-setter',
+      accentLight: 'from-emerald-400/10 to-teal-400/10',
+      iconBg: 'from-emerald-500 to-teal-600',
+      badgeBg: 'bg-emerald-100 text-emerald-700',
+      textAccent: 'text-emerald-600',
     },
   ]
 
@@ -199,6 +199,11 @@ export default function Home() {
                 Trusted by Thousands
               </div>
             </AnimatedSection>
+            <AnimatedSection delay={80}>
+              <p className="text-base sm:text-lg text-slate-600 font-medium">
+                Serving 5,000+ clients with a 150+ member team across MENA.
+              </p>
+            </AnimatedSection>
             <AnimatedSection delay={100}>
               <h2 className="text-5xl sm:text-6xl font-extrabold text-slate-900 mb-6 tracking-tighter">
                 Building the Future of{' '}
@@ -223,7 +228,7 @@ export default function Home() {
                       <Users className="text-white" size={24} />
                     </div>
                     <div className="text-4xl font-extrabold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent mb-2">
-                      <AnimatedCounter end={135} duration={2000} />+
+                      <AnimatedCounter end={150} duration={2000} />+
                     </div>
                     <div className="text-slate-700 font-bold text-sm">Team Members</div>
                   </div>
