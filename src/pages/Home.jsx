@@ -463,16 +463,16 @@ export default function Home() {
                 {/* Header */}
                 <div className="text-center mb-8">
                   <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-100 border border-emerald-200 text-emerald-800 text-sm font-bold mb-4">
-                    <MapPin size={16} />
-                    <span>FinOps Career Drive</span>
-                  </div>
-                  <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-3 tracking-tight">
-                    Dedicated FinOps drive. Virtual rounds on Fri 12th & Sat 13th.
-                  </h2>
-              <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto font-medium">
-                Focused hiring for FinOps pods: group discussion on Friday (1 hour), technical on Saturday, finals early next week. All conversations are scheduled.
+                <MapPin size={16} />
+                <span>FinOps Career Drive</span>
+              </div>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-3 tracking-tight">
+                FinOps Career Drive — virtual weekend rounds.
+              </h2>
+          <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto font-medium">
+                All conversations are scheduled—no walk-ins. Apply now to join pod-ready FinOps roles across controllership, delivery, and accounting.
               </p>
-                </div>
+            </div>
 
                 {/* Quick Info Bar */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
@@ -482,7 +482,7 @@ export default function Home() {
                     </div>
                     <div>
                       <div className="text-xs text-slate-600 font-semibold uppercase tracking-wide">Group Discussion</div>
-                      <div className="font-bold text-slate-900">Friday, 12th</div>
+                      <div className="font-bold text-slate-900">Sat 13th • 12:00 PM DXB / 1:30 PM IST</div>
                       <div className="text-slate-600 text-xs">1-hour virtual cohort discussion</div>
                     </div>
                   </div>
@@ -492,8 +492,8 @@ export default function Home() {
                     </div>
                     <div>
                       <div className="text-xs text-slate-600 font-semibold uppercase tracking-wide">Technical Round</div>
-                      <div className="font-bold text-slate-900">Saturday, 13th</div>
-                      <div className="text-slate-600 text-xs">Role-specific deep dives with FinOps leaders</div>
+                      <div className="font-bold text-slate-900">Saturday 13th & Sunday</div>
+                      <div className="text-slate-600 text-xs">Shortlisted from GD; rounds right after and Sunday follow-ups</div>
                     </div>
                   </div>
                   <div className="flex items-center gap-3 p-4 rounded-xl bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-100">
@@ -538,15 +538,15 @@ export default function Home() {
                                 </div>
                               </div>
                               <p className="text-slate-600 text-sm mb-4 leading-relaxed">{role.description}</p>
-                              <div className="flex items-center justify-between">
-                                <div className="flex items-center gap-2 text-slate-700">
-                                  <Users size={16} className={role.textAccent} />
-                                  <span className="text-sm font-semibold">Slots for Fri 12th & Sat 13th</span>
-                                </div>
-                                <div className="flex items-center gap-1 text-indigo-600 font-bold text-sm group-hover:gap-2 transition-all">
-                                  View details
-                                  <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-                                </div>
+                                <div className="flex items-center justify-between">
+                                  <div className="flex items-center gap-2 text-slate-700">
+                                    <Users size={16} className={role.textAccent} />
+                                    <span className="text-sm font-semibold">Slots for Sat 13th GD & weekend tech</span>
+                                  </div>
+                                  <div className="flex items-center gap-1 text-indigo-600 font-bold text-sm group-hover:gap-2 transition-all">
+                                    View details
+                                    <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                                  </div>
                               </div>
                             </div>
                           </div>

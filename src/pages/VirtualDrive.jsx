@@ -161,7 +161,7 @@ export default function VirtualDrive() {
                 to="/finops-career-drive"
                 className="mt-6 inline-flex items-center gap-2 px-4 py-3 rounded-xl bg-gradient-to-r from-emerald-50 to-teal-50 text-emerald-800 font-semibold border border-emerald-100 shadow-sm hover:shadow-md transition-all"
               >
-                FinOps roles? Visit the FinOps Career Drive (12th & 13th)
+                FinOps roles? Visit the FinOps Career Drive (13th GD + weekend tech)
                 <ArrowRight size={18} className="text-emerald-700" />
               </Link>
             </AnimatedSection>
@@ -249,7 +249,7 @@ export default function VirtualDrive() {
             <p className="text-lg text-slate-600 max-w-3xl">Pick the role that fits you best in our final hiring drive of the year. Apply before Friday, 19th Dec 2025 to lock your slot for the weekend interviews.</p>
             <div className="mt-3 inline-flex items-center gap-2 px-3 py-2 rounded-full bg-emerald-50 text-emerald-800 text-xs font-semibold border border-emerald-100">
               <Link to="/finops-career-drive" className="inline-flex items-center gap-2 hover:text-emerald-900">
-                FinOps roles have moved to the FinOps Career Drive (12th & 13th)
+                FinOps roles have moved to the FinOps Career Drive (13th GD + weekend tech)
                 <ArrowRight size={14} />
               </Link>
             </div>

@@ -95,10 +95,10 @@ export default function JuniorAccountingAssociate() {
                       <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900">FinOps Career Drive Schedule</h3>
                     </div>
                     <div className="space-y-2 text-slate-700 font-medium text-sm sm:text-base">
-                      <p><strong>Friday, 12th:</strong> 1-hour group discussion (virtual)</p>
-                      <p><strong>Saturday, 13th:</strong> Technical round (virtual)</p>
+                      <p><strong>Saturday, 13th:</strong> 1-hour group discussion (virtual) — 12:00 PM (Dubai) / 1:30 PM (IST)</p>
+                      <p><strong>Saturday 13th & Sunday:</strong> Technical round (virtual) for shortlisted candidates right after the GD and on Sunday.</p>
                       <p><strong>Final Round:</strong> Early next week with leadership</p>
-                      <p className="text-sky-700 font-bold mt-3 sm:mt-4">Submit now to get scheduled for the 12th & 13th sessions.</p>
+                      <p className="text-sky-700 font-bold mt-3 sm:mt-4">Submit now to get scheduled for the 13th GD and weekend technical rounds.</p>
                     </div>
                   </div>
                 </Card>
@@ -212,7 +212,7 @@ export default function JuniorAccountingAssociate() {
                       <p className="text-sky-50 text-xs sm:text-sm">Junior Accounting Associate</p>
                     </div>
                     <div className="p-4 sm:p-6 space-y-3">
-                      <p className="text-sm text-slate-600">Submit your application to get scheduled for the 12th & 13th virtual rounds.</p>
+                      <p className="text-sm text-slate-600">Submit your application to get scheduled for the 13th GD and weekend technical rounds.</p>
                       <div
                         id="zf_div_eJHiYL5szMR2i0ahFh4Awh3AeLaAlbtX3PiC2UjpGWU"
                         className="w-full"

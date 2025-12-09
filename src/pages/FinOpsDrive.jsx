@@ -5,8 +5,8 @@ import { Button } from '../components/ui/Button'
 import { Card } from '../components/ui/Card'
 
 const PROCESS_STEPS = [
-  { title: 'Friday, 12th — 1-hour group discussion', detail: '5:30 – 6:30pm (Asia/Dubai) via Google Meet. Virtual group discussion focused on how you operate within pods and handle live scenarios.' },
-  { title: 'Saturday, 13th — Technical round', detail: 'Hands-on discussions with FinOps leaders to test accounting depth, reconciliations, and reporting rigor.' },
+  { title: 'Saturday, 13th — 1-hour group discussion', detail: '12:00 PM (Dubai) / 1:30 PM (IST) via Google Meet. Virtual group discussion focused on how you operate within pods and handle live scenarios.' },
+  { title: 'Saturday 13th & Sunday — Technical round', detail: 'Hands-on discussions with FinOps leaders for shortlisted candidates right after the GD on Saturday, with follow-on slots on Sunday.' },
   { title: 'Final round — Early next week', detail: 'Leadership conversation for shortlisted candidates before offers are rolled out.' },
 ]
 
@@ -36,20 +36,12 @@ const FINOPS_ROLES = [
     chipBg: 'bg-amber-100 text-amber-700',
   },
   {
-    title: 'Senior Accounting Associate',
+    title: 'Accounting Advisor',
     tag: 'FinOps • Remote',
     description: 'Handle complex reconciliations, reporting packs, and support month-end closes.',
     to: '/virtual-drive/senior-accounting-associate',
     accent: 'from-purple-500 to-pink-500',
     chipBg: 'bg-purple-100 text-purple-700',
-  },
-  {
-    title: 'Junior Accounting Associate',
-    tag: 'FinOps • Remote',
-    description: 'Execute daily bookkeeping, AP/AR hygiene, and assist in close activities.',
-    to: '/virtual-drive/junior-accounting-associate',
-    accent: 'from-sky-500 to-cyan-500',
-    chipBg: 'bg-sky-100 text-sky-700',
   },
   {
     title: 'Accounting Fresher',
@@ -76,10 +68,10 @@ export default function FinOpsDrive() {
 
             <AnimatedSection animation="fade-up" delay={100}>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight tracking-tight mb-4">
-                Dedicated hiring for FinOps. Virtual rounds on 12th & 13th.
+                Dedicated FinOps drive for pod-ready talent.
               </h1>
               <p className="text-lg sm:text-xl text-slate-600 max-w-3xl font-medium">
-                Join our FinOps pods across controllership, delivery, and accounting excellence. All conversations are scheduled—no walk-ins.
+                Join our FinOps pods across controllership, delivery, and accounting excellence. 100% virtual with scheduled slots only—no walk-ins.
               </p>
             </AnimatedSection>
 
@@ -87,11 +79,11 @@ export default function FinOpsDrive() {
               <div className="mt-8 flex flex-wrap gap-3">
                 <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-indigo-50 text-indigo-700 text-sm font-semibold border border-indigo-100">
                   <Calendar size={16} />
-                  Friday 12th • Group discussion (1 hour)
+                  Saturday 13th Dec • GD at 12:00 PM DXB / 1:30 PM IST
                 </div>
                 <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-amber-50 text-amber-700 text-sm font-semibold border border-amber-100">
                   <Clock size={16} />
-                  Saturday 13th • Technical round
+                  Sat 13th & Sun • Technical round after GD
                 </div>
                 <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-emerald-50 text-emerald-700 text-sm font-semibold border border-emerald-100">
                   <Laptop2 size={16} />
@@ -117,7 +109,7 @@ export default function FinOpsDrive() {
                   <ArrowRight size={18} />
                 </Link>
               </div>
-              <p className="text-sm text-slate-500 mt-3">Submit now to be scheduled for the 12th & 13th. Finals happen early the following week.</p>
+              <p className="text-sm text-slate-500 mt-3">Submit now to be scheduled for the 13th Dec. Finals happen early the following week.</p>
             </AnimatedSection>
           </div>
 
@@ -135,8 +127,8 @@ export default function FinOpsDrive() {
                 <div className="grid sm:grid-cols-2 gap-4 pt-6">
                   <div className="p-4 rounded-xl bg-gradient-to-br from-indigo-50 to-purple-50 border border-indigo-100">
                     <div className="text-xs font-semibold text-indigo-700 uppercase mb-2">Timeline</div>
-                    <div className="font-extrabold text-slate-900 text-xl">Fri 12th & Sat 13th</div>
-                    <div className="text-slate-600 text-sm">Group discussion on Friday, technical on Saturday, finals early next week.</div>
+                    <div className="font-extrabold text-slate-900 text-xl">Sat 13th December</div>
+                    <div className="text-slate-600 text-sm">GD at 12:00 PM Dubai (1:30 PM IST) with technical rounds right after on Saturday and follow-ups on Sunday.</div>
                   </div>
                   <div className="p-4 rounded-xl bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-100">
                     <div className="text-xs font-semibold text-emerald-700 uppercase mb-2">Format</div>
@@ -186,7 +178,7 @@ export default function FinOpsDrive() {
           <AnimatedSection animation="fade-up" delay={350}>
             <div className="mt-6 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 text-white text-sm font-semibold">
               <Users size={16} />
-              Group discussion on Friday (1 hour), technical on Saturday, finals early next week.
+              Group discussion Saturday 12:00 PM Dubai / 1:30 PM IST, technical rounds Sat post-GD and Sunday, finals early next week.
             </div>
           </AnimatedSection>
         </div>
@@ -200,7 +192,7 @@ export default function FinOpsDrive() {
               <span className="text-sm font-bold text-emerald-700 uppercase tracking-wide">FinOps hiring • UAE (Dubai) & Remote</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">Roles in the FinOps Career Drive</h2>
-            <p className="text-lg text-slate-600 max-w-3xl">Pick the pod and level that fits you best. Apply now so we can slot you into the 12th & 13th sessions.</p>
+            <p className="text-lg text-slate-600 max-w-3xl">Pick the pod and level that fits you best. Apply now so we can slot you into the 13th GD and weekend technical rounds.</p>
           </AnimatedSection>
 
           <div className="grid md:grid-cols-2 gap-6 mt-8">
