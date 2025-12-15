@@ -8,23 +8,15 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   const pathname = location.pathname
-  const isFinOpsPage =
-    pathname.startsWith('/finops-career-drive') ||
-    /^\/virtual-drive\/(finops-.*|financial-controller|senior-accounting-associate|junior-accounting-associate|accounting-fresher)$/.test(
-      pathname
-    )
-
   const isActive = (path) => {
     if (path === '/') return pathname === '/'
-    if (path === '/finops-career-drive') return isFinOpsPage
-    if (path === '/virtual-drive') return pathname.startsWith('/virtual-drive') && !isFinOpsPage
+    if (path === '/virtual-drive') return pathname.startsWith('/virtual-drive')
     return pathname.startsWith(path)
   }
 
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'Jobs', path: '/jobs' },
-    { name: 'FinOps Career Drive', path: '/finops-career-drive' },
     { name: 'Endgame Hiring 2025', path: '/virtual-drive' },
     { name: 'Life at Finanshels', path: '/life' },
   ]

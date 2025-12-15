@@ -6,7 +6,6 @@ import Jobs from './pages/Jobs'
 import JobDetail from './pages/JobDetail'
 import Life from './pages/Life'
 import VirtualDrive from './pages/VirtualDrive'
-import FinOpsDrive from './pages/FinOpsDrive'
 import FieldSalesExecutive from './pages/virtualDrive/FieldSalesExecutive'
 import PartnershipsManager from './pages/virtualDrive/PartnershipsManager'
 import AppointmentSetter from './pages/virtualDrive/AppointmentSetter'
@@ -40,7 +39,6 @@ function App() {
                   <Route path="/jobs" element={<Jobs />} />
                   <Route path="/jobs/:id" element={<JobDetail />} />
                   <Route path="/life" element={<Life />} />
-                  <Route path="/finops-career-drive" element={<FinOpsDrive />} />
                   <Route path="/virtual-drive" element={<VirtualDrive />} />
                   <Route path="/virtual-drive/field-sales-executive" element={<FieldSalesExecutive />} />
                   <Route path="/virtual-drive/partnerships-manager" element={<PartnershipsManager />} />

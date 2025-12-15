@@ -58,9 +58,9 @@ export default function FinancialController() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
             <div className="lg:col-span-2">
               <AnimatedSection animation="fade-up">
-                <Link to="/finops-career-drive" className="inline-flex items-center gap-2 text-indigo-600 hover:text-indigo-700 font-semibold mb-6 sm:mb-8 group text-sm sm:text-base">
+                <Link to="/virtual-drive" className="inline-flex items-center gap-2 text-indigo-600 hover:text-indigo-700 font-semibold mb-6 sm:mb-8 group text-sm sm:text-base">
                   <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
-                  Back to FinOps Career Drive
+                  Back to Endgame Hiring 2025
                 </Link>
 
                 <div className="mb-6 sm:mb-8">
@@ -92,13 +92,13 @@ export default function FinancialController() {
                   <div className="p-4 sm:p-6 md:p-8">
                     <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
                       <Calendar className="text-indigo-600 flex-shrink-0" size={24} />
-                      <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900">FinOps Career Drive Schedule</h3>
+                      <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900">Virtual interview process</h3>
                     </div>
                     <div className="space-y-2 text-slate-700 font-medium text-sm sm:text-base">
-                      <p><strong>Saturday, 13th:</strong> 1-hour group discussion (virtual) — 12:00 PM (Dubai) / 1:30 PM (IST)</p>
-                      <p><strong>Saturday 13th & Sunday:</strong> Technical round (virtual) for shortlisted candidates right after the GD and on Sunday.</p>
-                      <p><strong>Final Round:</strong> Early next week with leadership</p>
-                      <p className="text-indigo-700 font-bold mt-3 sm:mt-4">Submit now to get scheduled for the 13th GD and weekend technical rounds.</p>
+                      <p><strong>Step 1:</strong> Screening + pod-fit conversation (virtual).</p>
+                      <p><strong>Step 2:</strong> Technical round with FinOps leads (virtual).</p>
+                      <p><strong>Final Round:</strong> Leadership discussion before offer.</p>
+                      <p className="text-indigo-700 font-bold mt-3 sm:mt-4">All interviews are scheduled—no walk-ins.</p>
                     </div>
                   </div>
                 </Card>

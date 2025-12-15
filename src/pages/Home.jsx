@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowRight, Users, MapPin, Zap, Star, Award, TrendingUp, Target, Sparkles, Building, CheckCircle, Calendar, Clock, CheckCircle2, Briefcase } from 'lucide-react'
+import { ArrowRight, Users, Zap, Star, Award, TrendingUp, Sparkles, CheckCircle, Building, Calendar, Clock, Laptop2 } from 'lucide-react'
 import { Button } from '../components/ui/Button'
 import { Card } from '../components/ui/Card'
 import StatCard from '../components/StatCard'
@@ -14,48 +14,6 @@ import { TEAMS } from '../data/jobs'
 import { LEADERSHIP_TEAM, TESTIMONIALS, COMPANY_VALUES } from '../data/team'
 
 export default function Home() {
-  const DRIVE_ROLES = [
-    {
-      title: 'Financial Controller',
-      tag: 'FinOps • UAE (Dubai) / Remote',
-      description: 'Own controllership, reviews, and pod-level quality for high-growth startup clients.',
-      to: '/virtual-drive/financial-controller',
-      accentLight: 'from-indigo-400/10 to-blue-400/10',
-      iconBg: 'from-indigo-600 to-blue-600',
-      badgeBg: 'bg-indigo-100 text-indigo-700',
-      textAccent: 'text-indigo-600',
-    },
-    {
-      title: 'Account Manager - FinOps',
-      tag: 'FinOps • UAE (Dubai) / Remote',
-      description: 'Lead client pods, manage SLAs, and partner with controllers on escalations.',
-      to: '/virtual-drive/finops-account-manager',
-      accentLight: 'from-emerald-400/10 to-teal-400/10',
-      iconBg: 'from-emerald-500 to-teal-600',
-      badgeBg: 'bg-emerald-100 text-emerald-700',
-      textAccent: 'text-emerald-600',
-    },
-    {
-      title: 'Team Lead - FinOps',
-      tag: 'FinOps • UAE (Dubai) / Remote',
-      description: 'Run daily execution for pods; coach Sr/Jr associates to deliver error-free work.',
-      to: '/virtual-drive/finops-team-lead',
-      accentLight: 'from-amber-400/10 to-orange-400/10',
-      iconBg: 'from-amber-500 to-orange-500',
-      badgeBg: 'bg-amber-100 text-amber-700',
-      textAccent: 'text-amber-600',
-    },
-    {
-      title: 'Senior Accounting Associate',
-      tag: 'FinOps • Remote',
-      description: 'Handle complex reconciliations, reporting packs, and month-end support.',
-      to: '/virtual-drive/senior-accounting-associate',
-      accentLight: 'from-purple-400/10 to-pink-400/10',
-      iconBg: 'from-purple-600 to-pink-500',
-      badgeBg: 'bg-purple-100 text-purple-700',
-      textAccent: 'text-purple-600',
-    },
-  ]
 
   useEffect(() => {
     const container = document.getElementById("zf_div_jQBxaOyXvB5vbVEwHYzgDthNbYVadDVpRDKRFkkD_Mo")
@@ -184,6 +142,84 @@ export default function Home() {
                 </Link>
               </div>
             </AnimatedSection>
+          </div>
+        </div>
+      </section>
+
+      {/* Endgame Hiring Feature */}
+      <section className="py-12 px-6 sm:px-8 lg:px-12 bg-gradient-to-b from-white via-indigo-50/50 to-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-10 items-center">
+            <div>
+              <AnimatedSection animation="fade-up">
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-700 text-sm font-semibold mb-4">
+                  <Sparkles size={16} />
+                  Endgame Hiring 2025
+                </div>
+              </AnimatedSection>
+              <AnimatedSection animation="fade-up" delay={80}>
+                <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-3 tracking-tight">
+                  Final virtual drive of the year — application only.
+                </h2>
+                <p className="text-lg text-slate-600 max-w-2xl font-medium">
+                  Apply by Friday, 19th Dec 2025 to be scheduled for screening on Saturday 20th and technical on Sunday 21st. No walk-ins.
+                </p>
+              </AnimatedSection>
+              <AnimatedSection animation="fade-up" delay={160}>
+                <div className="mt-6 flex flex-wrap gap-3">
+                  <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-indigo-50 text-indigo-700 text-sm font-semibold border border-indigo-100">
+                    <Calendar size={16} />
+                    Apply by Fri, 19 Dec
+                  </div>
+                  <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-blue-50 text-blue-700 text-sm font-semibold border border-blue-100">
+                    <Clock size={16} />
+                    Screening 20th • Technical 21st
+                  </div>
+                  <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-emerald-50 text-emerald-700 text-sm font-semibold border border-emerald-100">
+                    <Laptop2 size={16} />
+                    100% virtual
+                  </div>
+                </div>
+                <div className="mt-8 flex flex-wrap gap-4">
+                  <Link to="/virtual-drive">
+                    <Button size="lg" className="group h-12 px-6 shadow-lg shadow-indigo-500/20">
+                      View drive details
+                      <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={18} />
+                    </Button>
+                  </Link>
+                  <Link to="/virtual-drive#roles" className="inline-flex items-center text-indigo-700 font-semibold hover:text-indigo-800">
+                    See roles & apply
+                    <ArrowRight className="ml-2" size={16} />
+                  </Link>
+                </div>
+              </AnimatedSection>
+            </div>
+            <div>
+              <AnimatedSection animation="fade-left" delay={120}>
+                <div className="grid sm:grid-cols-2 gap-4">
+                  <Card className="p-5 bg-white border-2 border-indigo-100 shadow-sm">
+                    <div className="text-xs font-semibold text-indigo-700 uppercase mb-2">Timeline</div>
+                    <div className="text-xl font-extrabold text-slate-900">20–21 Dec 2025</div>
+                    <p className="text-sm text-slate-600 mt-1">Screening on Saturday, technical on Sunday, finals the following week.</p>
+                  </Card>
+                  <Card className="p-5 bg-white border-2 border-blue-100 shadow-sm">
+                    <div className="text-xs font-semibold text-blue-700 uppercase mb-2">Format</div>
+                    <div className="text-xl font-extrabold text-slate-900">Application only</div>
+                    <p className="text-sm text-slate-600 mt-1">Pre-registered candidates only; every slot is scheduled.</p>
+                  </Card>
+                  <Card className="p-5 bg-white border-2 border-emerald-100 shadow-sm">
+                    <div className="text-xs font-semibold text-emerald-700 uppercase mb-2">Locations</div>
+                    <div className="text-xl font-extrabold text-slate-900">Dubai & Remote</div>
+                    <p className="text-sm text-slate-600 mt-1">UAE + global applicants welcome for virtual interviews.</p>
+                  </Card>
+                  <Card className="p-5 bg-white border-2 border-amber-100 shadow-sm">
+                    <div className="text-xs font-semibold text-amber-700 uppercase mb-2">Who we want</div>
+                    <div className="text-xl font-extrabold text-slate-900">Top performers</div>
+                    <p className="text-sm text-slate-600 mt-1">Outcome-owners across sales, marketing, and engineering.</p>
+                  </Card>
+                </div>
+              </AnimatedSection>
+            </div>
           </div>
         </div>
       </section>
@@ -445,129 +481,6 @@ export default function Home() {
             <div className="absolute left-0 top-0 bottom-8 w-20 bg-gradient-to-r from-slate-50 to-transparent pointer-events-none"></div>
             <div className="absolute right-0 top-0 bottom-8 w-20 bg-gradient-to-l from-slate-50 to-transparent pointer-events-none"></div>
           </div>
-        </div>
-      </section>
-
-      {/* FinOps Career Drive Banner */}
-      <section className="py-12 px-6 sm:px-8 lg:px-12 bg-slate-900 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-0 left-1/4 w-96 h-96 bg-amber-500/20 rounded-full blur-3xl animate-float"></div>
-          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
-        </div>
-        
-        <div className="max-w-7xl mx-auto relative z-10">
-          <AnimatedSection animation="fade-up">
-            <Card className="bg-gradient-to-br from-slate-50 to-white border-none shadow-2xl overflow-hidden">
-              <div className="p-6 sm:p-8 lg:p-10">
-                {/* Header */}
-                <div className="text-center mb-8">
-                  <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-100 border border-emerald-200 text-emerald-800 text-sm font-bold mb-4">
-                <MapPin size={16} />
-                <span>FinOps Career Drive</span>
-              </div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-3 tracking-tight">
-                FinOps Career Drive — virtual weekend rounds.
-              </h2>
-          <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto font-medium">
-                All conversations are scheduled—no walk-ins. Apply now to join pod-ready FinOps roles across controllership, delivery, and accounting.
-              </p>
-            </div>
-
-                {/* Quick Info Bar */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-                  <div className="flex items-center gap-3 p-4 rounded-xl bg-gradient-to-br from-blue-50 to-cyan-50 border border-blue-100">
-                    <div className="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center flex-shrink-0">
-                      <Calendar className="text-white" size={18} />
-                    </div>
-                    <div>
-                      <div className="text-xs text-slate-600 font-semibold uppercase tracking-wide">Group Discussion</div>
-                      <div className="font-bold text-slate-900">Sat 13th • 12:00 PM DXB / 1:30 PM IST</div>
-                      <div className="text-slate-600 text-xs">1-hour virtual cohort discussion</div>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-3 p-4 rounded-xl bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-100">
-                    <div className="w-10 h-10 rounded-xl bg-amber-600 flex items-center justify-center flex-shrink-0">
-                      <Clock className="text-white" size={18} />
-                    </div>
-                    <div>
-                      <div className="text-xs text-slate-600 font-semibold uppercase tracking-wide">Technical Round</div>
-                      <div className="font-bold text-slate-900">Saturday 13th & Sunday</div>
-                      <div className="text-slate-600 text-xs">Shortlisted from GD; rounds right after and Sunday follow-ups</div>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-3 p-4 rounded-xl bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-100">
-                    <div className="w-10 h-10 rounded-xl bg-emerald-600 flex items-center justify-center flex-shrink-0">
-                      <Building className="text-white" size={18} />
-                    </div>
-                    <div>
-                      <div className="text-xs text-slate-600 font-semibold uppercase tracking-wide">Final Round</div>
-                      <div className="font-bold text-slate-900 text-sm">Early next week</div>
-                      <div className="text-slate-600 text-xs">Leadership conversation for shortlisted talent</div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Main Content */}
-                <div className="mb-6">
-                  {/* Open Positions */}
-                  <div>
-                    <h3 className="text-xl font-bold text-slate-900 mb-6 flex items-center gap-3">
-                      <div className="w-1.5 h-8 bg-gradient-to-b from-blue-600 to-cyan-600 rounded-full"></div>
-                      Roles in this drive
-                    </h3>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      {DRIVE_ROLES.map((role, idx) => (
-                        <Link to={role.to || '/virtual-drive#roles'} key={idx} className="block group">
-                          <div className="relative p-6 rounded-2xl bg-gradient-to-br from-white via-slate-50/40 to-white border border-slate-200 hover:border-indigo-300 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 overflow-hidden">
-                            <div className={`absolute top-0 right-0 w-32 h-32 bg-gradient-to-br ${role.accentLight} rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500`}></div>
-                            <div className="relative">
-                              <div className="flex items-start justify-between mb-4">
-                                <div className="flex items-center gap-4">
-                                  <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${role.iconBg} flex items-center justify-center flex-shrink-0 shadow-lg shadow-slate-300/50 group-hover:scale-110 transition-all`}>
-                                    <Target className="text-white" size={24} />
-                                  </div>
-                                  <div>
-                                    <div className={`inline-flex px-3 py-1 rounded-full ${role.badgeBg} text-xs font-bold mb-2`}>
-                                      {role.tag}
-                                    </div>
-                                    <h4 className="font-extrabold text-slate-900 text-lg group-hover:text-indigo-600 transition-colors leading-tight">
-                                      {role.title}
-                                    </h4>
-                                  </div>
-                                </div>
-                              </div>
-                              <p className="text-slate-600 text-sm mb-4 leading-relaxed">{role.description}</p>
-                                <div className="flex items-center justify-between">
-                                  <div className="flex items-center gap-2 text-slate-700">
-                                    <Users size={16} className={role.textAccent} />
-                                    <span className="text-sm font-semibold">Slots for Sat 13th GD & weekend tech</span>
-                                  </div>
-                                  <div className="flex items-center gap-1 text-indigo-600 font-bold text-sm group-hover:gap-2 transition-all">
-                                    View details
-                                    <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-                                  </div>
-                              </div>
-                            </div>
-                          </div>
-                        </Link>
-                      ))}
-                    </div>
-                    <div className="mt-8 text-center">
-                      <Link to="/finops-career-drive">
-                        <Button size="lg" className="group shadow-lg bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white">
-                          View FinOps roles & apply
-                          <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
-                        </Button>
-                      </Link>
-                    </div>
-                  </div>
-
-                </div>
-
-              </div>
-            </Card>
-          </AnimatedSection>
         </div>
       </section>
 

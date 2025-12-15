@@ -96,7 +96,7 @@ export default function EventPRManager() {
                     📣 Marketing
                   </div>
                   <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">
-                    Field Marketing Manager (Arabic is a must)
+                    Field Marketing Manager (Arabic is a plus)
                   </h1>
                   <div className="flex flex-wrap gap-3 sm:gap-4 text-slate-600 font-medium text-sm sm:text-base">
                     <div className="flex items-center gap-2">
@@ -138,7 +138,7 @@ export default function EventPRManager() {
                   <div className="p-4 sm:p-6 md:p-8">
                     <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3 sm:mb-4">About the Role</h2>
                     <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-3 sm:mb-4">
-                      Lead field marketing programs, events, and ecosystem visibility across the region with Arabic-first storytelling. You’ll design experiences that attract founders, partners, and media, showcasing Finanshels as the category leader.
+                      Lead field marketing programs, events, and ecosystem visibility across the region with storytelling. You’ll design experiences that attract founders, partners, and media, showcasing Finanshels as the category leader.
                     </p>
                     <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                       Ideal for operators who mix creative storytelling with flawless execution and strong media networks.
@@ -187,7 +187,7 @@ export default function EventPRManager() {
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-rose-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Fluent Arabic (written/spoken) with strong English for bilingual campaigns.</span>
+                        <span className="text-sm sm:text-base text-slate-700">Arabic is a plus.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-rose-600 flex-shrink-0 mt-1" size={18} />
