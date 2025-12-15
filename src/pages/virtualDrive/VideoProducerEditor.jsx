@@ -1,20 +1,19 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowLeft, MapPin, Briefcase, Users, Calendar, Code2, CheckCircle, Laptop2, Server } from 'lucide-react'
-import { Card } from '../../components/ui/Card'
-import { Button } from '../../components/ui/Button'
+import { ArrowLeft, MapPin, Briefcase, Users, Calendar, Camera, Sparkles, CheckCircle, Clapperboard } from 'lucide-react'
 import AnimatedSection from '../../components/AnimatedSection'
+import { Card } from '../../components/ui/Card'
 
-export default function SrFullStackDeveloper() {
+export default function VideoProducerEditor() {
   useEffect(() => {
-    const containerId = 'zf_div_xb0s-d8pzsrBsCAYTMNpfFZyvyb1L-J_FA4aR_5ebAw'
+    const containerId = 'zf_div_pyGZKZf639oIFP1kwTIV3llZi36Wc_jc1U96odSFYM8'
     const container = document.getElementById(containerId)
 
     if (!container || container.querySelector('iframe')) return
 
     try {
       const iframe = document.createElement('iframe')
-      let ifrmSrc = 'https://forms.zohopublic.com/finanshelsllc/form/SrSoftwareEngineer1/formperma/xb0s-d8pzsrBsCAYTMNpfFZyvyb1L-J_FA4aR_5ebAw?zf_rszfm=1'
+      let ifrmSrc = 'https://forms.zohopublic.com/finanshelsllc/form/VideoProducerEditor/formperma/pyGZKZf639oIFP1kwTIV3llZi36Wc_jc1U96odSFYM8?zf_rszfm=1'
 
       try {
         if (typeof window.ZFAdvLead !== 'undefined' && typeof window.zfutm_zfAdvLead !== 'undefined') {
@@ -40,10 +39,10 @@ export default function SrFullStackDeveloper() {
 
       iframe.src = ifrmSrc
       iframe.style.border = 'none'
-      iframe.style.height = '1290px'
+      iframe.style.height = '1175px'
       iframe.style.width = '90%'
       iframe.style.transition = 'all 0.5s ease'
-      iframe.setAttribute('aria-label', 'Sr Software Engineer')
+      iframe.setAttribute('aria-label', 'Video Producer & Editor')
 
       container.appendChild(iframe)
 
@@ -78,48 +77,48 @@ export default function SrFullStackDeveloper() {
       }
     } catch (e) {}
   }, [])
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white pt-20">
       <div className="py-12 sm:py-16 px-4 sm:px-6 lg:px-12">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
-            {/* Main Content */}
             <div className="lg:col-span-2">
               <AnimatedSection animation="fade-up">
-                <Link to="/virtual-drive" className="inline-flex items-center gap-2 text-indigo-600 hover:text-indigo-700 font-semibold mb-6 sm:mb-8 group text-sm sm:text-base">
+                <Link to="/virtual-drive" className="inline-flex items-center gap-2 text-orange-600 hover:text-orange-700 font-semibold mb-6 sm:mb-8 group text-sm sm:text-base">
                   <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
                   Back to Endgame Hiring 2025
                 </Link>
 
                 <div className="mb-6 sm:mb-8">
-                  <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white text-xs sm:text-sm font-bold mb-3 sm:mb-4">
-                    👩‍💻 Technology
+                  <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-gradient-to-r from-orange-500 to-pink-500 text-white text-xs sm:text-sm font-bold mb-3 sm:mb-4">
+                    🎬 Brand & Content
                   </div>
                   <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">
-                    Senior Software Engineer
+                    Video Producer & Editor (Dubai)
                   </h1>
                   <div className="flex flex-wrap gap-3 sm:gap-4 text-slate-600 font-medium text-sm sm:text-base">
                     <div className="flex items-center gap-2">
-                      <MapPin size={16} className="text-indigo-600 flex-shrink-0" />
-                      Remote (virtual interview process)
+                      <MapPin size={16} className="text-orange-600 flex-shrink-0" />
+                      Dubai, UAE (virtual interview process)
                     </div>
                     <div className="flex items-center gap-2">
-                      <Briefcase size={16} className="text-indigo-600 flex-shrink-0" />
+                      <Briefcase size={16} className="text-orange-600 flex-shrink-0" />
                       Full-Time
                     </div>
                     <div className="flex items-center gap-2">
-                      <Users size={16} className="text-indigo-600 flex-shrink-0" />
-                      Hiring for top talent
+                      <Users size={16} className="text-orange-600 flex-shrink-0" />
+                      Marketing team
                     </div>
                   </div>
                 </div>
               </AnimatedSection>
 
               <AnimatedSection animation="fade-up" delay={100}>
-                <Card className="mb-6 bg-gradient-to-br from-indigo-50 to-purple-50 border-2 border-indigo-200">
+                <Card className="mb-6 bg-gradient-to-br from-orange-50 to-pink-50 border-2 border-orange-200">
                   <div className="p-4 sm:p-6 md:p-8">
                     <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
-                      <Calendar className="text-indigo-600 flex-shrink-0" size={24} />
+                      <Calendar className="text-orange-600 flex-shrink-0" size={24} />
                       <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900">Virtual Drive Schedule</h3>
                     </div>
                     <div className="space-y-2 text-slate-700 font-medium text-sm sm:text-base">
@@ -127,7 +126,7 @@ export default function SrFullStackDeveloper() {
                       <p><strong>Screening & HR:</strong> Saturday, 20th Dec 2025 (virtual)</p>
                       <p><strong>Technical:</strong> Sunday, 21st Dec 2025 (virtual)</p>
                       <p><strong>Final Round:</strong> Early next week with leadership</p>
-                      <p className="text-indigo-600 font-bold mt-3 sm:mt-4">Only candidates who apply before Friday, 19th Dec 2025 will be scheduled.</p>
+                      <p className="text-orange-700 font-bold mt-3 sm:mt-4">Only candidates who apply before Friday, 19th Dec 2025 will be scheduled.</p>
                     </div>
                   </div>
                 </Card>
@@ -138,10 +137,10 @@ export default function SrFullStackDeveloper() {
                   <div className="p-4 sm:p-6 md:p-8">
                     <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3 sm:mb-4">About the Role</h2>
                     <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-3 sm:mb-4">
-                      Lead end-to-end product builds across React, Node, and cloud services. You’ll ship fast, keep quality high, and mentor developers while partnering closely with design and product.
+                      Lead end-to-end video production for founder stories, product explainers, and social-first content. You’ll own scripting, shooting, editing, and packaging assets that make Finanshels stand out.
                     </p>
                     <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                      This is a hands-on engineering role for builders who own outcomes and love scaling systems that power thousands of customers.
+                      Ideal for creators who blend storytelling, crisp editing, and a marketer’s understanding of distribution across channels.
                     </p>
                   </div>
                 </Card>
@@ -151,29 +150,25 @@ export default function SrFullStackDeveloper() {
                 <Card className="mb-6">
                   <div className="p-4 sm:p-6 md:p-8">
                     <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-6 flex items-center gap-2">
-                      <Code2 className="text-indigo-600 flex-shrink-0" size={24} />
+                      <Camera className="text-orange-600 flex-shrink-0" size={24} />
                       Key Responsibilities
                     </h2>
                     <ul className="space-y-3 sm:space-y-4">
                       <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Architect, build, and ship features across React/Node services.</span>
+                        <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">Plan, script, and storyboard video content for campaigns, events, and product launches.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Maintain high bar on code quality, testing, and performance.</span>
+                        <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">Lead shoots in Dubai; manage lighting, audio, and on-set direction for talent and leadership.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Mentor junior engineers and drive engineering best practices.</span>
+                        <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">Edit fast for social; craft polished cuts for longer-form stories with motion graphics when needed.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Collaborate with product/design to scope, sequence, and deliver.</span>
-                      </li>
-                      <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Optimize reliability, observability, and deployment pipelines.</span>
+                        <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">Collaborate with marketing to optimize for channels, hooks, and performance data.</span>
                       </li>
                     </ul>
                   </div>
@@ -184,29 +179,25 @@ export default function SrFullStackDeveloper() {
                 <Card className="mb-6">
                   <div className="p-4 sm:p-6 md:p-8">
                     <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-6 flex items-center gap-2">
-                      <Server className="text-indigo-600 flex-shrink-0" size={24} />
+                      <Clapperboard className="text-orange-600 flex-shrink-0" size={24} />
                       Required Qualifications
                     </h2>
                     <ul className="space-y-3 sm:space-y-4">
                       <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-indigo-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">5+ years building production systems with React and Node.</span>
+                        <CheckCircle className="text-orange-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">4+ years in video production and editing with a portfolio of brand or product work.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-indigo-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Comfortable with TypeScript, REST/GraphQL, and SQL.</span>
+                        <CheckCircle className="text-orange-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">Expert in Adobe Premiere Pro/DaVinci Resolve; motion design chops in After Effects is a plus.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-indigo-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Experience with cloud infra (AWS/GCP) and CI/CD pipelines.</span>
+                        <CheckCircle className="text-orange-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">On-set experience managing cameras, lighting, and audio; comfortable directing talent.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-indigo-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Strong debugging skills and ownership mindset.</span>
-                      </li>
-                      <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-indigo-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Ability to work async/remote with tight feedback loops.</span>
+                        <CheckCircle className="text-orange-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">Strong sense of story, pacing, and channel-specific best practices for short-form and long-form.</span>
                       </li>
                     </ul>
                   </div>
@@ -219,20 +210,20 @@ export default function SrFullStackDeveloper() {
                     <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-6">What We Offer</h2>
                     <ul className="space-y-3 sm:space-y-4">
                       <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Competitive salary with performance incentives.</span>
+                        <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">Competitive package with performance incentives for high-impact content.</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={20} />
+                        <span className="text-slate-700">Health insurance, visa sponsorship, and production support in Dubai.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Remote-first culture with strong collaboration rituals.</span>
+                        <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">Access to leadership, founders, and partners for compelling storylines.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Modern stack, ownership, and real impact at scale.</span>
-                      </li>
-                      <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Health benefits and learning budget.</span>
+                        <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">Gear budget and creative runway to experiment with formats.</span>
                       </li>
                     </ul>
                   </div>
@@ -240,22 +231,18 @@ export default function SrFullStackDeveloper() {
               </AnimatedSection>
             </div>
 
-            {/* Sidebar */}
             <div className="lg:col-span-1">
               <AnimatedSection>
                 <div className="lg:sticky lg:top-24">
                   <Card className="shadow-xl bg-white overflow-hidden">
-                    <div className="bg-gradient-to-r from-indigo-600 to-purple-600 p-4 sm:p-6 text-white">
-                      <Laptop2 className="mb-2" size={24} />
+                    <div className="bg-gradient-to-r from-orange-500 to-pink-500 p-4 sm:p-6 text-white">
+                      <Sparkles className="mb-2" size={24} />
                       <h3 className="text-xl sm:text-2xl font-bold mb-1">Apply Now</h3>
-                      <p className="text-indigo-50 text-xs sm:text-sm">Senior Software Engineer</p>
+                      <p className="text-orange-50 text-xs sm:text-sm">Video Producer & Editor</p>
                     </div>
                     <div className="p-4 sm:p-6 space-y-3">
                       <p className="text-sm text-slate-600">Submit your application before Friday, 19th Dec 2025 to get scheduled for the virtual rounds.</p>
-                      <div
-                      id="zf_div_xb0s-d8pzsrBsCAYTMNpfFZyvyb1L-J_FA4aR_5ebAw"
-                        className="w-full"
-                      />
+                      <div id="zf_div_pyGZKZf639oIFP1kwTIV3llZi36Wc_jc1U96odSFYM8" className="w-full" />
                     </div>
                   </Card>
                 </div>

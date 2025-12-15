@@ -40,10 +40,10 @@ export default function JrWebDeveloper() {
 
       iframe.src = ifrmSrc
       iframe.style.border = 'none'
-      iframe.style.height = '900px'
-      iframe.style.width = '100%'
+      iframe.style.height = '1290px'
+      iframe.style.width = '90%'
       iframe.style.transition = 'all 0.5s ease'
-      iframe.setAttribute('aria-label', 'Jr Web Developer')
+      iframe.setAttribute('aria-label', 'React Web Developer')
 
       container.appendChild(iframe)
 
@@ -95,7 +95,7 @@ export default function JrWebDeveloper() {
                     🧑‍💻 Technology
                   </div>
                   <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">
-                    Junior Web Developer
+                    React Web Developer
                   </h1>
                   <div className="flex flex-wrap gap-3 sm:gap-4 text-slate-600 font-medium text-sm sm:text-base">
                     <div className="flex items-center gap-2">
@@ -137,7 +137,7 @@ export default function JrWebDeveloper() {
                   <div className="p-4 sm:p-6 md:p-8">
                     <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3 sm:mb-4">About the Role</h2>
                     <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-3 sm:mb-4">
-                      Ship clean, performant web experiences with guidance from senior engineers. You’ll build UI components, integrate APIs, and learn best practices across the stack.
+                      Ship clean, performant React experiences with guidance from senior engineers. You’ll build UI components, integrate APIs, and learn best practices across the stack.
                     </p>
                     <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                       Perfect for fast learners who want to grow in a high-velocity fintech team and see their work ship to thousands of users.
@@ -239,7 +239,7 @@ export default function JrWebDeveloper() {
                     <div className="bg-gradient-to-r from-purple-600 to-pink-600 p-4 sm:p-6 text-white">
                       <Laptop className="mb-2" size={24} />
                       <h3 className="text-xl sm:text-2xl font-bold mb-1">Apply Now</h3>
-                      <p className="text-purple-50 text-xs sm:text-sm">Junior Web Developer</p>
+                      <p className="text-purple-50 text-xs sm:text-sm">React Web Developer</p>
                     </div>
                     <div className="p-4 sm:p-6 space-y-3">
                       <p className="text-sm text-slate-600">Submit your application before Friday, 19th Dec 2025 to get scheduled for the virtual rounds.</p>

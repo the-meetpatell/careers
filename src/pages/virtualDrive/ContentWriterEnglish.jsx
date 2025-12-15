@@ -15,7 +15,7 @@ export default function ContentWriterEnglish() {
 
     iframe.src = ifrmSrc
     iframe.style.border = 'none'
-    iframe.style.height = '900px'
+    iframe.style.height = '1175px'
     iframe.style.width = '99%'
     iframe.style.transition = 'all 0.5s ease'
     iframe.setAttribute('aria-label', 'Content Writer - English')

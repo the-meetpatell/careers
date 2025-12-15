@@ -40,7 +40,7 @@ export default function ContentPRManager() {
 
       iframe.src = ifrmSrc
       iframe.style.border = 'none'
-      iframe.style.height = '920px'
+      iframe.style.height = '1175px'
       iframe.style.width = '100%'
       iframe.style.transition = 'all 0.5s ease'
       iframe.setAttribute('aria-label', 'Content & PR Manager (Arabic)')
