@@ -17,6 +17,7 @@ export default function Navbar() {
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'Jobs', path: '/jobs' },
+    { name: 'FinOps Career', path: '/finops-drive' },
     { name: 'Endgame Hiring 2025', path: '/virtual-drive' },
     { name: 'Life at Finanshels', path: '/life' },
   ]

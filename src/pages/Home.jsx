@@ -181,14 +181,14 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="mt-8 flex flex-wrap gap-4">
-                  <Link to="/virtual-drive">
+                  <Link to="/virtual-drive#roles">
                     <Button size="lg" className="group h-12 px-6 shadow-lg shadow-indigo-500/20">
-                      View drive details
+                      View roles & apply
                       <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={18} />
                     </Button>
                   </Link>
-                  <Link to="/virtual-drive#roles" className="inline-flex items-center text-indigo-700 font-semibold hover:text-indigo-800">
-                    See roles & apply
+                  <Link to="/finops-drive" className="inline-flex items-center text-indigo-700 font-semibold hover:text-indigo-800">
+                    Looking for Finance roles?
                     <ArrowRight className="ml-2" size={16} />
                   </Link>
                 </div>

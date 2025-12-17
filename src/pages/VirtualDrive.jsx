@@ -69,14 +69,6 @@ const ROLE_GROUPS = [
         chipBg: 'bg-rose-100 text-rose-700',
       },
       {
-        title: 'Marketing Ops & CRM Manager',
-        tag: 'Marketing • Remote',
-        description: 'Build and optimize CRM, automations, and reporting for growth teams.',
-        to: '/virtual-drive/marketing-ops-crm-manager',
-        accent: 'from-lime-500 to-green-600',
-        chipBg: 'bg-lime-100 text-lime-700',
-      },
-      {
         title: 'Video Producer & Editor',
         tag: 'Marketing • Dubai',
         description: 'Script, shoot, and edit short-form and long-form content that amplifies our brand story.',

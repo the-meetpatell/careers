@@ -132,11 +132,11 @@ export default function SDRManager() {
                       <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900">Virtual Drive Schedule</h3>
                     </div>
                     <div className="space-y-2 text-slate-700 font-medium text-sm sm:text-base">
-                      <p><strong>Apply by:</strong> Friday, 19th Dec 2025 (applications only)</p>
-                      <p><strong>Screening & HR:</strong> Saturday, 20th Dec 2025 (virtual)</p>
-                      <p><strong>Technical:</strong> Sunday, 21st Dec 2025 (virtual)</p>
-                      <p><strong>Final Round:</strong> Early next week with leadership</p>
-                      <p className="text-indigo-700 font-bold mt-3 sm:mt-4">Only candidates who apply before Friday, 19th Dec 2025 will be scheduled.</p>
+                      <p><strong>Apply by:</strong> Friday, 19 Dec 2025 — we lock the next outbound cohort that night.</p>
+                      <p><strong>Screening & culture fit:</strong> Saturday, 20 Dec 2025 (virtual, 30 mins)</p>
+                      <p><strong>Outbound working session:</strong> Sunday, 21 Dec 2025 (virtual) — build a mini plan live.</p>
+                      <p><strong>Leadership round:</strong> Early the following week to align on targets and support.</p>
+                      <p className="text-indigo-700 font-bold mt-3 sm:mt-4">All rounds are virtual; we schedule time-zone-friendly slots once you apply.</p>
                     </div>
                   </div>
                 </Card>
@@ -147,10 +147,10 @@ export default function SDRManager() {
                   <div className="p-4 sm:p-6 md:p-8">
                     <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3 sm:mb-4">About the Role</h2>
                     <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-3 sm:mb-4">
-                      Build and lead our SDR function to create predictable outbound pipeline. You’ll set the playbook, coach a pod of SDRs, and partner closely with sales leadership on performance, hiring, and tooling.
+                      We’re hiring a player-coach to own our outbound engine. You’ll build the messaging, sequences, and daily rituals that create predictable meetings for revenue while coaching a pod of SDRs to hit and raise the bar.
                     </p>
                     <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                      Ideal for a player-coach who thrives on data-driven execution, crisp messaging, and developing reps into top performers.
+                      Perfect for a builder who loves crisp copy, disciplined pipeline math, and developing people into confident outbound pros.
                     </p>
                   </div>
                 </Card>
@@ -166,23 +166,23 @@ export default function SDRManager() {
                     <ul className="space-y-3 sm:space-y-4">
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Own outbound strategy: ICP definition, messaging, cadences, and channel mix for SDR teams.</span>
+                        <span className="text-sm sm:text-base text-slate-700">Own outbound strategy end-to-end: ICP definition, messaging, channel mix, and a cadence library the pod can trust.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Hire, onboard, and coach SDRs; run daily standups, call reviews, and skill drills.</span>
+                        <span className="text-sm sm:text-base text-slate-700">Coach the SDR pod daily: standups, call reviews, objection drills, and live copy iterations.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Monitor dashboards for activity, conversion, and pipeline coverage; adjust plays quickly.</span>
+                        <span className="text-sm sm:text-base text-slate-700">Run pipeline math weekly; tune activity, conversion, and coverage to hit SAL/SQL goals.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Partner with marketing on lead routing, SLAs, and feedback on campaign quality.</span>
+                        <span className="text-sm sm:text-base text-slate-700">Partner with marketing and revops on lead routing, SLAs, and fast feedback to sharpen campaigns.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Evaluate tools (sequencers, intent, data) and keep CRM hygiene airtight.</span>
+                        <span className="text-sm sm:text-base text-slate-700">Keep the stack sharp (sequencer, intent, data) and maintain airtight CRM hygiene.</span>
                       </li>
                     </ul>
                   </div>
@@ -199,23 +199,23 @@ export default function SDRManager() {
                     <ul className="space-y-3 sm:space-y-4">
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-indigo-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">4+ years in outbound sales with 2+ years leading SDR/BDR teams.</span>
+                        <span className="text-sm sm:text-base text-slate-700">4–6 years in outbound/BDR roles, with 2+ years coaching or managing SDRs.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-indigo-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Proven ability to build cadences, scripts, and objection handling that convert.</span>
+                        <span className="text-sm sm:text-base text-slate-700">Proven multi-channel cadences (email, phone, LinkedIn) that move prospects to meetings.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-indigo-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Strong CRM/sequence tooling knowledge (Zoho CRM, Outreach/HubSpot/Salesloft).</span>
+                        <span className="text-sm sm:text-base text-slate-700">Strong CRM and sequencing chops (Zoho CRM plus Outreach/HubSpot/Salesloft or similar).</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-indigo-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Comfortable building dashboards and reading funnel data to coach performance.</span>
+                        <span className="text-sm sm:text-base text-slate-700">Comfortable working backwards from SAL/SQL targets and coaching with dashboard data.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-indigo-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Excellent written and verbal communication; experience with founder/exec outreach.</span>
+                        <span className="text-sm sm:text-base text-slate-700">Confident written and verbal communication, especially for founder/exec outreach.</span>
                       </li>
                     </ul>
                   </div>
@@ -229,19 +229,19 @@ export default function SDRManager() {
                     <ul className="space-y-3 sm:space-y-4">
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Competitive base with performance incentives tied to pipeline and bookings.</span>
+                        <span className="text-sm sm:text-base text-slate-700">Competitive base plus variable tied to SAL, SQL, and pipeline quality.</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={20} />
-                        <span className="text-slate-700">Health insurance and visa support where applicable.</span>
+                        <span className="text-slate-700">Health coverage and visa support where applicable.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Direct access to leadership to shape revenue strategy.</span>
+                        <span className="text-sm sm:text-base text-slate-700">Direct access to GTM leadership to shape outbound strategy and budget.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Tools budget and enablement support for your team.</span>
+                        <span className="text-sm sm:text-base text-slate-700">Tools budget, enablement support, and freedom to test new intent/data signals.</span>
                       </li>
                     </ul>
                   </div>
@@ -255,8 +255,8 @@ export default function SDRManager() {
                   <Card className="shadow-xl bg-white overflow-hidden">
                     <div className="bg-gradient-to-r from-indigo-600 to-sky-500 p-4 sm:p-6 text-white">
                       <Users className="mb-2" size={24} />
-                      <h3 className="text-xl sm:text-2xl font-bold mb-1">Apply Now</h3>
-                      <p className="text-indigo-50 text-xs sm:text-sm">SDR Manager</p>
+                      <h3 className="text-xl sm:text-2xl font-bold mb-1">Apply to Lead Outbound</h3>
+                      <p className="text-indigo-50 text-xs sm:text-sm">SDR Manager • Revenue pod</p>
                     </div>
 
                     <div id="zf_div__lO4Ei3j2A-VkAsd1naY27hH-3cAV0JTU7XnzPWnmzk" className="w-full" />
