@@ -129,7 +129,7 @@ export default function Home() {
 
             <AnimatedSection animation="scale" delay={300}>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
-                <Link to="/jobs">
+                <Link to="/virtual-drive">
                   <Button size="lg" variant="primary" className="group w-full sm:w-auto text-lg h-14 px-10 shadow-2xl shadow-indigo-500/30 hover:shadow-indigo-500/50">
                     See open roles
                     <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={22} />
@@ -146,7 +146,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Endgame Hiring Feature */}
+      {/* Career Opportunities Feature */}
       <section className="py-12 px-6 sm:px-8 lg:px-12 bg-gradient-to-b from-white via-indigo-50/50 to-white">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-10 items-center">
@@ -154,30 +154,30 @@ export default function Home() {
               <AnimatedSection animation="fade-up">
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-700 text-sm font-semibold mb-4">
                   <Sparkles size={16} />
-                  Endgame Hiring 2025
+                  Career opportunities
                 </div>
               </AnimatedSection>
               <AnimatedSection animation="fade-up" delay={80}>
                 <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-3 tracking-tight">
-                  Final virtual drive of the year — application only.
+                  Find your next role at Finanshels.
                 </h2>
                 <p className="text-lg text-slate-600 max-w-2xl font-medium">
-                  Apply by Friday, 19th Dec 2025 to be scheduled for screening on Saturday 20th and technical on Sunday 21st. No walk-ins.
+                  Apply once, get fast-tracked. We review applications weekly and schedule the strongest profiles immediately across revenue, marketing, product, and engineering.
                 </p>
               </AnimatedSection>
               <AnimatedSection animation="fade-up" delay={160}>
                 <div className="mt-6 flex flex-wrap gap-3">
                   <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-indigo-50 text-indigo-700 text-sm font-semibold border border-indigo-100">
                     <Calendar size={16} />
-                    Apply by Fri, 19 Dec
+                    Rolling applications
                   </div>
                   <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-blue-50 text-blue-700 text-sm font-semibold border border-blue-100">
                     <Clock size={16} />
-                    Screening 20th • Technical 21st
+                    Fast-track interviews
                   </div>
                   <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-emerald-50 text-emerald-700 text-sm font-semibold border border-emerald-100">
                     <Laptop2 size={16} />
-                    100% virtual
+                    Virtual-first, hybrid teams
                   </div>
                 </div>
                 <div className="mt-8 flex flex-wrap gap-4">
@@ -198,24 +198,24 @@ export default function Home() {
               <AnimatedSection animation="fade-left" delay={120}>
                 <div className="grid sm:grid-cols-2 gap-4">
                   <Card className="p-5 bg-white border-2 border-indigo-100 shadow-sm">
-                    <div className="text-xs font-semibold text-indigo-700 uppercase mb-2">Timeline</div>
-                    <div className="text-xl font-extrabold text-slate-900">20–21 Dec 2025</div>
-                    <p className="text-sm text-slate-600 mt-1">Screening on Saturday, technical on Sunday, finals the following week.</p>
+                    <div className="text-xs font-semibold text-indigo-700 uppercase mb-2">Cadence</div>
+                    <div className="text-xl font-extrabold text-slate-900">Weekly review</div>
+                    <p className="text-sm text-slate-600 mt-1">We screen and schedule the best profiles every week—no waiting for a drive.</p>
                   </Card>
                   <Card className="p-5 bg-white border-2 border-blue-100 shadow-sm">
                     <div className="text-xs font-semibold text-blue-700 uppercase mb-2">Format</div>
-                    <div className="text-xl font-extrabold text-slate-900">Application only</div>
-                    <p className="text-sm text-slate-600 mt-1">Pre-registered candidates only; every slot is scheduled.</p>
+                    <div className="text-xl font-extrabold text-slate-900">Virtual-first</div>
+                    <p className="text-sm text-slate-600 mt-1">Structured remote interviews with quick follow-ups.</p>
                   </Card>
                   <Card className="p-5 bg-white border-2 border-emerald-100 shadow-sm">
                     <div className="text-xs font-semibold text-emerald-700 uppercase mb-2">Locations</div>
                     <div className="text-xl font-extrabold text-slate-900">Dubai & Remote</div>
-                    <p className="text-sm text-slate-600 mt-1">UAE + global applicants welcome for virtual interviews.</p>
+                    <p className="text-sm text-slate-600 mt-1">UAE + global applicants welcome for hybrid or remote roles.</p>
                   </Card>
                   <Card className="p-5 bg-white border-2 border-amber-100 shadow-sm">
                     <div className="text-xs font-semibold text-amber-700 uppercase mb-2">Who we want</div>
                     <div className="text-xl font-extrabold text-slate-900">Top performers</div>
-                    <p className="text-sm text-slate-600 mt-1">Outcome-owners across sales, marketing, and engineering.</p>
+                    <p className="text-sm text-slate-600 mt-1">Outcome-owners across sales, marketing, product, and engineering.</p>
                   </Card>
                 </div>
               </AnimatedSection>

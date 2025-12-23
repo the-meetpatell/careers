@@ -97,7 +97,7 @@ export default function SDRManager() {
               <AnimatedSection animation="fade-up">
                 <Link to="/virtual-drive" className="inline-flex items-center gap-2 text-indigo-600 hover:text-indigo-700 font-semibold mb-8 group">
                   <ArrowLeft size={20} className="group-hover:-translate-x-1 transition-transform" />
-                  Back to Endgame Hiring 2025
+                  Back to Career Opportunities
                 </Link>
 
                 <div className="mb-8">
@@ -129,14 +129,14 @@ export default function SDRManager() {
                   <div className="p-4 sm:p-6 md:p-8">
                     <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
                       <Calendar className="text-indigo-600 flex-shrink-0" size={24} />
-                      <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900">Virtual Drive Schedule</h3>
+                      <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900">Interview process</h3>
                     </div>
                     <div className="space-y-2 text-slate-700 font-medium text-sm sm:text-base">
-                      <p><strong>Apply by:</strong> Friday, 19 Dec 2025 — we lock the next outbound cohort that night.</p>
-                      <p><strong>Screening & culture fit:</strong> Saturday, 20 Dec 2025 (virtual, 30 mins)</p>
-                      <p><strong>Outbound working session:</strong> Sunday, 21 Dec 2025 (virtual) — build a mini plan live.</p>
-                      <p><strong>Leadership round:</strong> Early the following week to align on targets and support.</p>
-                      <p className="text-indigo-700 font-bold mt-3 sm:mt-4">All rounds are virtual; we schedule time-zone-friendly slots once you apply.</p>
+                      <p><strong>Apply:</strong> Rolling applications; we prioritise top profiles weekly.</p>
+                      <p><strong>Screening & culture fit:</strong> Quick virtual alignment with our people team.</p>
+                      <p><strong>Working session:</strong> Role-specific conversation with the hiring manager.</p>
+                      <p><strong>Leadership round:</strong> Decision conversation and offer.</p>
+                      <p className="text-indigo-700 font-bold mt-3 sm:mt-4">All rounds are virtual; we schedule time-zone-friendly slots as soon as you apply.</p>
                     </div>
                   </div>
                 </Card>

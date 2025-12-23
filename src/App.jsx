@@ -1,9 +1,7 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
-import Jobs from './pages/Jobs'
-import JobDetail from './pages/JobDetail'
 import Life from './pages/Life'
 import VirtualDrive from './pages/VirtualDrive'
 import FinOpsDrive from './pages/FinOpsDrive'
@@ -23,6 +21,10 @@ import FinOpsAccountManager from './pages/virtualDrive/FinOpsAccountManager'
 import FinOpsTeamLead from './pages/virtualDrive/FinOpsTeamLead'
 import SeniorAccountingAssociate from './pages/virtualDrive/SeniorAccountingAssociate'
 import AccountingFresher from './pages/virtualDrive/AccountingFresher'
+import AuditAssuranceLead from './pages/virtualDrive/AuditAssuranceLead'
+import VPOperations from './pages/virtualDrive/VPOperations'
+import TaxAdvisor from './pages/virtualDrive/TaxAdvisor'
+import FPAAnalyst from './pages/virtualDrive/FPAAnalyst'
 import Onboarding from './pages/Onboarding'
 
 function App() {
@@ -37,8 +39,7 @@ function App() {
               <main className="flex-1">
                 <Routes>
                   <Route path="/" element={<Home />} />
-                  <Route path="/jobs" element={<Jobs />} />
-                  <Route path="/jobs/:id" element={<JobDetail />} />
+                  <Route path="/jobs" element={<Navigate replace to="/virtual-drive" />} />
                   <Route path="/life" element={<Life />} />
                   <Route path="/finops-drive" element={<FinOpsDrive />} />
                   <Route path="/virtual-drive" element={<VirtualDrive />} />
@@ -59,6 +60,10 @@ function App() {
                   <Route path="/finops-drive/finops-team-lead" element={<FinOpsTeamLead />} />
                   <Route path="/finops-drive/senior-accounting-associate" element={<SeniorAccountingAssociate />} />
                   <Route path="/finops-drive/accounting-fresher" element={<AccountingFresher />} />
+                  <Route path="/finops-drive/audit-assurance-lead" element={<AuditAssuranceLead />} />
+                  <Route path="/finops-drive/vp-operations" element={<VPOperations />} />
+                  <Route path="/finops-drive/tax-advisor" element={<TaxAdvisor />} />
+                  <Route path="/finops-drive/fpa-analyst" element={<FPAAnalyst />} />
                 </Routes>
               </main>
               <Footer />

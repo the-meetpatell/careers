@@ -13,6 +13,22 @@ const PROCESS_STEPS = [
 
 const FINOPS_ROLES = [
   {
+    title: 'VP - Operations',
+    tag: 'FinOps • UAE (Dubai) / Remote',
+    description: 'Own FinOps delivery ops end-to-end—capacity, SLAs, tooling, and pod performance.',
+    to: '/finops-drive/vp-operations',
+    accent: 'from-slate-700 to-slate-900',
+    chipBg: 'bg-slate-100 text-slate-800',
+  },
+  {
+    title: 'Audit & Assurance Lead',
+    tag: 'FinOps • Audit & Assurance',
+    description: 'Keep pods audit-ready, lead external auditor interactions, and tighten controls.',
+    to: '/finops-drive/audit-assurance-lead',
+    accent: 'from-cyan-600 to-teal-600',
+    chipBg: 'bg-cyan-100 text-cyan-800',
+  },
+  {
     title: 'Financial Controller',
     tag: 'FinOps • UAE (Dubai) / Remote',
     description: 'Own pod-level controllership, reviews, and quality for high-growth startup clients.',
@@ -35,6 +51,22 @@ const FINOPS_ROLES = [
     to: '/finops-drive/finops-team-lead',
     accent: 'from-amber-500 to-orange-500',
     chipBg: 'bg-amber-100 text-amber-700',
+  },
+  {
+    title: 'Tax Advisor',
+    tag: 'FinOps • VAT & Corporate Tax',
+    description: 'Lead VAT/CT filings, reconcile tax positions, and guide clients through FTA queries.',
+    to: '/finops-drive/tax-advisor',
+    accent: 'from-red-500 to-amber-600',
+    chipBg: 'bg-amber-100 text-amber-800',
+  },
+  {
+    title: 'FP&A Analyst',
+    tag: 'FinOps • FP&A',
+    description: 'Build driver-based budgets, forecasts, and board-ready reporting for startups.',
+    to: '/finops-drive/fpa-analyst',
+    accent: 'from-blue-500 to-indigo-500',
+    chipBg: 'bg-blue-100 text-blue-700',
   },
   {
     title: 'Accounting Advisor',
@@ -69,10 +101,10 @@ export default function FinOpsDrive() {
 
             <AnimatedSection animation="fade-up" delay={100}>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight tracking-tight mb-4">
-                Always-on FinOps hiring for pod-ready talent.
+                Always-on FinOps hiring
               </h1>
               <p className="text-lg sm:text-xl text-slate-600 max-w-3xl font-medium">
-                Join our FinOps pods across controllership, delivery, and accounting excellence. Ongoing hiring with weekly virtual slots—no walk-ins required.
+                Weekly virtual interviews—no walk-ins.
               </p>
             </AnimatedSection>
 

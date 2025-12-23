@@ -15,15 +15,19 @@ export default function FinOpsRoleTemplate({
   responsibilities = [],
   requirements = [],
   offer = [],
+  formId = 'zf_div_eJHiYL5szMR2i0ahFh4Awh3AeLaAlbtX3PiC2UjpGWU',
+  formSrc = 'https://forms.zohopublic.com/finanshelsllc/form/AccountingRoles/formperma/eJHiYL5szMR2i0ahFh4Awh3AeLaAlbtX3PiC2UjpGWU?zf_rszfm=1',
+  formAriaLabel = 'Accounting Roles',
+  iframeHeight = '1160px',
 }) {
   useEffect(() => {
-    const containerId = 'zf_div_eJHiYL5szMR2i0ahFh4Awh3AeLaAlbtX3PiC2UjpGWU'
+    const containerId = formId
     const container = document.getElementById(containerId)
 
     if (container && container.children.length === 0) {
       try {
         const iframe = document.createElement('iframe')
-        let ifrmSrc = 'https://forms.zohopublic.com/finanshelsllc/form/AccountingRoles/formperma/eJHiYL5szMR2i0ahFh4Awh3AeLaAlbtX3PiC2UjpGWU?zf_rszfm=1'
+        let ifrmSrc = formSrc
 
         try {
           if (typeof window !== 'undefined' && typeof window.ZFAdvLead !== 'undefined' && typeof window.zfutm_zfAdvLead !== 'undefined') {
@@ -49,12 +53,12 @@ export default function FinOpsRoleTemplate({
 
         iframe.src = ifrmSrc
         iframe.style.border = 'none'
-        iframe.style.height = '1260px'
+        iframe.style.height = iframeHeight
         iframe.style.width = '100%'
         iframe.style.transition = 'all 0.5s ease'
         iframe.style.overflow = 'hidden'
         iframe.style.display = 'block'
-        iframe.setAttribute('aria-label', 'Accounting Roles')
+        iframe.setAttribute('aria-label', formAriaLabel)
 
         container.appendChild(iframe)
 
@@ -97,7 +101,7 @@ export default function FinOpsRoleTemplate({
         }
       } catch (e) {}
     }
-  }, [])
+  }, [formId, formSrc, formAriaLabel, iframeHeight])
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white pt-20">
@@ -215,13 +219,13 @@ export default function FinOpsRoleTemplate({
                   <Card className="shadow-xl bg-white overflow-hidden">
                     <div className="bg-gradient-to-r from-sky-600 to-indigo-600 p-4 sm:p-6 text-white">
                       <Users className="mb-2" size={24} />
-                      <h3 className="text-xl sm:text-2xl font-bold mb-1">Apply once for FinOps</h3>
-                      <p className="text-sky-50 text-xs sm:text-sm">One form for controllers, AMs, pod leads, and associates.</p>
+                      <h3 className="text-xl sm:text-2xl font-bold mb-1">Apply for {title}</h3>
+                      <p className="text-sky-50 text-xs sm:text-sm">One quick form—next available virtual slot.</p>
                     </div>
 
                     <div className="p-4 sm:p-6">
-                      <div id="zf_div_eJHiYL5szMR2i0ahFh4Awh3AeLaAlbtX3PiC2UjpGWU" className="w-full" />
-                      <p className="text-xs text-slate-500 mt-3">Apply once—we’ll slot you into the best-fitting pod and level.</p>
+                      <div id={formId} className="w-full" />
+                      <p className="text-xs text-slate-500 mt-3">We’ll route you to the right pod and level.</p>
                     </div>
                   </Card>
                 </div>

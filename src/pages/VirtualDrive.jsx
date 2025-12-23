@@ -5,10 +5,10 @@ import { Button } from '../components/ui/Button'
 import { Card } from '../components/ui/Card'
 
 const PROCESS_STEPS = [
-  { title: 'Apply by Friday, 19th Dec 2025', detail: 'Submit your application before 11:59 PM. Only pre-registered candidates move forward.' },
-  { title: 'Screening & HR • Saturday, 20th Dec 2025', detail: 'Initial screening plus a quick HR conversation to align expectations.' },
-  { title: 'Technical • Sunday, 21st Dec 2025', detail: 'Role-specific technical/skills discussions with our leaders.' },
-  { title: 'Final Round • Following Week', detail: 'Top candidates meet leadership for the closing conversation.' },
+  { title: 'Apply (rolling)', detail: 'Submit once; we review applications weekly and prioritise the strongest profiles.' },
+  { title: 'Screening & HR', detail: 'Short screening and expectation alignment with our people team.' },
+  { title: 'Role Interview', detail: 'Skills-focused conversations with leaders who own the function.' },
+  { title: 'Offer & Onboarding', detail: 'Final decision with leadership and a fast, structured onboarding plan.' },
 ]
 
 const ROLE_GROUPS = [
@@ -22,6 +22,14 @@ const ROLE_GROUPS = [
         to: '/virtual-drive/field-sales-executive',
         accent: 'from-blue-500 to-cyan-500',
         chipBg: 'bg-blue-100 text-blue-700',
+      },
+      {
+        title: 'Partnerships Manager',
+        tag: 'Growth • Dubai',
+        description: 'Build and scale ecosystem partnerships with Freezones, VCs, and accelerators across the UAE.',
+        to: '/virtual-drive/partnerships-manager',
+        accent: 'from-amber-500 to-orange-500',
+        chipBg: 'bg-amber-100 text-amber-700',
       },
       {
         title: 'SDR Manager',
@@ -110,16 +118,16 @@ export default function VirtualDrive() {
             <AnimatedSection animation="fade-down">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-50 text-emerald-800 font-semibold border border-emerald-100 mb-4">
                 <Sparkles size={16} />
-                Endgame Hiring 2025
+                Career Opportunities
               </div>
             </AnimatedSection>
 
             <AnimatedSection animation="fade-up" delay={100}>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight tracking-tight mb-4">
-                Final virtual drive of the year. Application-only hiring.
+                Career Opportunities
               </h1>
               <p className="text-lg sm:text-xl text-slate-600 max-w-3xl font-medium">
-                We are looking for top performers who can move fast and own outcomes. Apply before Friday, 19th Dec 2025 to be considered for virtual rounds happening on the 20th & 21st.
+                Hiring across teams—apply once; we move fast.
               </p>
             </AnimatedSection>
 
@@ -127,15 +135,15 @@ export default function VirtualDrive() {
               <div className="mt-8 flex flex-wrap gap-3">
                 <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-indigo-50 text-indigo-700 text-sm font-semibold border border-indigo-100">
                   <Calendar size={16} />
-                  Apply by Friday, 19th Dec 2025
+                  Rolling applications
                 </div>
                 <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-blue-50 text-blue-700 text-sm font-semibold border border-blue-100">
                   <Clock size={16} />
-                  Screening 20th Dec • Technical 21st Dec
+                  Fast-track interviews
                 </div>
                 <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-emerald-50 text-emerald-700 text-sm font-semibold border border-emerald-100">
                   <Laptop2 size={16} />
-                  100% virtual
+                  Virtual-first, hybrid teams
                 </div>
                 <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-slate-100 text-slate-800 text-sm font-semibold border border-slate-200">
                   <Globe2 size={16} />
@@ -153,7 +161,7 @@ export default function VirtualDrive() {
                   </Button>
                 </a>
               </div>
-              <p className="text-sm text-slate-500 mt-3">Only applications submitted before Friday, 19th Dec 2025 will be scheduled.</p>
+              <p className="text-sm text-slate-500 mt-3">We review applications weekly and schedule interviews quickly.</p>
             </AnimatedSection>
 
           </div>
@@ -171,9 +179,9 @@ export default function VirtualDrive() {
 
                 <div className="grid sm:grid-cols-2 gap-4 pt-6">
                   <div className="p-4 rounded-xl bg-gradient-to-br from-indigo-50 to-purple-50 border border-indigo-100">
-                    <div className="text-xs font-semibold text-indigo-700 uppercase mb-2">Timeline</div>
-                    <div className="font-extrabold text-slate-900 text-xl">20th Dec - 21st Dec 2025</div>
-                    <div className="text-slate-600 text-sm">Screening on Saturday, Technical on Sunday, Finals the following week.</div>
+                    <div className="text-xs font-semibold text-indigo-700 uppercase mb-2">Cadence</div>
+                    <div className="font-extrabold text-slate-900 text-xl">Weekly review</div>
+                    <div className="text-slate-600 text-sm">We schedule screens and role interviews every week for the best profiles.</div>
                   </div>
                   <div className="p-4 rounded-xl bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-100">
                     <div className="text-xs font-semibold text-emerald-700 uppercase mb-2">Locations</div>
@@ -182,8 +190,8 @@ export default function VirtualDrive() {
                   </div>
                   <div className="p-4 rounded-xl bg-gradient-to-br from-blue-50 to-cyan-50 border border-blue-100">
                     <div className="text-xs font-semibold text-blue-700 uppercase mb-2">Format</div>
-                    <div className="font-extrabold text-slate-900 text-xl">Virtual only</div>
-                    <div className="text-slate-600 text-sm">You’ll receive confirmed slots—no drop-ins.</div>
+                    <div className="font-extrabold text-slate-900 text-xl">Virtual-first</div>
+                    <div className="text-slate-600 text-sm">You’ll receive confirmed slots—structured conversations, no walk-ins.</div>
                   </div>
                   <div className="p-4 rounded-xl bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-100">
                     <div className="text-xs font-semibold text-amber-700 uppercase mb-2">Who we want</div>
@@ -200,8 +208,8 @@ export default function VirtualDrive() {
       <section className="px-6 sm:px-8 lg:px-12 pb-16">
         <div className="max-w-7xl mx-auto">
           <AnimatedSection animation="fade-up">
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">How the drive works</h2>
-            <p className="text-lg text-slate-600 max-w-3xl"> Damn good talent only</p>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">How we hire</h2>
+            <p className="text-lg text-slate-600 max-w-3xl">Fast, structured, and focused on builders who own outcomes.</p>
           </AnimatedSection>
 
           <div className="grid md:grid-cols-2 gap-6 mt-8">
@@ -223,7 +231,7 @@ export default function VirtualDrive() {
           <AnimatedSection animation="fade-up" delay={350}>
             <div className="mt-6 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 text-white text-sm font-semibold">
               <Users size={16} />
-              Screening on 20th Dec, Technical on 21st Dec, Finals the following week.
+              Weekly shortlists, quick interviews, and decisive offers.
             </div>
           </AnimatedSection>
         </div>
@@ -236,8 +244,8 @@ export default function VirtualDrive() {
               <MapPin className="text-indigo-600" size={18} />
               <span className="text-sm font-bold text-indigo-700 uppercase tracking-wide">UAE (Dubai) & Global (Remote) hiring</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">Roles in Endgame Hiring 2025</h2>
-            <p className="text-lg text-slate-600 max-w-3xl">Pick the role that fits you best in our final hiring drive of the year. Apply before Friday, 19th Dec 2025 to lock your slot for the weekend interviews.</p>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">Open roles at Finanshels</h2>
+            <p className="text-lg text-slate-600 max-w-3xl">Pick the role that fits you best. We review applications every week and move fast for the right talent.</p>
           </AnimatedSection>
 
           <div className="space-y-10 mt-8">
