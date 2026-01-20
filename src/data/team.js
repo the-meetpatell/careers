@@ -28,11 +28,11 @@ export const LEADERSHIP_TEAM = [
     linkedin: "https://www.linkedin.com/in/kohlirahul/"
   },
   {
-    name: "Aditya Jha",
-    role: "Head of Sales",
+    name: "Ashish Yadav",
+    role: "Sales Lead",
     image: "https://api.dicebear.com/7.x/notionists/svg?seed=AdityaJha&backgroundColor=f97316",
     bio: "Leading revenue growth and building lasting client relationships.",
-    linkedin: "https://www.linkedin.com/in/adityajha11/"
+    linkedin: "https://www.linkedin.com/in/ashish-yadav-00370618a/"
   },
   {
     name: "Harris Solangi",

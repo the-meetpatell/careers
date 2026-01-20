@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowRight, Users, Zap, Star, Award, TrendingUp, Sparkles, CheckCircle, Building, Calendar, Clock, Laptop2 } from 'lucide-react'
+import { ArrowRight, Users, Zap, Star, Award, TrendingUp, Sparkles, CheckCircle, Building, Calendar, Clock, Laptop2, MapPin } from 'lucide-react'
 import { Button } from '../components/ui/Button'
 import { Card } from '../components/ui/Card'
 import StatCard from '../components/StatCard'
@@ -146,49 +146,53 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Career Opportunities Feature */}
-      <section className="py-12 px-6 sm:px-8 lg:px-12 bg-gradient-to-b from-white via-indigo-50/50 to-white">
+      {/* Partnership Appointment Setter Featured Section */}
+      <section className="relative py-16 px-6 sm:px-8 lg:px-12 bg-gradient-to-r from-emerald-50 via-teal-50 to-cyan-50">
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute -top-10 -left-10 w-80 h-80 bg-emerald-200/20 rounded-full blur-3xl"></div>
+          <div className="absolute top-0 right-0 w-96 h-96 bg-teal-200/20 rounded-full blur-3xl"></div>
+        </div>
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-10 items-center">
             <div>
               <AnimatedSection animation="fade-up">
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-700 text-sm font-semibold mb-4">
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-sm font-semibold mb-4">
                   <Sparkles size={16} />
-                  Career opportunities
+                  Special Opportunity
                 </div>
               </AnimatedSection>
               <AnimatedSection animation="fade-up" delay={80}>
                 <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-3 tracking-tight">
-                  Find your next role at Finanshels.
+                  Partnership Appointment Setter
                 </h2>
                 <p className="text-lg text-slate-600 max-w-2xl font-medium">
-                  Apply once, get fast-tracked. We review applications weekly and schedule the strongest profiles immediately across revenue, marketing, product, and engineering.
+                  Book high-quality meetings that unlock partner activation and revenue. Virtual Walk-In happening <span className="font-bold text-emerald-600">this Saturday!</span>
                 </p>
               </AnimatedSection>
               <AnimatedSection animation="fade-up" delay={160}>
                 <div className="mt-6 flex flex-wrap gap-3">
-                  <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-indigo-50 text-indigo-700 text-sm font-semibold border border-indigo-100">
-                    <Calendar size={16} />
-                    Rolling applications
-                  </div>
-                  <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-blue-50 text-blue-700 text-sm font-semibold border border-blue-100">
-                    <Clock size={16} />
-                    Fast-track interviews
-                  </div>
                   <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-emerald-50 text-emerald-700 text-sm font-semibold border border-emerald-100">
-                    <Laptop2 size={16} />
-                    Virtual-first, hybrid teams
+                    <Zap size={16} />
+                    High-velocity role
+                  </div>
+                  <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-teal-50 text-teal-700 text-sm font-semibold border border-teal-100">
+                    <Users size={16} />
+                    Junior / Graduate Track
+                  </div>
+                  <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-cyan-50 text-cyan-700 text-sm font-semibold border border-cyan-100">
+                    <MapPin size={16} />
+                    Dubai-based
                   </div>
                 </div>
                 <div className="mt-8 flex flex-wrap gap-4">
-                  <Link to="/virtual-drive#roles">
-                    <Button size="lg" className="group h-12 px-6 shadow-lg shadow-indigo-500/20">
-                      View roles & apply
+                  <Link to="/partnership-appointment-setter-walkin#apply">
+                    <Button size="lg" className="group h-12 px-6 shadow-lg shadow-emerald-500/20 bg-emerald-600 hover:bg-emerald-700">
+                      Apply for Saturday Walk-In
                       <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={18} />
                     </Button>
                   </Link>
-                  <Link to="/finops-drive" className="inline-flex items-center text-indigo-700 font-semibold hover:text-indigo-800">
-                    Looking for Finance roles?
+                  <Link to="/virtual-drive/partnership-appointment-setter" className="inline-flex items-center text-emerald-700 font-semibold hover:text-emerald-800">
+                    View full details
                     <ArrowRight className="ml-2" size={16} />
                   </Link>
                 </div>
@@ -197,25 +201,25 @@ export default function Home() {
             <div>
               <AnimatedSection animation="fade-left" delay={120}>
                 <div className="grid sm:grid-cols-2 gap-4">
-                  <Card className="p-5 bg-white border-2 border-indigo-100 shadow-sm">
-                    <div className="text-xs font-semibold text-indigo-700 uppercase mb-2">Cadence</div>
-                    <div className="text-xl font-extrabold text-slate-900">Weekly review</div>
-                    <p className="text-sm text-slate-600 mt-1">We screen and schedule the best profiles every week—no waiting for a drive.</p>
+                  <Card className="p-5 bg-white border-2 border-emerald-100 shadow-sm hover:shadow-md transition-all">
+                    <div className="text-xs font-semibold text-emerald-700 uppercase mb-2">Target</div>
+                    <div className="text-2xl font-extrabold text-slate-900">7 meetings/day</div>
+                    <p className="text-sm text-slate-600 mt-1">Non-negotiable daily target in 90-day track.</p>
                   </Card>
-                  <Card className="p-5 bg-white border-2 border-blue-100 shadow-sm">
-                    <div className="text-xs font-semibold text-blue-700 uppercase mb-2">Format</div>
-                    <div className="text-xl font-extrabold text-slate-900">Virtual-first</div>
-                    <p className="text-sm text-slate-600 mt-1">Structured remote interviews with quick follow-ups.</p>
+                  <Card className="p-5 bg-white border-2 border-teal-100 shadow-sm hover:shadow-md transition-all">
+                    <div className="text-xs font-semibold text-teal-700 uppercase mb-2">Quality</div>
+                    <div className="text-2xl font-extrabold text-slate-900">≥80% ICP</div>
+                    <p className="text-sm text-slate-600 mt-1">High-quality, matched partner meetings.</p>
                   </Card>
-                  <Card className="p-5 bg-white border-2 border-emerald-100 shadow-sm">
-                    <div className="text-xs font-semibold text-emerald-700 uppercase mb-2">Locations</div>
-                    <div className="text-xl font-extrabold text-slate-900">Dubai & Remote</div>
-                    <p className="text-sm text-slate-600 mt-1">UAE + global applicants welcome for hybrid or remote roles.</p>
+                  <Card className="p-5 bg-white border-2 border-cyan-100 shadow-sm hover:shadow-md transition-all">
+                    <div className="text-xs font-semibold text-cyan-700 uppercase mb-2">Location</div>
+                    <div className="text-2xl font-extrabold text-slate-900">Dubai</div>
+                    <p className="text-sm text-slate-600 mt-1">UAE-based partnership role.</p>
                   </Card>
-                  <Card className="p-5 bg-white border-2 border-amber-100 shadow-sm">
-                    <div className="text-xs font-semibold text-amber-700 uppercase mb-2">Who we want</div>
-                    <div className="text-xl font-extrabold text-slate-900">Top performers</div>
-                    <p className="text-sm text-slate-600 mt-1">Outcome-owners across sales, marketing, product, and engineering.</p>
+                  <Card className="p-5 bg-white border-2 border-green-100 shadow-sm hover:shadow-md transition-all">
+                    <div className="text-xs font-semibold text-green-700 uppercase mb-2">Comp</div>
+                    <div className="text-2xl font-extrabold text-slate-900">AED 2-3K</div>
+                    <p className="text-sm text-slate-600 mt-1">Base + performance bonus & tools budget.</p>
                   </Card>
                 </div>
               </AnimatedSection>
@@ -223,6 +227,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      
 
 
       {/* Company Metrics Section */}
@@ -368,6 +374,84 @@ export default function Home() {
                 </div>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Career Opportunities Feature (moved) */}
+      <section className="py-12 px-6 sm:px-8 lg:px-12 bg-gradient-to-b from-white via-indigo-50/50 to-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-10 items-center">
+            <div>
+              <AnimatedSection animation="fade-up">
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-700 text-sm font-semibold mb-4">
+                  <Sparkles size={16} />
+                  Career opportunities
+                </div>
+              </AnimatedSection>
+              <AnimatedSection animation="fade-up" delay={80}>
+                <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-3 tracking-tight">
+                  Find your next role at Finanshels.
+                </h2>
+                <p className="text-lg text-slate-600 max-w-2xl font-medium">
+                  Apply once, get fast-tracked. We review applications weekly and schedule the strongest profiles immediately across revenue, marketing, product, and engineering.
+                </p>
+              </AnimatedSection>
+              <AnimatedSection animation="fade-up" delay={160}>
+                <div className="mt-6 flex flex-wrap gap-3">
+                  <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-indigo-50 text-indigo-700 text-sm font-semibold border border-indigo-100">
+                    <Calendar size={16} />
+                    Rolling applications
+                  </div>
+                  <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-blue-50 text-blue-700 text-sm font-semibold border border-blue-100">
+                    <Clock size={16} />
+                    Fast-track interviews
+                  </div>
+                  <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-emerald-50 text-emerald-700 text-sm font-semibold border border-emerald-100">
+                    <Laptop2 size={16} />
+                    Virtual-first, hybrid teams
+                  </div>
+                </div>
+                <div className="mt-8 flex flex-wrap gap-4">
+                  <Link to="/virtual-drive#roles">
+                    <Button size="lg" className="group h-12 px-6 shadow-lg shadow-indigo-500/20">
+                      View roles & apply
+                      <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={18} />
+                    </Button>
+                  </Link>
+                  <Link to="/finops-drive" className="inline-flex items-center text-indigo-700 font-semibold hover:text-indigo-800">
+                    Looking for Finance roles?
+                    <ArrowRight className="ml-2" size={16} />
+                  </Link>
+                </div>
+              </AnimatedSection>
+            </div>
+            <div>
+              <AnimatedSection animation="fade-left" delay={120}>
+                <div className="grid sm:grid-cols-2 gap-4">
+                  <Card className="p-5 bg-white border-2 border-indigo-100 shadow-sm">
+                    <div className="text-xs font-semibold text-indigo-700 uppercase mb-2">Cadence</div>
+                    <div className="text-xl font-extrabold text-slate-900">Weekly review</div>
+                    <p className="text-sm text-slate-600 mt-1">We screen and schedule the best profiles every week—no waiting for a drive.</p>
+                  </Card>
+                  <Card className="p-5 bg-white border-2 border-blue-100 shadow-sm">
+                    <div className="text-xs font-semibold text-blue-700 uppercase mb-2">Format</div>
+                    <div className="text-xl font-extrabold text-slate-900">Virtual-first</div>
+                    <p className="text-sm text-slate-600 mt-1">Structured remote interviews with quick follow-ups.</p>
+                  </Card>
+                  <Card className="p-5 bg-white border-2 border-emerald-100 shadow-sm">
+                    <div className="text-xs font-semibold text-emerald-700 uppercase mb-2">Locations</div>
+                    <div className="text-xl font-extrabold text-slate-900">Dubai & Remote</div>
+                    <p className="text-sm text-slate-600 mt-1">UAE + global applicants welcome for hybrid or remote roles.</p>
+                  </Card>
+                  <Card className="p-5 bg-white border-2 border-amber-100 shadow-sm">
+                    <div className="text-xs font-semibold text-amber-700 uppercase mb-2">Who we want</div>
+                    <div className="text-xl font-extrabold text-slate-900">Top performers</div>
+                    <p className="text-sm text-slate-600 mt-1">Outcome-owners across sales, marketing, product, and engineering.</p>
+                  </Card>
+                </div>
+              </AnimatedSection>
+            </div>
           </div>
         </div>
       </section>

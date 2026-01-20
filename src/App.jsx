@@ -2,12 +2,14 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
+import PartnershipAppointmentSetterWalkIn from './pages/PartnershipAppointmentSetterWalkIn'
 import Life from './pages/Life'
 import VirtualDrive from './pages/VirtualDrive'
 import FinOpsDrive from './pages/FinOpsDrive'
 import FieldSalesExecutive from './pages/virtualDrive/FieldSalesExecutive'
 import PartnershipsManager from './pages/virtualDrive/PartnershipsManager'
 import AppointmentSetter from './pages/virtualDrive/AppointmentSetter'
+import PartnershipAppointmentSetter from './pages/virtualDrive/PartnershipAppointmentSetter'
 import SrFullStackDeveloper from './pages/virtualDrive/SrFullStackDeveloper'
 import JrWebDeveloper from './pages/virtualDrive/JrWebDeveloper'
 import ContentPRManager from './pages/virtualDrive/ContentPRManager'
@@ -39,6 +41,7 @@ function App() {
               <main className="flex-1">
                 <Routes>
                   <Route path="/" element={<Home />} />
+                  <Route path="/partnership-appointment-setter-walkin" element={<PartnershipAppointmentSetterWalkIn />} />
                   <Route path="/jobs" element={<Navigate replace to="/virtual-drive" />} />
                   <Route path="/life" element={<Life />} />
                   <Route path="/finops-drive" element={<FinOpsDrive />} />
@@ -46,6 +49,7 @@ function App() {
                   <Route path="/virtual-drive/field-sales-executive" element={<FieldSalesExecutive />} />
                   <Route path="/virtual-drive/partnerships-manager" element={<PartnershipsManager />} />
                   <Route path="/virtual-drive/appointment-setter" element={<AppointmentSetter />} />
+                  <Route path="/virtual-drive/partnership-appointment-setter" element={<PartnershipAppointmentSetter />} />
                   <Route path="/virtual-drive/sr-software-engineer" element={<SrFullStackDeveloper />} />
                   <Route path="/virtual-drive/sr-full-stack-developer" element={<SrFullStackDeveloper />} />
                   <Route path="/virtual-drive/jr-web-developer" element={<JrWebDeveloper />} />

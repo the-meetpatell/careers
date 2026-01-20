@@ -47,6 +47,14 @@ const ROLE_GROUPS = [
         accent: 'from-emerald-500 to-teal-600',
         chipBg: 'bg-emerald-100 text-emerald-700',
       },
+      {
+        title: 'Partnership Appointment Setter',
+        tag: 'Revenue Engine • Dubai',
+        description: 'Book high-quality, ICP-matched meetings for Partnership Managers. Junior/Graduate track.',
+        to: '/virtual-drive/partnership-appointment-setter',
+        accent: 'from-teal-500 to-green-600',
+        chipBg: 'bg-teal-100 text-teal-700',
+      },
     ],
   },
   {
