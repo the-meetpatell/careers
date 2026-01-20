@@ -128,27 +128,9 @@ export default function PartnershipAppointmentSetter() {
           <AnimatedSection animation="fade-up" delay={100}>
             <Card className="mb-6 bg-gradient-to-br from-red-50 to-orange-50 border-2 border-red-200">
               <div className="p-4 sm:p-6 md:p-8">
-                <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2">⚡ Virtual Walk-in This Saturday</h3>
-                <p className="text-sm sm:text-base text-slate-700 font-medium mb-3">Apply online → GD Round (same day after filtering)</p>
+                <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2">⚡ Virtual Walk-in: Saturday, 24th January 2026</h3>
+                <p className="text-sm sm:text-base text-slate-700 font-medium mb-3">10 AM - 6 PM • Apply online → GD Round (same day after filtering)</p>
                 <p className="text-sm text-slate-600">High-energy group discussions with our partnerships team. Come ready to pitch ideas and work through scenarios.</p>
-              </div>
-            </Card>
-          </AnimatedSection>
-
-          <AnimatedSection animation="fade-up" delay={100}>
-            <Card className="mb-6 bg-gradient-to-br from-emerald-50 to-teal-50 border-2 border-emerald-200">
-              <div className="p-4 sm:p-6 md:p-8">
-                <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
-                  <Calendar className="text-emerald-600 flex-shrink-0" size={24} />
-                  <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900">Interview Process</h3>
-                </div>
-                <div className="space-y-2 text-slate-700 font-medium text-sm sm:text-base">
-                  <p><strong>Saturday:</strong> Apply online + GD Round (group discussion)</p>
-                  <p><strong>Week 1:</strong> Initial screening & expectation setting with HR</p>
-                  <p><strong>Week 2:</strong> Skills assessment + roleplay scenario</p>
-                  <p><strong>Week 3:</strong> Final conversation with Team Lead (Partnerships)</p>
-                  <p className="text-emerald-600 font-bold mt-3 sm:mt-4">Fast-track: Top performers move through rounds quickly</p>
-                </div>
               </div>
             </Card>
           </AnimatedSection>
@@ -327,28 +309,6 @@ export default function PartnershipAppointmentSetter() {
                 <div className="mt-6 p-4 bg-amber-50 border border-amber-200 rounded-lg">
                   <p className="text-sm sm:text-base text-slate-700 font-semibold mb-2">🎯 Bonus if you've used:</p>
                   <p className="text-sm text-slate-600">Dripify, Loosha, dialers, CRMs, WhatsApp outreach tools</p>
-                </div>
-              </div>
-            </Card>
-          </AnimatedSection>
-
-          <AnimatedSection animation="fade-up" delay={800}>
-            <Card className="mb-6">
-              <div className="p-4 sm:p-6 md:p-8">
-                <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-6">Compensation Package</h2>
-                <div className="space-y-3 sm:space-y-4">
-                  <div className="flex justify-between items-center p-3 sm:p-4 bg-emerald-50 rounded-lg border border-emerald-200">
-                    <span className="text-sm sm:text-base font-semibold text-slate-900">Base Salary</span>
-                    <span className="text-lg sm:text-xl font-bold text-emerald-600">AED 2,000 – 3,000</span>
-                  </div>
-                  <div className="flex justify-between items-center p-3 sm:p-4 bg-teal-50 rounded-lg border border-teal-200">
-                    <span className="text-sm sm:text-base font-semibold text-slate-900">Performance Bonus</span>
-                    <span className="text-lg sm:text-xl font-bold text-teal-600">Based on targets</span>
-                  </div>
-                  <div className="flex justify-between items-center p-3 sm:p-4 bg-sky-50 rounded-lg border border-sky-200">
-                    <span className="text-sm sm:text-base font-semibold text-slate-900">Tools Budget</span>
-                    <span className="text-lg sm:text-xl font-bold text-sky-600">Up to AED 500</span>
-                  </div>
                 </div>
               </div>
             </Card>

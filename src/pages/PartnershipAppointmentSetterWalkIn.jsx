@@ -108,7 +108,7 @@ export default function PartnershipAppointmentSetterWalkIn() {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
                 </span>
-                🚀 Virtual Walk-In This Saturday
+                🚀 Saturday, 24th January 2026 • 10 AM - 6 PM
               </div>
             </AnimatedSection>
 
@@ -134,12 +134,16 @@ export default function PartnershipAppointmentSetterWalkIn() {
 
             <AnimatedSection animation="scale" delay={300}>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-12">
-                <Link to="#apply">
-                  <Button size="lg" variant="primary" className="group text-lg h-14 px-10 shadow-2xl shadow-emerald-500/30 hover:shadow-emerald-500/50 w-full sm:w-auto">
-                    Apply for Saturday Walk-In
-                    <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={22} />
-                  </Button>
-                </Link>
+                <button
+                  onClick={() => {
+                    const element = document.getElementById('apply');
+                    element?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                  }}
+                  className="group text-lg h-14 px-10 shadow-2xl shadow-emerald-500/30 hover:shadow-emerald-500/50 w-full sm:w-auto bg-gradient-to-r from-indigo-600 to-indigo-700 hover:from-indigo-700 hover:to-indigo-800 text-white font-semibold rounded-xl transition-all duration-200 flex items-center justify-center"
+                >
+                  Apply for Saturday Walk-In
+                  <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={22} />
+                </button>
                 <Link to="/virtual-drive/partnership-appointment-setter">
                   <Button size="lg" variant="outline" className="text-lg h-14 px-10 w-full sm:w-auto border-2 hover:bg-emerald-50">
                     View Full Details
@@ -163,8 +167,8 @@ export default function PartnershipAppointmentSetterWalkIn() {
             </AnimatedSection>
             <AnimatedSection animation="fade-up" delay={100}>
               <Card className="p-6 bg-gradient-to-br from-teal-50 to-cyan-50 border-2 border-teal-200">
-                <div className="text-3xl font-bold text-teal-600 mb-2">AED 2-3K</div>
-                <p className="text-sm font-semibold text-slate-700">Base Salary + Bonus</p>
+                <div className="text-3xl font-bold text-teal-600 mb-2">5</div>
+                <p className="text-sm font-semibold text-slate-700">Openings Available</p>
               </Card>
             </AnimatedSection>
             <AnimatedSection animation="fade-up" delay={200}>
@@ -264,7 +268,7 @@ export default function PartnershipAppointmentSetterWalkIn() {
                     <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={20} />
                     <div>
                       <p className="font-semibold text-slate-900 mb-1">High-volume, high-quality</p>
-                      <p className="text-slate-600 text-sm">7 meetings/day with ≥80% ICP match & ≥75% show-up rate.</p>
+                      <p className="text-slate-600 text-sm"> Schedule meetings at ≥80% ICP match & ≥75% show-up rate.</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -321,74 +325,44 @@ export default function PartnershipAppointmentSetterWalkIn() {
             </p>
           </AnimatedSection>
 
-          <div className="grid lg:grid-cols-2 gap-6">
+          <div className="flex justify-center">
             <AnimatedSection animation="fade-up" delay={100}>
-              <Card className="p-6 bg-white border-2 border-slate-200 hover:border-emerald-300 transition-all">
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Award className="text-emerald-600" size={20} />
+              <Card className="p-8 bg-gradient-to-br from-emerald-50 to-teal-50 border-2 border-emerald-200 rounded-2xl max-w-2xl w-full">
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="w-12 h-12 bg-emerald-200 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Award className="text-emerald-700" size={24} />
                   </div>
-                  <h3 className="text-lg font-bold text-slate-900">Scoring Criteria</h3>
+                  <h3 className="text-2xl font-bold text-slate-900">Scoring Criteria</h3>
                 </div>
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-2">
-                    <span className="text-emerald-600 font-bold flex-shrink-0">30%</span>
-                    <span className="text-slate-600 text-sm">Communication & confidence</span>
+                <ul className="space-y-4">
+                  <li className="flex items-start gap-3">
+                    <span className="text-emerald-600 font-extrabold text-base flex-shrink-0 min-w-12">30%</span>
+                    <span className="text-slate-700 text-sm font-medium">Communication & confidence</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-emerald-600 font-bold flex-shrink-0">20%</span>
-                    <span className="text-slate-600 text-sm">Ability to convert conversation → meeting</span>
+                  <li className="flex items-start gap-3">
+                    <span className="text-emerald-600 font-extrabold text-base flex-shrink-0 min-w-12">20%</span>
+                    <span className="text-slate-700 text-sm font-medium">Ability to convert conversation → meeting</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-emerald-600 font-bold flex-shrink-0">10%</span>
-                    <span className="text-slate-600 text-sm">Process discipline</span>
+                  <li className="flex items-start gap-3">
+                    <span className="text-emerald-600 font-extrabold text-base flex-shrink-0 min-w-12">10%</span>
+                    <span className="text-slate-700 text-sm font-medium">Process discipline</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-emerald-600 font-bold flex-shrink-0">30%</span>
-                    <span className="text-slate-600 text-sm">Energy & resilience</span>
+                  <li className="flex items-start gap-3">
+                    <span className="text-emerald-600 font-extrabold text-base flex-shrink-0 min-w-12">30%</span>
+                    <span className="text-slate-700 text-sm font-medium">Energy & resilience</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-emerald-600 font-bold flex-shrink-0">10%</span>
-                    <span className="text-slate-600 text-sm">Coachability</span>
+                  <li className="flex items-start gap-3">
+                    <span className="text-emerald-600 font-extrabold text-base flex-shrink-0 min-w-12">10%</span>
+                    <span className="text-slate-700 text-sm font-medium">Coachability</span>
                   </li>
                 </ul>
-                <p className="text-sm font-bold text-slate-700 mt-6 p-3 bg-emerald-50 rounded-lg">
+                <p className="text-sm font-bold text-emerald-700 mt-8 p-4 bg-white rounded-lg border border-emerald-200 text-center">
                   ✓ Minimum pass score: 80%
                 </p>
               </Card>
             </AnimatedSection>
 
-            <AnimatedSection animation="fade-up" delay={200}>
-              <Card className="p-6 bg-white border-2 border-slate-200 hover:border-emerald-300 transition-all">
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Target className="text-teal-600" size={20} />
-                  </div>
-                  <h3 className="text-lg font-bold text-slate-900">Key GD Questions</h3>
-                </div>
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-2">
-                    <span className="text-teal-600 font-bold text-lg flex-shrink-0">•</span>
-                    <span className="text-slate-600 text-sm">"How would you convince a busy business owner to give you 20 mins?"</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-teal-600 font-bold text-lg flex-shrink-0">•</span>
-                    <span className="text-slate-600 text-sm">"What would you say if someone says 'not interested'?"</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-teal-600 font-bold text-lg flex-shrink-0">•</span>
-                    <span className="text-slate-600 text-sm">"How many calls/messages can you realistically do per day?"</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-teal-600 font-bold text-lg flex-shrink-0">•</span>
-                    <span className="text-slate-600 text-sm">"What motivates you more—salary or hitting targets?"</span>
-                  </li>
-                </ul>
-                <p className="text-sm font-bold text-slate-700 mt-6 p-3 bg-amber-50 rounded-lg text-amber-800">
-                  ⚠️ Anyone who avoids numbers gets rejected
-                </p>
-              </Card>
-            </AnimatedSection>
+
           </div>
         </div>
       </section>
@@ -428,7 +402,7 @@ export default function PartnershipAppointmentSetterWalkIn() {
             </AnimatedSection>
 
             {/* Application Form Section */}
-            <AnimatedSection animation="fade-up">
+            <AnimatedSection animation="fade-up" id="apply">
               <div className="bg-white rounded-2xl border-2 border-emerald-100 p-8 shadow-lg overflow-hidden max-w-2xl mx-auto">
                 <h3 className="text-2xl font-bold text-slate-900 mb-8 text-center">
                   Apply for Saturday Walk-In
