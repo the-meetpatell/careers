@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
-import PartnershipAppointmentSetterWalkIn from './pages/PartnershipAppointmentSetterWalkIn'
 import Life from './pages/Life'
 import VirtualDrive from './pages/VirtualDrive'
 import FinOpsDrive from './pages/FinOpsDrive'
@@ -41,7 +40,6 @@ function App() {
               <main className="flex-1">
                 <Routes>
                   <Route path="/" element={<Home />} />
-                  <Route path="/partnership-appointment-setter-walkin" element={<PartnershipAppointmentSetterWalkIn />} />
                   <Route path="/jobs" element={<Navigate replace to="/virtual-drive" />} />
                   <Route path="/life" element={<Life />} />
                   <Route path="/finops-drive" element={<FinOpsDrive />} />

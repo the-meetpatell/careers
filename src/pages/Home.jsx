@@ -146,91 +146,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Partnership Appointment Setter Featured Section */}
-      <section className="relative py-16 px-6 sm:px-8 lg:px-12 bg-gradient-to-r from-emerald-50 via-teal-50 to-cyan-50">
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute -top-10 -left-10 w-80 h-80 bg-emerald-200/20 rounded-full blur-3xl"></div>
-          <div className="absolute top-0 right-0 w-96 h-96 bg-teal-200/20 rounded-full blur-3xl"></div>
-        </div>
-        <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-10 items-center">
-            <div>
-              <AnimatedSection animation="fade-up">
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-sm font-semibold mb-4">
-                  <Sparkles size={16} />
-                  Special Opportunity
-                </div>
-              </AnimatedSection>
-              <AnimatedSection animation="fade-up" delay={80}>
-                <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-3 tracking-tight">
-                  Partnership Appointment Setter
-                </h2>
-                <p className="text-lg text-slate-600 max-w-2xl font-medium">
-                  Book high-quality meetings that unlock partner activation and revenue. Virtual Walk-In happening <span className="font-bold text-emerald-600">this Saturday!</span>
-                </p>
-              </AnimatedSection>
-              <AnimatedSection animation="fade-up" delay={160}>
-                <div className="mt-6 flex flex-wrap gap-3">
-                  <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-emerald-50 text-emerald-700 text-sm font-semibold border border-emerald-100">
-                    <Zap size={16} />
-                    High-velocity role
-                  </div>
-                  <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-teal-50 text-teal-700 text-sm font-semibold border border-teal-100">
-                    <Users size={16} />
-                    Junior / Graduate Track
-                  </div>
-                  <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-cyan-50 text-cyan-700 text-sm font-semibold border border-cyan-100">
-                    <MapPin size={16} />
-                    Dubai-based
-                  </div>
-                </div>
-                <div className="mt-8 flex flex-wrap gap-4">
-                  <Link to="/partnership-appointment-setter-walkin#apply">
-                    <Button size="lg" className="group h-12 px-6 shadow-lg shadow-emerald-500/20 bg-emerald-600 hover:bg-emerald-700">
-                      Apply for Saturday Walk-In
-                      <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={18} />
-                    </Button>
-                  </Link>
-                  <Link to="/virtual-drive/partnership-appointment-setter" className="inline-flex items-center text-emerald-700 font-semibold hover:text-emerald-800">
-                    View full details
-                    <ArrowRight className="ml-2" size={16} />
-                  </Link>
-                </div>
-              </AnimatedSection>
-            </div>
-            <div>
-              <AnimatedSection animation="fade-left" delay={120}>
-                <div className="grid sm:grid-cols-2 gap-4">
-                  <Card className="p-5 bg-white border-2 border-emerald-100 shadow-sm hover:shadow-md transition-all">
-                    <div className="text-xs font-semibold text-emerald-700 uppercase mb-2">Target</div>
-                    <div className="text-2xl font-extrabold text-slate-900">7 meetings/day</div>
-                    <p className="text-sm text-slate-600 mt-1">Non-negotiable daily target in 90-day track.</p>
-                  </Card>
-                  <Card className="p-5 bg-white border-2 border-teal-100 shadow-sm hover:shadow-md transition-all">
-                    <div className="text-xs font-semibold text-teal-700 uppercase mb-2">Quality</div>
-                    <div className="text-2xl font-extrabold text-slate-900">≥80% ICP</div>
-                    <p className="text-sm text-slate-600 mt-1">High-quality, matched partner meetings.</p>
-                  </Card>
-                  <Card className="p-5 bg-white border-2 border-cyan-100 shadow-sm hover:shadow-md transition-all">
-                    <div className="text-xs font-semibold text-cyan-700 uppercase mb-2">Location</div>
-                    <div className="text-2xl font-extrabold text-slate-900">Dubai</div>
-                    <p className="text-sm text-slate-600 mt-1">UAE-based partnership role.</p>
-                  </Card>
-                  <Card className="p-5 bg-white border-2 border-green-100 shadow-sm hover:shadow-md transition-all">
-                    <div className="text-xs font-semibold text-green-700 uppercase mb-2">Comp</div>
-                    <div className="text-2xl font-extrabold text-slate-900">AED 2-3K</div>
-                    <p className="text-sm text-slate-600 mt-1">Base + performance bonus & tools budget.</p>
-                  </Card>
-                </div>
-              </AnimatedSection>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      
-
-
       {/* Company Metrics Section */}
       <section className="py-16 px-6 sm:px-8 lg:px-12 bg-white">
         <div className="max-w-7xl mx-auto">
@@ -243,7 +158,7 @@ export default function Home() {
             </AnimatedSection>
             <AnimatedSection delay={80}>
               <p className="text-base sm:text-lg text-slate-600 font-medium">
-                Serving 5,000+ clients with a 150+ member team across MENA.
+                Serving 6,000+ clients with a 150+ member team across MENA.
               </p>
             </AnimatedSection>
             <AnimatedSection delay={100}>
@@ -286,7 +201,7 @@ export default function Home() {
                       <Building className="text-white" size={24} />
                     </div>
                     <div className="text-4xl font-extrabold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-2">
-                      <AnimatedCounter end={5000} duration={2000} />+
+                      <AnimatedCounter end={6000} duration={2000} />+
                     </div>
                     <div className="text-slate-700 font-bold text-sm">Active Clients</div>
                   </div>

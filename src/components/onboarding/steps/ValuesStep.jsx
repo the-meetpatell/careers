@@ -21,7 +21,7 @@ export default function ValuesStep() {
               INSPIRE <span className="bg-gradient-to-r from-orange-500 to-blue-600 bg-clip-text text-transparent">Our Core Values Framework</span>
             </h2>
             <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed font-medium">
-              These 7 principles guide how we think, work, and show up every single day at Finanshels. <br className="hidden sm:block" />
+              These 5 principles guide how we think, work, and show up every single day at Finanshels. <br className="hidden sm:block" />
               <span className="inline-flex items-center gap-2 mt-2 text-blue-600 font-bold">
                 <MousePointer2 size={18} />
                 Click on each value card to dive deeper and understand what drives us

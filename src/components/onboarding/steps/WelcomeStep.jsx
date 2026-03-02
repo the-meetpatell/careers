@@ -32,7 +32,7 @@ export default function WelcomeStep() {
 
         <AnimatedSection animation="fade-up" delay={200}>
           <p className="text-xl sm:text-2xl md:text-3xl text-white/90 mb-4 font-medium leading-relaxed">
-            Accounting - Tax - Audit & Liquidation - Compliance - CFO Services
+            Accounting - Tax - Audit - Compliance - CFO Services
           </p>
         </AnimatedSection>
 

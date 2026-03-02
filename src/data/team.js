@@ -29,8 +29,8 @@ export const LEADERSHIP_TEAM = [
   },
   {
     name: "Ashish Yadav",
-    role: "Sales Lead",
-    image: "https://api.dicebear.com/7.x/notionists/svg?seed=AdityaJha&backgroundColor=f97316",
+    role: "Head of Sales",
+    image: "https://api.dicebear.com/7.x/notionists/svg?seed=AshishYadav&backgroundColor=f97316",
     bio: "Leading revenue growth and building lasting client relationships.",
     linkedin: "https://www.linkedin.com/in/ashish-yadav-00370618a/"
   },
@@ -41,13 +41,7 @@ export const LEADERSHIP_TEAM = [
     bio: "Building scalable tech infrastructure powering financial operations.",
     linkedin: "https://www.linkedin.com/in/harrissolangi/"
   },
-  {
-    name: "George Methew",
-    role: "Fractional CHRO",
-    image: "https://api.dicebear.com/7.x/notionists/svg?seed=GeorgeMethewMale456&backgroundColor=a855f7",
-    bio: "Shaping company culture and building world-class teams.",
-    linkedin: "https://www.linkedin.com/in/georgeathumlog/"
-  },
+ 
   {
     name: "Suhail KY",
     role: "Head of Taxation",
@@ -79,13 +73,6 @@ export const LEADERSHIP_TEAM = [
 ]
 
 export const TESTIMONIALS = [
-  {
-    name: "Shabana Nazeer",
-    role: "HR - Operations",
-    image: "https://api.dicebear.com/7.x/shapes/svg?seed=ShabanaNazeer&backgroundColor=6366f1",
-    quote: "Finanshels has given me the opportunity to shape HR operations from the ground up. The team's commitment to employee growth and well-being is truly inspiring.",
-    rating: 5
-  },
   {
     name: "Tanish Khandelwal",
     role: "Full Stack Software Developer",
@@ -155,4 +142,3 @@ export const COMPANY_VALUES = [
     description: "We're building for our region, understanding local nuances, regulations, and culture. Global quality, local expertise."
   }
 ]
-

@@ -1,7 +1,7 @@
 import { useOnboarding } from '../../../contexts/OnboardingContext'
 import { Button } from '../../ui/Button'
 import { Card } from '../../ui/Card'
-import { ArrowRight, ArrowLeft, Sparkles, Video, MessageCircle, TrendingUp, Users, Briefcase, ShieldCheck } from 'lucide-react'
+import { ArrowRight, ArrowLeft, Sparkles, Video, MessageCircle, TrendingUp, Users, Briefcase } from 'lucide-react'
 import AnimatedSection from '../../AnimatedSection'
 
 export default function RoadmapStep() {
@@ -27,22 +27,16 @@ export default function RoadmapStep() {
       description: 'Join a warm welcome session with our founder focused on inspiration and engagement.'
     },
     {
-      title: 'CHRO Talk',
+      title: 'Conversation with EOS Integrator',
       icon: Users,
       color: 'from-pink-500 to-rose-600',
-      description: 'Hear directly from our CHRO about company culture, values and key HR processes.'
+      description: 'Connect with our EOS Integrator to understand company operating rhythm, priorities, and execution model.'
     },
     {
       title: 'Department Head Introduction',
       icon: Briefcase,
       color: 'from-amber-500 to-yellow-600',
       description: 'Meet each department head for a quick overview of their teams and collaboration touchpoints.'
-    },
-    {
-      title: 'Legal Team Address',
-      icon: ShieldCheck,
-      color: 'from-red-500 to-rose-600',
-      description: 'Learn essential legal guidelines covering contracts, compliance and critical policies.'
     },
     {
       title: 'Meet Your Buddy',
@@ -55,6 +49,12 @@ export default function RoadmapStep() {
       icon: TrendingUp,
       color: 'from-indigo-500 to-blue-600',
       description: 'Build meaningful connections, understand expectations and set the stage for success.'
+    },
+    {
+      title: 'Onboarding & Training',
+      icon: Sparkles,
+      color: 'from-cyan-500 to-blue-600',
+      description: 'Structured onboarding and training sessions with the Organization Excellence team to help you ramp up quickly and confidently.'
     }
   ]
 
@@ -76,18 +76,18 @@ export default function RoadmapStep() {
           </div>
         </AnimatedSection>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {phases.map((phase, idx) => (
             <AnimatedSection key={idx} animation="fade-up" delay={idx * 100}>
               <Card className="h-full border-2 border-slate-100 hover:border-blue-300 hover:shadow-2xl transition-all duration-500 group">
                 <div className="p-6 flex flex-col h-full">
-                  <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${phase.color} flex items-center justify-center mb-4 shadow-lg group-hover:scale-110 transition-transform`}>
-                    <phase.icon className="text-white" size={24} />
+                  <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${phase.color} flex items-center justify-center mb-4 shadow-lg group-hover:scale-105 transition-transform`}>
+                    <phase.icon className="text-white" size={20} />
                   </div>
-                  <h3 className="text-sm font-bold text-slate-900 mb-2 leading-tight">
+                  <h3 className="text-xl font-bold text-slate-900 mb-2 leading-snug">
                     {phase.title}
                   </h3>
-                  <p className="text-xs text-slate-600 leading-relaxed">
+                  <p className="text-base text-slate-700 leading-8">
                     {phase.description}
                   </p>
                 </div>

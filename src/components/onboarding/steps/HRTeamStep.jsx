@@ -22,12 +22,6 @@ const hrSquads = [
         support: 'Owns your hiring journey and answers strategic questions about your fit at Finanshels.'
       },
       {
-        name: 'Vasudha T',
-        title: 'Talent Acquisition',
-        linkedin: 'https://www.linkedin.com/in/vasudhatucker/',
-        support: 'Schedules interviews, shares context for every conversation, and keeps you updated.'
-      },
-      {
         name: 'Anusree P',
         title: 'Talent Acquisition',
         linkedin: 'https://www.linkedin.com/in/anusreepc90111998/',
@@ -45,12 +39,6 @@ const hrSquads = [
       'Stay in touch beyond onboarding for pulse checks, recognition, and wellbeing support.'
     ],
     members: [
-      {
-        name: 'Shabana N',
-        title: 'HR Business Partner',
-        linkedin: 'https://www.linkedin.com/in/shabana-nazeer-36a74a70/',
-        support: 'Your go-to for policy clarifications, career conversations, and manager alignment.'
-      },
       {
         name: 'Abhinand C',
         title: 'HR Operations',
@@ -184,4 +172,3 @@ export default function HRTeamStep() {
     </div>
   )
 }
-

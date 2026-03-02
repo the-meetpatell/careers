@@ -24,13 +24,14 @@ export default function TeamStep() {
         {
           name: 'Sales',
           leaders: [
-            { name: 'Aditya Jha', title: 'Head of Sales', linkedin: 'https://www.linkedin.com/in/adityajha11/' }
+            { name: 'Ashish Yadav', title: 'Head of Sales', linkedin: 'https://www.linkedin.com/in/ashish-yadav-00370618a/' }
           ]
         },
         {
           name: 'Partnership',
           leaders: [
-            { name: 'Aditi Gupta', title: 'Partnership Lead', linkedin: 'https://www.linkedin.com/in/aditi-gupta1583/' }
+            { name: 'Aditi Gupta', title: 'Partnership Lead', linkedin: 'https://www.linkedin.com/in/aditi-gupta1583/' },
+            { name: 'Vishal Singh', title: 'Partnership Manager', linkedin: 'https://www.linkedin.com/in/vishalsingh2302/' }
           ]
         },
         {
@@ -78,8 +79,6 @@ export default function TeamStep() {
         {
           name: 'HR Team',
           leaders: [
-            { name: 'George Mathew', title: 'Fractional CHRO', linkedin: 'https://www.linkedin.com/in/georgeathumlog/' },
-            { name: 'Shabana', title: 'HR Business Partner', linkedin: 'https://www.linkedin.com/in/shabana-nazeer-36a74a70/'  },
             { name: 'Brijen', title: 'Manager - Talent Acquisition', linkedin: 'https://www.linkedin.com/in/brijenbrahmbhatt/'  }
           ]
         },

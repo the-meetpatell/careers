@@ -34,13 +34,11 @@ function OnboardingContent() {
       case 'company': return <CompanyOverviewStep />
       case 'vision-mission': return <VisionMissionStep />
       case 'values': return <ValuesStep />
-      case 'integrity': return <CoreValueDetailStep valueKey="integrity" />
-      case 'never-stop-learning': return <CoreValueDetailStep valueKey="never-stop-learning" />
-      case 'striving-excellence': return <CoreValueDetailStep valueKey="striving-excellence" />
-      case 'proactive-ownership': return <CoreValueDetailStep valueKey="proactive-ownership" />
-      case 'inventiveness': return <CoreValueDetailStep valueKey="inventiveness" />
-      case 'resilience': return <CoreValueDetailStep valueKey="resilience" />
-      case 'expansion-mindset': return <CoreValueDetailStep valueKey="expansion-mindset" />
+      case 'relentless-customer-centricity': return <CoreValueDetailStep valueKey="relentless-customer-centricity" />
+      case 'togetherness': return <CoreValueDetailStep valueKey="togetherness" />
+      case 'transparency-integrity': return <CoreValueDetailStep valueKey="transparency-integrity" />
+      case 'unprompted-ownership': return <CoreValueDetailStep valueKey="unprompted-ownership" />
+      case 'scalable-innovation-excellence': return <CoreValueDetailStep valueKey="scalable-innovation-excellence" />
       case 'okr-system': return <OKRSystemStep />
       case 'services': return <ServicesStep />
       case 'team': return <TeamStep />

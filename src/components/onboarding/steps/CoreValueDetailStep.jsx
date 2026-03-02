@@ -39,10 +39,10 @@ export default function CoreValueDetailStep({ valueKey }) {
                   <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/80 text-xs font-bold text-slate-700 border border-white">
                     What it means
                   </div>
-                  <h3 className="text-2xl font-extrabold text-slate-900 mt-4 mb-3">Aim higher than "okay"</h3>
+                  <h3 className="text-2xl font-extrabold text-slate-900 mt-4 mb-3">{value.title}</h3>
                   <p className="text-slate-700 leading-relaxed text-lg mb-4">{value.meaning}</p>
                   <div className="flex flex-wrap gap-2">
-                    {['Consistency', 'Clarity', 'Craft'].map((tag) => (
+                    {(value.tags || ['Consistency', 'Clarity', 'Craft']).map((tag) => (
                       <span key={tag} className="px-3 py-1 rounded-full bg-white/80 text-xs font-semibold text-slate-700 border border-slate-100">
                         {tag}
                       </span>

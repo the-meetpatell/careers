@@ -11,13 +11,11 @@ export default function Navbar() {
   const isActive = (path) => {
     if (path === '/') return pathname === '/'
     if (path === '/virtual-drive') return pathname.startsWith('/virtual-drive')
-    if (path === '/partnership-appointment-setter-walkin') return pathname === '/partnership-appointment-setter-walkin'
     return pathname.startsWith(path)
   }
 
   const navLinks = [
     { name: 'Home', path: '/' },
-    { name: '🚀 Partnership Setter (GD)', path: '/partnership-appointment-setter-walkin' },
     { name: 'FinOps Career', path: '/finops-drive' },
     { name: 'Career Opportunities', path: '/virtual-drive' },
     { name: 'Life at Finanshels', path: '/life' },
