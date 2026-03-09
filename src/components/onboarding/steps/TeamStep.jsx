@@ -24,14 +24,14 @@ export default function TeamStep() {
         {
           name: 'Sales',
           leaders: [
-            { name: 'Ashish Yadav', title: 'Head of Sales', linkedin: 'https://www.linkedin.com/in/ashish-yadav-00370618a/' }
+            { name: 'Ashish Yadav', title: 'Sales Lead', linkedin: 'https://www.linkedin.com/in/ashish-yadav-00370618a/' }
           ]
         },
         {
           name: 'Partnership',
           leaders: [
-            { name: 'Aditi Gupta', title: 'Partnership Lead', linkedin: 'https://www.linkedin.com/in/aditi-gupta1583/' },
-            { name: 'Vishal Singh', title: 'Partnership Manager', linkedin: 'https://www.linkedin.com/in/vishalsingh2302/' }
+            { name: 'Aditi Gupta', title: 'Strategic Partnership Manager', linkedin: 'https://www.linkedin.com/in/aditi-gupta1583/' },
+            { name: 'Vishal Singh', title: 'Partnership Lead', linkedin: 'https://www.linkedin.com/in/vishalsingh2302/' }
           ]
         },
         {
@@ -49,7 +49,13 @@ export default function TeamStep() {
         {
           name: 'Center of Excellence',
           leaders: [
-            { name: 'Meet Patel', title: 'Head of Business Excellence', linkedin: 'https://www.linkedin.com/in/themeetpatel/' }
+            { name: 'Meet Patel', title: 'AVP - COE / Integrator', linkedin: 'https://www.linkedin.com/in/themeetpatel/' }
+          ]
+        },
+        {
+          name: 'Center of Excellence',
+          leaders: [
+            { name: 'Santo Thomas', title: 'AM - COE / Org Excellence', linkedin: 'https://www.linkedin.com/in/themeetpatel/' }
           ]
         },
         {
@@ -79,7 +85,7 @@ export default function TeamStep() {
         {
           name: 'HR Team',
           leaders: [
-            { name: 'Brijen', title: 'Manager - Talent Acquisition', linkedin: 'https://www.linkedin.com/in/brijenbrahmbhatt/'  }
+            { name: 'Brijen', title: 'HR Manager', linkedin: 'https://www.linkedin.com/in/brijenbrahmbhatt/'  }
           ]
         },
         {

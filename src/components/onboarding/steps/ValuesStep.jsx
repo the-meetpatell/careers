@@ -41,7 +41,7 @@ export default function ValuesStep() {
                   <div className="absolute top-0 right-0 w-32 h-32 bg-white/50 rounded-full -translate-y-16 translate-x-16 group-hover:scale-150 transition-transform duration-700"></div>
                   
                   <div className={`w-24 h-24 rounded-3xl bg-gradient-to-br ${value.colors.gradient} flex items-center justify-center mb-6 shadow-xl group-hover:scale-110 group-hover:rotate-12 transition-all duration-500 relative z-10 text-4xl font-extrabold text-white`}>
-                    {value.letter}
+                    {value.sequence}
                   </div>
                   
                   <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors relative z-10">
@@ -49,7 +49,7 @@ export default function ValuesStep() {
                   </h3>
                   
                   <p className="text-sm sm:text-base text-slate-700 font-bold mb-3 relative z-10 uppercase tracking-widest">
-                    {value.letter} — {value.title}
+                    {value.sequence} — {value.title}
                   </p>
                   
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4 relative z-10">

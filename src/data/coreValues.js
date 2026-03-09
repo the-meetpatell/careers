@@ -1,71 +1,7 @@
 export const coreValues = [
   {
-    id: 'relentless-customer-centricity',
-    letter: 'RC',
-    title: 'Relentless Customer Centricity',
-    tagline: 'Every decision starts with the customer and works backward. We obsess over real outcomes and go the extra mile to create value customers genuinely feel.',
-    meaning: 'Start with the customer, validate with evidence, and finish with a measurable outcome they can see and feel.',
-    behaviors: [
-      'Begin projects with the customer outcome, not the task list',
-      'Validate assumptions with customer calls, data, or experiments',
-      'Escalate and unblock anything that hurts the customer experience',
-      'Close the loop with customers after shipping changes'
-    ],
-    examples: {
-      good: [
-        'Jumping on a quick call to confirm the problem before drafting a proposal',
-        'Adding a success metric tied to customer impact in every brief',
-        'Following up after an issue is fixed to ensure the customer feels the improvement'
-      ],
-      bad: [
-        'Shipping a change without speaking to users or checking data',
-        'Relying on internal opinions as "customer truth"',
-        'Leaving negative feedback unanswered for days'
-      ]
-    },
-    scorecard: [
-      { measure: 'Customer Insight', scores: { 1: 'Assumptions only', 3: 'Some validation', 5: 'Evidence-led' } },
-      { measure: 'Outcomes Delivered', scores: { 1: 'Unclear', 3: 'Occasional wins', 5: 'Consistent, felt impact' } },
-      { measure: 'Responsiveness', scores: { 1: 'Slow / silent', 3: 'Timely', 5: 'Proactive follow-through' } }
-    ],
-    tags: ['Customer insight', 'Outcomes', 'Empathy'],
-    colors: { gradient: 'from-emerald-500 to-teal-600', soft: 'from-emerald-50 to-teal-50' }
-  },
-  {
-    id: 'togetherness',
-    letter: 'T',
-    title: 'Togetherness',
-    tagline: 'We win as one team. We respect diverse perspectives, collaborate openly, and support each other to achieve outcomes bigger than any individual effort.',
-    meaning: 'Default to "we". Seek perspectives, unblock teammates, and celebrate shared wins.',
-    behaviors: [
-      'Invite diverse viewpoints and listen actively',
-      'Share context early so others can move faster',
-      'Ask for help and offer help without being asked',
-      'Celebrate team wins publicly and credit contributors'
-    ],
-    examples: {
-      good: [
-        'Pulling product, ops, and sales into a quick huddle to align on a customer issue',
-        'Sharing draft work early to gather feedback',
-        'Calling out teammates by name when celebrating results'
-      ],
-      bad: [
-        "Guarding information to stay \"in control\"",
-        "Letting a teammate stay blocked because \"it's not my lane\"",
-        "Taking credit for shared work"
-      ]
-    },
-    scorecard: [
-      { measure: 'Collaboration', scores: { 1: 'Siloed', 3: 'Participates', 5: 'Orchestrates' } },
-      { measure: 'Communication', scores: { 1: 'Sparse', 3: 'Informative', 5: 'Rich context, early' } },
-      { measure: 'Team Support', scores: { 1: 'Rarely helps', 3: 'Helps when asked', 5: 'Proactively supports' } }
-    ],
-    tags: ['Trust', 'Collaboration', 'Support'],
-    colors: { gradient: 'from-blue-500 to-indigo-600', soft: 'from-blue-50 to-indigo-50' }
-  },
-  {
     id: 'transparency-integrity',
-    letter: 'T&',
+    sequence: '01',
     title: 'Transparency & Integrity',
     tagline: "We speak the truth early and act with integrity even when it's uncomfortable. We share context, not just conclusions, and keep our word to customers, teammates, and partners.",
     meaning: 'Be honest early, provide context, and honor commitments--especially when it is inconvenient.',
@@ -96,8 +32,40 @@ export const coreValues = [
     colors: { gradient: 'from-amber-500 to-orange-600', soft: 'from-amber-50 to-orange-50' }
   },
   {
+    id: 'relentless-customer-centricity',
+    sequence: '02',
+    title: 'Relentless Customer Centricity',
+    tagline: 'Every decision starts with the customer and works backward. We obsess over real outcomes and go the extra mile to create value customers genuinely feel.',
+    meaning: 'Start with the customer, validate with evidence, and finish with a measurable outcome they can see and feel.',
+    behaviors: [
+      'Begin projects with the customer outcome, not the task list',
+      'Validate assumptions with customer calls, data, or experiments',
+      'Escalate and unblock anything that hurts the customer experience',
+      'Close the loop with customers after shipping changes'
+    ],
+    examples: {
+      good: [
+        'Jumping on a quick call to confirm the problem before drafting a proposal',
+        'Adding a success metric tied to customer impact in every brief',
+        'Following up after an issue is fixed to ensure the customer feels the improvement'
+      ],
+      bad: [
+        'Shipping a change without speaking to users or checking data',
+        'Relying on internal opinions as "customer truth"',
+        'Leaving negative feedback unanswered for days'
+      ]
+    },
+    scorecard: [
+      { measure: 'Customer Insight', scores: { 1: 'Assumptions only', 3: 'Some validation', 5: 'Evidence-led' } },
+      { measure: 'Outcomes Delivered', scores: { 1: 'Unclear', 3: 'Occasional wins', 5: 'Consistent, felt impact' } },
+      { measure: 'Responsiveness', scores: { 1: 'Slow / silent', 3: 'Timely', 5: 'Proactive follow-through' } }
+    ],
+    tags: ['Customer insight', 'Outcomes', 'Empathy'],
+    colors: { gradient: 'from-emerald-500 to-teal-600', soft: 'from-emerald-50 to-teal-50' }
+  },
+  {
     id: 'unprompted-ownership',
-    letter: 'UO',
+    sequence: '03',
     title: 'Unprompted Ownership',
     tagline: "We take responsibility without being asked. We own outcomes end-to-end, fix what's broken, and don't wait for permission to do what's right for the business.",
     meaning: 'See it, solve it, ship it--and make sure it sticks.',
@@ -129,7 +97,7 @@ export const coreValues = [
   },
   {
     id: 'scalable-innovation-excellence',
-    letter: 'SI',
+    sequence: '04',
     title: 'Scalable Innovation & Excellence',
     tagline: 'We build with the future in mind. We innovate to simplify, raise quality standards, and design solutions that scale--without compromising on excellence.',
     meaning: 'Invent to simplify, raise the bar, and make it scalable from day one.',
@@ -158,5 +126,37 @@ export const coreValues = [
     ],
     tags: ['Scale', 'Quality', 'Simplicity'],
     colors: { gradient: 'from-purple-600 to-fuchsia-600', soft: 'from-purple-50 to-fuchsia-50' }
+  },
+  {
+    id: 'togetherness',
+    sequence: '05',
+    title: 'Togetherness',
+    tagline: 'We win as one team. We respect diverse perspectives, collaborate openly, and support each other to achieve outcomes bigger than any individual effort.',
+    meaning: 'Default to "we". Seek perspectives, unblock teammates, and celebrate shared wins.',
+    behaviors: [
+      'Invite diverse viewpoints and listen actively',
+      'Share context early so others can move faster',
+      'Ask for help and offer help without being asked',
+      'Celebrate team wins publicly and credit contributors'
+    ],
+    examples: {
+      good: [
+        'Pulling product, ops, and sales into a quick huddle to align on a customer issue',
+        'Sharing draft work early to gather feedback',
+        'Calling out teammates by name when celebrating results'
+      ],
+      bad: [
+        "Guarding information to stay \"in control\"",
+        "Letting a teammate stay blocked because \"it's not my lane\"",
+        "Taking credit for shared work"
+      ]
+    },
+    scorecard: [
+      { measure: 'Collaboration', scores: { 1: 'Siloed', 3: 'Participates', 5: 'Orchestrates' } },
+      { measure: 'Communication', scores: { 1: 'Sparse', 3: 'Informative', 5: 'Rich context, early' } },
+      { measure: 'Team Support', scores: { 1: 'Rarely helps', 3: 'Helps when asked', 5: 'Proactively supports' } }
+    ],
+    tags: ['Trust', 'Collaboration', 'Support'],
+    colors: { gradient: 'from-blue-500 to-indigo-600', soft: 'from-blue-50 to-indigo-50' }
   }
 ]
