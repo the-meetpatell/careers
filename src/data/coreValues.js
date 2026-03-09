@@ -1,7 +1,7 @@
 export const coreValues = [
   {
     id: 'transparency-integrity',
-    sequence: '01',
+    letter: 'T',
     title: 'Transparency & Integrity',
     tagline: "We speak the truth early and act with integrity even when it's uncomfortable. We share context, not just conclusions, and keep our word to customers, teammates, and partners.",
     meaning: 'Be honest early, provide context, and honor commitments--especially when it is inconvenient.',
@@ -33,7 +33,7 @@ export const coreValues = [
   },
   {
     id: 'relentless-customer-centricity',
-    sequence: '02',
+    letter: 'R',
     title: 'Relentless Customer Centricity',
     tagline: 'Every decision starts with the customer and works backward. We obsess over real outcomes and go the extra mile to create value customers genuinely feel.',
     meaning: 'Start with the customer, validate with evidence, and finish with a measurable outcome they can see and feel.',
@@ -65,7 +65,7 @@ export const coreValues = [
   },
   {
     id: 'unprompted-ownership',
-    sequence: '03',
+    letter: 'U',
     title: 'Unprompted Ownership',
     tagline: "We take responsibility without being asked. We own outcomes end-to-end, fix what's broken, and don't wait for permission to do what's right for the business.",
     meaning: 'See it, solve it, ship it--and make sure it sticks.',
@@ -97,7 +97,7 @@ export const coreValues = [
   },
   {
     id: 'scalable-innovation-excellence',
-    sequence: '04',
+    letter: 'S',
     title: 'Scalable Innovation & Excellence',
     tagline: 'We build with the future in mind. We innovate to simplify, raise quality standards, and design solutions that scale--without compromising on excellence.',
     meaning: 'Invent to simplify, raise the bar, and make it scalable from day one.',
@@ -129,7 +129,7 @@ export const coreValues = [
   },
   {
     id: 'togetherness',
-    sequence: '05',
+    letter: 'T',
     title: 'Togetherness',
     tagline: 'We win as one team. We respect diverse perspectives, collaborate openly, and support each other to achieve outcomes bigger than any individual effort.',
     meaning: 'Default to "we". Seek perspectives, unblock teammates, and celebrate shared wins.',
@@ -158,5 +158,5 @@ export const coreValues = [
     ],
     tags: ['Trust', 'Collaboration', 'Support'],
     colors: { gradient: 'from-blue-500 to-indigo-600', soft: 'from-blue-50 to-indigo-50' }
-  }
+  },
 ]
