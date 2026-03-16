@@ -31,7 +31,7 @@ export default function QuizStep() {
     },
     {
       id: 3,
-      question: 'Which of these is part of the INSPIRE core values?',
+      question: 'Which of these is part of the TRUST core values?',
       options: ['Integrity', 'Profit Maximization', 'Avoiding change', 'Winning at all costs'],
       correct: 0
     },
@@ -48,7 +48,7 @@ export default function QuizStep() {
     },
     {
       id: 5,
-      question: 'How many core values does Finanshels INSPIRE framework include?',
+      question: 'How many core values does Finanshels TRUST framework include?',
       options: ['3', '5', '7', '10'],
       correct: 2
     }

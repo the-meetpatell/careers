@@ -85,7 +85,7 @@ export default function TeamStep() {
         {
           name: 'HR Team',
           leaders: [
-            { name: 'Brijen', title: 'HR Manager', linkedin: 'https://www.linkedin.com/in/brijenbrahmbhatt/'  }
+            { name: 'Brijen Brahmbhatt', title: 'HR Manager', linkedin: 'https://www.linkedin.com/in/brijenbrahmbhatt/'  }
           ]
         },
         {

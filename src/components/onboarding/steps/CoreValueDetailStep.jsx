@@ -16,7 +16,7 @@ export default function CoreValueDetailStep({ valueKey }) {
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-white border border-slate-200 text-sm font-bold text-slate-700 shadow-sm">
               <Sparkles size={16} className="text-orange-500" />
-              INSPIRE • Our Core Values
+              TRUST • Our Core Values
             </div>
             <div className="flex justify-center items-center gap-6 mt-6">
               <div className={`w-24 h-24 rounded-3xl bg-gradient-to-br ${value.colors.gradient} flex items-center justify-center text-white text-4xl font-extrabold shadow-2xl`}>
