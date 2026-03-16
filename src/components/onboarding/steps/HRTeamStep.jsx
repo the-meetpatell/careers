@@ -40,6 +40,12 @@ const hrSquads = [
     ],
     members: [
       {
+        name: 'Divya Mangtani',
+        title: 'HRBP - People Operations',
+        linkedin: 'https://www.linkedin.com/in/divya-mangtani-1470271b5/',
+        support: 'Handles HR - People Operations and ensures smooth processes for all employees.'
+      },
+      {
         name: 'Abhinand C',
         title: 'HR Operations',
         linkedin: 'https://www.linkedin.com/in/abhinand-c-p-1b19b6248/',
