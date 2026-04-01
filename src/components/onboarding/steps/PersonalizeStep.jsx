@@ -2,22 +2,26 @@ import { useEffect } from 'react'
 import { useOnboarding } from '../../../contexts/OnboardingContext'
 import { Button } from '../../ui/Button'
 import { Card } from '../../ui/Card'
-import { ArrowRight, ArrowLeft, Info, ShieldCheck } from 'lucide-react'
+import { ArrowRight, ArrowLeft } from 'lucide-react'
 import AnimatedSection from '../../AnimatedSection'
 
 const FORM_CONTAINER_ID = 'zf_div__zvGqqY95wJdw2PJYPnCYgAfb_VJl3jeOIZor19ATm0'
 const FORM_PERMA_ID = '_zvGqqY95wJdw2PJYPnCYgAfb_VJl3jeOIZor19ATm0'
 const FORM_SRC = `https://forms.zohopublic.com/finanshelsllc/form/EmployeeOnboarding/formperma/${FORM_PERMA_ID}?zf_rszfm=1`
+const normalizeFormToken = (value = '') => value.toString().replace(/[^a-zA-Z0-9]/g, '')
 
 export default function PersonalizeStep() {
   const { nextStep, previousStep, userData, updateUserData } = useOnboarding()
-  const formAcknowledged = Boolean(userData.intakeFormAcknowledged)
+  const formVerified = Boolean(userData.intakeFormVerified)
 
   useEffect(() => {
     const container = document.getElementById(FORM_CONTAINER_ID)
     if (!container) return
 
     container.innerHTML = ''
+    let maxObservedHeight = 720
+    let hasUnlocked = Boolean(userData.intakeFormVerified)
+    let iframeLoadCount = 0
 
     const iframe = document.createElement('iframe')
     let iframeSrc = FORM_SRC
@@ -59,6 +63,23 @@ export default function PersonalizeStep() {
     iframe.style.transition = 'all 0.5s ease'
     iframe.style.display = 'block'
     iframe.setAttribute('aria-label', 'Employee Onboarding')
+
+    const unlockFormStep = () => {
+      if (hasUnlocked) return
+      hasUnlocked = true
+      updateUserData({ intakeFormVerified: true })
+    }
+
+    iframe.addEventListener('load', () => {
+      iframeLoadCount += 1
+
+      // Initial embed render triggers the first load.
+      // A post-submit thank-you navigation triggers a later load.
+      if (iframeLoadCount > 1) {
+        unlockFormStep()
+      }
+    })
+
     container.appendChild(iframe)
 
     const messageHandler = (event) => {
@@ -69,16 +90,34 @@ export default function PersonalizeStep() {
       if (iframeData.length !== 2 && iframeData.length !== 3) return
 
       const submittedFormId = iframeData[0]
-      const nextIframeHeight = `${parseInt(iframeData[1], 10) + 15}px`
+      const iframeHeight = parseInt(iframeData[1], 10)
+      if (Number.isNaN(iframeHeight)) return
+
+      const nextIframeHeight = `${iframeHeight + 15}px`
       const iframeElement = container.getElementsByTagName('iframe')[0]
       if (!iframeElement) return
 
-      if (iframeElement.src.indexOf('formperma') <= 0 || iframeElement.src.indexOf(submittedFormId) <= 0) return
+      const isZohoOrigin = typeof event.origin === 'string' && event.origin.includes('zoho')
+      const messageMatchesForm =
+        normalizeFormToken(submittedFormId) === normalizeFormToken(FORM_PERMA_ID) ||
+        iframeElement.src.includes(submittedFormId) ||
+        submittedFormId.includes(FORM_PERMA_ID)
+
+      if (!messageMatchesForm && !isZohoOrigin) return
 
       const shouldDelayResize = iframeData.length === 3
+      const didCollapseAfterExpanded =
+        maxObservedHeight >= 900 && iframeHeight <= maxObservedHeight - 250
+      const shouldUnlock = shouldDelayResize || didCollapseAfterExpanded
+
+      maxObservedHeight = Math.max(maxObservedHeight, iframeHeight)
+
+      if (shouldUnlock) {
+        unlockFormStep()
+      }
+
       if (shouldDelayResize) {
         iframeElement.scrollIntoView({ behavior: 'smooth', block: 'start' })
-        updateUserData({ intakeFormAcknowledged: true })
       }
 
       if (iframeElement.style.height !== nextIframeHeight) {
@@ -100,10 +139,6 @@ export default function PersonalizeStep() {
     }
   }, [])
 
-  const handleConfirmationChange = (event) => {
-    updateUserData({ intakeFormAcknowledged: event.target.checked })
-  }
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-blue-50 px-6 py-12 sm:py-16 relative overflow-hidden">
       <div className="absolute top-20 right-10 w-96 h-96 bg-orange-200/30 rounded-full filter blur-3xl"></div>
@@ -124,37 +159,9 @@ export default function PersonalizeStep() {
         <AnimatedSection animation="fade-up" delay={100}>
           <Card className="border-2 border-slate-200 shadow-2xl">
             <div className="p-8 sm:p-12 space-y-6">
-              <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-200">
-                <Info size={20} className="text-blue-500 flex-shrink-0 mt-1" />
-                <p className="text-sm text-slate-600">
-                  This step now uses the official Zoho onboarding form, so OTP verification and the
-                  `@finanshels.com` email restriction are enforced by Zoho instead of being bypassed in the app.
-                </p>
-              </div>
-
-              <div className="flex items-start gap-3 p-4 rounded-2xl bg-emerald-50 border border-emerald-200">
-                <ShieldCheck size={20} className="text-emerald-600 flex-shrink-0 mt-1" />
-                <p className="text-sm text-emerald-900">
-                  After the iframe shows the form success state, the confirmation below may auto-enable. If it does not,
-                  tick it manually once you have submitted the form successfully.
-                </p>
-              </div>
-
               <div className="rounded-3xl bg-white border border-slate-100 shadow-inner p-4 sm:p-6">
                 <div id={FORM_CONTAINER_ID} className="mx-auto w-full max-w-4xl overflow-hidden rounded-3xl" />
               </div>
-
-              <label className="flex items-start gap-3 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm cursor-pointer">
-                <input
-                  type="checkbox"
-                  checked={formAcknowledged}
-                  onChange={handleConfirmationChange}
-                  className="mt-1 h-5 w-5 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500"
-                />
-                <span className="text-sm text-slate-700">
-                  I have completed the secure onboarding intake form and passed the required validation checks.
-                </span>
-              </label>
 
               <div className="pt-2 flex gap-4">
                 <Button
@@ -170,7 +177,7 @@ export default function PersonalizeStep() {
                   type="button"
                   size="lg"
                   onClick={nextStep}
-                  disabled={!formAcknowledged}
+                  disabled={!formVerified}
                   className="flex-1 bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent hover:opacity-95 text-white font-bold text-lg shadow-xl"
                 >
                   Continue
@@ -179,9 +186,9 @@ export default function PersonalizeStep() {
               </div>
 
               <p className="text-sm text-slate-500 text-center">
-                {formAcknowledged
+                {formVerified
                   ? 'All set. Continue to move to the next step.'
-                  : 'Submit the official onboarding form above to enable Continue.'}
+                  : 'Submit the official onboarding form above to unlock Continue.'}
               </p>
             </div>
           </Card>

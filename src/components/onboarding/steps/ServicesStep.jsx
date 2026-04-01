@@ -10,9 +10,9 @@ export default function ServicesStep() {
   const services = [
     { title: 'Bookkeeping', icon: '📚' },
     { title: 'Tax Consultancy', icon: '💼' },
-    { title: 'Fractional CFO', icon: '👔' },
     { title: 'Audit & Liquidation', icon: '📊' },
-    { title: 'Compliance Services', icon: '✅' }
+    { title: 'Compliance Services', icon: '✅' },
+    { title: 'Fractional CFO', icon: '👔' },
   ]
 
   const products = [

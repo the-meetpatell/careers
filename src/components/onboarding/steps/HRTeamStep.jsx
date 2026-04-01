@@ -50,6 +50,12 @@ const hrSquads = [
         title: 'HR Operations',
         linkedin: 'https://www.linkedin.com/in/abhinand-c-p-1b19b6248/',
         support: 'Takes care of HR systems access, payroll inputs, documentation, and benefits queries.'
+      },
+      {
+        name: 'Lohith Raj',
+        title: 'IT & Admin',
+        linkedin: 'https://www.linkedin.com/in/lohith-raj-sj-4baa8933b/',
+        support: 'Supports IT onboarding, device and access readiness, and day-to-day admin coordination for smooth operations.'
       }
     ]
   }

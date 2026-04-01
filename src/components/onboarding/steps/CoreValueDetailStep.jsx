@@ -20,7 +20,7 @@ export default function CoreValueDetailStep({ valueKey }) {
             </div>
             <div className="flex justify-center items-center gap-6 mt-6">
               <div className={`w-24 h-24 rounded-3xl bg-gradient-to-br ${value.colors.gradient} flex items-center justify-center text-white text-4xl font-extrabold shadow-2xl`}>
-                {value.sequence}
+                {value.letter || value.title?.charAt(0) || '?'}
               </div>
               <div className="text-left">
                 <h2 className="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight">{value.title}</h2>

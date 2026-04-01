@@ -7,7 +7,7 @@ const createDefaultUserData = () => ({
   role: '',
   department: '',
   startDate: new Date().toISOString().split('T')[0],
-  intakeFormAcknowledged: false
+  intakeFormVerified: false
 })
 
 export const useOnboarding = () => {
@@ -24,11 +24,11 @@ const ONBOARDING_STEPS = [
   { id: 'company', title: 'About Us', icon: '🏢', required: true },
   { id: 'vision-mission', title: 'Vision & Mission', icon: '🎯', required: true },
   { id: 'values', title: 'Our Values', icon: '💎', required: true },
-  { id: 'relentless-customer-centricity', title: 'Relentless Customer Centricity', icon: '🧭', required: false },
-  { id: 'togetherness', title: 'Togetherness', icon: '🤝', required: false },
   { id: 'transparency-integrity', title: 'Transparency & Integrity', icon: '🔍', required: false },
+  { id: 'relentless-customer-centricity', title: 'Relentless Customer Centricity', icon: '🧭', required: false },
   { id: 'unprompted-ownership', title: 'Unprompted Ownership', icon: '🚀', required: false },
   { id: 'scalable-innovation-excellence', title: 'Scalable Innovation & Excellence', icon: '✨', required: false },
+  { id: 'togetherness', title: 'Togetherness', icon: '🤝', required: false },
   { id: 'okr-system', title: 'OKR System', icon: '📊', required: true },
   { id: 'services', title: 'Our Services', icon: '🛠️', required: true },
   { id: 'team', title: 'Meet the Team', icon: '👥', required: true },
@@ -39,6 +39,8 @@ const ONBOARDING_STEPS = [
   { id: 'quiz', title: 'Knowledge Check', icon: '🎓', required: true },
   { id: 'completion', title: 'Congratulations!', icon: '🎉', required: true }
 ]
+
+const PERSONALIZE_STEP_ID = 'personalize'
 
 const BADGES = [
   { id: 'first-step', title: 'First Step', icon: '👣', condition: (progress) => progress.completedSteps.length >= 1 },
@@ -60,13 +62,32 @@ export const OnboardingProvider = ({ children }) => {
   const [timeSpent, setTimeSpent] = useState(0)
   const [showConfetti, setShowConfetti] = useState(false)
 
+  const canAccessStep = (stepId, formVerified = userData.intakeFormVerified) => {
+    const personalizeIndex = ONBOARDING_STEPS.findIndex(step => step.id === PERSONALIZE_STEP_ID)
+    const targetIndex = ONBOARDING_STEPS.findIndex(step => step.id === stepId)
+
+    if (targetIndex === -1 || personalizeIndex === -1) {
+      return false
+    }
+
+    // Everything after personalize is locked until the onboarding intake form is verified.
+    if (targetIndex > personalizeIndex && !formVerified) {
+      return false
+    }
+
+    return true
+  }
+
   useEffect(() => {
     const saved = localStorage.getItem('finanshels-onboarding')
     if (saved) {
       const data = JSON.parse(saved)
-      setCurrentStep(data.currentStep || 'welcome')
+      const restoredUserData = { ...createDefaultUserData(), ...(data.userData || {}) }
+      const restoredStep = data.currentStep || 'welcome'
+
+      setCurrentStep(canAccessStep(restoredStep, restoredUserData.intakeFormVerified) ? restoredStep : PERSONALIZE_STEP_ID)
       setCompletedSteps(data.completedSteps || [])
-      setUserData({ ...createDefaultUserData(), ...(data.userData || {}) })
+      setUserData(restoredUserData)
       setQuizAnswers(data.quizAnswers || {})
       setQuizScore(data.quizScore || 0)
       setBadges(data.badges || [])
@@ -120,14 +141,23 @@ export const OnboardingProvider = ({ children }) => {
   }
 
   const goToStep = (stepId) => {
+    if (!canAccessStep(stepId)) {
+      return
+    }
+
     setCurrentStep(stepId)
   }
 
   const nextStep = () => {
     const currentIndex = ONBOARDING_STEPS.findIndex(s => s.id === currentStep)
     if (currentIndex < ONBOARDING_STEPS.length - 1) {
+      const targetStep = ONBOARDING_STEPS[currentIndex + 1]
+      if (!canAccessStep(targetStep.id)) {
+        return
+      }
+
       completeStep(currentStep)
-      setCurrentStep(ONBOARDING_STEPS[currentIndex + 1].id)
+      setCurrentStep(targetStep.id)
     }
   }
 
