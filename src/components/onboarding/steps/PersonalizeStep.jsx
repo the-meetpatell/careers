@@ -1,60 +1,122 @@
-import { useState, useCallback } from 'react'
+import { useEffect } from 'react'
 import { useOnboarding } from '../../../contexts/OnboardingContext'
 import { Button } from '../../ui/Button'
 import { Card } from '../../ui/Card'
-import { ArrowRight, ArrowLeft, Info, CheckCircle2 } from 'lucide-react'
+import { ArrowRight, ArrowLeft, Info, ShieldCheck } from 'lucide-react'
 import AnimatedSection from '../../AnimatedSection'
 
+const FORM_CONTAINER_ID = 'zf_div__zvGqqY95wJdw2PJYPnCYgAfb_VJl3jeOIZor19ATm0'
+const FORM_PERMA_ID = '_zvGqqY95wJdw2PJYPnCYgAfb_VJl3jeOIZor19ATm0'
+const FORM_SRC = `https://forms.zohopublic.com/finanshelsllc/form/EmployeeOnboarding/formperma/${FORM_PERMA_ID}?zf_rszfm=1`
+
 export default function PersonalizeStep() {
-  const { nextStep, previousStep } = useOnboarding()
-  const formActionUrl = 'https://forms.zohopublic.com/finanshelsllc/form/EmployeeOnboarding/formperma/Woot2Ll8DxPyJgzujhpCq92VB8sONE-HMNiKDZC0hyo/htmlRecords/submit'
-  const [formSubmitted, setFormSubmitted] = useState(false)
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  const [submissionError, setSubmissionError] = useState(null)
+  const { nextStep, previousStep, userData, updateUserData } = useOnboarding()
+  const formAcknowledged = Boolean(userData.intakeFormAcknowledged)
 
-  const handleSubmit = useCallback(
-    async (event) => {
-      event.preventDefault()
-      if (formSubmitted || isSubmitting) return
+  useEffect(() => {
+    const container = document.getElementById(FORM_CONTAINER_ID)
+    if (!container) return
 
-      setSubmissionError(null)
-      setIsSubmitting(true)
-      try {
-        const formData = new FormData(event.currentTarget)
-        const response = await fetch(formActionUrl, {
-          method: 'POST',
-          mode: 'no-cors',
-          body: formData
-        })
+    container.innerHTML = ''
 
-        if (!response.ok && response.type !== 'opaque') {
-          throw new Error('Form submission failed')
+    const iframe = document.createElement('iframe')
+    let iframeSrc = FORM_SRC
+
+    try {
+      if (typeof window.ZFAdvLead !== 'undefined' && typeof window.zfutm_zfAdvLead !== 'undefined') {
+        for (let prmIdx = 0; prmIdx < window.ZFAdvLead.utmPNameArr.length; prmIdx++) {
+          let utmPm = window.ZFAdvLead.utmPNameArr[prmIdx]
+          utmPm =
+            window.ZFAdvLead.isSameDomian && window.ZFAdvLead.utmcustPNameArr.indexOf(utmPm) === -1
+              ? `zf_${utmPm}`
+              : utmPm
+          const utmVal = window.zfutm_zfAdvLead.zfautm_gC_enc(window.ZFAdvLead.utmPNameArr[prmIdx])
+
+          if (typeof utmVal !== 'undefined' && utmVal !== '') {
+            iframeSrc = iframeSrc + (iframeSrc.includes('?') ? '&' : '?') + `${utmPm}=${utmVal}`
+          }
         }
-
-        setFormSubmitted(true)
-      } catch (error) {
-        console.error('Unable to submit onboarding form', error)
-        setSubmissionError('Something went wrong while submitting the form. Please try again.')
-      } finally {
-        setIsSubmitting(false)
       }
-    },
-    [formActionUrl, formSubmitted, isSubmitting]
-  )
+
+      if (typeof window.ZFLead !== 'undefined' && typeof window.zfutm_zfLead !== 'undefined') {
+        for (let prmIdx = 0; prmIdx < window.ZFLead.utmPNameArr.length; prmIdx++) {
+          const utmPm = window.ZFLead.utmPNameArr[prmIdx]
+          const utmVal = window.zfutm_zfLead.zfutm_gC_enc(window.ZFLead.utmPNameArr[prmIdx])
+
+          if (typeof utmVal !== 'undefined' && utmVal !== '') {
+            iframeSrc = iframeSrc + (iframeSrc.includes('?') ? '&' : '?') + `${utmPm}=${utmVal}`
+          }
+        }
+      }
+    } catch (error) {
+      console.error('Unable to append Zoho tracking params', error)
+    }
+
+    iframe.src = iframeSrc
+    iframe.style.border = 'none'
+    iframe.style.height = '720px'
+    iframe.style.width = '100%'
+    iframe.style.transition = 'all 0.5s ease'
+    iframe.style.display = 'block'
+    iframe.setAttribute('aria-label', 'Employee Onboarding')
+    container.appendChild(iframe)
+
+    const messageHandler = (event) => {
+      const eventData = event.data
+      if (!eventData || eventData.constructor !== String) return
+
+      const iframeData = eventData.split('|')
+      if (iframeData.length !== 2 && iframeData.length !== 3) return
+
+      const submittedFormId = iframeData[0]
+      const nextIframeHeight = `${parseInt(iframeData[1], 10) + 15}px`
+      const iframeElement = container.getElementsByTagName('iframe')[0]
+      if (!iframeElement) return
+
+      if (iframeElement.src.indexOf('formperma') <= 0 || iframeElement.src.indexOf(submittedFormId) <= 0) return
+
+      const shouldDelayResize = iframeData.length === 3
+      if (shouldDelayResize) {
+        iframeElement.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        updateUserData({ intakeFormAcknowledged: true })
+      }
+
+      if (iframeElement.style.height !== nextIframeHeight) {
+        if (shouldDelayResize) {
+          setTimeout(() => {
+            iframeElement.style.height = nextIframeHeight
+          }, 500)
+        } else {
+          iframeElement.style.height = nextIframeHeight
+        }
+      }
+    }
+
+    window.addEventListener('message', messageHandler, false)
+
+    return () => {
+      window.removeEventListener('message', messageHandler, false)
+      container.innerHTML = ''
+    }
+  }, [])
+
+  const handleConfirmationChange = (event) => {
+    updateUserData({ intakeFormAcknowledged: event.target.checked })
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-blue-50 px-6 py-12 sm:py-16 relative overflow-hidden">
       <div className="absolute top-20 right-10 w-96 h-96 bg-orange-200/30 rounded-full filter blur-3xl"></div>
       <div className="absolute bottom-20 left-10 w-96 h-96 bg-blue-200/30 rounded-full filter blur-3xl"></div>
 
-      <div className="max-w-3xl mx-auto relative z-10">
+      <div className="max-w-5xl mx-auto relative z-10">
         <AnimatedSection animation="fade-down">
           <div className="text-center mb-12">
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-slate-900 mb-4 tracking-tighter">
               Tell Us About <span className="bg-gradient-to-r from-orange-500 to-blue-600 bg-clip-text text-transparent">You</span>
             </h2>
             <p className="text-lg text-slate-600">
-              This helps us customize your onboarding journey
+              Complete the secure onboarding intake to unlock the rest of your journey.
             </p>
           </div>
         </AnimatedSection>
@@ -65,120 +127,36 @@ export default function PersonalizeStep() {
               <div className="flex items-start gap-3 p-4 rounded-2xl bg-slate-50 border border-slate-200">
                 <Info size={20} className="text-blue-500 flex-shrink-0 mt-1" />
                 <p className="text-sm text-slate-600">
-                  Please fill in our secure onboarding intake form below. Once you submit the information, click Continue to move to the next step.
+                  This step now uses the official Zoho onboarding form, so OTP verification and the
+                  `@finanshels.com` email restriction are enforced by Zoho instead of being bypassed in the app.
                 </p>
               </div>
-              <div className={`${formSubmitted ? 'hidden' : 'block'}`}>
-                <form
-                  onSubmit={handleSubmit}
-                  action={formActionUrl}
-                  method="POST"
-                  acceptCharset="UTF-8"
-                  encType="multipart/form-data"
-                  className="space-y-6 rounded-3xl bg-white border border-slate-100 shadow-inner p-8"
-                >
-                  <input type="hidden" name="zf_referrer_name" value="" />
-                  <input type="hidden" name="zf_redirect_url" value="" />
-                  <input type="hidden" name="zc_gad" value="" />
-                  <div>
-                    <label className="block text-sm font-semibold text-slate-700 mb-2">
-                      Your Name <span className="text-pink-500">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      name="SingleLine"
-                      placeholder="i.e. Meet Patel"
-                      maxLength="255"
-                      required
-                      className="w-full rounded-2xl border border-slate-200 px-4 py-3 text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-200"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-semibold text-slate-700 mb-2">
-                      Phone <span className="text-pink-500">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      compname="PhoneNumber"
-                      name="PhoneNumber_countrycode"
-                      phoneFormat="1"
-                      isCountryCodeEnabled="false"
-                      maxLength="20"
-                      fieldType="11"
-                      id="international_PhoneNumber_countrycode"
-                      className="w-full rounded-2xl border border-slate-200 px-4 py-3 text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-200"
-                      placeholder="Enter your phone number"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-semibold text-slate-700 mb-2">
-                      Email <span className="text-pink-500">*</span>
-                    </label>
-                    <input
-                      type="email"
-                      name="Email"
-                      placeholder="i.e. name@finanshels.com"
-                      maxLength="255"
-                      required
-                      className="w-full rounded-2xl border border-slate-200 px-4 py-3 text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-200"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-semibold text-slate-700 mb-2">
-                      Your Department <span className="text-pink-500">*</span>
-                    </label>
-                    <select
-                      name="Dropdown"
-                      required
-                      defaultValue="-Select-"
-                      className="w-full rounded-2xl border border-slate-200 px-4 py-3 text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-200 bg-white"
-                    >
-                      <option value="-Select-" disabled>
-                        Select
-                      </option>
-                      <option value="Marketing">Marketing</option>
-                      <option value="Sales">Sales</option>
-                      <option value="Partnership">Partnership</option>
-                      <option value="Engineering">Engineering</option>
-                      <option value="HR">HR</option>
-                      <option value="Customer Success">Customer Success</option>
-                      <option value="FinOps">FinOps</option>
-                      <option value="AML">AML</option>
-                      <option value="ALC">ALC</option>
-                      <option value="Taxation">Taxation</option>
-                      <option value="Legal">Legal</option>
-                      <option value="Internal Finance">Internal Finance</option>
-                      <option value="Center of Excellence">Center of Excellence</option>
-                    </select>
-                  </div>
-                  <div className="pt-2">
-                    <Button
-                      type="submit"
-                      size="lg"
-                      disabled={isSubmitting}
-                      className="w-full bg-slate-900 hover:bg-slate-800 text-white rounded-2xl"
-                    >
-                      {isSubmitting ? 'Submitting...' : 'Submit'}
-                    </Button>
-                    {submissionError && <p className="mt-3 text-sm text-red-500 text-center">{submissionError}</p>}
-                  </div>
-                </form>
+
+              <div className="flex items-start gap-3 p-4 rounded-2xl bg-emerald-50 border border-emerald-200">
+                <ShieldCheck size={20} className="text-emerald-600 flex-shrink-0 mt-1" />
+                <p className="text-sm text-emerald-900">
+                  After the iframe shows the form success state, the confirmation below may auto-enable. If it does not,
+                  tick it manually once you have submitted the form successfully.
+                </p>
               </div>
-              {formSubmitted && (
-                <div className="rounded-3xl bg-white border border-slate-100 shadow-inner p-10 text-center space-y-6">
-                  <div className="flex justify-center">
-                    <div className="w-32 h-32 rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center shadow-inner">
-                      <CheckCircle2 className="text-blue-600" size={56} />
-                    </div>
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-semibold text-slate-900 mb-2">Thank you!</h3>
-                    <p className="text-slate-600 text-sm sm:text-base">Your response has been submitted successfully. Click Continue below.</p>
-                  </div>
-                </div>
-              )}
-              <div className="pt-6 flex gap-4">
+
+              <div className="rounded-3xl bg-white border border-slate-100 shadow-inner p-4 sm:p-6">
+                <div id={FORM_CONTAINER_ID} className="mx-auto w-full max-w-4xl overflow-hidden rounded-3xl" />
+              </div>
+
+              <label className="flex items-start gap-3 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm cursor-pointer">
+                <input
+                  type="checkbox"
+                  checked={formAcknowledged}
+                  onChange={handleConfirmationChange}
+                  className="mt-1 h-5 w-5 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500"
+                />
+                <span className="text-sm text-slate-700">
+                  I have completed the secure onboarding intake form and passed the required validation checks.
+                </span>
+              </label>
+
+              <div className="pt-2 flex gap-4">
                 <Button
                   type="button"
                   size="lg"
@@ -192,15 +170,18 @@ export default function PersonalizeStep() {
                   type="button"
                   size="lg"
                   onClick={nextStep}
-                  disabled={!formSubmitted}
+                  disabled={!formAcknowledged}
                   className="flex-1 bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent hover:opacity-95 text-white font-bold text-lg shadow-xl"
                 >
                   Continue
                   <ArrowRight className="ml-2" size={20} />
                 </Button>
               </div>
+
               <p className="text-sm text-slate-500 text-center">
-                {formSubmitted ? 'All set! Click Continue below to move ahead.' : 'Submit the form above to enable the Continue button.'}
+                {formAcknowledged
+                  ? 'All set. Continue to move to the next step.'
+                  : 'Submit the official onboarding form above to enable Continue.'}
               </p>
             </div>
           </Card>

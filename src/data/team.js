@@ -14,18 +14,18 @@ export const LEADERSHIP_TEAM = [
     linkedin: "https://www.linkedin.com/in/muhammed-musthafa-vk/"
   },
   {
-    name: "Meet Patel",
-    role: "Centre Of Excellence",
-    image: "https://api.dicebear.com/7.x/notionists/svg?seed=MaleStylishBoss&backgroundColor=ec4899",
-    bio: "Driving growth, business and innovations",
-    linkedin: "https://www.linkedin.com/in/themeetpatel/"
-  },
-  {
     name: "Rahul Kohli",
     role: "Head of Marketing",
     image: "https://api.dicebear.com/7.x/notionists/svg?seed=RahulKohli&backgroundColor=06b6d4",
     bio: "Building brand presence and scaling growth-driven marketing strategies.",
     linkedin: "https://www.linkedin.com/in/kohlirahul/"
+  },
+  {
+    name: "Ashish Tripathi",
+    role: "Head of Product & Monetization",
+    image: "https://api.dicebear.com/7.x/notionists/svg?seed=MaleStylishBoss&backgroundColor=ec4899",
+    bio: "Building scalable Products powering Client experience and financial operations.",
+    linkedin: "https://www.linkedin.com/in/ashishtripathi-at/'"
   },
   {
     name: "Ashish Yadav",
@@ -35,41 +35,40 @@ export const LEADERSHIP_TEAM = [
     linkedin: "https://www.linkedin.com/in/ashish-yadav-00370618a/"
   },
   {
-    name: "Harris Solangi",
-    role: "VP of Engineering",
-    image: "https://api.dicebear.com/7.x/notionists/svg?seed=HarrisSolangi&backgroundColor=10b981",
-    bio: "Building scalable tech infrastructure powering financial operations.",
-    linkedin: "https://www.linkedin.com/in/harrissolangi/"
+    name: "Brijen Brahmbhatt",
+    role: "HR Manager",
+    image: "https://api.dicebear.com/7.x/notionists/svg?seed=BrijenBrahmbhatt&backgroundColor=f97316",
+    bio: "Leading HR initiatives to build a world-class team and culture.",
+    linkedin: "https://www.linkedin.com/in/brijenbrahmbhatt/"
   },
- 
   {
     name: "Suhail KY",
-    role: "Head of Taxation",
+    role: "Operation Lead",
     image: "https://api.dicebear.com/7.x/notionists/svg?seed=SuhailKYMale&backgroundColor=eab308",
-    bio: "Expert in tax compliance and strategic financial planning.",
+    bio: "Driving operational excellence across delivery teams and client success.",
     linkedin: "https://www.linkedin.com/in/suhail-k-y-cma%C2%AE-011264181/"
   },
   {
     name: "Jaydeep Khamkar",
-    role: "VP - Operations",
+    role: "Financial Controller",
     image: "https://api.dicebear.com/7.x/notionists/svg?seed=JaydeepKhamkar&backgroundColor=14b8a6",
     bio: "Optimizing processes and scaling operations for rapid growth.",
     linkedin: "https://www.linkedin.com/in/jaydeep-khamkar-538ab415/"
   },
   {
-    name: "Aditi Gupta",
-    role: "Strategic Partnership Head",
-    image: "https://api.dicebear.com/7.x/notionists/svg?seed=AditiGuptaFemale789&backgroundColor=f43f5e",
-    bio: "Building strategic alliances and ecosystem partnerships across MENA.",
-    linkedin: "https://www.linkedin.com/in/aditi-gupta1583/"
-  },
-  {
     name: "Jasmeet Monga",
-    role: "Account Manager - Finance",
+    role: "Account Manager",
     image: "https://api.dicebear.com/7.x/notionists/svg?seed=JasmeetMongaMale&backgroundColor=f59e0b",
     bio: "Leading finance operations and client relationships across UAE markets.",
     linkedin: "https://www.linkedin.com/in/jasmeet-monga-acca-98a39254/"
-  }
+  },
+  {
+    name: "Krishna Nair",
+    role: "Account Manager",
+    image: "https://api.dicebear.com/7.x/notionists/svg?seed=KrishnaNairMale&backgroundColor=f59e0b",
+    bio: "Leading AML compliances for our clients in the UAE.",
+    linkedin: "https://www.linkedin.com/in/krishna-subash-nair-9153671b/"
+  },
 ]
 
 export const TESTIMONIALS = [

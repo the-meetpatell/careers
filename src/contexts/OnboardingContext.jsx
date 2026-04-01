@@ -2,6 +2,14 @@ import { createContext, useContext, useState, useEffect } from 'react'
 
 const OnboardingContext = createContext()
 
+const createDefaultUserData = () => ({
+  name: '',
+  role: '',
+  department: '',
+  startDate: new Date().toISOString().split('T')[0],
+  intakeFormAcknowledged: false
+})
+
 export const useOnboarding = () => {
   const context = useContext(OnboardingContext)
   if (!context) throw new Error('useOnboarding must be used within OnboardingProvider')
@@ -44,7 +52,7 @@ const BADGES = [
 export const OnboardingProvider = ({ children }) => {
   const [currentStep, setCurrentStep] = useState('welcome')
   const [completedSteps, setCompletedSteps] = useState([])
-  const [userData, setUserData] = useState({ name: '', role: '', department: '', startDate: new Date().toISOString().split('T')[0] })
+  const [userData, setUserData] = useState(createDefaultUserData)
   const [quizAnswers, setQuizAnswers] = useState({})
   const [quizScore, setQuizScore] = useState(0)
   const [badges, setBadges] = useState([])
@@ -58,7 +66,7 @@ export const OnboardingProvider = ({ children }) => {
       const data = JSON.parse(saved)
       setCurrentStep(data.currentStep || 'welcome')
       setCompletedSteps(data.completedSteps || [])
-      setUserData(data.userData || userData)
+      setUserData({ ...createDefaultUserData(), ...(data.userData || {}) })
       setQuizAnswers(data.quizAnswers || {})
       setQuizScore(data.quizScore || 0)
       setBadges(data.badges || [])
@@ -141,7 +149,7 @@ export const OnboardingProvider = ({ children }) => {
   const resetOnboarding = () => {
     setCurrentStep('welcome')
     setCompletedSteps([])
-    setUserData({ name: '', role: '', department: '', startDate: new Date().toISOString().split('T')[0] })
+    setUserData(createDefaultUserData())
     setQuizAnswers({})
     setQuizScore(0)
     setBadges([])

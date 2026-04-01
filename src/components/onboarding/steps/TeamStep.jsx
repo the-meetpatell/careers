@@ -30,7 +30,6 @@ export default function TeamStep() {
         {
           name: 'Partnership',
           leaders: [
-            { name: 'Aditi Gupta', title: 'Strategic Partnership Manager', linkedin: 'https://www.linkedin.com/in/aditi-gupta1583/' },
             { name: 'Vishal Singh', title: 'Partnership Lead', linkedin: 'https://www.linkedin.com/in/vishalsingh2302/' }
           ]
         },
@@ -49,13 +48,9 @@ export default function TeamStep() {
         {
           name: 'Center of Excellence',
           leaders: [
-            { name: 'Meet Patel', title: 'AVP - COE / Integrator', linkedin: 'https://www.linkedin.com/in/themeetpatel/' }
-          ]
-        },
-        {
-          name: 'Center of Excellence',
-          leaders: [
-            { name: 'Santo Thomas', title: 'AM - COE / Org Excellence', linkedin: 'https://www.linkedin.com/in/themeetpatel/' }
+            { name: 'Santo Thomas', title: 'AM - Org Excellence', linkedin: 'https://www.linkedin.com/in/santo-thomas-991287236/' },
+            { name: 'Vaishnavi Trivedi', title: 'Sr Business Ops Coordinator', linkedin: 'https://www.linkedin.com/in/vaishnavi-trivedi-/' },
+            { name: 'Amith Ravindran', title: 'Partnership Coordinator', linkedin: 'https://www.linkedin.com/in/amithravindran93/' }
           ]
         },
         {
@@ -70,40 +65,42 @@ export default function TeamStep() {
     },
     {
       name: 'MUHAMMED MUSTHAFA',
-      title: 'COO & Co-Founder',
-      focus: 'Operations & Delivery',
+      title: 'CPO & Co-Founder',
+      focus: 'Product & Operations',
       gradient: 'from-orange-500 to-amber-500',
       linkedin: 'https://www.linkedin.com/in/muhammed-musthafa-vk/',
       teams: [
         {
-          name: 'FinOps Team',
-          leaders: [
-            { name: 'Jasmeet Monga', title: 'Account Manager', linkedin: 'https://www.linkedin.com/in/jasmeet-monga-acca-98a39254/' },
-            { name: 'Jaydeep Khamkhar', title: 'Account Manager', linkedin: 'https://www.linkedin.com/in/jaydeep-khamkar-538ab415/' }
-          ]
-        },
-        {
           name: 'HR Team',
           leaders: [
-            { name: 'Brijen Brahmbhatt', title: 'HR Manager', linkedin: 'https://www.linkedin.com/in/brijenbrahmbhatt/'  }
+            { name: 'Brijen Brahmbhatt', title: 'HR Manager', linkedin: 'https://www.linkedin.com/in/brijenbrahmbhatt/'  },
+            { name: 'Divya Mangtani', title: 'HR - Business Partner', linkedin: 'https://www.linkedin.com/in/divya-mangtani-1470271b5/'  },
+            { name: 'Lohith Raj', title: 'IT & Administrator', linkedin: 'https://www.linkedin.com/in/lohith-raj-sj-4baa8933b/'  },
           ]
         },
         {
           name: 'Tech & Product',
           leaders: [
-            { name: 'Harris Solangi', title: 'VP of Engineering', linkedin: 'https://www.linkedin.com/in/harrissolangi/' }
+            { name: 'Ashish Tripathi', title: 'Head of Product & Monetization', linkedin: 'https://www.linkedin.com/in/ashishtripathi-at/' }
+          ]
+        },
+        {
+          name: 'Operation Lead',
+          leaders: [
+            { name: 'Suhail KY', title: 'Operation Lead', linkedin: 'https://www.linkedin.com/in/suhail-k-y-cma%C2%AE-011264181/' }
+          ]
+        },
+        {
+          name: 'FinOps Team',
+          leaders: [
+            { name: 'Jasmeet Monga', title: 'Account Manager', linkedin: 'https://www.linkedin.com/in/jasmeet-monga-acca-98a39254/' },
+            { name: 'Jaydeep Khamkhar', title: 'Financial Controller', linkedin: 'https://www.linkedin.com/in/jaydeep-khamkar-538ab415/' }
           ]
         },
         {
           name: 'Tax Team',
           leaders: [
-            { name: 'Suhail KY', title: 'Account Manager', linkedin: 'https://www.linkedin.com/in/suhail-k-y-cma%C2%AE-011264181/' }
-          ]
-        },
-        {
-          name: 'Internal Finance',
-          leaders: [
-            { name: 'Shahul Mohammed', title: 'Finance Manager', linkedin: 'https://www.linkedin.com/in/shahul-mohammed-41733623b/' }
+            { name: 'Gautam Sanoj', title: 'Associate Manager', linkedin: 'https://www.linkedin.com/in/gautam-sanoj-4887901b1/' }
           ]
         },
         {
@@ -117,7 +114,13 @@ export default function TeamStep() {
           leaders: [
             { name: 'Akshay Kadam', title: 'Account Manager', linkedin: 'https://www.linkedin.com/in/akshay-kadam-21604159/' }
           ]
-        }
+        },
+        {
+          name: 'Internal Finance',
+          leaders: [
+            { name: 'Shahul Mohammed', title: 'Finance Manager', linkedin: 'https://www.linkedin.com/in/shahul-mohammed-41733623b/' }
+          ]
+        },
       ]
     }
   ]
