@@ -48,9 +48,9 @@ export default function QuizStep() {
     },
     {
       id: 5,
-      question: 'How many core values does Finanshels TRUST framework include?',
-      options: ['3', '5', '7', '10'],
-      correct: 2
+      question: 'In the TRUST framework, what does the "S" stand for?',
+      options: ['Speed Over Quality', 'Scalable Innovation & Excellence', 'Sales & Strategy', 'Service Standards'],
+      correct: 1
     }
   ]
 
