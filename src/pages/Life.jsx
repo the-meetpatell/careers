@@ -36,46 +36,34 @@ export default function Life() {
 
   const coreValues = [
     {
-      number: "01",
-      title: "Integrity",
-      description: "We do the right thing even when no one is watching.",
+      letter: "T",
+      title: "Transparency & Integrity",
+      description: "We speak the truth early and act with integrity even when it’s uncomfortable. We share context, not just conclusions, and keep our word to customers, teammates, and partners.",
       gradient: "from-amber-500 to-orange-600"
     },
     {
-      number: "02",
-      title: "Never Stop Learning",
-      description: "Learning is continuous. We learn fast and execute fast.",
-      gradient: "from-blue-500 to-cyan-600"
-    },
-    {
-      number: "03",
-      title: "Striving for Excellence",
-      description: "Aim for high-quality work — not just “okay”.",
-      gradient: "from-indigo-500 to-purple-600"
-    },
-    {
-      number: "04",
-      title: "Proactive Ownership",
-      description: "Treat the company like it's yours. Own your work from start to finish.",
+      letter: "R",
+      title: "Relentless Customer Centricity",
+      description: "Every decision starts with the customer and works backward. We obsess over real outcomes and go the extra mile to create value customers genuinely feel.",
       gradient: "from-emerald-500 to-teal-600"
     },
     {
-      number: "05",
-      title: "Inventiveness",
-      description: "We don't freeze when stuck — we figure things out.",
-      gradient: "from-fuchsia-500 to-pink-600"
+      letter: "U",
+      title: "Unprompted Ownership",
+      description: "We take responsibility without being asked. We own outcomes end-to-end, fix what’s broken, and don’t wait for permission to do what’s right for the business.",
+      gradient: "from-teal-500 to-emerald-600"
     },
     {
-      number: "06",
-      title: "Resilience",
-      description: "We push beyond the expected when it matters.",
-      gradient: "from-orange-500 to-red-500"
+      letter: "S",
+      title: "Scalable Innovation & Excellence",
+      description: "We build with the future in mind. We innovate to simplify, raise quality standards, and design solutions that scale — without compromising on excellence.",
+      gradient: "from-purple-600 to-fuchsia-600"
     },
     {
-      number: "07",
-      title: "Expansion Mindset",
-      description: "We see challenges as opportunities and embrace change.",
-      gradient: "from-blue-600 to-indigo-700"
+      letter: "T",
+      title: "Togetherness",
+      description: "We win as one team. We respect diverse perspectives, collaborate openly, and support each other to achieve outcomes bigger than any individual effort.",
+      gradient: "from-blue-500 to-indigo-600"
     }
   ]
 
@@ -261,7 +249,7 @@ export default function Life() {
                   <div className={`absolute inset-0 bg-gradient-to-r ${value.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
                   <div className="p-10 flex items-start gap-8 relative">
                     <div className={`text-8xl font-extrabold bg-gradient-to-r ${value.gradient} bg-clip-text text-transparent leading-none opacity-40 group-hover:opacity-100 transition-opacity duration-500`}>
-                      {value.number}
+                      {value.letter}
                     </div>
                     <div className="flex-1">
                       <h3 className="text-3xl font-bold text-slate-900 mb-4 group-hover:text-indigo-600 transition-colors">
