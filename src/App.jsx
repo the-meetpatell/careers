@@ -26,6 +26,11 @@ import AuditAssuranceLead from './pages/virtualDrive/AuditAssuranceLead'
 import VPOperations from './pages/virtualDrive/VPOperations'
 import TaxAdvisor from './pages/virtualDrive/TaxAdvisor'
 import FPAAnalyst from './pages/virtualDrive/FPAAnalyst'
+import VasRevenueVendorPartnershipsExecutive from './pages/virtualDrive/VasRevenueVendorPartnershipsExecutive'
+import OutboundSalesIndia from './pages/virtualDrive/OutboundSalesIndia'
+import EngineeringLead from './pages/virtualDrive/EngineeringLead'
+import DevOpsEngineer from './pages/virtualDrive/DevOpsEngineer'
+import SeniorTalentAcquisition from './pages/virtualDrive/SeniorTalentAcquisition'
 import Onboarding from './pages/Onboarding'
 
 function App() {
@@ -66,6 +71,11 @@ function App() {
                   <Route path="/finops-drive/vp-operations" element={<VPOperations />} />
                   <Route path="/finops-drive/tax-advisor" element={<TaxAdvisor />} />
                   <Route path="/finops-drive/fpa-analyst" element={<FPAAnalyst />} />
+                  <Route path="/virtual-drive/vas-revenue-vendor-partnerships-executive" element={<VasRevenueVendorPartnershipsExecutive />} />
+                  <Route path="/virtual-drive/outbound-sales-india-business-development" element={<OutboundSalesIndia />} />
+                  <Route path="/virtual-drive/engineering-lead" element={<EngineeringLead />} />
+                  <Route path="/virtual-drive/devops-engineer-part-time" element={<DevOpsEngineer />} />
+                  <Route path="/virtual-drive/senior-talent-acquisition" element={<SeniorTalentAcquisition />} />
                 </Routes>
               </main>
               <Footer />
