@@ -80,6 +80,12 @@ function App() {
                   <Route path="/virtual-drive/engineering-lead" element={<EngineeringLead />} />
                   <Route path="/virtual-drive/devops-engineer-part-time" element={<DevOpsEngineer />} />
                   <Route path="/virtual-drive/senior-talent-acquisition" element={<SeniorTalentAcquisition />} />
+                  <Route path="/new-hiring" element={<VirtualDrive />} />
+                  <Route path="/new-hiring/vas-revenue-vendor-partnerships-executive" element={<VasRevenueVendorPartnershipsExecutive />} />
+                  <Route path="/new-hiring/outbound-sales-india-business-development" element={<OutboundSalesIndia />} />
+                  <Route path="/new-hiring/engineering-lead" element={<EngineeringLead />} />
+                  <Route path="/new-hiring/devops-engineer-part-time" element={<DevOpsEngineer />} />
+                  <Route path="/new-hiring/senior-talent-acquisition" element={<SeniorTalentAcquisition />} />
                 </Routes>
               </main>
               <Footer />
