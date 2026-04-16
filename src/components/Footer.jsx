@@ -98,7 +98,7 @@ export default function Footer() {
             <h3 className="font-bold text-xl mb-6 text-slate-900">Get in Touch</h3>
             <ul className="space-y-4 text-slate-700 font-medium text-base">
               <li>
-                <a href="mailto:careers@finanshels.com" className="hover:text-slate-900 transition-colors">
+                <a href="mailto:talents@finanshels.com" className="hover:text-slate-900 transition-colors">
                   talents@finanshels.com
                 </a>
               </li>
@@ -110,7 +110,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-slate-200 pt-10 text-center text-slate-600 text-base font-medium">
-          <p>© 2025 Finanshels. All rights reserved. Backed by MBRIF, in5 Tech, Kube VC.</p>
+          <p>© 2026 Finanshels. All rights reserved. Backed by MBRIF, in5 Tech, Kube VC.</p>
         </div>
       </div>
     </footer>
