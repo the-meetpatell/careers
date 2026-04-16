@@ -129,7 +129,7 @@ export default function Home() {
 
             <AnimatedSection animation="scale" delay={300}>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
-                <Link to="/virtual-drive">
+                <Link to="/new-hiring">
                   <Button size="lg" variant="primary" className="group w-full sm:w-auto text-lg h-14 px-10 shadow-2xl shadow-indigo-500/30 hover:shadow-indigo-500/50">
                     See open roles
                     <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={22} />
@@ -328,7 +328,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="mt-8 flex flex-wrap gap-4">
-                  <Link to="/virtual-drive#roles">
+                  <Link to="/new-hiring#roles">
                     <Button size="lg" className="group h-12 px-6 shadow-lg shadow-indigo-500/20">
                       View roles & apply
                       <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={18} />

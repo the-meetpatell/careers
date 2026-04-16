@@ -10,14 +10,14 @@ export default function Navbar() {
   const pathname = location.pathname
   const isActive = (path) => {
     if (path === '/') return pathname === '/'
-    if (path === '/virtual-drive') return pathname.startsWith('/virtual-drive')
+    if (path === '/new-hiring') return pathname.startsWith('/new-hiring')
     return pathname.startsWith(path)
   }
 
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'FinOps Career', path: '/finops-drive' },
-    { name: 'Career Opportunities', path: '/virtual-drive' },
+    { name: 'New Hiring', path: '/new-hiring' },
     { name: 'Life at Finanshels', path: '/life' },
   ]
 

@@ -1,19 +1,20 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowLeft, MapPin, Briefcase, Users, Calendar, Target, CheckCircle, TrendingUp, PhoneCall } from 'lucide-react'
-import AnimatedSection from '../../components/AnimatedSection'
+import { ArrowLeft, MapPin, Briefcase, Users, Calendar, BarChart3, CheckCircle, Database } from 'lucide-react'
 import { Card } from '../../components/ui/Card'
+import { Button } from '../../components/ui/Button'
+import AnimatedSection from '../../components/AnimatedSection'
 
-export default function OutboundSalesIndia() {
+export default function MarketingOpsCRMManager() {
   useEffect(() => {
-    const containerId = 'zf_div_IDaJzBwWkZz6lqq56UKsSNreqeVH9o5IND2G1EsAErc'
+    const containerId = 'zf_div_e9f3GO_SePt7HtSRH9kKlVieKEUvlGHjzSCenamipy0'
     const container = document.getElementById(containerId)
 
     if (!container || container.querySelector('iframe')) return
 
     try {
       const iframe = document.createElement('iframe')
-      let ifrmSrc = 'https://forms.zohopublic.com/finanshelsllc/form/OutboundSalesSpecialist/formperma/IDaJzBwWkZz6lqq56UKsSNreqeVH9o5IND2G1EsAErc?zf_rszfm=1'
+      let ifrmSrc = 'https://forms.zohopublic.com/finanshelsllc/form/MarketingOpsCRMDeveloper/formperma/e9f3GO_SePt7HtSRH9kKlVieKEUvlGHjzSCenamipy0?zf_rszfm=1'
 
       try {
         if (typeof window.ZFAdvLead !== 'undefined' && typeof window.zfutm_zfAdvLead !== 'undefined') {
@@ -39,10 +40,10 @@ export default function OutboundSalesIndia() {
 
       iframe.src = ifrmSrc
       iframe.style.border = 'none'
-      iframe.style.height = '1278px'
-      iframe.style.width = '90%'
+      iframe.style.height = '1175px'
+      iframe.style.width = '100%'
       iframe.style.transition = 'all 0.5s ease'
-      iframe.setAttribute('aria-label', 'Outbound Sales Specialist')
+      iframe.setAttribute('aria-label', 'Marketing Automation & CRM Manager')
 
       container.appendChild(iframe)
 
@@ -59,7 +60,9 @@ export default function OutboundSalesIndia() {
               const zf_tout = zf_ifrm_data.length === 3
               if (prevIframeHeight !== zf_ifrm_ht_nw) {
                 if (zf_tout) {
-                  setTimeout(() => { iframeEl.style.height = zf_ifrm_ht_nw }, 500)
+                  setTimeout(() => {
+                    iframeEl.style.height = zf_ifrm_ht_nw
+                  }, 500)
                 } else {
                   iframeEl.style.height = zf_ifrm_ht_nw
                 }
@@ -70,52 +73,52 @@ export default function OutboundSalesIndia() {
       }
 
       window.addEventListener('message', messageHandler, false)
-      return () => { window.removeEventListener('message', messageHandler) }
+      return () => {
+        window.removeEventListener('message', messageHandler)
+      }
     } catch (e) {}
   }, [])
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white pt-20">
       <div className="py-12 sm:py-16 px-4 sm:px-6 lg:px-12">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
-            {/* Main Content */}
             <div className="lg:col-span-2">
               <AnimatedSection animation="fade-up">
-                <Link to="/virtual-drive" className="inline-flex items-center gap-2 text-amber-600 hover:text-amber-700 font-semibold mb-6 sm:mb-8 group text-sm sm:text-base">
+                <Link to="/new-hiring" className="inline-flex items-center gap-2 text-lime-700 hover:text-lime-800 font-semibold mb-6 sm:mb-8 group text-sm sm:text-base">
                   <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
                   Back to Career Opportunities
                 </Link>
 
                 <div className="mb-6 sm:mb-8">
-                  <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-gradient-to-r from-amber-500 to-orange-500 text-white text-xs sm:text-sm font-bold mb-3 sm:mb-4">
-                    📈 Revenue • India
+                  <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-gradient-to-r from-lime-500 to-green-600 text-white text-xs sm:text-sm font-bold mb-3 sm:mb-4">
+                    📊 Marketing Automation
                   </div>
                   <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">
-                    Outbound Sales – India / Business Development
+                    Marketing Automation & CRM Manager
                   </h1>
                   <div className="flex flex-wrap gap-3 sm:gap-4 text-slate-600 font-medium text-sm sm:text-base">
                     <div className="flex items-center gap-2">
-                      <MapPin size={16} className="text-amber-600 flex-shrink-0" />
-                      India (Remote, virtual interview process)
+                      <MapPin size={16} className="text-lime-700 flex-shrink-0" />
+                      Remote (virtual interview process)
                     </div>
                     <div className="flex items-center gap-2">
-                      <Briefcase size={16} className="text-amber-600 flex-shrink-0" />
+                      <Briefcase size={16} className="text-lime-700 flex-shrink-0" />
                       Full-Time
                     </div>
                     <div className="flex items-center gap-2">
-                      <Users size={16} className="text-amber-600 flex-shrink-0" />
-                      Hiring top talent
+                      <Users size={16} className="text-lime-700 flex-shrink-0" />
+                      Marketing team
                     </div>
                   </div>
                 </div>
               </AnimatedSection>
 
               <AnimatedSection animation="fade-up" delay={100}>
-                <Card className="mb-6 bg-gradient-to-br from-amber-50 to-orange-50 border-2 border-amber-200">
+                <Card className="mb-6 bg-gradient-to-br from-lime-50 to-green-50 border-2 border-lime-200">
                   <div className="p-4 sm:p-6 md:p-8">
                     <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
-                      <Calendar className="text-amber-600 flex-shrink-0" size={24} />
+                      <Calendar className="text-lime-700 flex-shrink-0" size={24} />
                       <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900">Interview process</h3>
                     </div>
                     <div className="space-y-2 text-slate-700 font-medium text-sm sm:text-base">
@@ -123,7 +126,7 @@ export default function OutboundSalesIndia() {
                       <p><strong>Screening & HR:</strong> Quick expectation alignment with our people team (virtual).</p>
                       <p><strong>Skills interview:</strong> Role-specific working session with the hiring manager.</p>
                       <p><strong>Final Round:</strong> Leadership conversation + offer.</p>
-                      <p className="text-amber-600 font-bold mt-3 sm:mt-4">We move fast—top profiles are scheduled immediately.</p>
+                      <p className="text-lime-700 font-bold mt-3 sm:mt-4">We move fast—top profiles are scheduled immediately.</p>
                     </div>
                   </div>
                 </Card>
@@ -134,10 +137,10 @@ export default function OutboundSalesIndia() {
                   <div className="p-4 sm:p-6 md:p-8">
                     <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3 sm:mb-4">About the Role</h2>
                     <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-3 sm:mb-4">
-                      We're expanding into India and looking for a sharp, driven Outbound Sales / Business Development professional to own the India pipeline. You'll prospect, qualify, and close SMB customers, building Finanshels' presence in one of the world's fastest-growing fintech markets.
+                      Own the marketing tech stack, CRM, and automation. You’ll keep data clean, build journeys, and deliver reporting that drives better decisions across growth, sales, and partnerships.
                     </p>
                     <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                      This is a ground-floor opportunity for high-impact individuals who want to own a market, not just work a territory. You'll report directly to leadership and have the autonomy to shape the India go-to-market.
+                      Ideal for operators who blend systems thinking, tooling expertise, and a bias for measurable impact.
                     </p>
                   </div>
                 </Card>
@@ -147,33 +150,25 @@ export default function OutboundSalesIndia() {
                 <Card className="mb-6">
                   <div className="p-4 sm:p-6 md:p-8">
                     <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-6 flex items-center gap-2">
-                      <Target className="text-amber-600 flex-shrink-0" size={24} />
+                      <Database className="text-lime-700 flex-shrink-0" size={24} />
                       Key Responsibilities
                     </h2>
                     <ul className="space-y-3 sm:space-y-4">
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Own the end-to-end outbound sales cycle: prospecting, qualification, demos, proposals, and closings.</span>
+                        <span className="text-sm sm:text-base text-slate-700">Own CRM hygiene, segmentation, and lifecycle automations.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Build and manage a pipeline of SMB prospects across key sectors in India.</span>
+                        <span className="text-sm sm:text-base text-slate-700">Build dashboards and attribution to measure pipeline impact.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Execute cold outreach via LinkedIn, email, and calls — with a high conversion rate focus.</span>
+                        <span className="text-sm sm:text-base text-slate-700">Evaluate and integrate tools (CRM, MAP, analytics).</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Identify and develop local partnership and referral channels to accelerate pipeline.</span>
-                      </li>
-                      <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Maintain accurate CRM records and provide regular pipeline forecasts to leadership.</span>
-                      </li>
-                      <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Provide market feedback to shape product positioning and India-specific GTM messaging.</span>
+                        <span className="text-sm sm:text-base text-slate-700">Partner with marketing, sales, and partnerships on data flows.</span>
                       </li>
                     </ul>
                   </div>
@@ -183,30 +178,23 @@ export default function OutboundSalesIndia() {
               <AnimatedSection animation="fade-up" delay={400}>
                 <Card className="mb-6">
                   <div className="p-4 sm:p-6 md:p-8">
-                    <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-6 flex items-center gap-2">
-                      <TrendingUp className="text-amber-600 flex-shrink-0" size={24} />
-                      Required Qualifications
-                    </h2>
+                    <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-6">Required Qualifications</h2>
                     <ul className="space-y-3 sm:space-y-4">
                       <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-amber-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">2–5 years in outbound B2B sales or business development — SaaS, fintech, or accounting software preferred.</span>
+                        <CheckCircle className="text-lime-700 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">4+ years in marketing ops/CRM with B2B experience.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-amber-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Strong cold outreach skills — you know how to write compelling sequences and book meetings.</span>
+                        <CheckCircle className="text-lime-700 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">Hands-on with Zoho CRM (or similar) and automation tools.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-amber-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Comfortable selling remotely and managing a pipeline in a CRM (HubSpot, Salesforce, or similar).</span>
+                        <CheckCircle className="text-lime-700 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">Strong grasp of attribution, reporting, and data quality.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-amber-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Self-motivated and able to thrive in a fast-paced, low-overhead environment.</span>
-                      </li>
-                      <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-amber-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Excellent verbal and written communication in English; Hindi proficiency a strong plus.</span>
+                        <CheckCircle className="text-lime-700 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">Ability to work cross-functionally and manage stakeholders.</span>
                       </li>
                     </ul>
                   </div>
@@ -220,19 +208,15 @@ export default function OutboundSalesIndia() {
                     <ul className="space-y-3 sm:space-y-4">
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Competitive base salary + uncapped commission on closed revenue.</span>
+                        <span className="text-sm sm:text-base text-slate-700">Competitive compensation and performance incentives.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Remote-first role — work from anywhere in India.</span>
+                        <span className="text-sm sm:text-base text-slate-700">Remote-first culture with strong operational rigor.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Ground-floor opportunity to own and shape the India GTM strategy.</span>
-                      </li>
-                      <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Direct exposure to leadership and clear path into a country/regional leadership role.</span>
+                        <span className="text-sm sm:text-base text-slate-700">Ownership of tooling decisions and impactful projects.</span>
                       </li>
                     </ul>
                   </div>
@@ -240,20 +224,21 @@ export default function OutboundSalesIndia() {
               </AnimatedSection>
             </div>
 
-            {/* Sidebar */}
             <div className="lg:col-span-1">
               <AnimatedSection>
                 <div className="lg:sticky lg:top-24">
                   <Card className="shadow-xl bg-white overflow-hidden">
-                    <div className="bg-gradient-to-r from-amber-500 to-orange-500 p-4 sm:p-6 text-white">
-                      <PhoneCall className="mb-2" size={24} />
+                    <div className="bg-gradient-to-r from-lime-500 to-green-600 p-4 sm:p-6 text-white">
+                      <BarChart3 className="mb-2" size={24} />
                       <h3 className="text-xl sm:text-2xl font-bold mb-1">Apply Now</h3>
-                      <p className="text-amber-50 text-xs sm:text-sm">Outbound Sales – India / Business Development</p>
+                      <p className="text-lime-50 text-xs sm:text-sm">Join our Marketing Team</p>
                     </div>
                     <div className="p-4 sm:p-6 space-y-3">
                       <p className="text-sm text-slate-600">Submit your application to get scheduled quickly for virtual rounds.</p>
-                      <div id="zf_div_IDaJzBwWkZz6lqq56UKsSNreqeVH9o5IND2G1EsAErc" className="w-full" />
-                      <p className="text-xs text-slate-500 text-center">or email talents@finanshels.com</p>
+                      <div
+                        id="zf_div_e9f3GO_SePt7HtSRH9kKlVieKEUvlGHjzSCenamipy0"
+                        className="w-full"
+                      />
                     </div>
                   </Card>
                 </div>

@@ -3,12 +3,12 @@ import FinOpsRoleTemplate from './FinOpsRoleTemplate'
 export default function AccountingFresher() {
   return (
     <FinOpsRoleTemplate
-      badgeText="FinOps • Early Talent"
-      title="Accounting Fresher"
+      badgeText="FinOps • Remote"
+      title="Jr Associate - Accounting"
       location="Remote"
       team="FinOps Pods"
       level="Full-time"
-      summary="Kickstart your accounting career in structured pods—supporting reconciliations, data prep, and reporting hygiene for global clients."
+      summary="Start your accounting career in structured pods—supporting reconciliations, data prep, and reporting hygiene for global clients."
       about="You’ll work alongside controllers, team leads, and account managers while learning pod playbooks and close discipline. Expect fast learning cycles and plenty of coaching."
       responsibilities={[
         'Support data prep for reconciliations across banks, expenses, and payables.',

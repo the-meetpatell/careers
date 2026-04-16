@@ -1,20 +1,19 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowLeft, MapPin, Briefcase, Users, Calendar, Laptop, CheckCircle, Code } from 'lucide-react'
-import { Card } from '../../components/ui/Card'
-import { Button } from '../../components/ui/Button'
+import { ArrowLeft, MapPin, Briefcase, Users, Calendar, Target, CheckCircle, UserPlus, Search } from 'lucide-react'
 import AnimatedSection from '../../components/AnimatedSection'
+import { Card } from '../../components/ui/Card'
 
-export default function JrWebDeveloper() {
+export default function SeniorTalentAcquisition() {
   useEffect(() => {
-    const containerId = 'zf_div_EP_GDKAYxqPZzr7AWmk0AIw5jR2SEO6wvFmjmeyUFxE'
+    const containerId = 'zf_div_wZkv_SVIPnsI8bOv-4UraZFj509lzc8cCMwWcXUqfUI'
     const container = document.getElementById(containerId)
 
     if (!container || container.querySelector('iframe')) return
 
     try {
       const iframe = document.createElement('iframe')
-      let ifrmSrc = 'https://forms.zohopublic.com/finanshelsllc/form/JuniorWebDeveloper/formperma/EP_GDKAYxqPZzr7AWmk0AIw5jR2SEO6wvFmjmeyUFxE?zf_rszfm=1'
+      let ifrmSrc = 'https://forms.zohopublic.com/finanshelsllc/form/SrTalentAcquisitionSpecialist/formperma/wZkv_SVIPnsI8bOv-4UraZFj509lzc8cCMwWcXUqfUI?zf_rszfm=1'
 
       try {
         if (typeof window.ZFAdvLead !== 'undefined' && typeof window.zfutm_zfAdvLead !== 'undefined') {
@@ -40,10 +39,10 @@ export default function JrWebDeveloper() {
 
       iframe.src = ifrmSrc
       iframe.style.border = 'none'
-      iframe.style.height = '1290px'
+      iframe.style.height = '1240px'
       iframe.style.width = '90%'
       iframe.style.transition = 'all 0.5s ease'
-      iframe.setAttribute('aria-label', 'React Web Developer')
+      iframe.setAttribute('aria-label', 'Sr Talent Acquisition Specialist')
 
       container.appendChild(iframe)
 
@@ -60,9 +59,7 @@ export default function JrWebDeveloper() {
               const zf_tout = zf_ifrm_data.length === 3
               if (prevIframeHeight !== zf_ifrm_ht_nw) {
                 if (zf_tout) {
-                  setTimeout(() => {
-                    iframeEl.style.height = zf_ifrm_ht_nw
-                  }, 500)
+                  setTimeout(() => { iframeEl.style.height = zf_ifrm_ht_nw }, 500)
                 } else {
                   iframeEl.style.height = zf_ifrm_ht_nw
                 }
@@ -73,60 +70,60 @@ export default function JrWebDeveloper() {
       }
 
       window.addEventListener('message', messageHandler, false)
-      return () => {
-        window.removeEventListener('message', messageHandler)
-      }
+      return () => { window.removeEventListener('message', messageHandler) }
     } catch (e) {}
   }, [])
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white pt-20">
       <div className="py-12 sm:py-16 px-4 sm:px-6 lg:px-12">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
+            {/* Main Content */}
             <div className="lg:col-span-2">
               <AnimatedSection animation="fade-up">
-                <Link to="/virtual-drive" className="inline-flex items-center gap-2 text-purple-600 hover:text-purple-700 font-semibold mb-6 sm:mb-8 group text-sm sm:text-base">
+                <Link to="/new-hiring" className="inline-flex items-center gap-2 text-indigo-600 hover:text-indigo-700 font-semibold mb-6 sm:mb-8 group text-sm sm:text-base">
                   <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
                   Back to Career Opportunities
                 </Link>
 
                 <div className="mb-6 sm:mb-8">
-                  <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 text-white text-xs sm:text-sm font-bold mb-3 sm:mb-4">
-                    🧑‍💻 Technology
+                  <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-gradient-to-r from-indigo-600 to-blue-600 text-white text-xs sm:text-sm font-bold mb-3 sm:mb-4">
+                    👥 HR & Talent Acquisition
                   </div>
                   <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">
-                    React Web Developer
+                    Senior Talent Acquisition Specialist
                   </h1>
                   <div className="flex flex-wrap gap-3 sm:gap-4 text-slate-600 font-medium text-sm sm:text-base">
                     <div className="flex items-center gap-2">
-                      <MapPin size={16} className="text-purple-600 flex-shrink-0" />
-                      Remote (virtual interview process)
+                      <MapPin size={16} className="text-indigo-600 flex-shrink-0" />
+                      Remote / Hybrid (virtual interview process)
                     </div>
                     <div className="flex items-center gap-2">
-                      <Briefcase size={16} className="text-purple-600 flex-shrink-0" />
+                      <Briefcase size={16} className="text-indigo-600 flex-shrink-0" />
                       Full-Time
                     </div>
                     <div className="flex items-center gap-2">
-                      <Users size={16} className="text-purple-600 flex-shrink-0" />
-                      Early-career role
+                      <Users size={16} className="text-indigo-600 flex-shrink-0" />
+                      Hiring top talent
                     </div>
                   </div>
                 </div>
               </AnimatedSection>
 
               <AnimatedSection animation="fade-up" delay={100}>
-                <Card className="mb-6 bg-gradient-to-br from-purple-50 to-pink-50 border-2 border-purple-200">
+                <Card className="mb-6 bg-gradient-to-br from-indigo-50 to-blue-50 border-2 border-indigo-200">
                   <div className="p-4 sm:p-6 md:p-8">
                     <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
-                      <Calendar className="text-purple-600 flex-shrink-0" size={24} />
+                      <Calendar className="text-indigo-600 flex-shrink-0" size={24} />
                       <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900">Interview process</h3>
                     </div>
                     <div className="space-y-2 text-slate-700 font-medium text-sm sm:text-base">
                       <p><strong>Apply:</strong> Rolling applications; we prioritise top profiles weekly.</p>
                       <p><strong>Screening & HR:</strong> Quick expectation alignment with our people team (virtual).</p>
-                      <p><strong>Skills interview:</strong> Role-specific working session with the hiring manager.</p>
+                      <p><strong>Skills interview:</strong> Practical hiring scenario and sourcing strategy discussion.</p>
                       <p><strong>Final Round:</strong> Leadership conversation + offer.</p>
-                      <p className="text-purple-600 font-bold mt-3 sm:mt-4">We move fast—top profiles are scheduled immediately.</p>
+                      <p className="text-indigo-600 font-bold mt-3 sm:mt-4">We move fast—top profiles are scheduled immediately.</p>
                     </div>
                   </div>
                 </Card>
@@ -137,10 +134,10 @@ export default function JrWebDeveloper() {
                   <div className="p-4 sm:p-6 md:p-8">
                     <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3 sm:mb-4">About the Role</h2>
                     <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-3 sm:mb-4">
-                      Ship clean, performant React experiences with guidance from senior engineers. You’ll build UI components, integrate APIs, and learn best practices across the stack.
+                      Finanshels is scaling fast and we need a Senior Talent Acquisition Specialist who can own the full hiring lifecycle — from sourcing and screening to offer acceptance. You'll partner closely with hiring managers across engineering, sales, finance, and operations to attract and close top-tier talent.
                     </p>
                     <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                      Perfect for fast learners who want to grow in a high-velocity fintech team and see their work ship to thousands of users.
+                      This role is ideal for a resourceful recruiter with a builder's mentality — someone who can create scalable processes, maintain an exceptional candidate experience, and consistently deliver quality hires in a fast-moving startup environment.
                     </p>
                   </div>
                 </Card>
@@ -150,29 +147,37 @@ export default function JrWebDeveloper() {
                 <Card className="mb-6">
                   <div className="p-4 sm:p-6 md:p-8">
                     <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-6 flex items-center gap-2">
-                      <Code className="text-purple-600 flex-shrink-0" size={24} />
+                      <Target className="text-indigo-600 flex-shrink-0" size={24} />
                       Key Responsibilities
                     </h2>
                     <ul className="space-y-3 sm:space-y-4">
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Build and refine React components with clean, accessible UI.</span>
+                        <span className="text-sm sm:text-base text-slate-700">Own the full-cycle recruitment process across all functions — from job briefing to signed offer.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Integrate APIs and ensure reliable data flows.</span>
+                        <span className="text-sm sm:text-base text-slate-700">Source exceptional candidates through LinkedIn, referrals, job boards, and creative channels.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Write tests and participate in code reviews to maintain quality.</span>
+                        <span className="text-sm sm:text-base text-slate-700">Partner with hiring managers to define role requirements, ideal profiles, and interview frameworks.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Collaborate with designers to polish UX and interactions.</span>
+                        <span className="text-sm sm:text-base text-slate-700">Maintain an excellent candidate experience — timely communication, structured interviews, clear feedback.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Document components and patterns for reuse.</span>
+                        <span className="text-sm sm:text-base text-slate-700">Build and maintain a strong talent pipeline for current and future hiring needs.</span>
+                      </li>
+                      <li className="flex items-start gap-2 sm:gap-3">
+                        <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">Track hiring metrics (time-to-fill, offer acceptance rates, source quality) and report to leadership.</span>
+                      </li>
+                      <li className="flex items-start gap-2 sm:gap-3">
+                        <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">Support employer branding initiatives to position Finanshels as a destination for top talent.</span>
                       </li>
                     </ul>
                   </div>
@@ -182,23 +187,34 @@ export default function JrWebDeveloper() {
               <AnimatedSection animation="fade-up" delay={400}>
                 <Card className="mb-6">
                   <div className="p-4 sm:p-6 md:p-8">
-                    <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-6">Required Qualifications</h2>
+                    <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-6 flex items-center gap-2">
+                      <Search className="text-indigo-600 flex-shrink-0" size={24} />
+                      Required Qualifications
+                    </h2>
                     <ul className="space-y-3 sm:space-y-4">
                       <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-purple-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">1-2 years with React/JavaScript and modern frontend tooling.</span>
+                        <CheckCircle className="text-indigo-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">4+ years of talent acquisition experience, ideally in a startup, fintech, or technology company.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-purple-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Comfortable with HTML/CSS/Tailwind (or similar) and Git.</span>
+                        <CheckCircle className="text-indigo-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">Proven track record closing senior and specialised hires across multiple functions.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-purple-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Basic understanding of APIs and debugging.</span>
+                        <CheckCircle className="text-indigo-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">Strong sourcing skills — expert use of LinkedIn Recruiter, Boolean search, and referral networks.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-purple-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Eagerness to learn quickly and take feedback.</span>
+                        <CheckCircle className="text-indigo-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">Experience managing an ATS and running structured interview processes.</span>
+                      </li>
+                      <li className="flex items-start gap-2 sm:gap-3">
+                        <CheckCircle className="text-indigo-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">Excellent interpersonal skills — you can build trust with candidates and stakeholders alike.</span>
+                      </li>
+                      <li className="flex items-start gap-2 sm:gap-3">
+                        <CheckCircle className="text-indigo-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">High ownership mindset — you treat open roles like revenue targets and close them with the same urgency.</span>
                       </li>
                     </ul>
                   </div>
@@ -212,19 +228,19 @@ export default function JrWebDeveloper() {
                     <ul className="space-y-3 sm:space-y-4">
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Mentorship from senior engineers and clear growth paths.</span>
+                        <span className="text-sm sm:text-base text-slate-700">Competitive salary with performance bonuses tied to hiring outcomes.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Remote-first flexibility with strong team rituals.</span>
+                        <span className="text-sm sm:text-base text-slate-700">High-impact role — you'll directly shape the team that builds Finanshels' future.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Competitive compensation and learning budget.</span>
+                        <span className="text-sm sm:text-base text-slate-700">Remote-first culture with flexibility and strong async collaboration.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Real impact on products used by thousands of founders.</span>
+                        <span className="text-sm sm:text-base text-slate-700">Clear path to Head of People / HR Leadership as the company scales.</span>
                       </li>
                     </ul>
                   </div>
@@ -232,21 +248,20 @@ export default function JrWebDeveloper() {
               </AnimatedSection>
             </div>
 
+            {/* Sidebar */}
             <div className="lg:col-span-1">
               <AnimatedSection>
                 <div className="lg:sticky lg:top-24">
                   <Card className="shadow-xl bg-white overflow-hidden">
-                    <div className="bg-gradient-to-r from-purple-600 to-pink-600 p-4 sm:p-6 text-white">
-                      <Laptop className="mb-2" size={24} />
+                    <div className="bg-gradient-to-r from-indigo-600 to-blue-600 p-4 sm:p-6 text-white">
+                      <UserPlus className="mb-2" size={24} />
                       <h3 className="text-xl sm:text-2xl font-bold mb-1">Apply Now</h3>
-                      <p className="text-purple-50 text-xs sm:text-sm">React Web Developer</p>
+                      <p className="text-indigo-50 text-xs sm:text-sm">Senior Talent Acquisition Executive</p>
                     </div>
                     <div className="p-4 sm:p-6 space-y-3">
                       <p className="text-sm text-slate-600">Submit your application to get scheduled quickly for virtual rounds.</p>
-                      <div
-                        id="zf_div_EP_GDKAYxqPZzr7AWmk0AIw5jR2SEO6wvFmjmeyUFxE"
-                        className="w-full"
-                      />
+                      <div id="zf_div_wZkv_SVIPnsI8bOv-4UraZFj509lzc8cCMwWcXUqfUI" className="w-full" />
+                      <p className="text-xs text-slate-500 text-center">or email talents@finanshels.com</p>
                     </div>
                   </Card>
                 </div>

@@ -4,7 +4,7 @@ export default function FinOpsAccountManager() {
   return (
     <FinOpsRoleTemplate
       badgeText="FinOps • Delivery"
-      title="Account Manager - FinOps"
+      title="Account Manager"
       location="Remote / Dubai"
       team="Client Pods"
       level="Full-time"

@@ -86,7 +86,7 @@ export default function ContentPRManager() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
             <div className="lg:col-span-2">
               <AnimatedSection animation="fade-up">
-                <Link to="/virtual-drive" className="inline-flex items-center gap-2 text-indigo-600 hover:text-indigo-700 font-semibold mb-6 sm:mb-8 group text-sm sm:text-base">
+                <Link to="/new-hiring" className="inline-flex items-center gap-2 text-indigo-600 hover:text-indigo-700 font-semibold mb-6 sm:mb-8 group text-sm sm:text-base">
                   <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
                   Back to Career Opportunities
                 </Link>

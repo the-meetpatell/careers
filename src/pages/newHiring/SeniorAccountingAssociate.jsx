@@ -4,7 +4,7 @@ export default function SeniorAccountingAssociate() {
   return (
     <FinOpsRoleTemplate
       badgeText="FinOps • Accounting"
-      title="Accounting Advisor"
+      title="Sr Associate - Accounting"
       location="Remote"
       team="FinOps Pods"
       level="Full-time"

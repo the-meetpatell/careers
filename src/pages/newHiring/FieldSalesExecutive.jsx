@@ -96,7 +96,7 @@ export default function FieldSalesExecutive() {
             {/* Main Content - Left Side */}
             <div className="lg:col-span-2">
           <AnimatedSection animation="fade-up">
-            <Link to="/virtual-drive" className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold mb-8 group">
+            <Link to="/new-hiring" className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold mb-8 group">
               <ArrowLeft size={20} className="group-hover:-translate-x-1 transition-transform" />
               Back to Career Opportunities
             </Link>

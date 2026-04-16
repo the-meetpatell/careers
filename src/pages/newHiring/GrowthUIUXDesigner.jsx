@@ -1,19 +1,19 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowLeft, MapPin, Briefcase, Users, Calendar, Target, CheckCircle, Server, Terminal } from 'lucide-react'
+import { ArrowLeft, MapPin, Briefcase, Users, Calendar, Sparkles, PenTool, LineChart, CheckCircle } from 'lucide-react'
 import AnimatedSection from '../../components/AnimatedSection'
 import { Card } from '../../components/ui/Card'
 
-export default function DevOpsEngineer() {
+export default function GrowthUIUXDesigner() {
   useEffect(() => {
-    const containerId = 'zf_div_381U_I-FD1JQBrEZEjk0PiQCJhNcUtwFF3HWdhnkq7o'
+    const containerId = 'zf_div_KoeZNoN73xfIKsFKv-80y3LntAcR-XBw8qc6duSS3Bc'
     const container = document.getElementById(containerId)
 
     if (!container || container.querySelector('iframe')) return
 
     try {
       const iframe = document.createElement('iframe')
-      let ifrmSrc = 'https://forms.zohopublic.com/finanshelsllc/form/DevOpsEngineer/formperma/381U_I-FD1JQBrEZEjk0PiQCJhNcUtwFF3HWdhnkq7o?zf_rszfm=1'
+      let ifrmSrc = 'https://forms.zohopublic.com/finanshelsllc/form/GrowthUIUXDesigner/formperma/KoeZNoN73xfIKsFKv-80y3LntAcR-XBw8qc6duSS3Bc?zf_rszfm=1'
 
       try {
         if (typeof window.ZFAdvLead !== 'undefined' && typeof window.zfutm_zfAdvLead !== 'undefined') {
@@ -39,10 +39,10 @@ export default function DevOpsEngineer() {
 
       iframe.src = ifrmSrc
       iframe.style.border = 'none'
-      iframe.style.height = '1278px'
+      iframe.style.height = '1175px'
       iframe.style.width = '90%'
       iframe.style.transition = 'all 0.5s ease'
-      iframe.setAttribute('aria-label', 'DevOps Engineer')
+      iframe.setAttribute('aria-label', 'Growth UI/UX Designer')
 
       container.appendChild(iframe)
 
@@ -59,7 +59,9 @@ export default function DevOpsEngineer() {
               const zf_tout = zf_ifrm_data.length === 3
               if (prevIframeHeight !== zf_ifrm_ht_nw) {
                 if (zf_tout) {
-                  setTimeout(() => { iframeEl.style.height = zf_ifrm_ht_nw }, 500)
+                  setTimeout(() => {
+                    iframeEl.style.height = zf_ifrm_ht_nw
+                  }, 500)
                 } else {
                   iframeEl.style.height = zf_ifrm_ht_nw
                 }
@@ -70,7 +72,9 @@ export default function DevOpsEngineer() {
       }
 
       window.addEventListener('message', messageHandler, false)
-      return () => { window.removeEventListener('message', messageHandler) }
+      return () => {
+        window.removeEventListener('message', messageHandler)
+      }
     } catch (e) {}
   }, [])
 
@@ -79,51 +83,50 @@ export default function DevOpsEngineer() {
       <div className="py-12 sm:py-16 px-4 sm:px-6 lg:px-12">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
-            {/* Main Content */}
             <div className="lg:col-span-2">
               <AnimatedSection animation="fade-up">
-                <Link to="/virtual-drive" className="inline-flex items-center gap-2 text-emerald-600 hover:text-emerald-700 font-semibold mb-6 sm:mb-8 group text-sm sm:text-base">
+                <Link to="/new-hiring" className="inline-flex items-center gap-2 text-sky-600 hover:text-sky-700 font-semibold mb-6 sm:mb-8 group text-sm sm:text-base">
                   <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
                   Back to Career Opportunities
                 </Link>
 
                 <div className="mb-6 sm:mb-8">
-                  <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-gradient-to-r from-emerald-500 to-teal-600 text-white text-xs sm:text-sm font-bold mb-3 sm:mb-4">
-                    ⚙️ Engineering
+                  <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-gradient-to-r from-sky-500 to-indigo-500 text-white text-xs sm:text-sm font-bold mb-3 sm:mb-4">
+                    📐 Growth Design
                   </div>
                   <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">
-                    DevOps Engineer – Part Time
+                    Growth UI/UX Designer (Remote)
                   </h1>
                   <div className="flex flex-wrap gap-3 sm:gap-4 text-slate-600 font-medium text-sm sm:text-base">
                     <div className="flex items-center gap-2">
-                      <MapPin size={16} className="text-emerald-600 flex-shrink-0" />
-                      Remote / Hybrid (virtual interview process)
+                      <MapPin size={16} className="text-sky-600 flex-shrink-0" />
+                      Remote (virtual interview process)
                     </div>
                     <div className="flex items-center gap-2">
-                      <Briefcase size={16} className="text-emerald-600 flex-shrink-0" />
-                      Part-Time
+                      <Briefcase size={16} className="text-sky-600 flex-shrink-0" />
+                      Full-Time
                     </div>
                     <div className="flex items-center gap-2">
-                      <Users size={16} className="text-emerald-600 flex-shrink-0" />
-                      Hiring top talent
+                      <Users size={16} className="text-sky-600 flex-shrink-0" />
+                      Marketing team
                     </div>
                   </div>
                 </div>
               </AnimatedSection>
 
               <AnimatedSection animation="fade-up" delay={100}>
-                <Card className="mb-6 bg-gradient-to-br from-emerald-50 to-teal-50 border-2 border-emerald-200">
+                <Card className="mb-6 bg-gradient-to-br from-sky-50 to-indigo-50 border-2 border-sky-200">
                   <div className="p-4 sm:p-6 md:p-8">
                     <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
-                      <Calendar className="text-emerald-600 flex-shrink-0" size={24} />
+                      <Calendar className="text-sky-600 flex-shrink-0" size={24} />
                       <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900">Interview process</h3>
                     </div>
                     <div className="space-y-2 text-slate-700 font-medium text-sm sm:text-base">
                       <p><strong>Apply:</strong> Rolling applications; we prioritise top profiles weekly.</p>
                       <p><strong>Screening & HR:</strong> Quick expectation alignment with our people team (virtual).</p>
-                      <p><strong>Technical interview:</strong> Infrastructure review and practical discussion with the engineering lead.</p>
+                      <p><strong>Skills interview:</strong> Role-specific working session with the hiring manager.</p>
                       <p><strong>Final Round:</strong> Leadership conversation + offer.</p>
-                      <p className="text-emerald-600 font-bold mt-3 sm:mt-4">We move fast—top profiles are scheduled immediately.</p>
+                      <p className="text-sky-700 font-bold mt-3 sm:mt-4">We move fast—top profiles are scheduled immediately.</p>
                     </div>
                   </div>
                 </Card>
@@ -134,10 +137,10 @@ export default function DevOpsEngineer() {
                   <div className="p-4 sm:p-6 md:p-8">
                     <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3 sm:mb-4">About the Role</h2>
                     <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-3 sm:mb-4">
-                      We're hiring a skilled DevOps Engineer on a part-time basis to manage and improve our cloud infrastructure, CI/CD pipelines, and deployment processes. You'll ensure Finanshels' platform stays reliable, secure, and scalable as we grow.
+                      Design growth loops, onboarding journeys, and marketing surfaces that convert curious founders into loyal customers. You’ll partner with growth, product, and engineering to ship experiments fast and iterate with data.
                     </p>
                     <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                      This role is ideal for an experienced DevOps professional looking for a meaningful part-time engagement with real ownership over a production fintech platform. You'll work closely with the engineering team to automate, monitor, and harden our infrastructure.
+                      Ideal for designers who mix strong UX craft with a bias for rapid testing, clean systems, and measurable outcomes.
                     </p>
                   </div>
                 </Card>
@@ -147,37 +150,25 @@ export default function DevOpsEngineer() {
                 <Card className="mb-6">
                   <div className="p-4 sm:p-6 md:p-8">
                     <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-6 flex items-center gap-2">
-                      <Target className="text-emerald-600 flex-shrink-0" size={24} />
+                      <LineChart className="text-sky-600 flex-shrink-0" size={24} />
                       Key Responsibilities
                     </h2>
                     <ul className="space-y-3 sm:space-y-4">
                       <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Manage and maintain cloud infrastructure on AWS/GCP — including compute, storage, networking, and security groups.</span>
+                        <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">Design and ship landing pages, onboarding flows, and in-product prompts that improve activation and conversion.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Build, improve, and manage CI/CD pipelines to enable fast, safe, and reliable deployments.</span>
+                        <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">Run rapid experiments with growth and engineering; translate learnings into scalable patterns.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Set up and maintain monitoring, alerting, and observability tooling (Datadog, CloudWatch, or similar).</span>
+                        <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">Maintain design systems for marketing and product growth surfaces with accessibility in mind.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Implement and enforce security best practices, including secrets management, IAM policies, and vulnerability scanning.</span>
-                      </li>
-                      <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Manage containerisation and orchestration with Docker and Kubernetes (or ECS).</span>
-                      </li>
-                      <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Support incident response, root cause analysis, and platform reliability improvements.</span>
-                      </li>
-                      <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Collaborate with engineering on infrastructure-as-code using Terraform or similar tooling.</span>
+                        <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">Instrument flows with analytics to track drop-offs, funnel lift, and experiment results.</span>
                       </li>
                     </ul>
                   </div>
@@ -188,33 +179,25 @@ export default function DevOpsEngineer() {
                 <Card className="mb-6">
                   <div className="p-4 sm:p-6 md:p-8">
                     <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-6 flex items-center gap-2">
-                      <Server className="text-emerald-600 flex-shrink-0" size={24} />
+                      <PenTool className="text-sky-600 flex-shrink-0" size={24} />
                       Required Qualifications
                     </h2>
                     <ul className="space-y-3 sm:space-y-4">
                       <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">4+ years of DevOps or Site Reliability Engineering experience in a production environment.</span>
+                        <CheckCircle className="text-sky-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">3+ years in product or growth design, shipping experiments in SaaS/tech.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Hands-on experience with AWS or GCP — EC2, S3, RDS, Lambda, VPC, and related services.</span>
+                        <CheckCircle className="text-sky-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">Expert in Figma and component-driven design systems.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Strong knowledge of Docker, Kubernetes/ECS, and container orchestration.</span>
+                        <CheckCircle className="text-sky-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">Comfortable instrumenting flows and reading funnel metrics to guide decisions.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Proficient in CI/CD tooling — GitHub Actions, GitLab CI, Jenkins, or similar.</span>
-                      </li>
-                      <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Experience with infrastructure-as-code (Terraform, Pulumi, or CloudFormation).</span>
-                      </li>
-                      <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Security-first mindset with knowledge of IAM, secrets management, and compliance practices.</span>
+                        <CheckCircle className="text-sky-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">Strong collaboration with growth, product, and engineering; crisp communication.</span>
                       </li>
                     </ul>
                   </div>
@@ -227,20 +210,20 @@ export default function DevOpsEngineer() {
                     <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-6">What We Offer</h2>
                     <ul className="space-y-3 sm:space-y-4">
                       <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Competitive part-time compensation, paid per hour or per engagement.</span>
+                        <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">Competitive compensation tied to growth impact.</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={20} />
+                        <span className="text-slate-700">Health insurance and remote-first flexibility.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Fully remote with flexible scheduling — coordinate asynchronously with the team.</span>
+                        <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">Autonomy to ship high-visibility experiences with leadership.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Real ownership over infrastructure with opportunity to grow into a full-time senior role.</span>
-                      </li>
-                      <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Work on a live fintech platform serving hundreds of businesses.</span>
+                        <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">Learning budget and tools to keep your craft sharp.</span>
                       </li>
                     </ul>
                   </div>
@@ -248,20 +231,18 @@ export default function DevOpsEngineer() {
               </AnimatedSection>
             </div>
 
-            {/* Sidebar */}
             <div className="lg:col-span-1">
               <AnimatedSection>
                 <div className="lg:sticky lg:top-24">
                   <Card className="shadow-xl bg-white overflow-hidden">
-                    <div className="bg-gradient-to-r from-emerald-500 to-teal-600 p-4 sm:p-6 text-white">
-                      <Terminal className="mb-2" size={24} />
+                    <div className="bg-gradient-to-r from-sky-500 to-indigo-500 p-4 sm:p-6 text-white">
+                      <Sparkles className="mb-2" size={24} />
                       <h3 className="text-xl sm:text-2xl font-bold mb-1">Apply Now</h3>
-                      <p className="text-emerald-50 text-xs sm:text-sm">DevOps Engineer – Part Time</p>
+                      <p className="text-sky-50 text-xs sm:text-sm">Growth UI/UX Designer</p>
                     </div>
                     <div className="p-4 sm:p-6 space-y-3">
                       <p className="text-sm text-slate-600">Submit your application to get scheduled quickly for virtual rounds.</p>
-                      <div id="zf_div_381U_I-FD1JQBrEZEjk0PiQCJhNcUtwFF3HWdhnkq7o" className="w-full" />
-                      <p className="text-xs text-slate-500 text-center">or email talents@finanshels.com</p>
+                      <div id="zf_div_KoeZNoN73xfIKsFKv-80y3LntAcR-XBw8qc6duSS3Bc" className="w-full" />
                     </div>
                   </Card>
                 </div>

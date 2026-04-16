@@ -13,22 +13,6 @@ const PROCESS_STEPS = [
 
 const FINOPS_ROLES = [
   {
-    title: 'VP - Operations',
-    tag: 'FinOps • UAE (Dubai) / Remote',
-    description: 'Own FinOps delivery ops end-to-end—capacity, SLAs, tooling, and pod performance.',
-    to: '/finops-drive/vp-operations',
-    accent: 'from-slate-700 to-slate-900',
-    chipBg: 'bg-slate-100 text-slate-800',
-  },
-  {
-    title: 'Audit & Assurance Lead',
-    tag: 'FinOps • Audit & Assurance',
-    description: 'Keep pods audit-ready, lead external auditor interactions, and tighten controls.',
-    to: '/finops-drive/audit-assurance-lead',
-    accent: 'from-cyan-600 to-teal-600',
-    chipBg: 'bg-cyan-100 text-cyan-800',
-  },
-  {
     title: 'Financial Controller',
     tag: 'FinOps • UAE (Dubai) / Remote',
     description: 'Own pod-level controllership, reviews, and quality for high-growth startup clients.',
@@ -37,7 +21,7 @@ const FINOPS_ROLES = [
     chipBg: 'bg-indigo-100 text-indigo-700',
   },
   {
-    title: 'Account Manager - FinOps',
+    title: 'Account Manager',
     tag: 'FinOps • UAE (Dubai) / Remote',
     description: 'Lead client pods, manage delivery SLAs, and partner with controllers on escalations.',
     to: '/finops-drive/finops-account-manager',
@@ -45,7 +29,7 @@ const FINOPS_ROLES = [
     chipBg: 'bg-emerald-100 text-emerald-700',
   },
   {
-    title: 'Team Lead - FinOps',
+    title: 'Team Lead - Accounting Advisory',
     tag: 'FinOps • UAE (Dubai) / Remote',
     description: 'Run daily execution for pods; coach Sr/Jr associates to deliver error-free work.',
     to: '/finops-drive/finops-team-lead',
@@ -53,23 +37,7 @@ const FINOPS_ROLES = [
     chipBg: 'bg-amber-100 text-amber-700',
   },
   {
-    title: 'Tax Advisor',
-    tag: 'FinOps • VAT & Corporate Tax',
-    description: 'Lead VAT/CT filings, reconcile tax positions, and guide clients through FTA queries.',
-    to: '/finops-drive/tax-advisor',
-    accent: 'from-red-500 to-amber-600',
-    chipBg: 'bg-amber-100 text-amber-800',
-  },
-  {
-    title: 'FP&A Analyst',
-    tag: 'FinOps • FP&A',
-    description: 'Build driver-based budgets, forecasts, and board-ready reporting for startups.',
-    to: '/finops-drive/fpa-analyst',
-    accent: 'from-blue-500 to-indigo-500',
-    chipBg: 'bg-blue-100 text-blue-700',
-  },
-  {
-    title: 'Accounting Advisor',
+    title: 'Sr Associate - Accounting',
     tag: 'FinOps • Remote',
     description: 'Handle complex reconciliations, reporting packs, and support month-end closes.',
     to: '/finops-drive/senior-accounting-associate',
@@ -77,12 +45,28 @@ const FINOPS_ROLES = [
     chipBg: 'bg-purple-100 text-purple-700',
   },
   {
-    title: 'Accounting Fresher',
+    title: 'Jr Associate - Accounting',
     tag: 'FinOps • Remote',
     description: 'Learn fast in a structured pod, supporting data prep, reconciliations, and reporting.',
     to: '/finops-drive/accounting-fresher',
     accent: 'from-lime-500 to-green-500',
     chipBg: 'bg-lime-100 text-lime-700',
+  },
+  {
+    title: 'Finance Intern',
+    tag: 'FinOps • Remote',
+    description: 'Gain hands-on experience in financial operations, supporting pods with data, analysis, and reporting tasks.',
+    to: '/finops-drive/finance-intern',
+    accent: 'from-sky-500 to-cyan-500',
+    chipBg: 'bg-sky-100 text-sky-700',
+  },
+  {
+    title: 'Tax Intern',
+    tag: 'FinOps • VAT & Corporate Tax',
+    description: 'Support VAT and corporate tax filings, learn FTA compliance, and build your tax career at a fast-growing fintech.',
+    to: '/finops-drive/tax-intern',
+    accent: 'from-red-500 to-amber-600',
+    chipBg: 'bg-amber-100 text-amber-800',
   },
 ]
 
@@ -137,7 +121,7 @@ export default function FinOpsDrive() {
                     <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
                   </Button>
                 </a>
-                <Link to="/virtual-drive" className="inline-flex items-center gap-2 text-slate-700 font-semibold hover:text-indigo-700">
+                <Link to="/new-hiring" className="inline-flex items-center gap-2 text-slate-700 font-semibold hover:text-indigo-700">
                   Looking for other roles?
                   <ArrowRight size={18} />
                 </Link>

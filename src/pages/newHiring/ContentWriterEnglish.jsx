@@ -4,22 +4,21 @@ import { ArrowLeft, Briefcase, Calendar, CheckCircle, Laptop, MapPin, PenTool, U
 import AnimatedSection from '../../components/AnimatedSection'
 import { Card } from '../../components/ui/Card'
 
-export default function ContentWriterArabic() {
+export default function ContentWriterEnglish() {
   useEffect(() => {
-    const containerId = 'zf_div_ubY5LDz5Nic_aMgUNDCojQSfgyqLpTs-NC5PZXKwQjQ'
+    const containerId = 'zf_div_twzyyIbeSwc_qnpRphOdBZnIhkpeL-KlJx32KoKPESs'
     const container = document.getElementById(containerId)
     if (!container || container.querySelector('iframe')) return
 
     const iframe = document.createElement('iframe')
-    let ifrmSrc =
-      'https://forms.zohopublic.com/finanshelsllc/form/ContentWriterArabic1/formperma/ubY5LDz5Nic_aMgUNDCojQSfgyqLpTs-NC5PZXKwQjQ?zf_rszfm=1'
+    let ifrmSrc = 'https://forms.zohopublic.com/finanshelsllc/form/ContentWriter/formperma/twzyyIbeSwc_qnpRphOdBZnIhkpeL-KlJx32KoKPESs?zf_rszfm=1'
 
     iframe.src = ifrmSrc
     iframe.style.border = 'none'
     iframe.style.height = '1175px'
     iframe.style.width = '99%'
     iframe.style.transition = 'all 0.5s ease'
-    iframe.setAttribute('aria-label', 'Content Writer - Arabic')
+    iframe.setAttribute('aria-label', 'Content Writer - English')
 
     container.innerHTML = ''
     container.appendChild(iframe)
@@ -60,29 +59,29 @@ export default function ContentWriterArabic() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
             <div className="lg:col-span-2">
               <AnimatedSection animation="fade-up">
-                <Link to="/virtual-drive" className="inline-flex items-center gap-2 text-amber-600 hover:text-amber-700 font-semibold mb-6 sm:mb-8 group text-sm sm:text-base">
+                <Link to="/new-hiring" className="inline-flex items-center gap-2 text-sky-600 hover:text-sky-700 font-semibold mb-6 sm:mb-8 group text-sm sm:text-base">
                   <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
                   Back to Career Opportunities
                 </Link>
 
                 <div className="mb-6 sm:mb-8">
-                  <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-gradient-to-r from-amber-500 to-red-500 text-white text-xs sm:text-sm font-bold mb-3 sm:mb-4">
+                  <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-gradient-to-r from-sky-500 to-indigo-500 text-white text-xs sm:text-sm font-bold mb-3 sm:mb-4">
                     ✍️ Marketing
                   </div>
                   <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">
-                    Content Writer (Arabic)
+                    Content Writer (English)
                   </h1>
                   <div className="flex flex-wrap gap-3 sm:gap-4 text-slate-600 font-medium text-sm sm:text-base">
                     <div className="flex items-center gap-2">
-                      <MapPin size={16} className="text-amber-600 flex-shrink-0" />
+                      <MapPin size={16} className="text-sky-600 flex-shrink-0" />
                       Remote (virtual interview process)
                     </div>
                     <div className="flex items-center gap-2">
-                      <Briefcase size={16} className="text-amber-600 flex-shrink-0" />
+                      <Briefcase size={16} className="text-sky-600 flex-shrink-0" />
                       Full-Time
                     </div>
                     <div className="flex items-center gap-2">
-                      <Users size={16} className="text-amber-600 flex-shrink-0" />
+                      <Users size={16} className="text-sky-600 flex-shrink-0" />
                       Marketing Team
                     </div>
                   </div>
@@ -90,18 +89,18 @@ export default function ContentWriterArabic() {
               </AnimatedSection>
 
               <AnimatedSection animation="fade-up" delay={100}>
-                <Card className="mb-6 bg-gradient-to-br from-amber-50 to-red-50 border-2 border-amber-200">
+                <Card className="mb-6 bg-gradient-to-br from-sky-50 to-indigo-50 border-2 border-sky-200">
                   <div className="p-4 sm:p-6 md:p-8">
                     <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
-                      <Calendar className="text-amber-600 flex-shrink-0" size={24} />
-                      <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900">Interview process</h3>
+                      <Calendar className="text-sky-600 flex-shrink-0" size={24} />
+                      <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900">Virtual Drive Schedule</h3>
                     </div>
                     <div className="space-y-2 text-slate-700 font-medium text-sm sm:text-base">
                       <p><strong>Apply:</strong> Rolling applications; we prioritise top profiles weekly.</p>
                       <p><strong>Screening & HR:</strong> Quick expectation alignment with our people team (virtual).</p>
                       <p><strong>Skills interview:</strong> Role-specific working session with the hiring manager.</p>
                       <p><strong>Final Round:</strong> Leadership conversation + offer.</p>
-                      <p className="text-amber-700 font-bold mt-3 sm:mt-4">We move fast—top profiles are scheduled immediately.</p>
+                      <p className="text-sky-700 font-bold mt-3 sm:mt-4">We move fast—top profiles are scheduled immediately.</p>
                     </div>
                   </div>
                 </Card>
@@ -112,10 +111,10 @@ export default function ContentWriterArabic() {
                   <div className="p-4 sm:p-6 md:p-8">
                     <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3 sm:mb-4">About the Role</h2>
                     <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-3 sm:mb-4">
-                      Craft Arabic content that resonates with founders and partners across the region. You’ll localize messaging, write crisp narratives, and ensure every touchpoint feels native and trustworthy.
+                      Shape our English content across web, product, lifecycle, and PR touchpoints. You’ll translate founder stories into crisp copy, collaborate with design, and keep our tone clear, confident, and human.
                     </p>
                     <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                      Ideal for writers who think in Arabic first, can collaborate quickly with design/PR, and love translating complex fintech ideas into simple, confident stories.
+                      Perfect for writers who obsess over clarity, can move fast with editors/designers, and love turning complex fintech concepts into simple, high-trust messages.
                     </p>
                   </div>
                 </Card>
@@ -125,29 +124,29 @@ export default function ContentWriterArabic() {
                 <Card className="mb-6">
                   <div className="p-4 sm:p-6 md:p-8">
                     <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-6 flex items-center gap-2">
-                      <PenTool className="text-amber-600 flex-shrink-0" size={24} />
+                      <PenTool className="text-sky-600 flex-shrink-0" size={24} />
                       Key Responsibilities
                     </h2>
                     <ul className="space-y-3 sm:space-y-4">
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Write Arabic copy for web, product, lifecycle, and PR assets.</span>
+                        <span className="text-sm sm:text-base text-slate-700">Own English copy across landing pages, product flows, and lifecycle campaigns.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Localize English narratives to Arabic while preserving intent and clarity.</span>
+                        <span className="text-sm sm:text-base text-slate-700">Partner with design to ship clear, on-brand experiences fast.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Collaborate with design and PR to ship on-brand experiences quickly.</span>
+                        <span className="text-sm sm:text-base text-slate-700">Write case studies, blogs, and PR-ready narratives that build trust.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Maintain voice/tone guidelines to keep every asset consistent.</span>
+                        <span className="text-sm sm:text-base text-slate-700">Keep voice, tone, and style guides tight and consistent.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Interview founders/customers to surface stories and quotes that build trust.</span>
+                        <span className="text-sm sm:text-base text-slate-700">Interview founders/customers to pull stories and quotes that build trust.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
                         <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
@@ -165,11 +164,7 @@ export default function ContentWriterArabic() {
                     <ul className="space-y-3 sm:space-y-4">
                       <li className="flex items-start gap-3">
                         <CheckCircle className="text-amber-600 flex-shrink-0 mt-1" size={20} />
-                        <span className="text-sm sm:text-base text-slate-700">2–4 years writing Arabic content for marketing/product/PR; portfolio of shipped work.</span>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <CheckCircle className="text-amber-600 flex-shrink-0 mt-1" size={20} />
-                        <span className="text-sm sm:text-base text-slate-700">Native-level Arabic and strong English comprehension for accurate localization.</span>
+                        <span className="text-sm sm:text-base text-slate-700">2–4 years writing English content for marketing/product/PR; portfolio of shipped work.</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <CheckCircle className="text-amber-600 flex-shrink-0 mt-1" size={20} />
@@ -177,11 +172,11 @@ export default function ContentWriterArabic() {
                       </li>
                       <li className="flex items-start gap-3">
                         <CheckCircle className="text-amber-600 flex-shrink-0 mt-1" size={20} />
-                        <span className="text-sm sm:text-base text-slate-700">Comfort working with designers, PMs, and PR partners on fast timelines.</span>
+                        <span className="text-sm sm:text-base text-slate-700">Comfort collaborating with designers, PMs, and PR partners on fast timelines.</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <CheckCircle className="text-amber-600 flex-shrink-0 mt-1" size={20} />
-                        <span className="text-sm sm:text-base text-slate-700">Experience maintaining tone/voice guidelines and QA-ing translated assets.</span>
+                        <span className="text-sm sm:text-base text-slate-700">Experience maintaining tone/voice guidelines and QA-ing localized assets.</span>
                       </li>
                     </ul>
                   </div>
@@ -218,7 +213,7 @@ export default function ContentWriterArabic() {
                 <Card className="mb-6">
                   <div className="p-4 sm:p-6 md:p-8">
                     <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-6 flex items-center gap-2">
-                      <Sparkles className="text-amber-600 flex-shrink-0" size={22} />
+                      <Sparkles className="text-sky-600 flex-shrink-0" size={22} />
                       What You Will Get
                     </h2>
                     <ul className="space-y-3 sm:space-y-4">
@@ -248,15 +243,15 @@ export default function ContentWriterArabic() {
               <AnimatedSection>
                 <div className="lg:sticky lg:top-24">
                   <Card className="shadow-xl bg-white overflow-hidden">
-                    <div className="bg-gradient-to-r from-amber-500 to-red-500 p-4 sm:p-6 text-white">
+                    <div className="bg-gradient-to-r from-sky-500 to-indigo-500 p-4 sm:p-6 text-white">
                       <Laptop className="mb-2" size={24} />
                       <h3 className="text-xl sm:text-2xl font-bold mb-1">Apply Now</h3>
-                      <p className="text-amber-50 text-xs sm:text-sm">Content Writer (Arabic)</p>
+                      <p className="text-indigo-50 text-xs sm:text-sm">Content Writer (English)</p>
                     </div>
                     <div className="p-4 sm:p-6 space-y-3">
                       <p className="text-sm text-slate-600">Submit your application to get scheduled quickly for virtual rounds.</p>
                       <div
-                        id="zf_div_ubY5LDz5Nic_aMgUNDCojQSfgyqLpTs-NC5PZXKwQjQ"
+                        id="zf_div_twzyyIbeSwc_qnpRphOdBZnIhkpeL-KlJx32KoKPESs"
                         className="w-full"
                       />
                     </div>

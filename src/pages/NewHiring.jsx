@@ -79,13 +79,13 @@ export default function VirtualDrive() {
             <AnimatedSection animation="fade-down">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-50 text-emerald-800 font-semibold border border-emerald-100 mb-4">
                 <Sparkles size={16} />
-                Career Opportunities
+                New Hiring
               </div>
             </AnimatedSection>
 
             <AnimatedSection animation="fade-up" delay={100}>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight tracking-tight mb-4">
-                Career Opportunities
+                New Hiring
               </h1>
               <p className="text-lg sm:text-xl text-slate-600 max-w-3xl font-medium">
                 Hiring across teams—apply once; we move fast.

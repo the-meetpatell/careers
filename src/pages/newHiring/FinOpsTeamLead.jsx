@@ -4,7 +4,7 @@ export default function FinOpsTeamLead() {
   return (
     <FinOpsRoleTemplate
       badgeText="FinOps • Pod Leadership"
-      title="Team Lead - FinOps"
+      title="Team Lead - Accounting Advisory"
       location="Remote / Dubai"
       team="Pods & Delivery"
       level="Full-time"

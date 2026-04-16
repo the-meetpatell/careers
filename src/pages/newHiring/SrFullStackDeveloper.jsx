@@ -1,19 +1,20 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowLeft, MapPin, Briefcase, Users, Calendar, Sparkles, PenTool, LineChart, CheckCircle } from 'lucide-react'
-import AnimatedSection from '../../components/AnimatedSection'
+import { ArrowLeft, MapPin, Briefcase, Users, Calendar, Code2, CheckCircle, Laptop2, Server } from 'lucide-react'
 import { Card } from '../../components/ui/Card'
+import { Button } from '../../components/ui/Button'
+import AnimatedSection from '../../components/AnimatedSection'
 
-export default function GrowthUIUXDesigner() {
+export default function SrFullStackDeveloper() {
   useEffect(() => {
-    const containerId = 'zf_div_KoeZNoN73xfIKsFKv-80y3LntAcR-XBw8qc6duSS3Bc'
+    const containerId = 'zf_div_xb0s-d8pzsrBsCAYTMNpfFZyvyb1L-J_FA4aR_5ebAw'
     const container = document.getElementById(containerId)
 
     if (!container || container.querySelector('iframe')) return
 
     try {
       const iframe = document.createElement('iframe')
-      let ifrmSrc = 'https://forms.zohopublic.com/finanshelsllc/form/GrowthUIUXDesigner/formperma/KoeZNoN73xfIKsFKv-80y3LntAcR-XBw8qc6duSS3Bc?zf_rszfm=1'
+      let ifrmSrc = 'https://forms.zohopublic.com/finanshelsllc/form/SrSoftwareEngineer1/formperma/xb0s-d8pzsrBsCAYTMNpfFZyvyb1L-J_FA4aR_5ebAw?zf_rszfm=1'
 
       try {
         if (typeof window.ZFAdvLead !== 'undefined' && typeof window.zfutm_zfAdvLead !== 'undefined') {
@@ -39,10 +40,10 @@ export default function GrowthUIUXDesigner() {
 
       iframe.src = ifrmSrc
       iframe.style.border = 'none'
-      iframe.style.height = '1175px'
+      iframe.style.height = '1290px'
       iframe.style.width = '90%'
       iframe.style.transition = 'all 0.5s ease'
-      iframe.setAttribute('aria-label', 'Growth UI/UX Designer')
+      iframe.setAttribute('aria-label', 'Sr Software Engineer')
 
       container.appendChild(iframe)
 
@@ -77,48 +78,48 @@ export default function GrowthUIUXDesigner() {
       }
     } catch (e) {}
   }, [])
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white pt-20">
       <div className="py-12 sm:py-16 px-4 sm:px-6 lg:px-12">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
+            {/* Main Content */}
             <div className="lg:col-span-2">
               <AnimatedSection animation="fade-up">
-                <Link to="/virtual-drive" className="inline-flex items-center gap-2 text-sky-600 hover:text-sky-700 font-semibold mb-6 sm:mb-8 group text-sm sm:text-base">
+                <Link to="/new-hiring" className="inline-flex items-center gap-2 text-indigo-600 hover:text-indigo-700 font-semibold mb-6 sm:mb-8 group text-sm sm:text-base">
                   <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
                   Back to Career Opportunities
                 </Link>
 
                 <div className="mb-6 sm:mb-8">
-                  <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-gradient-to-r from-sky-500 to-indigo-500 text-white text-xs sm:text-sm font-bold mb-3 sm:mb-4">
-                    📐 Growth Design
+                  <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white text-xs sm:text-sm font-bold mb-3 sm:mb-4">
+                    👩‍💻 Technology
                   </div>
                   <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">
-                    Growth UI/UX Designer (Remote)
+                    Senior Software Engineer
                   </h1>
                   <div className="flex flex-wrap gap-3 sm:gap-4 text-slate-600 font-medium text-sm sm:text-base">
                     <div className="flex items-center gap-2">
-                      <MapPin size={16} className="text-sky-600 flex-shrink-0" />
+                      <MapPin size={16} className="text-indigo-600 flex-shrink-0" />
                       Remote (virtual interview process)
                     </div>
                     <div className="flex items-center gap-2">
-                      <Briefcase size={16} className="text-sky-600 flex-shrink-0" />
+                      <Briefcase size={16} className="text-indigo-600 flex-shrink-0" />
                       Full-Time
                     </div>
                     <div className="flex items-center gap-2">
-                      <Users size={16} className="text-sky-600 flex-shrink-0" />
-                      Marketing team
+                      <Users size={16} className="text-indigo-600 flex-shrink-0" />
+                      Hiring for top talent
                     </div>
                   </div>
                 </div>
               </AnimatedSection>
 
               <AnimatedSection animation="fade-up" delay={100}>
-                <Card className="mb-6 bg-gradient-to-br from-sky-50 to-indigo-50 border-2 border-sky-200">
+                <Card className="mb-6 bg-gradient-to-br from-indigo-50 to-purple-50 border-2 border-indigo-200">
                   <div className="p-4 sm:p-6 md:p-8">
                     <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
-                      <Calendar className="text-sky-600 flex-shrink-0" size={24} />
+                      <Calendar className="text-indigo-600 flex-shrink-0" size={24} />
                       <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900">Interview process</h3>
                     </div>
                     <div className="space-y-2 text-slate-700 font-medium text-sm sm:text-base">
@@ -126,7 +127,7 @@ export default function GrowthUIUXDesigner() {
                       <p><strong>Screening & HR:</strong> Quick expectation alignment with our people team (virtual).</p>
                       <p><strong>Skills interview:</strong> Role-specific working session with the hiring manager.</p>
                       <p><strong>Final Round:</strong> Leadership conversation + offer.</p>
-                      <p className="text-sky-700 font-bold mt-3 sm:mt-4">We move fast—top profiles are scheduled immediately.</p>
+                      <p className="text-indigo-600 font-bold mt-3 sm:mt-4">We move fast—top profiles are scheduled immediately.</p>
                     </div>
                   </div>
                 </Card>
@@ -137,10 +138,10 @@ export default function GrowthUIUXDesigner() {
                   <div className="p-4 sm:p-6 md:p-8">
                     <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3 sm:mb-4">About the Role</h2>
                     <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-3 sm:mb-4">
-                      Design growth loops, onboarding journeys, and marketing surfaces that convert curious founders into loyal customers. You’ll partner with growth, product, and engineering to ship experiments fast and iterate with data.
+                      Lead end-to-end product builds across React, Node, and cloud services. You’ll ship fast, keep quality high, and mentor developers while partnering closely with design and product.
                     </p>
                     <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                      Ideal for designers who mix strong UX craft with a bias for rapid testing, clean systems, and measurable outcomes.
+                      This is a hands-on engineering role for builders who own outcomes and love scaling systems that power thousands of customers.
                     </p>
                   </div>
                 </Card>
@@ -150,25 +151,29 @@ export default function GrowthUIUXDesigner() {
                 <Card className="mb-6">
                   <div className="p-4 sm:p-6 md:p-8">
                     <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-6 flex items-center gap-2">
-                      <LineChart className="text-sky-600 flex-shrink-0" size={24} />
+                      <Code2 className="text-indigo-600 flex-shrink-0" size={24} />
                       Key Responsibilities
                     </h2>
                     <ul className="space-y-3 sm:space-y-4">
                       <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Design and ship landing pages, onboarding flows, and in-product prompts that improve activation and conversion.</span>
+                        <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">Architect, build, and ship features across React/Node services.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Run rapid experiments with growth and engineering; translate learnings into scalable patterns.</span>
+                        <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">Maintain high bar on code quality, testing, and performance.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Maintain design systems for marketing and product growth surfaces with accessibility in mind.</span>
+                        <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">Mentor junior engineers and drive engineering best practices.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Instrument flows with analytics to track drop-offs, funnel lift, and experiment results.</span>
+                        <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">Collaborate with product/design to scope, sequence, and deliver.</span>
+                      </li>
+                      <li className="flex items-start gap-2 sm:gap-3">
+                        <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">Optimize reliability, observability, and deployment pipelines.</span>
                       </li>
                     </ul>
                   </div>
@@ -179,25 +184,29 @@ export default function GrowthUIUXDesigner() {
                 <Card className="mb-6">
                   <div className="p-4 sm:p-6 md:p-8">
                     <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-6 flex items-center gap-2">
-                      <PenTool className="text-sky-600 flex-shrink-0" size={24} />
+                      <Server className="text-indigo-600 flex-shrink-0" size={24} />
                       Required Qualifications
                     </h2>
                     <ul className="space-y-3 sm:space-y-4">
                       <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-sky-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">3+ years in product or growth design, shipping experiments in SaaS/tech.</span>
+                        <CheckCircle className="text-indigo-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">5+ years building production systems with React and Node.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-sky-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Expert in Figma and component-driven design systems.</span>
+                        <CheckCircle className="text-indigo-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">Comfortable with TypeScript, REST/GraphQL, and SQL.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-sky-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Comfortable instrumenting flows and reading funnel metrics to guide decisions.</span>
+                        <CheckCircle className="text-indigo-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">Experience with cloud infra (AWS/GCP) and CI/CD pipelines.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-sky-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Strong collaboration with growth, product, and engineering; crisp communication.</span>
+                        <CheckCircle className="text-indigo-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">Strong debugging skills and ownership mindset.</span>
+                      </li>
+                      <li className="flex items-start gap-2 sm:gap-3">
+                        <CheckCircle className="text-indigo-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">Ability to work async/remote with tight feedback loops.</span>
                       </li>
                     </ul>
                   </div>
@@ -210,20 +219,20 @@ export default function GrowthUIUXDesigner() {
                     <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-6">What We Offer</h2>
                     <ul className="space-y-3 sm:space-y-4">
                       <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Competitive compensation tied to growth impact.</span>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={20} />
-                        <span className="text-slate-700">Health insurance and remote-first flexibility.</span>
+                        <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">Competitive salary with performance incentives.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Autonomy to ship high-visibility experiences with leadership.</span>
+                        <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">Remote-first culture with strong collaboration rituals.</span>
                       </li>
                       <li className="flex items-start gap-2 sm:gap-3">
-                        <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-sm sm:text-base text-slate-700">Learning budget and tools to keep your craft sharp.</span>
+                        <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">Modern stack, ownership, and real impact at scale.</span>
+                      </li>
+                      <li className="flex items-start gap-2 sm:gap-3">
+                        <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
+                        <span className="text-sm sm:text-base text-slate-700">Health benefits and learning budget.</span>
                       </li>
                     </ul>
                   </div>
@@ -231,18 +240,22 @@ export default function GrowthUIUXDesigner() {
               </AnimatedSection>
             </div>
 
+            {/* Sidebar */}
             <div className="lg:col-span-1">
               <AnimatedSection>
                 <div className="lg:sticky lg:top-24">
                   <Card className="shadow-xl bg-white overflow-hidden">
-                    <div className="bg-gradient-to-r from-sky-500 to-indigo-500 p-4 sm:p-6 text-white">
-                      <Sparkles className="mb-2" size={24} />
+                    <div className="bg-gradient-to-r from-indigo-600 to-purple-600 p-4 sm:p-6 text-white">
+                      <Laptop2 className="mb-2" size={24} />
                       <h3 className="text-xl sm:text-2xl font-bold mb-1">Apply Now</h3>
-                      <p className="text-sky-50 text-xs sm:text-sm">Growth UI/UX Designer</p>
+                      <p className="text-indigo-50 text-xs sm:text-sm">Senior Software Engineer</p>
                     </div>
                     <div className="p-4 sm:p-6 space-y-3">
                       <p className="text-sm text-slate-600">Submit your application to get scheduled quickly for virtual rounds.</p>
-                      <div id="zf_div_KoeZNoN73xfIKsFKv-80y3LntAcR-XBw8qc6duSS3Bc" className="w-full" />
+                      <div
+                      id="zf_div_xb0s-d8pzsrBsCAYTMNpfFZyvyb1L-J_FA4aR_5ebAw"
+                        className="w-full"
+                      />
                     </div>
                   </Card>
                 </div>

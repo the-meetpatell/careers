@@ -1,18 +1,18 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowLeft, MapPin, Clock, Briefcase, Users, Target, CheckCircle, Calendar, UserPlus, FileText } from 'lucide-react'
+import { ArrowLeft, MapPin, Clock, Briefcase, Users, Target, CheckCircle, Calendar, Phone, FileText } from 'lucide-react'
 import { Button } from '../../components/ui/Button'
 import { Card } from '../../components/ui/Card'
 import AnimatedSection from '../../components/AnimatedSection'
 
-export default function PartnershipsManager() {
+export default function AppointmentSetter() {
   useEffect(() => {
-    const container = document.getElementById("zf_div_SMR_M9LuF2KZv2MIDJ9UdGAx1avIS5hhiSlRyLS537M");
+    const container = document.getElementById("zf_div_M9dFXcE-7EnFpKTSJ4GBnvzcSEVh3QjjGzsBud8nJBQ");
     
     if (container && container.children.length === 0) {
       try {
         const iframe = document.createElement("iframe");
-        let ifrmSrc = 'https://forms.zohopublic.com/finanshelsllc/form/PartnershipManager/formperma/SMR_M9LuF2KZv2MIDJ9UdGAx1avIS5hhiSlRyLS537M?zf_rszfm=1';
+        let ifrmSrc = 'https://forms.zohopublic.com/finanshelsllc/form/AppointmentSetter/formperma/M9dFXcE-7EnFpKTSJ4GBnvzcSEVh3QjjGzsBud8nJBQ?zf_rszfm=1';
         
         try {
           if (typeof window.ZFAdvLead !== "undefined" && typeof window.zfutm_zfAdvLead !== "undefined") {
@@ -38,12 +38,12 @@ export default function PartnershipsManager() {
         
         iframe.src = ifrmSrc;
         iframe.style.border = "none";
-        iframe.style.height = "1175px";
+        iframe.style.height = "1300px";
         iframe.style.width = "100%";
         iframe.style.transition = "all 0.5s ease";
         iframe.style.overflow = "hidden";
         iframe.style.display = "block";
-        iframe.setAttribute("aria-label", 'Partnership Manager');
+        iframe.setAttribute("aria-label", 'Partnership Appointment Setter');
         
         container.appendChild(iframe);
         
@@ -96,48 +96,48 @@ export default function PartnershipsManager() {
             {/* Main Content - Left Side */}
             <div className="lg:col-span-2">
           <AnimatedSection animation="fade-up">
-            <Link to="/virtual-drive" className="inline-flex items-center gap-2 text-amber-600 hover:text-amber-700 font-semibold mb-6 sm:mb-8 group text-sm sm:text-base">
-              <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
-              Back to Career Opportunities
-            </Link>
+                <Link to="/new-hiring" className="inline-flex items-center gap-2 text-emerald-600 hover:text-emerald-700 font-semibold mb-6 sm:mb-8 group text-sm sm:text-base">
+                  <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
+                  Back to Career Opportunities
+                </Link>
 
-            <div className="mb-6 sm:mb-8">
-              <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-gradient-to-r from-amber-600 to-orange-600 text-white text-xs sm:text-sm font-bold mb-3 sm:mb-4">
-                🤝 Strategic Partnerships
-              </div>
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">
-                Partnerships Manager
-              </h1>
-              <div className="flex flex-wrap gap-3 sm:gap-4 text-slate-600 font-medium text-sm sm:text-base">
-                <div className="flex items-center gap-2">
-                  <MapPin size={16} className="text-amber-600 flex-shrink-0" />
-                  Dubai, UAE (virtual interview process)
+                <div className="mb-6 sm:mb-8">
+                  <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-gradient-to-r from-emerald-600 to-teal-600 text-white text-xs sm:text-sm font-bold mb-3 sm:mb-4">
+                    🤝 Revenue Support
+                  </div>
+                  <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">
+                    Partnership Appointment Setter
+                  </h1>
+                <div className="flex flex-wrap gap-3 sm:gap-4 text-slate-600 font-medium text-sm sm:text-base">
+                  <div className="flex items-center gap-2">
+                    <MapPin size={16} className="text-emerald-600 flex-shrink-0" />
+                    Remote (virtual interview process)
+                  </div>
+                    <div className="flex items-center gap-2">
+                      <Briefcase size={16} className="text-emerald-600 flex-shrink-0" />
+                      Full-Time
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Users size={16} className="text-emerald-600 flex-shrink-0" />
+                      Multiple Openings
+                    </div>
+                  </div>
                 </div>
-                <div className="flex items-center gap-2">
-                  <Briefcase size={16} className="text-amber-600 flex-shrink-0" />
-                  Full-Time
-                </div>
-                <div className="flex items-center gap-2">
-                  <Users size={16} className="text-amber-600 flex-shrink-0" />
-                  2 Openings
-                </div>
-              </div>
-            </div>
-          </AnimatedSection>
+              </AnimatedSection>
 
           <AnimatedSection animation="fade-up" delay={100}>
-            <Card className="mb-6 bg-gradient-to-br from-amber-50 to-orange-50 border-2 border-amber-200">
+            <Card className="mb-6 bg-gradient-to-br from-emerald-50 to-teal-50 border-2 border-emerald-200">
               <div className="p-4 sm:p-6 md:p-8">
                 <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
-                  <Calendar className="text-amber-600 flex-shrink-0" size={24} />
-                  <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900">Interview process</h3>
+                  <Calendar className="text-emerald-600 flex-shrink-0" size={24} />
+                    <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900">Interview process</h3>
                 </div>
                 <div className="space-y-2 text-slate-700 font-medium text-sm sm:text-base">
-                  <p><strong>Apply:</strong> Rolling applications; we prioritise top profiles weekly.</p>
-                  <p><strong>Screening & HR:</strong> Quick expectation alignment with our people team (virtual).</p>
-                  <p><strong>Skills interview:</strong> Role-specific working session with the hiring manager.</p>
-                  <p><strong>Final Round:</strong> Leadership conversation + offer.</p>
-                  <p className="text-amber-600 font-bold mt-3 sm:mt-4">We move fast—top profiles are scheduled immediately.</p>
+                    <p><strong>Apply:</strong> Rolling applications; we prioritise top profiles weekly.</p>
+                    <p><strong>Screening & HR:</strong> Quick expectation alignment with our people team (virtual).</p>
+                    <p><strong>Skills interview:</strong> Role-specific conversation with the hiring manager.</p>
+                    <p><strong>Final Round:</strong> Leadership conversation + offer.</p>
+                    <p className="text-emerald-600 font-bold mt-3 sm:mt-4">We move fast—top profiles are scheduled immediately.</p>
                 </div>
               </div>
             </Card>
@@ -148,10 +148,10 @@ export default function PartnershipsManager() {
               <div className="p-4 sm:p-6 md:p-8">
                 <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3 sm:mb-4">About the Role</h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-3 sm:mb-4">
-                We're seeking an experienced Partnerships Manager to build and nurture strategic relationships across Dubai's startup ecosystem. You'll identify partnership opportunities, negotiate agreements, and drive growth through collaborative initiatives with freezones, VCs, and accelerators.
+                  We're looking for Partnership Appointment Setters to support our revenue team remotely. You'll be the first touch for potential partners, qualifying interest and booking meetings for our partnerships and sales leads.
                 </p>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                  This role is ideal for someone with strong relationship-building skills who can navigate complex partnership landscapes and create win-win scenarios with accelerators, VCs, government entities, and corporate partners.
+                  This is an excellent entry-level role for fast learners who want to build a fintech career. You'll receive structured training, clear playbooks, and growth paths.
                 </p>
               </div>
             </Card>
@@ -161,41 +161,41 @@ export default function PartnershipsManager() {
             <Card className="mb-6">
               <div className="p-4 sm:p-6 md:p-8">
                 <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-6 flex items-center gap-2">
-                  <Target className="text-amber-600 flex-shrink-0" size={24} />
+                  <Target className="text-emerald-600 flex-shrink-0" size={24} />
                   Key Responsibilities
                 </h2>
                 <ul className="space-y-3 sm:space-y-4">
                   <li className="flex items-start gap-2 sm:gap-3">
                     <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={18} />
-                    <span className="text-sm sm:text-base text-slate-700">Identify and develop strategic partnerships with accelerators, VCs, government entities, and corporate partners</span>
+                    <span className="text-sm sm:text-base text-slate-700">Make outbound calls to potential clients from provided lead lists</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={20} />
-                    <span className="text-slate-700">Negotiate partnership agreements and manage contract processes</span>
+                    <span className="text-slate-700">Qualify leads based on defined criteria and business needs</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={20} />
-                    <span className="text-slate-700">Build and maintain relationships with key decision-makers in the MENA ecosystem</span>
+                    <span className="text-slate-700">Schedule appointments for partnerships and sales leaders</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={20} />
-                    <span className="text-slate-700">Develop partnership strategies to drive client acquisition and revenue growth</span>
+                    <span className="text-slate-700">Maintain accurate records of all calls and appointments in CRM</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={20} />
-                    <span className="text-slate-700">Coordinate with internal teams to ensure successful partnership execution</span>
+                    <span className="text-slate-700">Follow up with leads via email and phone calls</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={20} />
-                    <span className="text-slate-700">Track partnership performance metrics and provide regular reports</span>
+                    <span className="text-slate-700">Meet daily and weekly appointment-setting targets</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={20} />
-                    <span className="text-slate-700">Represent Finanshels at industry events and networking functions</span>
+                    <span className="text-slate-700">Provide feedback on lead quality and campaign performance</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={20} />
-                    <span className="text-slate-700">Create partnership proposals and presentations for potential partners</span>
+                    <span className="text-slate-700">Collaborate with the sales team to optimize conversion rates</span>
                   </li>
                 </ul>
               </div>
@@ -208,32 +208,32 @@ export default function PartnershipsManager() {
                 <h2 className="text-2xl font-bold text-slate-900 mb-6">Required Qualifications</h2>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
-                    <CheckCircle className="text-amber-600 flex-shrink-0 mt-1" size={20} />
-                    <span className="text-slate-700">3-5 years of experience in partnerships, business development, or strategic alliances</span>
+                    <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={20} />
+                    <span className="text-slate-700">1-3 years of experience in appointment setting, telemarketing, or customer service</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle className="text-amber-600 flex-shrink-0 mt-1" size={20} />
-                    <span className="text-slate-700">Proven track record of building successful partnerships and driving revenue</span>
+                    <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={20} />
+                    <span className="text-slate-700">Excellent verbal communication skills in English</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle className="text-amber-600 flex-shrink-0 mt-1" size={20} />
-                    <span className="text-slate-700">Excellent negotiation and contract management skills</span>
+                    <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={20} />
+                    <span className="text-slate-700">Confident phone manner and professional demeanor</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle className="text-amber-600 flex-shrink-0 mt-1" size={20} />
-                    <span className="text-slate-700">Strong network in the MENA startup ecosystem</span>
+                    <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={20} />
+                    <span className="text-slate-700">Goal-oriented with strong work ethic</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle className="text-amber-600 flex-shrink-0 mt-1" size={20} />
-                    <span className="text-slate-700">Exceptional communication and presentation skills</span>
+                    <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={20} />
+                    <span className="text-slate-700">Basic computer skills and ability to use CRM software</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle className="text-amber-600 flex-shrink-0 mt-1" size={20} />
-                    <span className="text-slate-700">Strategic thinking and problem-solving abilities</span>
+                    <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={20} />
+                    <span className="text-slate-700">Positive attitude and resilience to handle rejections</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle className="text-amber-600 flex-shrink-0 mt-1" size={20} />
-                    <span className="text-slate-700">Bachelor's degree in Business, Marketing, or related field</span>
+                    <CheckCircle className="text-emerald-600 flex-shrink-0 mt-1" size={20} />
+                    <span className="text-slate-700">High school diploma or equivalent</span>
                   </li>
                 </ul>
               </div>
@@ -247,23 +247,23 @@ export default function PartnershipsManager() {
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <CheckCircle className="text-blue-600 flex-shrink-0 mt-1" size={20} />
-                    <span className="text-slate-700">Experience in fintech or B2B SaaS partnerships</span>
+                    <span className="text-slate-700">Previous B2B appointment setting experience</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="text-blue-600 flex-shrink-0 mt-1" size={20} />
-                    <span className="text-slate-700">Existing relationships with UAE/MENA accelerators and VCs</span>
+                    <span className="text-slate-700">Familiarity with CRM tools (HubSpot, Zoho CRM)</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="text-blue-600 flex-shrink-0 mt-1" size={20} />
-                    <span className="text-slate-700">MBA or equivalent advanced degree</span>
+                    <span className="text-slate-700">Knowledge of sales prospecting techniques</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="text-blue-600 flex-shrink-0 mt-1" size={20} />
-                    <span className="text-slate-700">Multilingual abilities (Arabic is a strong plus)</span>
+                    <span className="text-slate-700">Multilingual abilities (Arabic is a plus)</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="text-blue-600 flex-shrink-0 mt-1" size={20} />
-                    <span className="text-slate-700">Experience with partnership CRM and tracking tools</span>
+                    <span className="text-slate-700">Understanding of fintech or financial services</span>
                   </li>
                 </ul>
               </div>
@@ -277,27 +277,23 @@ export default function PartnershipsManager() {
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={20} />
-                    <span className="text-slate-700">Competitive salary package with performance bonuses</span>
+                    <span className="text-slate-700">Competitive base salary + performance bonuses</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={20} />
-                    <span className="text-slate-700">Health insurance and visa sponsorship</span>
+                    <span className="text-slate-700">Health insurance</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={20} />
-                    <span className="text-slate-700">Opportunity to build partnerships with leading ecosystem players</span>
+                    <span className="text-slate-700">Comprehensive sales training program</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={20} />
+                    <span className="text-slate-700">Clear career progression path to Business Development roles</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={20} />
                     <span className="text-slate-700">Work with a fast-growing fintech backed by MBRIF and in5 Tech</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={20} />
-                    <span className="text-slate-700">High-impact role with direct influence on company growth</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle className="text-green-600 flex-shrink-0 mt-1" size={20} />
-                    <span className="text-slate-700">Professional development and networking opportunities</span>
                   </li>
                 </ul>
               </div>
@@ -310,14 +306,14 @@ export default function PartnershipsManager() {
               <AnimatedSection>
                 <div className="sticky top-24">
                   <Card className="shadow-xl bg-white overflow-hidden">
-                    <div className="bg-gradient-to-r from-amber-600 to-orange-600 p-4 sm:p-6 text-white">
+                    <div className="bg-gradient-to-r from-emerald-600 to-teal-600 p-4 sm:p-6 text-white">
                       <FileText className="mb-2" size={24} />
                       <h3 className="text-xl sm:text-2xl font-bold mb-1">Apply Now</h3>
-                      <p className="text-amber-50 text-xs sm:text-sm">Join our partnerships team</p>
+                      <p className="text-emerald-50 text-xs sm:text-sm">Join our Partnership team</p>
                     </div>
                     
                     <div 
-                      id="zf_div_SMR_M9LuF2KZv2MIDJ9UdGAx1avIS5hhiSlRyLS537M"
+                      id="zf_div_M9dFXcE-7EnFpKTSJ4GBnvzcSEVh3QjjGzsBud8nJBQ"
                       className="w-full"
                     />
                   </Card>
