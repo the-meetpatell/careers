@@ -7,9 +7,7 @@ import {
   CheckCircle,
   Clock,
   Globe2,
-  Laptop2,
   MapPin,
-  ShieldCheck,
   Sparkles,
   Target,
   Users,
@@ -20,45 +18,6 @@ import { Card } from '../components/ui/Card'
 
 const FORM_CONTAINER_ID = 'zf_div_drive_eJHiYL5szMR2i0ahFh4Awh3AeLaAlbtX3PiC2UjpGWU'
 const FORM_SRC = 'https://forms.zohopublic.com/finanshelsllc/form/AccountingRoles/formperma/eJHiYL5szMR2i0ahFh4Awh3AeLaAlbtX3PiC2UjpGWU?zf_rszfm=1'
-
-const DRIVE_HIGHLIGHTS = [
-  {
-    label: 'Date',
-    value: 'Saturday, 23 May 2026',
-    note: 'One-day virtual recruitment drive',
-    icon: Calendar,
-    accent: 'from-amber-50 to-orange-50 border-amber-100',
-    iconBg: 'text-amber-700',
-    chipText: 'text-amber-700',
-  },
-  {
-    label: 'Format',
-    value: '100% Virtual',
-    note: 'Slots confirmed once you apply',
-    icon: Laptop2,
-    accent: 'from-indigo-50 to-blue-50 border-indigo-100',
-    iconBg: 'text-indigo-700',
-    chipText: 'text-indigo-700',
-  },
-  {
-    label: 'Position',
-    value: 'Senior Accounting Advisor',
-    note: '5 open positions for this drive',
-    icon: Briefcase,
-    accent: 'from-emerald-50 to-teal-50 border-emerald-100',
-    iconBg: 'text-emerald-700',
-    chipText: 'text-emerald-700',
-  },
-  {
-    label: 'Location',
-    value: 'UAE (Dubai) & Remote',
-    note: 'Pod placement finalised with offer',
-    icon: Globe2,
-    accent: 'from-sky-50 to-cyan-50 border-sky-100',
-    iconBg: 'text-sky-700',
-    chipText: 'text-sky-700',
-  },
-]
 
 const PROCESS_STEPS = [
   { title: 'Apply by Friday', detail: 'Submit the form below before Saturday so we can lock in your slot for the drive.' },
@@ -120,11 +79,11 @@ export default function SaturdayDrive() {
           }
         }
       }
-    } catch (e) {}
+    } catch (e) { }
 
     iframe.src = ifrmSrc
     iframe.style.border = 'none'
-    iframe.style.height = '1160px'
+    iframe.style.height = '100vh'
     iframe.style.width = '100%'
     iframe.style.transition = 'all 0.5s ease'
     iframe.style.overflow = 'hidden'
@@ -173,94 +132,60 @@ export default function SaturdayDrive() {
     <div className="min-h-screen bg-gradient-to-b from-white via-amber-50/50 to-white pt-24">
       {/* Hero */}
       <section className="px-6 sm:px-8 lg:px-12 pb-16">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-[1.1fr_0.9fr] gap-10 items-start">
-          <div>
-            <AnimatedSection animation="fade-down">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-100 text-amber-800 font-semibold border border-amber-200 mb-4">
-                <Sparkles size={16} />
-                Saturday Recruitment Drive
-              </div>
-            </AnimatedSection>
+        <div className="max-w-4xl mx-auto text-center">
+          <AnimatedSection animation="fade-down">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-100 text-amber-800 font-semibold border border-amber-200 mb-6">
+              <Sparkles size={16} />
+              Saturday Recruitment Drive · 23 May 2026
+            </div>
+          </AnimatedSection>
 
-            <AnimatedSection animation="fade-up" delay={100}>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight tracking-tight mb-4">
-                Senior Accounting Advisor — One-day hiring drive
-              </h1>
-              <p className="text-lg sm:text-xl text-slate-600 max-w-3xl font-medium">
-                Saturday, 23 May 2026. We’re running a focused virtual drive to hire 5 Senior Accounting Advisors for our FinOps pods.
-              </p>
-            </AnimatedSection>
+          <AnimatedSection animation="fade-up" delay={100}>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight tracking-tight mb-5">
+              Senior Accounting Advisor
+            </h1>
+            <p className="text-lg sm:text-xl text-slate-600 font-medium max-w-2xl mx-auto">
+              5 open positions. One-day virtual drive for India-based advisors joining our FinOps pods.
+            </p>
+          </AnimatedSection>
 
-            <AnimatedSection animation="fade-up" delay={200}>
-              <div className="mt-8 flex flex-wrap gap-3">
-                <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-amber-50 text-amber-800 text-sm font-semibold border border-amber-200">
-                  <Calendar size={16} />
-                  Sat, 23 May 2026
-                </div>
-                <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-indigo-50 text-indigo-700 text-sm font-semibold border border-indigo-100">
-                  <Laptop2 size={16} />
-                  100% virtual
-                </div>
-                <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-emerald-50 text-emerald-700 text-sm font-semibold border border-emerald-100">
-                  <Briefcase size={16} />
-                  5 open positions
-                </div>
-                <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-slate-100 text-slate-800 text-sm font-semibold border border-slate-200">
-                  <Globe2 size={16} />
-                  UAE (Dubai) & Remote
-                </div>
-              </div>
-            </AnimatedSection>
+          <AnimatedSection animation="fade-up" delay={200}>
+            <div className="mt-8 flex flex-wrap justify-center items-center gap-x-5 gap-y-2 text-sm font-semibold text-slate-700">
+              <span className="inline-flex items-center gap-2">
+                <Calendar size={16} className="text-amber-600" />
+                Sat, 23 May 2026
+              </span>
+              <span className="text-slate-300" aria-hidden="true">•</span>
+              <span className="inline-flex items-center gap-2">
+                <Briefcase size={16} className="text-emerald-600" />
+                5 open positions
+              </span>
+              <span className="text-slate-300" aria-hidden="true">•</span>
+              <span className="inline-flex items-center gap-2">
+                <Globe2 size={16} className="text-sky-600" />
+                India — Remote
+              </span>
+            </div>
+          </AnimatedSection>
 
-            <AnimatedSection animation="fade-up" delay={300}>
-              <div className="mt-10 flex gap-4 flex-wrap items-center">
-                <a href="#apply">
-                  <Button
-                    size="lg"
-                    className="group h-14 px-8 text-base shadow-lg shadow-amber-500/20 bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-700 hover:to-orange-700"
-                  >
-                    Reserve your slot
-                    <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
-                  </Button>
-                </a>
-                <a href="#role" className="inline-flex items-center gap-2 text-slate-700 font-semibold hover:text-amber-700">
-                  See the role details
-                  <ArrowRight size={18} />
-                </a>
-              </div>
-              <p className="text-sm text-slate-500 mt-3">Apply before Friday so we can confirm your virtual slot for Saturday.</p>
-            </AnimatedSection>
-          </div>
-
-          <div>
-            <AnimatedSection animation="fade-left" delay={150}>
-              <Card className="bg-white shadow-2xl border-0 p-6 sm:p-8">
-                <div className="flex items-start gap-3 pb-6 border-b border-slate-200">
-                  <ShieldCheck className="text-amber-600 flex-shrink-0" size={24} />
-                  <div>
-                    <div className="text-sm font-bold text-amber-700 uppercase tracking-wide">Drive details</div>
-                    <p className="text-slate-700 font-semibold">One Saturday. 5 open positions. Confirmed virtual conversations with hiring managers.</p>
-                  </div>
-                </div>
-
-                <div className="grid sm:grid-cols-2 gap-4 pt-6">
-                  {DRIVE_HIGHLIGHTS.map((item) => {
-                    const Icon = item.icon
-                    return (
-                      <div key={item.label} className={`p-4 rounded-xl bg-gradient-to-br ${item.accent} border`}>
-                        <div className={`text-xs font-semibold uppercase mb-2 ${item.chipText}`}>{item.label}</div>
-                        <div className="flex items-center gap-2 mb-1">
-                          <Icon className={item.iconBg} size={18} />
-                          <div className="font-extrabold text-slate-900 text-base sm:text-lg leading-tight">{item.value}</div>
-                        </div>
-                        <div className="text-slate-600 text-sm">{item.note}</div>
-                      </div>
-                    )
-                  })}
-                </div>
-              </Card>
-            </AnimatedSection>
-          </div>
+          <AnimatedSection animation="fade-up" delay={300}>
+            <div className="mt-10 flex gap-4 flex-wrap items-center justify-center">
+              <a href="#apply">
+                <Button
+                  size="lg"
+                  className="group h-14 px-8 text-base shadow-lg shadow-amber-500/20 bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-700 hover:to-orange-700"
+                >
+                  Reserve your slot
+                  <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
+                </Button>
+              </a>
+              <a href="#role" className="inline-flex items-center gap-2 text-slate-700 font-semibold hover:text-amber-700">
+                See the role details
+                <ArrowRight size={18} />
+              </a>
+            </div>
+            <p className="text-sm text-slate-500 mt-3">Apply before Friday so we can confirm your virtual slot for Saturday.</p>
+          </AnimatedSection>
         </div>
       </section>
 
@@ -303,7 +228,7 @@ export default function SaturdayDrive() {
           <AnimatedSection animation="fade-up">
             <div className="flex items-center gap-2 mb-3">
               <MapPin className="text-amber-600" size={18} />
-              <span className="text-sm font-bold text-amber-700 uppercase tracking-wide">FinOps • UAE (Dubai) & Remote</span>
+              <span className="text-sm font-bold text-amber-700 uppercase tracking-wide">FinOps • India — Remote</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">Senior Accounting Advisor</h2>
             <p className="text-lg text-slate-600 max-w-3xl">
@@ -377,7 +302,8 @@ export default function SaturdayDrive() {
               <div className="p-4 sm:p-6">
                 <div id={FORM_CONTAINER_ID} className="w-full" />
                 <p className="text-xs text-slate-500 mt-3">
-                  Having trouble with the form? Email careers@finanshels.com with your CV and we’ll reach out.
+                  Having trouble with the form? Email <a className="underline hover:text-blue-700"
+                    href="mailto:talents@finanshels.com?subject=Application%20for%20Senior%20Accounting%20Advisor&body=Please%20find%20my%20CV%20attached.%20I%20am%20interested%20in%20the%20Senior%20Accounting%20Advisor%20role.">Talents Email</a> with your CV and we’ll reach out.
                 </p>
               </div>
             </Card>
