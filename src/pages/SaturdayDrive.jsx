@@ -43,7 +43,7 @@ const DRIVE_HIGHLIGHTS = [
   {
     label: 'Position',
     value: 'Senior Accounting Advisor',
-    note: 'Only this role for the drive',
+    note: '5 open positions for this drive',
     icon: Briefcase,
     accent: 'from-emerald-50 to-teal-50 border-emerald-100',
     iconBg: 'text-emerald-700',
@@ -187,7 +187,7 @@ export default function SaturdayDrive() {
                 Senior Accounting Advisor — One-day hiring drive
               </h1>
               <p className="text-lg sm:text-xl text-slate-600 max-w-3xl font-medium">
-                Saturday, 23 May 2026. We’re running a focused virtual drive to hire one Senior Accounting Advisor for our FinOps pods.
+                Saturday, 23 May 2026. We’re running a focused virtual drive to hire 5 Senior Accounting Advisors for our FinOps pods.
               </p>
             </AnimatedSection>
 
@@ -203,7 +203,7 @@ export default function SaturdayDrive() {
                 </div>
                 <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-emerald-50 text-emerald-700 text-sm font-semibold border border-emerald-100">
                   <Briefcase size={16} />
-                  1 position
+                  5 open positions
                 </div>
                 <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-slate-100 text-slate-800 text-sm font-semibold border border-slate-200">
                   <Globe2 size={16} />
@@ -239,7 +239,7 @@ export default function SaturdayDrive() {
                   <ShieldCheck className="text-amber-600 flex-shrink-0" size={24} />
                   <div>
                     <div className="text-sm font-bold text-amber-700 uppercase tracking-wide">Drive details</div>
-                    <p className="text-slate-700 font-semibold">One Saturday. One position. Confirmed virtual conversations with hiring managers.</p>
+                    <p className="text-slate-700 font-semibold">One Saturday. 5 open positions. Confirmed virtual conversations with hiring managers.</p>
                   </div>
                 </div>
 
