@@ -49,6 +49,7 @@ const REQUIREMENTS = [
   'Dedication to delivering an exceptional client experience.',
   'Eagerness to learn, adopt, and test new technologies in accounting.',
   'CMA / CA / ACCA certification is a plus.',
+  'Immediate joiners preferred—currently available or on a short notice period.',
 ]
 
 export default function SaturdayDrive() {
@@ -165,6 +166,13 @@ export default function SaturdayDrive() {
                 <Globe2 size={16} className="text-sky-600" />
                 India — Remote
               </span>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection animation="fade-up" delay={250}>
+            <div className="mt-5 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-50 text-emerald-800 text-sm font-bold border border-emerald-200">
+              <Clock size={14} />
+              Preference for immediate joiners
             </div>
           </AnimatedSection>
 
