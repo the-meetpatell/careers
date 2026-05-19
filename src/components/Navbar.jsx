@@ -16,6 +16,7 @@ export default function Navbar() {
 
   const navLinks = [
     { name: 'Home', path: '/' },
+    { name: 'Saturday Drive · 23 May', path: '/saturday-drive', highlight: true },
     { name: 'FinOps Career', path: '/finops-drive' },
     { name: 'New Hiring', path: '/new-hiring' },
     { name: 'Life at Finanshels', path: '/life' },
@@ -43,7 +44,9 @@ export default function Navbar() {
                   'px-6 py-3 rounded-xl font-semibold transition-all duration-300',
                   isActive(link.path)
                     ? 'text-indigo-700 bg-indigo-50 shadow-sm'
-                    : 'text-slate-700 hover:bg-slate-50'
+                    : link.highlight
+                      ? 'text-white bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-700 hover:to-orange-700 shadow-md shadow-amber-500/20'
+                      : 'text-slate-700 hover:bg-slate-50'
                 )}
               >
                 {link.name}
@@ -74,7 +77,9 @@ export default function Navbar() {
                   'block px-5 py-3.5 rounded-xl font-semibold transition-all duration-300',
                   isActive(link.path)
                     ? 'text-indigo-700 bg-indigo-50 shadow-sm'
-                    : 'text-slate-700 hover:bg-slate-50'
+                    : link.highlight
+                      ? 'text-white bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-700 hover:to-orange-700 shadow-md shadow-amber-500/20'
+                      : 'text-slate-700 hover:bg-slate-50'
                 )}
               >
                 {link.name}
