@@ -158,7 +158,7 @@ export default function Home() {
             </AnimatedSection>
             <AnimatedSection delay={80}>
               <p className="text-base sm:text-lg text-slate-600 font-medium">
-                Serving 6,000+ clients with a 150+ member team across MENA.
+                Serving 7,000+ clients with a 150+ member team across MENA.
               </p>
             </AnimatedSection>
             <AnimatedSection delay={100}>

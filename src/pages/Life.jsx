@@ -79,8 +79,8 @@ export default function Life() {
   ]
 
   const stats = [
-    { number: "200+", label: "Team Members", icon: Users },
-    { number: "15+", label: "Countries", icon: Globe },
+    { number: "150+", label: "Team Members", icon: Users },
+    { number: "8+", label: "Countries", icon: Globe },
     { number: "42%", label: "Women in Tech", icon: Award },
     { number: "4.97/5", label: "Employee Rating", icon: Smile }
   ]

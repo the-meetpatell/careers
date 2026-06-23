@@ -17,6 +17,7 @@ import ServicesStep from '../components/onboarding/steps/ServicesStep'
 import TeamStep from '../components/onboarding/steps/TeamStep'
 import HRTeamStep from '../components/onboarding/steps/HRTeamStep'
 import PoliciesStep from '../components/onboarding/steps/PoliciesStep'
+import HRPoliciesStep from '../components/onboarding/steps/HRPoliciesStep'
 import ToolsStep from '../components/onboarding/steps/ToolsStep'
 import TestimonialsStep from '../components/onboarding/steps/TestimonialsStep'
 import QuizStep from '../components/onboarding/steps/QuizStep'
@@ -48,12 +49,14 @@ function OnboardingContent() {
       case 'testimonials': return <TestimonialsStep />
       case 'quiz': return <QuizStep />
       case 'completion': return <CompletionStep />
+      case 'hr-policies': return <HRPoliciesStep />
       default: return <WelcomeStep />
     }
   }
 
-  const showProgressBar = currentStep !== 'welcome' && currentStep !== 'completion'
-  const showSidebar = currentStep !== 'welcome' && currentStep !== 'completion'
+  const FULL_BLEED_STEPS = ['welcome', 'completion', 'hr-policies']
+  const showProgressBar = !FULL_BLEED_STEPS.includes(currentStep)
+  const showSidebar = !FULL_BLEED_STEPS.includes(currentStep)
 
   return (
     <div className="min-h-screen bg-slate-50">

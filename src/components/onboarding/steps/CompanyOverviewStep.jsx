@@ -10,8 +10,8 @@ export default function CompanyOverviewStep() {
   const stats = [
     { icon: Users, value: '150+', label: 'Team Members', color: 'from-blue-500 to-cyan-600' },
     { icon: Globe, value: 'MENA', label: 'Region Focus', color: 'from-orange-500 to-amber-600' },
-    { icon: Zap, value: '6,000+', label: 'SMBs Served', color: 'from-purple-500 to-pink-600' },
-    { icon: Building2, value: '200+', label: 'Partners', color: 'from-emerald-500 to-teal-600' }
+    { icon: Zap, value: '7,000+', label: 'SMBs Served', color: 'from-purple-500 to-pink-600' },
+    { icon: Building2, value: '400+', label: 'Partners', color: 'from-emerald-500 to-teal-600' }
   ]
 
   return (

@@ -110,12 +110,6 @@ export default function TeamStep() {
           ]
         },
         {
-          name: 'ALC',
-          leaders: [
-            { name: 'Akshay Kadam', title: 'Account Manager', linkedin: 'https://www.linkedin.com/in/akshay-kadam-21604159/' }
-          ]
-        },
-        {
           name: 'Internal Finance',
           leaders: [
             { name: 'Shahul Mohammed', title: 'Finance Manager', linkedin: 'https://www.linkedin.com/in/shahul-mohammed-41733623b/' }

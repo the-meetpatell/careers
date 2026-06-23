@@ -30,7 +30,7 @@ export default function TaxIntern() {
         'Structured mentorship from experienced tax advisors.',
         'Remote-first with flexible working hours.',
         'Clear path to a full-time Tax Associate role based on performance.',
-        'Work with a rapidly growing fintech serving 6,000+ SMBs.',
+        'Work with a rapidly growing fintech serving 7,000+ SMBs.',
       ]}
       iframeHeight="1260px"
     />

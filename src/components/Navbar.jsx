@@ -16,7 +16,6 @@ export default function Navbar() {
 
   const navLinks = [
     { name: 'Home', path: '/' },
-    { name: 'Saturday Drive · 23 May', path: '/saturday-drive', highlight: true },
     { name: 'FinOps Career', path: '/finops-drive' },
     { name: 'New Hiring', path: '/new-hiring' },
     { name: 'Life at Finanshels', path: '/life' },

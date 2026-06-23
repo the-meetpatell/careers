@@ -36,6 +36,9 @@ const ONBOARDING_STEPS = [
   { id: 'policies', title: 'Company Policies', icon: '📋', required: true },
   { id: 'tools', title: 'Tools & Systems', icon: '⚙️', required: true },
   { id: 'testimonials', title: 'Customer Stories', icon: '⭐', required: false },
+  // Full-page reference presentation shown right before the knowledge check.
+  // Kept `required: false` so it does not change the 100% completion math, badges, or certificate stats.
+  { id: 'hr-policies', title: 'HR Policies', icon: '📑', required: false },
   { id: 'quiz', title: 'Knowledge Check', icon: '🎓', required: true },
   { id: 'completion', title: 'Congratulations!', icon: '🎉', required: true }
 ]

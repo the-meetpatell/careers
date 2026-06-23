@@ -34,7 +34,6 @@ import SeniorTalentAcquisition from './pages/newHiring/SeniorTalentAcquisition'
 import TaxIntern from './pages/newHiring/TaxIntern'
 import FinanceIntern from './pages/newHiring/FinanceIntern'
 import Onboarding from './pages/Onboarding'
-import SaturdayDrive from './pages/SaturdayDrive'
 
 function App() {
   return (
@@ -48,7 +47,6 @@ function App() {
               <main className="flex-1">
                 <Routes>
                   <Route path="/" element={<Home />} />
-                  <Route path="/saturday-drive" element={<SaturdayDrive />} />
                   <Route path="/jobs" element={<Navigate replace to="/virtual-drive" />} />
                   <Route path="/life" element={<Life />} />
                   <Route path="/finops-drive" element={<FinOpsDrive />} />
