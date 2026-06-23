@@ -86,7 +86,7 @@ export default function TestimonialsStep() {
               onClick={nextStep}
               className="bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent hover:opacity-95 text-white font-bold px-12 text-lg shadow-xl"
             >
-              Take the Knowledge Check
+              Continue to HR Policies
               <ArrowRight className="ml-2" size={20} />
             </Button>
           </div>
